@@ -1,0 +1,37 @@
+
+.pagination a,.pagination span{text-decoration: none;color:#444;display: inline-block;padding:2px 9px;margin:0 3px;line-height: normal;}
+.pagination .current{color: #ffffff;
+    cursor: default;
+    background-color: #e10500;
+    border-color: #e10500;
+}
+.pagination .prev,.pagination .next{background: #fff;border:1px solid #eee;color:#444;}
+
+
+.pagination .prev:before {
+    display: inline-block;
+    content: "";
+    border-style: solid;
+    border-width: 5px 5px 5px 0;
+    border-color: transparent #666 transparent transparent;
+}
+
+
+.pagination .next:after {
+    display: inline-block;
+    content: "";
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #666;
+    margin-left: 6px;
+}
+
+.pagination-col{position: relative;}
+.pagination-col .pagination{margin:0;}
+.pagination-top a,.pagination-top span{display: none;}
+.pagination-top .next,.pagination-top .prev{display: inline-block;margin:0 24px;}
+
+.pagination-col .pagination-middle{position: absolute;top:0px;left:56px;width:43px;text-align: center;}
+
+.load-more-col{padding:0 20px;}
+.load-more{width:100%;border:1px solid #eee;line-height: 32px;clear: both;margin:0 auto;background: #fff;text-align: center;cursor: pointer;color:#999;}

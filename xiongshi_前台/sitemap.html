@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=/info/lightspeedutility/upgrade_browser.html" />
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>雄獅當地遊sitemap</title>
+<style>
+/*Now the CSS*/
+* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top: 20px; position: relative;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+</style>
+</head>
+<body>
+<div class="tree" style="width:3000px;">
+	<ul>
+		<li>
+			<a style="background:#bbbbbb;">雄旅網首頁</a>
+			<ul>
+				<li>
+					<a href="inedx.html">當地遊館頁</a>
+					<ul>
+						<li>
+							<a href="search_results.html">搜尋結果頁</a>
+							<ul>
+								<li>
+									<a href="product.html">產品介紹頁</a>
+									<ul>
+										<li>
+											<a style="background:#ff8282;" href="#">確定明細與相關規定</a>
+											<ul>
+												<li>
+													<a style="background:#bbbbbb;">會員登入</a>
+													<ul>
+														<li>
+															<a style="background:#bbbbbb;">選擇服務據點</a>
+															<ul>
+																<li>
+																	<a style="background:#ff8282;" href="#">旅客資料頁</a>
+																	<ul>
+																		<li>
+																			<a href="orderingproduct.html">產品訂購頁</a>
+																			<ul>
+																				<li>
+																					<a style="background:#ff8282;" href="#">訂購完成頁</a>
+																					<ul>
+																						<li>
+																							<a style="background:#ff8282;" href="#">訂購確認信</a>
+																						</li>
+																					</ul>
+																				</li>
+																				<li>
+																					<a style="background:#ff8282;" href="#">訂購完成頁(列印)</a>
+																				</li>
+																			</ul>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>	
+										</li>
+										<li>
+											<a style="background:#ff8282;" href="#">加價說明</a>
+										</li>
+										<li>
+											<a style="background:#ff8282;" href="#">個資同意書</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="product.html">產品介紹頁_選擇使用日期</a></li>
+								<li><a style="background:#ff8282;" href="#">產品介紹頁_選擇使用日期_選擇使用日期歐鐵</a></li>
+								<li><a href="product.html">產品介紹頁_預覽圖片</a></li>
+								<li><a style="background:#ff8282;" href="#">住宿資訊</a></li>
+								<li>
+									<a style="background:#ff8282;" href="#">選擇列印資訊(lightbox)</a>
+									<ul>
+										<li>
+											<a style="background:#ff8282;" href="#">預覽列印</a>
+											<ul>
+												<li>
+													<a style="background:#ff8282;" href="#">列印(黑白)</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="search_noresults.html">搜尋結果頁-查無結果</a>
+						</li>
+						<li>
+							<a href="loading.html">搜尋載入頁</a>
+						</li>
+						<li>
+							<a style="background:#ff8282;" href="#">收藏列表</a>
+						</li>
+						<li>
+							<a style="background:#ff8282;" href="#">收藏列表_無收藏</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a style="background:#bbbbbb;" href="order.html">我的訂單</a>
+					<ul>
+						<li><a style="background:#ff8282;" href="#">產品訂購資料(已付款)</a></li>
+						<li><a style="background:#ff8282;" href="#">我的訂單_憑證內容(lightbox)</a></li>
+						<li><a style="background:#ff8282;" href="#">我的訂單_訂單明細(lightbox)</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</body>
+</html>

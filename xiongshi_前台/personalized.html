@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=/info/lightspeedutility/upgrade_browser.html" />
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--當用手機選擇看電腦版時請使用以下viewport-->
+<meta name="viewport" content="width=980">
+<title>雄獅旅遊網：規劃旅遊行程、機票、訂房、自由行的首選網站</title>
+<meta name='description' content='雄獅旅遊網提供國外團體旅遊、台灣團體旅遊、機票、訂房、自由行、航空假期、票券、高鐵及主題旅遊等全方位服務，提供最完善的旅遊資訊，致力成為全球旅人最愛的旅遊網站' />
+<link href="images/favicon.ico" rel="shortcut icon">
+<link href="css/localtour.css" rel="stylesheet">
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+<link href="css/myorder.css" rel="stylesheet" />
+<link href="css/PagedList.css" rel="stylesheet" />
+<link href="css/core.css" rel="stylesheet" />
+
+<style type="text/css">
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+
+.ban{ width:560px; height:410px; position:relative; overflow:hidden;}
+.ban2{ width:560px; height:315px; position:relative; overflow:hidden;}
+.ban2 ul{ position:absolute; left:0; top:0;}
+.ban2 ul li{ width:560px; height:315px;}
+.prev{ float:left; cursor:pointer;}
+.num{ height:82px;overflow:hidden; width:480px; position:relative;float:left;}
+.min_pic{ padding-top:20px; width:100%;}
+.num ul{ position:absolute; left:0; top:0;}
+.num ul li{ width:80px; height:45px; margin-right:5px; padding:1px;}
+.num ul li.on{ border:1px solid red; padding:0;}
+.prev_btn1{ width:16px; text-align:center; height:18px; margin-top:10px; margin-right:20px; cursor:pointer; float:left;}
+.next_btn1{  width:16px; text-align:center; height:18px; margin-top:10px;cursor:pointer;float:right;}
+.prev1{ position:absolute; top:130px; left:0px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.next1{ position:absolute; top:130px; right:0px; width:28px; height:51px;z-index:9;cursor:pointer;}
+.mhc{ background:#000; width:100%;opacity:0.8;-moz-opacity:0.8;filter:alpha(Opacity=50); position:absolute; left:0; top:0; display:none;z-index:1;}
+.pop_up{ width:820px; height:470px; padding:10px; position:fixed; -position:absolute; left:40%; top:55%; margin-left:-255px; margin-top:-255px; display:none; z-index:3;}
+.pop_up_xx{ width:40px; height:40px; position:absolute; top:0px; right:-40px; cursor:pointer;}
+.pop_up2{ width:500px; height:500px; position:relative; overflow:hidden;}
+.pop_up2{ width:800px; position:relative; overflow:hidden; float:left;}
+.pop_up2 ul{ position:absolute; left:0; top:0;}
+.pop_up2 ul li{ width:800px; float:left;}
+.promote{
+border:2px solid #ebebeb;
+}
+.promote:hover{
+border:2px solid #ebebeb;
+box-shadow: 0px 4px 0px 0.5px #ebebeb;
+background:#fff9e3;
+}
+</style>
+</head>
+<body class="bg-lter">
+<div class="mhc"></div>
+<header>
+<div class="hd-ln fix-to-md">
+	<h1 class="site-name d-no">雄獅旅遊 LionTravel</h1>
+	<a href="index.html">
+		<img class="logo" src="images/49d7c8edb044a517f45c95589c969797.png" alt="雄獅旅遊 LionTravel">
+	</a>
+	<ul class="tp">
+		<li><a href="#">會員服務</a></li>
+		<li><a href="order.html">我的訂單</a></li>
+		<li><a href="#">門市服務據點</a></li>
+		<li><a href="#">企業專區</a></li>
+		<li><a href="#">旅遊資訊</a></li>
+		<li>
+			<a class="dp">雄獅集團網群</a>
+			<ul class="sm">
+				<li><a href="#" title="中國雄獅網" target="_blank"><span>中國雄獅網</span></a>
+				</li>
+				<li><a href="#" title="香港雄獅網" target="_blank"><span>香港雄獅網</span></a></li>
+				<li><a href="#" title="美國雄獅網" target="_blank"><span>美國雄獅網</span></a></li>
+			</ul>
+		</li>
+		<li>
+			<a class="dp">語系/Language</a>
+			<ul class="sm">
+				<li><a id="englishLightbox" href="#" title="ENGLISH"><span>ENGLISH</span></a></li>
+				<li><a href="#" title="正體中文"><span>正體中文</span></a></li>
+			</ul>
+		</li>
+		<li><a href="#">護照簽證</a></li>
+	</ul>
+	<ul class="bt">
+		<li><i class="ic-ln toolmemberf"></i><a href="#" target="_blank">會員登入 / 註冊</a></li>
+		<li><i class="ic-ln toolfbf"></i><a href="#" target="_blank">粉絲家族</a></li>
+		<li><i class="ic-ln toolcellf"></i><a href="#">手機App下載</a></li>
+		<li><i class="ic-ln tooltaiwanf"></i><a href="#">赴台旅遊</a></li>
+		<li><i class="ic-ln toolsurveyf"></i><a href="#">旅客滿意調查</a></li>
+	</ul>
+</div>
+<nav class="nvm-lnmg fix-to-md">
+	<div class="wrap">
+	<h3 class="lb"><span>國外</span></h3>
+	<ul class="menu">
+		<li id="aboardGroupMenu" class="w-f"><a href="#" title="國外團體旅遊">團體</a></li>
+		<li id="abroadHotelMenu"><a href="#" title="國外訂房">訂房</a></li>
+		<li class="link"><a href="#" title="機票">機票</a></li>
+		<li id="freeLionMenu"><a href="#" title="國外雄獅自由行">雄獅自由行</a></li>
+		<li id="freeAirMenu"><a href="#" title="航空自由行">航空自由行</a></li>
+		<li class="link"><a href="#" title="郵輪">郵輪</a></li>
+	</ul>
+	<h3 class="lb"><span>台灣</span></h3>
+	<ul class="menu">
+		<li id="domesticGroupMenu" class="pos-stc"><a href="#" title="台灣團體旅遊">團體</a></li>
+		<li id="domesticHotelMenu"><a href="#" title="台灣訂房">訂房</a></li>
+		<li id="freeTaiwanMenu"><a href="#" title="台灣自由行">自由行</a></li>
+		<li id="thsrcTaiwanMenu" class="m-r-xxs"><a href="#" title="高鐵/台鐵旅行">鐵道</a></li>
+	</ul>
+	<h3 class="lb"><span>更多</span></h3>
+	<ul class="menu">
+		<li id="taichungMenu"><a href="#" title="台中出發">台中出發</a></li>
+		<li id="kaohsiungMenu"><a href="#" title="高雄出發">高雄出發</a></li>
+		<li id="ticketMenu" class="link"><a href="#" title="當地遊">當地遊</a></li>
+		<li id="themeTripMenu"><a href="#" title="主題旅遊">主題旅遊</a></li>
+	</ul>
+	</div>
+</nav>
+</header>
+
+<main class="nvb_gplt member-main" data-xthreshold="75">
+	<div class="container-md">
+		
+		<div style="padding:20px 30px;background:#fff;">
+			<div style="margin-left:-15px;margin-right:-15px;">
+				<div class="col-xs-24 col-sm-24 col-md-24">
+					<div style="text-align:center;background:#e10500;padding:10px;font-size:20px;color:#fff;font-weight:bold;margin-bottom:20px;">
+						訂單確認信
+					</div>
+					<div style="padding:0 15px 15px 15px;">
+						<div style="font-size:16px;font-weight:bold;">感謝您對雄獅旅遊的支持~ </div>
+						<div style="font-size:16px;font-weight:bold;">承蒙您的訂購，雄獅旅遊網已於 2016/12/06 17:12:39 收到您的訂購單(訂單編號2016-485728)，我們將以最快的速度為您處理!</div>
+						<div style="font-size:16px;font-weight:bold;">以下為您此次的訂單明細，價格以新台幣計價，同時建議您可以登入雄獅旅遊網「<span style="color:#0077b3;">訂單查詢</span>」，隨時掌握您的訂單明細與處理進度。</div>
+						<div style="font-size:16px;line-height:200%;"><span style="margin-right:10px;"><img src="images/colock.png"/></span><span style="color:#e10500;vertical-align:middle;font-weight:bold;">只差一步!</span> <span style="color:#e10500;vertical-align:middle;">請於</span><span style="color:#e10500;vertical-align:top;font-size:20px;font-weight:bold;"> 2016/12/07 04:40 </span><span style="color:#e10500;vertical-align:middle;">前至「</span><span style="color:#0077b3;vertical-align:middle;font-weight:bold;"> 我的訂單 > </span><span><img src="images/icon15.png"/></span><span style="color:#0077b3;vertical-align:middle;font-weight:bold;"> 補填資料 </span><span style="color:#e10500;vertical-align:middle;">」，謝謝!</span></div>
+					</div>
+					<div style="padding:10px 15px;background:#f4f4f4;">
+						<div style="font-size:16px;font-weight:bold;">親愛的 <span style="color:#e10500;">劉清群</span> 先生/小姐：</div>
+						<div style="float:left;">
+							<div style="font-size:16px;font-weight:bold;line-height:200%;">感謝您~雄獅旅遊已經收到您的訂單，將會盡快為您處理!</div>
+							<div style="font-size:16px;line-height:200%;"><span style="margin-right:10px;"><img src="images/colock.png"/></span><span style="color:#e10500;vertical-align:middle;font-weight:bold;">只差一步!</span> <span style="color:#e10500;vertical-align:middle;">請於</span><span style="color:#e10500;vertical-align:top;font-size:20px;font-weight:bold;"> 2016/12/07 04:40 </span><span style="color:#e10500;vertical-align:middle;">前至「</span><span style="color:#0077b3;vertical-align:middle;font-weight:bold;"> 我的訂單 > </span><span><img src="images/icon15.png"/></span><span style="color:#0077b3;vertical-align:middle;font-weight:bold;"> 補填資料 </span><span style="color:#e10500;vertical-align:middle;">」，謝謝!</span></div>
+							<div><span>訂單編號：2015-123456</span><span style="margin-left:90px;">下單時間：2015/10/30  16:40</span></div>
+						</div>
+						<div style="float:right;">
+							<div>服務人員：李小明 Lee Xiao ming</div>
+							<div>聯絡電話：02-87939000 #9039</div>
+							<div style="margin-left:70px;">02-87939039</div>
+							<div><span style="letter-spacing:1px;">E-MAIL</span>：leexiaoming@liontravel.com</div>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div style="padding:20px 0 0 0;">
+						<div style="font-size:14px;">產品代碼：123456789</div>
+						<div style="font-size:20px;font-weight:bold;margin-top:5px;">白馬市極光奇景3日之旅</div>
+						<div style="border:1px solid #e3e3e3;margin-top:20px;">
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">產品</span></div>
+							<div style="background:#fff;">
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;">東京迪士尼2日券</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<span style="color:#666666;font-size:14px;">使用日期：2016/12/31<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">選項：Best Western Gold Rush Inn雙人房<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">場次：21：30<span>
+									</div>
+									<div style="margin-left:-5px;margin-right:-5px;">
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">成人 <span style="color:#f2511b;">$11,593</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">孩童 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">老人 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">學生 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">嬰幼兒 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="float:right;">小計：<span style="color:#e10500;">$28,900</span></div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;">東京迪士尼2日券</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<span style="color:#666666;font-size:14px;">使用日期：2016/12/31<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">選項：Best Western Gold Rush Inn雙人房<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">場次：21：30<span>
+									</div>
+									<div style="margin-left:-5px;margin-right:-5px;">
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">成人 <span style="color:#f2511b;">$11,593</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">孩童 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">老人 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">學生 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">嬰幼兒 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="float:right;">小計：<span style="color:#e10500;">$28,900</span></div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">加購項目</span></div>
+							<div style="background:#fff;">
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;">東京迪士尼2日券</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<span style="color:#666666;font-size:14px;">使用日期：2016/12/31<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">選項：Best Western Gold Rush Inn雙人房<span>
+										<span style="color:#666666;font-size:14px;margin-left:40px;">場次：21：30<span>
+									</div>
+									<div style="margin-left:-5px;margin-right:-5px;">
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">成人 <span style="color:#f2511b;">$11,593</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">孩童 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">老人 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">學生 <span style="color:#f2511b;">$7,425</span> ×2位</div>
+										<div class="col-xs-4 col-sm-4 col-md-4" style="color:#666666;font-size:14px;">嬰幼兒 <span style="color:#f2511b;">$5,425</span> ×2位</div>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="float:right;">小計：<span style="color:#e10500;">$28,900</span></div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px;">
+									<div style="float:right;">
+										<div style="font-size:16px;color:#e10500;font-weight:bold;">總價：<span style="font-size:24px;">TWD28,900</span></div>
+									</div>
+									<div style="float:right;clear:both;">
+										<div style="color:#24a07c;">本售價按該行程所有出發日期中最低房價的費用，您最後的價格會依出發日期、出行人數、所選飯店而有所不同。</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+						</div>
+						<div style="border:1px solid #e3e3e3;margin-top:20px;">
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">聯絡人資料</span></div>
+							<div style="background:#fff;">
+								<div style="padding:10px;">
+									<div style="width:115px;float:left;text-align:right;line-height:200%;">姓名：</div>
+									<div style="width:300px;float:left;text-align:left;line-height:200%;">劉清群</div>
+									<div style="width:140px;float:left;line-height:200%;"><span style="float:left;">國碼 886</span><span style="float:right;">白天：</span></div>
+									<div style="width:200px;float:left;line-height:200%;">04-28334333  分機1425</div>
+									<div style="clear:both;"></div>
+									<div style="width:115px;float:left;text-align:right;line-height:200%;">手機：</div>
+									<div style="width:300px;float:left;text-align:left;line-height:200%;">0910-042789</div>
+									<div style="width:140px;float:left;line-height:200%;"><span style="float:right;">晚上：</span></div>
+									<div style="width:200px;float:left;line-height:200%;">04-28334333</div>
+									<div style="clear:both;"></div>
+									<div style="width:115px;float:left;text-align:right;line-height:200%;">E-MAIL：</div>
+									<div style="width:300px;float:left;text-align:left;line-height:200%;">vickie_liu@yahoo.com.tw</div>
+									<div style="width:140px;float:left;line-height:200%;"><span style="float:right;">傳真：</span></div>
+									<div style="width:200px;float:left;line-height:200%;">04-28334333</div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="border:1px solid #e3e3e3;margin-top:20px;">
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">旅客資料</span></div>
+							<div style="background:#fff;">
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;font-weight:bold;">白馬市極光奇景3日之旅</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<div style="font-size:16px;">旅客(1)</div>
+										<div style="margin-left:40px;line-height:200%;"><span>中 / 英文姓名(同護照)：王曉明 WANG WENG-JAN (男)</span><span style="margin-left:100px;">出生年月日：1987/08/30</span><span style="margin-left:100px;">國籍：台灣</span></div>
+									</div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="padding-bottom:10px;">
+										<div style="font-size:16px;">旅客(2)</div>
+										<div style="margin-left:40px;line-height:200%;"><span>中 / 英文姓名(同護照)：王曉明 WANG WENG-JAN (男)</span><span style="margin-left:100px;">出生年月日：1987/08/30</span><span style="margin-left:100px;">國籍：台灣</span></div>
+									</div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;font-weight:bold;">白馬市極光奇景3日之旅</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<div style="font-size:16px;">旅客(1)</div>
+										<div style="margin-left:40px;line-height:200%;"><span>中 / 英文姓名(同護照)：王曉明 WANG WENG-JAN (男)</span><span style="margin-left:100px;">出生年月日：1987/08/30</span><span style="margin-left:100px;">國籍：台灣</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="border:1px solid #e3e3e3;margin-top:20px;">
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">產品訂購資料</span></div>
+							<div style="background:#fff;">
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;font-weight:bold;">白馬市極光奇景3日之旅</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<div style="font-size:16px;font-weight:bold;">產品資料</div>
+										<div style="line-height:200%;">
+										海外取件地點： Best Western Gold Rush Inn<br>
+										取件代表人：Liu Mister<br>
+										駕駛姓名：劉先生   駕駛效期：2018/08/30  手機：0910094782  電話：白天02-35352752   分機：1231
+										</div>
+									</div>
+								</div>
+								<div style="padding:10px 30px;">
+									<div style="font-size:16px;font-weight:bold;padding-bottom:10px;">
+										<span style="vertical-align:middle;font-size:16px;color:#666666;font-weight:bold;">白馬市極光奇景2日之旅</span>
+									</div>
+									<div style="padding-bottom:10px;">
+										<div style="font-size:16px;font-weight:bold;">旅客(1)</div>
+										<div style="line-height:200%;">
+										劉先生<br>
+										護照號碼：300000000<br>
+										台胞證號碼：300000000<br>
+										LineID：vickie_liu<br>
+										身分證字號：A123578698<br>
+										手機：0910-042789<br>
+										E-MAIL：vickie_liu@yahoo.com.tw<br>
+										海外取件地點飯店： Best Western Gold Rush Inn  <br>
+										飯店預約者名： <br>
+										取件代表人：Liu Mister<br>
+										接駁飯店：Best Western Gold Rush Inn <br>
+										回程搭機時間：2017/01/10 16;25 <br>
+										環球影城入園日：2017/01/05<br>
+										身高：180CM 體重：80KG 腳尺寸：26CM<br>
+										近視度數：左眼550度 右眼600度<br>
+										緊急聯絡人：王曉明 緊急聯絡人手機：0912-456789<br>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="border:1px solid #e3e3e3;margin-top:20px;">
+							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">其它資料</span></div>
+							<div style="background:#fff;">
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="padding-bottom:10px;">
+										<div style="float:left;width:90px;text-align:right;">其他特殊需求</div>
+										<div style="float:left;width:700px;margin-left:30px;">
+										1. 若負責的業務有需要致電聯繫，請於晚上九點前來電<br>
+										2. 本訂單欲加購部分自費行程，已聯繫負責業務，請以email提供自費行程的詳細收費資訊給聯絡人劉小姐
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="border-bottom:1px solid #d9d9d9;padding:10px 30px;">
+									<div style="padding-bottom:10px;">
+										<div style="float:left;width:90px;text-align:right;">代轉資料</div>
+										<div style="float:left;width:700px;margin-left:30px;">
+										抬頭：雄獅旅行社<br>
+										統一編號：12345678<br>
+										代轉備註：最多30個字最多30個字最多30個字最多30個字最多30個字最多30個字<br>
+										代轉寄送地址：台北市信義區松高路 9 號 23 樓<br>
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="padding:10px 30px;">
+									<div style="padding-bottom:10px;">
+										<div style="float:left;width:90px;text-align:right;">取件方式</div>
+										<div style="float:left;width:700px;margin-left:30px;">
+										自取 : 台北總公司    台北市瑞湖街111號2樓    02-87939000<br>
+										郵寄 : 王曉明 100台北市中正區重慶南路一段122號   手機：0910094782  電話：02-35352752   分機：1231
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+</main>
+
+
+<footer class="ft-ln fix-to-md">
+		<nav>
+		<a href="#">關於雄獅</a>
+		<a href="#">利害關係人專區</a>
+		<a href="#">菁英招募</a>
+		<a href="#">隱私權政策</a>
+		<a href="#">交易安全</a>
+		<a href="#">訂購說明</a>
+		<a href="#">網站導覽</a>
+		<a href="#">客戶信箱</a>
+		<a href="#">聯絡雄獅</a>
+	</nav>
+	<div class="info">
+		<div class="adds">
+			<a class="lion" href="#"></a>
+			<p>總公司地址：台灣台北市114內湖區石潭路151號</p>
+			<p>旅遊產品由 雄獅旅行社股份有限公司 提供</p>
+			<p>代表人：王文傑 統一編號：04655091</p>
+			<p>代表號：02-87939000</p>
+			<p>網站服務：簡慧瑜 <a id="memberMail" href="//www.liontravel.com/webcs/webvccs00.aspx?action=webvccs00">member@liontravel.com</a></p>
+			<p>綜合旅行社 交觀綜字 2016號</p>
+			<p>品保協會會員93字第北0541號</p>
+		</div>
+		<div class="tels">
+			<small>
+				直接點選電話號碼 可聯絡線上客服
+				<div class="shareBtn d-ib align-middle">
+					<div class="fb-share-button align-top" data-href="http://www.liontravel.com"  data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">分享</a></div>
+					<div class="g-plus align-top" data-action="share" data-annotation="none"></div>
+				</div>
+			</small>
+			<p class="tel">
+				<strong>國外機票自由行：</strong><span class="call" title="02-8793-9660">台北02-87939660</span><span class="call" title="03-3470202" data-ext="5692">桃園03-3470202</span><span class="call" title="04-2415-9866">台中04-24159866</span><span class="call" title="06-2083769" data-ext="6606">台南06-2083769</span><span class="call" title="07-213-7789">高雄07-2137789</span>
+			</p>
+			<p class="tel">
+				<strong>國外團體旅遊　：</strong><span class="call" title="02-87939669">台北02-87939669</span><span class="call" title="03-2730099" data-ext="5691">桃園03-2730099</span><span class="call" title="04-24159888">台中04-24159888</span><span class="call" title="06-2084169" data-ext="6602">台南06-2084169</span><span class="call" title="07-2137799">高雄07-2137799</span> 
+			</p>
+			<p class="tel">
+				<strong>台　灣　旅　遊：</strong><span class="call" title="02-87939611">台北02-87939611</span><span class="call" title="03-2730096" data-ext="5693">桃園03-2730096</span><span class="call" title="04-24159811">台中04-24159811</span><span class="call" title="06-2756006">台南06-2756006</span><span class="call" title="07-2137945">高雄07-2137945</span> 
+			</p>
+			<p class="tel">
+				<strong>主　題　旅　遊：</strong><span>達人 節慶 建築 攝影 生態 音樂 鐵道 古文明 美食 Club Med 日本嚴選</span><span class="call" title="02-87939671">02-87939671</span> 
+			</p>
+			<p class="tel">
+				<strong>主　題　旅　遊：</strong><span>郵輪 運動 頂級島嶼</span><span class="call" title="02-87939608">02-87939608</span><span>客製化包團</span><span class="call" title="02-87939685">02-87939685</span><span>高爾夫</span><span class="call" title="02-87939632">02-87939632</span>
+			</p>
+			<p class="copy">Copyright© LION TRAVEL SERVICE CO., LTD. All Rights Reserved</p>
+			<p class="mark">
+				<a target="_blank" href="http://www.sosa.org.tw/ec/ec_info.asp?markid=04655091">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTAwNUUyM0I2QkVCMTFFMTlEMjREOTQ1MDc5NkQ2NUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTAwNUUyM0M2QkVCMTFFMTlEMjREOTQ1MDc5NkQ2NUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MDA1RTIzOTZCRUIxMUUxOUQyNEQ5NDUwNzk2RDY1QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MDA1RTIzQTZCRUIxMUUxOUQyNEQ5NDUwNzk2RDY1QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk7iyoQAAAWpSURBVHjanFYJUFNXFD0JCZIFDAlBBIQAwQUBQZFRNCqIC5SqQ1vHqlTFpeNa61THvQWlrUuhdWunte52WrdWWVwAqaB1N8gygiAgSiQJhoAkQARuH9hhRsZR6Jt5898/79z7/n333DufQ0TozrijLgl60cCzC1V5XO6WQbvjt02TiYQHDpfFWtl82zo0KOluSQUptXpyfJfdWzcTdxesAtYwVgTNnD6Rft8roIunuLR1Q8T5pZ/l7NXXkUOPHU+dnnkWiKR9cX3+g3ivns0gTR4ofh0oaMQPt1tbidttx3t+LFkGBFLFLdtO+Ob5ftRUxaFKNVtnyjuw90aDfHyOFL7JB6dr8tgbl8tZ2Hp0136oRgH7jozAJJUUjyr1qNR4ImTcCKivZ6O/9yi4KCyYPPVu/cEDO+ZFR3uceWvy0jPLwp2d5tDpU9/RrJjdlPR9MVVUEYmlO2n+wnRqH5sSiCp1HUtU63ROzzRa53deRUOdUVKlMXQQ7+cTzZh7i1y8sxlzP5HRn8GDaOMX20npd5GSU0uiepy8shK9EkgisTCcZs3woB2bVGSpYlstoNrHIIWzklkvobPJ6ik9cgyso7BxCsrLdqUWrbQDTj0+hOIWfdhJ42MsI8ZTk8Us7GrPfVPRvP/BpWRHyRVjZlYF3DxNOPzzgA7czd2E0IhiPM2TAU1yXDz5mKF6/HJQHdutygMSKeusiIXNp3PHgpl2mXjM/E7KqsVRlJfhT4/uyxh5BW3+8lJcVx+8rge1tUfB48FnkAmNGjEO/zoSdjIzBiqf4XGRBKkZgfBVVsNvfB52bQlmFmL4+9rnd/XDeVMT8hv2Z767ZK1vSuZDWCx8pJ/wQ2W1LRqMPASPqMLYqCLGsgeHEw1YuYJaNvHZouWdV5FfqPEF5tGC2KA35vbetXZFxLA5h/66kDutR6pI2ndj5SvjCJowUkWrPx1C0yKDyEYcxbCP2FxGZ5Jzov9Xd8srLPOPnPJHKl+44yWwkeSuu/WhE05kJWz7ez3LpvBttpzuNvqejk5VpKXdiSwu0Q4sK6/1CB7mfDsmJuzIvp8ylpSVa72kUtHzRbGq/Q5yme7Q0ey5TyoMbqbmJtGsj0cd9xvcL+/YoYy5mhqT4/Klk/YIBDbmzuS1OwVCaKDvGgoMWk9XMu6FHziYxUQfRhMjt5Kw9wLq67LymWpsfA4wnSZO3kLjxyd0NKHaWrMECGJhK2jb9rQ1r+u4lcsq0A2jVT4YE+IOUe9e6b99cx3+ASpcTN2A8qKn8A6Mc1J4ypyGBA7A9BnDgRYODLUv6PjxG5DJg0FcDrKuFISuWR2x/TW5XTh/a/Lpk9m04vOj7PRpJBQtIHevtWyrlfYkpjJsJulrtHTzWgFt25lCLm6rycZmPvkHrKOEnWl05FgW40STWl0e0PnFlZUat83x5+L4fCF02nr0c/fC5rXhWPtVCiR2i1HX8BLzZ49FWkohvk7MgL1IAJGNFRx8nFBUoIVqmAeGhXjgk9l78E/2gzEBAYrcDlUYDQZpcsr959YCayi9naBQ9IZM4oDmxkYUqB+gsbkFo0ODWVOvxbWrhRBaW2PocA/06SNCaWk1lErPjuhvXFdDLpd6eyndSzk6/QtbY1193xe1NcXuLo6Q9XVCefkTlBY9w7hJw9HcbERB7kM4OrnC08OFmTdBrzNA7uiMqzk3YWmywMfPD60WE0vkc/AFokH9vbxKeeC+TKjRGZffuV2BMuc6eClqYaxnDchiQUXJE2h19bh8+RFCQgC5gwQ52blogxUGDGxDUWE1OFbWsOKXw85OgIrHJnZ1LQ8U7hYBTy7tDeFgLhrqzRFCkXWDxMFWY2dvx7VYWqxFdjxjYF/vBoOhIcxkNkEsFpzzUvbrL5VKDDK5bY3YhlwbzWTzkv0CsFKDws1B3EvEN3Os0PavAAMAfZ9z+O/9YScAAAAASUVORK5CYII=">
+				</a>
+				<a target="_blank" href="http://www.globaltrust.com.tw/trustseal/seal.asp?id=CEOV1409224885&amp;website=start_liontravel_com">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTUzRDA3MUI2QkVCMTFFMTg2NTJGNUI1NDJEQTlCNEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTUzRDA3MUM2QkVCMTFFMTg2NTJGNUI1NDJEQTlCNEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NTNEMDcxOTZCRUIxMUUxODY1MkY1QjU0MkRBOUI0QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NTNEMDcxQTZCRUIxMUUxODY1MkY1QjU0MkRBOUI0QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pm2xgXUAAAfKSURBVHjajFZpcFPn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">
+				</a>
+				<a target="_blank" href="http://www.sosa.org.tw/ec/ec_infotransparency.asp?markid=04655091">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk3NzcyQjc2QkVCMTFFMTgwM0VFNjM4MkUzODg4NDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk3NzcyQjg2QkVCMTFFMTgwM0VFNjM4MkUzODg4NDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OTc3NzJCNTZCRUIxMUUxODAzRUU2MzgyRTM4ODg0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1OTc3NzJCNjZCRUIxMUUxODAzRUU2MzgyRTM4ODg0NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmtRleAAAAZMSURBVHjatFYLUFRV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">
+				</a>
+				<a target="_blank" href="#">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUU4NjBGOUQ2QkVCMTFFMUFEOEI4RTU3QTlGRTkyMDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUU4NjBGOUU2QkVCMTFFMUFEOEI4RTU3QTlGRTkyMDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1RTg2MEY5QjZCRUIxMUUxQUQ4QjhFNTdBOUZFOTIwNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1RTg2MEY5QzZCRUIxMUUxQUQ4QjhFNTdBOUZFOTIwNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjtxcE8AAASDSURBVHja7FZrTBxVFP5mZnntwtrCSilFChSxplgKErGU0kgQW2mosRpjaWLTH03ro9ZoqqmtMdIEq9E0NtpnapCixIKBVlqBxqZiW6APpPVBKeW1LLssbNhdZpidmd293hlC7Sb7Q2Plh3qSb+6599w537nnnntzGUIIZlJYzLD8Fwj9ftb3wcfblW9OPj0jjNLuj3ZaAGKm4Mv27FSL6J8E6/WBFSgxT+HY9WaZe+2LtXdzQcQj6omihP4xQFntSwsu3qCqim6KkVCDpDRdKLobK/L39SdJlTXr/cPD8doR1AbHxk2jyx9vsdKumt6bFH0U4oGvN/8tMttonFR/ukSprCFkxBZ3m1AzEsISF28Unl1bq66yi0INwDov2SLX1zzzlwk9YrhUVb9ucn81Uc615/sVr07bw+nUMoAfRoPbm5N/MYL25ze3YPahk/Bb+uIdzadXTQDGYHs0LFgSdv+0o3zUY4sLMChyKF9R88JkXV0TF2uyMzrOe3sPp+ElROd+ZFWb9No7RBUfmZKx6n7iXPNhPfELenVeL9+fMv3PirrMDrwB0mY/nzs15menbc63ysvHMpZ33skRQOg5833hkMFElK4+jcixN40I360gCo3kxrwnKLNsGiSuRJSD7Ol4T40KTeaTq9X+shMZmuPGIVK0psFcLxISrvkVHNGeA99udr2091O/y2UMuGnkjl+WhEdHQZecBEXNym/d4HpvguGANv9i4Lh9tEo8PAA9kGXKaVX/yb4394LlVQtEj6Dv9Rxbb+IwVl85VPKFdUJUEwh9tEOobt/v7XIsZIxGdwAhd6quWLbRVNNT4+3eC2YeELbFAt8PThisgxC8LnS6r+NSaSsKE4qaGi2nnow+HONwSE6sTlma6vNEVlYM4kr2tiVY107LbusRzW/ErjXgUtED2TUrgNAvyaERyhjIOL3zZCv0jBriRfBmEXbYMHrtAqJkHbJjcrTtX1lX3PD+snfhkM00lccw4H4Kn7QBGVkhiKxrh3Xf+SnHSakwH+Q3iTcmEwMIFX4i0gUR0tmvoPQehUjnu8pyEV3K4372UcR5ZiFv7mNIrY5HXu1iJMfEoqH/NJ5vXInn0rbgyM/UiWUAw+ZJDHVZEE7DdB//Ee6tlfQUMGDnmGwBRcMfrdg4aEgSxHPNhcrAduLpaybOK+XEK5yaKldlqnn4bC7Z1LZR03dcfZuUni/R9Apaa69fdmi6u91C+I5+Mr7hc9KJFDKSve0SrXs2+KE1OxKUbpkEimequWUnQaXHST9iMAv4Vz7bJ1U1rFN1JtgTQ2pqLfKeONPIZS4AqwsFt+QhTB6qgC7tATDp84EvWxCSvwiSdQRcwhyE3RePiZbL4MYERGQlQPQZaNBD0IX4EPLyhnvYKKN72rcu2O0RtiC2ly3OKeZi59h916+n+/q7nVxBni5sbqSdTV98TXDLBWzsbDvrcmUxyfFXvYuSeqL0TKL3li1F9sk6lpPAZi50hzyY/CsiI/k7fTN34xFFPbDa1ThTT4w/S/b/q+3fQfi7AAMAZBq3PXZYtGMAAAAASUVORK5CYII=">
+				</a>
+				<a target="_blank" href="http://www.mastercard.com/tw/gateway.html">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjczNjgxOUY2QkVCMTFFMUJCMTVERUU1MzI5MUQ2NkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjczNjgxQTA2QkVCMTFFMUJCMTVERUU1MzI5MUQ2NkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NzM2ODE5RDZCRUIxMUUxQkIxNURFRTUzMjkxRDY2QiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NzM2ODE5RTZCRUIxMUUxQkIxNURFRTUzMjkxRDY2QiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pk2dkMsAAAUgSURBVHja7FZpbFRVFP7mzfpmykw73aadLkMXUlqgCAUpKAxLkUigKVBjQBICQSghJgaRQEyIIhqjQiJKS4hLjFECKJUaoUBsbUGElIS9pa2CQ5dpB6bTaWefeeO5fQ8ydUtMCL+4ycnNu+/c933n3POd+2TRaBSPc3B4zOMJ4CMfikfxEYGIE3NnzLORG5n+B6CnuXm2p7HRqnI6E8IyIJqU4dA+t+CUbmpxS6xfwH83S+hums07zhsAOQKKOIRM05eqMpb+qISMbR0FLPurLIYvX51sW7/u4FBLS4mPnpXMiSwizckVy2qzPz28TpMgdwpX39gdadi9g/NSiGHxgARyjKiIoDkdEeu+5ZrMZbWx0Y4CdH57dMW1FZVH2F4NGN/Rg3k6yFJTcvunfZl5k7vRaIWHFgwxuWJOAbJBIERI3oVb9vClH2wnDsFRgJ4L52demjHzHAOLHyknDg/JyGRilEIUnFoGrU4AnwZYttKinmj1RUSGggQok8D7CMUFhFe/v5Wf8Noelt6HgFfMGd32nu70RIkgi07FQEeqQAAj4ifLKdEjvswN5xVAZxmDpHnkbSfy/SzfZHFkYQlcI4Kyb4TWtY5XGQvaRmQxeOjrlcMElixlhs1qdp4E5CPzS/t17EzT3XCfI0L0Fe+pIeBSUEzp5FKRZTvZkGQEBjrf6B3i0FZdJVVplOvZ+fZO/eLF0M2xYsA1iKwFZRjYvw/aH47CT2h8YQGGJ85H5iTacPoTyPInINh8HZxJDafDiMCiM+gyFGJiwypoUhuA+720SSNWXCQbdybNR4oqxQHBrVeg/fqEu+2t4xTv7EdguRW8R0BvwxlczCpBZv2bmJKfBVvdd+j0qpG8+FkouQL4KtegO/cbKIqegtNcgtLACWi3PY261JXIXdODJMcRyOQZMOoMuHA3CnVSPnI823fBdesUF/YEVZGkAgTHpI1kJOIKINE/iEnT86AeNxaHm8/ClTcOs4vHov3gQXCvrMe1S5cRsC6Ejqfja7qAhDEnURQYRmnZXAwMAAO6SrSHSuD0hpHY/zGUHR8B7puUzJBCwSWa+tXllZ/9NuRd6//pJkUYxO1ZlcgxUruw3YPBbkf4mbkIpqvR1XEP3ScDiLe50QUtzMdqYTvahMuvNgEbXkZUW0QtZgB9/gTI2/ai/l4cFmyqRtztevjbvj+r0WbbFFyW2ZY8J//nqyumruWQBlOmHkF5BK2JFhIxj7hZxYiUl+GL+07MU2jgGx9E6tpFMHZ8DqPrBFZbPbhYvRlFnBuDnX8gZMmBMtCLomg9Ij0W/PKeA1P8uxBvrbCDN3eJsnDYTR0pab2ssFRSRw/FSOpBa2A1kF0mOniv03oJNYHX6fmiJAWeCVpyjJNk0Uq+9C646Xh5vGXJcfG2SDbZEw8c2EDph5vpkOlvRKUisMCET2vs/Y3TaqhIBupi0vxYKvJeXuwUCWRaMpPUORjosBgBV1Z+XG5Z0vi31vZ7VVX1rZqajfqYSBETKQNn/TWNXqS9pYChkKjfkUSriEkFJ+qPDhrB4rxO+Usd4+ViDkbfhznV1VXFe/dsgUTOK3WXgDQz43neb/zqyirNNj/vV874NUqLAqUl6hLTI1AaBJKhj5i5KzbWxIL9423xYNz/8N0dfY1nZyk9Qa0Q8qki6eYuU8XyY8YXXzj0wIc6qCLcXfe8cLtuidrVmceF3Xqf0uCKpE5rURZu3ifXZtgVMWD/Cfjkn+YJ4L+NPwUYAI11ByaiUvETAAAAAElFTkSuQmCC">
+				</a>
+				<a target="_blank" href="http://www.tata.org.tw/news/index.jsp">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkI3MzRGOTU2QkVCMTFFMUJCMTlGMUYyRDY2NUFENEQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkI3MzRGOTY2QkVCMTFFMUJCMTlGMUYyRDY2NUFENEQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2QjczNEY5MzZCRUIxMUUxQkIxOUYxRjJENjY1QUQ0RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2QjczNEY5NDZCRUIxMUUxQkIxOUYxRjJENjY1QUQ0RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmjGqmEAAASySURBVHja7FV7UFRlFD/37nJZZREEBAEDUhBBKHtHVkyN5UAPyiG1zJnM/MN8jaPTQ8WZLB9jMQ6IjcM4hKBORhrIw0FgElzEQE0CBQW13QAXgYQN3GXv3vvru3eX5/T6xz9qOnfO/b453++e37nnnHsuB4DupfB0j+XfT6D9J6BT1Ravq9c6ZnpNlEkGTwMOUEyEL8U/4V83hJFFcLxGYiFrxxSV+6sii5IkFFd0JoqyXtDp+o/y+I0cohuRO0+eOoHcOC5+5gzvawG+E8zqA5KkJY2y0Tj+kECWied5kpX9lda+6NTMKxseetDv3ZBpk6i9XaSWmwMsQp6C/QSaMpWjQH+e2kyDyz31OktyQvC3I44YEe8iUgjGa0PTnZh5S8vLKms7ceqHdjyWkA/Orxg0uRoUWAXez4CgWeVIO9gIO2TszrzxwdqttWkjPhxaQObV4Mc7/6XLPi0sruBml+UujpV1M0Qe0yLQjBK2HmSay/QY06+ZZmLROgMU2Z5ev+nZBcWV4/0RC4CHBH7Y4LMHxd8b0WtnlaQMkEchwp9rAnlVQBOWj+ffOYc3N7bg04PdmD3/MsMcwEdf/KiSxCXm1sTNz64ZSyBJw859Z5f0hEZnGxVw0CMGdnocsUkVbP0G5JaP5hs2DElT5y08vFjBfMV0Gy5dl1Q70WYsXFV7dITAtdm4q/5zonRc77C7gMchzLwImtCopuPsT23Dzlevv8J6sgqkPQzOZz9WrDqPvgFZPYtPblAJj5SY3hom2JFl2kR0BDSxUAWdLLeyk3yQcJKtpcgp+FW1i+yKik9ntv1Ma6C5vxgnzpswWvYe6nbVaSvq6tseVZvpy9yrK1nHkhDk4ewyUloXtCF1OgvgKVr66mTnB2fopaZKUWk/oqlmkjqJ1qy2Ejc5jd5fX6Fi+q06du9ieof8fSfeVt/AJjt0gY9XqanosEhwqO9WgPAXy2FlUY+WwlIzsgtbUdlgRh7bV9SJWLyuHpt3NKjnobFKzVJQZGh52ZUieajIrJAnEJNQpgK9YmqcafIox2f7fh5DsiX1Fu6LPIek5U1IeI19G25Zqr3V3KPm/+NtrTtHFdkuyJLyYQC9VpZ7fQ7OXjTDaBKduRSU/v8OgbOL8PSCM0hYVg9d6GlmOwxyZwHQTqzceMnVGNuxYJnh2Ng2ZTeWEq1dlgUFdKvLirnJFbDYrcjMM6rOPSMuISy+FgFzShESl48nl1zEnIUX2FkOEhZdUJ2HPLDX+Mz8Q2eGHIsSlKBHZhEzCRx4mTiN2GcRKSXjMq1YEkGdJpbRjFr20AQK8Qqg6loj6YO0FBnrQy9E62nJ6yE095X85phwoTEvK/EN59ATBTZVHcRx8rhpymYxcZIyBB12SfhkX3OK3xSPnlmh3nvqWtqoxaQhT3YF+4sUOp1jHWOjA1nN599Oispd+15kuurCQVqZjW2ecw67sQRsmrJ3UlBa4tzsiqnc0DOv5LTtJb0P16/3HNxy16Yj+6B1V4+51yfY2739wzVRu93dedvIFGVZIE7+8/8BwLtWcoKdYhnApNudVn+l69x1WltIsM405jklON4VHDmD+9sfzv8//f8Gwe8CDACnK1zZlqIabgAAAABJRU5ErkJggg==">
+				</a>
+				<a target="_blank" href="http://www.travel.org.tw/">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzAxNkEyQTk2QkVCMTFFMTkwMjk5Q0MxMTQ0ODU1QzgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzAxNkEyQUE2QkVCMTFFMTkwMjk5Q0MxMTQ0ODU1QzgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3MDE2QTJBNzZCRUIxMUUxOTAyOTlDQzExNDQ4NTVDOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3MDE2QTJBODZCRUIxMUUxOTAyOTlDQzExNDQ4NTVDOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmVHG1UAAANTSURBVHja7JVbaBRXGMe/Pe6uqRoJMabNatcoJMYaYm1rFRWhaouUgj6EoAm12KSQliRClbb4Vh980IIoiXctVGyRotSG2lAVtMULhoiFCOlDo4ma3dxQt3uZObd/z5yYmCW12RcfBD84c+Z8M/Obb/7nf874ANCzCEbPKF6AR8LvHVxFWecv0erQdN0zeRKLJ1I0hXMKTsrWyYmMOY9ilBPM0jwYJB5LsqkdN6lk6XJ8XzTbx59KBhSbs0D8TSSNPRxQiCN3vgB7VYAKXJMzPXl9CjRr+DyJi9fUKs9RT2vUP6jzlqx5iPIPY6j5QiN3nkJWMQflpyzUb+CbtiSwaq2046L5bs+vLc4H/we1YCXhB8TjBtpY97iqkMTORpNVyqQ1vCivdFGzRX83HtSCRw+6o07YykEcre0YE909CrMWq4H2DpSNB/aP1rtwoe82kab+WIDyssfOxwRjouzJaprr0sSM7dZ0CHU6wtiOg34D/e9lHuknKip2qDCsOsf121Dpwk9BB2+/x81QYe5yBwMPx0rx2+8KW7c7ezhXwfGksBX/coGtIT6Bju0L2I8QKUbFZXJMETfaiBaVBa4HAoxnULHwV9UnT7AQH6ms+Zy21tpQmzIjaXN9gw4+/9ptjPahIENXaDZvRQy122Ij4HhKIRgWdlHs2J2wdvtmP3DqLCoygVpw3wDyWY5C888yTc+Pt3JrO/JxfFSv0X7Hy2rWdQdzvL47qgq7umThEEiz9N482mlupAKBP1rTJ+rkGSPHTLNQpnovkLhybShfWeXg3bVxrKxwUVkrT/X26pe/3M53e9BdjWrbgeOqwYLv3dUzc0vV4J8dOg2szYqbUSowpcj9p6BERLz94XKbQMsloGSFgwfGNadbBKYtkCheGsf6TzkWv6+MHRLoieoZtuzyavnjziaVBk4Kc+EliSXL5FXvnpNn3Io3VybaqjcLHD/NsetQAm+9w1tnv5G6fbOTvx5amLz/09n4uk01zrefbJaHLfjWX3iNpnPsOapwN6LwQ3Nq/bkrcnV1Az/62VeyaVg3IbU/GhGvWI3vy3DEng9PmBrR98EjnfNkn7inw1UN8sTeI7LB7AWlXk4aKw7ERN7oScm0+V78pZ9f8L8CDABTzn/7by4PQAAAAABJRU5ErkJggg==">
+				</a>
+				<a target="_blank" href="http://www.iata.org/Pages/default.aspx">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAYAAACJISRoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzRFNEUwMTE2QkVCMTFFMTkyNzNGQTlGQUI2NzIzMUMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzRFNEUwMTI2QkVCMTFFMTkyNzNGQTlGQUI2NzIzMUMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NEU0RTAwRjZCRUIxMUUxOTI3M0ZBOUZBQjY3MjMxQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NEU0RTAxMDZCRUIxMUUxOTI3M0ZBOUZBQjY3MjMxQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkCNHoAAAAVKSURBVHja7FZrbFNlGH7OOe1p13bd2A26dWMDNmEjMjUOUIIj4yYx3IJODbhEjRleCIFoMBOVS1SQH+gPMpXIVTPiBUwUFBUZGNgc4bIhclWg29joWNf2tD09p+d8vud0lCzxr/5Qv/Sc83097/c9z3t7Wo4xhr978PgHxr8HxCIlFMe2gyeePdPln+DJcnXr4IYCU854m6jLEckuSbJL5HhFdNgVuzNN1hWNbHWA4wxD+vAQLJz+u+/mqGnjin96ZnrVVuMI7kJ/6MC0FZtndx9tB0o95qHGvtSwWoBAHxCMAw4HoKrJK4Pm2cNonrhjzxOmha5fzqH08ZmXL76/stT0JNNuY96cTHSX5AEFuUlGtzdZaUMgROscvLhsPqrHeumtFR2dPqzdsJsoks3oAkBWzG0miEDXKA88ntzuVLj6JLneYbPugM1WDYf9jicCnSATy3AM29e8hLqqMnQGwrBbrFhUWYTKvHwsXNMISDKQkw7EEkkAi0Aei7DZBSUFUp7rvh6IK1km46tkZOUGWdGttx/OilLMu68M1/0hdAYl9Msyioal496xHoym8F5pbgXKiihsRm4GCfoHgLiWRAgdnWoxnsFY3I3RI5DpcmMgHCYACwQbDy2aQEQihpoO34CEQDyOYFSHZCWSoozeWIxYp8PidkOLK2AKB0/+MNyIKZBVxW6CuCe2QGc6j0dfZTWbPmPGiMcY+7VLYn/4VXM9cU0Te2XPIXN+xR9gF7tC5vzDwyfZ7M1fsgTN+4KMnboWZEpCN99NWLuLFS7f5DPUxFQU41ZWv+EC7q5lmw91sNsjEpTNZ0xRGOa9xpZ+8j27Ggixy30y23igjaG2gfkGgqaNHNFT+7Y0n2UYtYBNXt14/DaI2RN2d5oMtwPLV7yNF3YdNr10uG3m0261gu1bhysUruIlqzGmbhWOX+oBa1oPb4bbtLE5OPO5at8JPN/wHm3ikJ7hDKUSb9x0ReWRmwWMdGJL424oTMLKOQ8hTXQQExVM01DhcePgzVtAfxShmgiMtPaGE+gJRpDuErHt2zZs+OBTagNqBasARY6LQ0CgE5MYNVgxMYsFsfWrYwhzafj8x1ZoN/yYs2Aa9rechPP+Sry7aDrazl/Dsr1t+Gj/z1BvBVA770Hs+eEI4EyjRBPZzhsQBF4fql38IFyEgPwyVi5+GE1LaqB1nIO3OAff1M9F45K5iA3EsbR6Aj6m9ZPlHqitp9BQOxVNdbMwv6ocUKjaNDqDaonxwl8IJCNvFApCNIpHKgqp6ug7pwtHNr5svq4s8UA/fQZT1u4w11OefgMoGoH1tdPNdZUnnwDoYJ7Km+cgJPShnpj6JpCBGgVys1FdVoyGvc14bPEMlGSIIAcwkaQCJYVYOKlskJQF373zXIrjoupJ1PnZFG7yxsaBMCxDcqKpJJ+6lpSUwuHY3nIeO1vbMfOecrz+RTM6um5SOMbD5s1H27VerPu6hQCL8FtPEHvbD5KEMXgznRBddihKPCl/nJCKEkfNZBle92bvrfZLWRhJbI1Y+kjbHGlJweuhijLCK1Kx5OUAA5Fk7L0kpr5+kg1aG3XkJFUuGJFU4dMXMa521vlzb9WPMz2h/YmnZkzeeWxMwfLi7Gxw9E0gJsNJtqrhGa2tVJLRsAwHSY1OPzeaxuCyiwhE47ATEWah8KgctZrNLPmzdxXhiUkVu1KeGB3ZfLXH1R+OPJBL6smRbulUBAktTueLlEOOeoKZTqmkT1bRZnaxxagTgwSnQ6D8MN1oD572qeiSIqjIzjw23psnpUD+/yPx3wP5U4ABALxOdYjgAj+VAAAAAElFTkSuQmCC">
+				</a>
+				<a target="_blank" href="http://www.visa-asia.com/ap/tw/index.shtml">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAbCAYAAACAyoQSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6N0FGRTg0NTc2QkVCMTFFMUI3NERBQjhCRUMzRjg5MjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6N0FGRTg0NTg2QkVCMTFFMUI3NERBQjhCRUMzRjg5MjkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3QUZFODQ1NTZCRUIxMUUxQjc0REFCOEJFQzNGODkyOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3QUZFODQ1NjZCRUIxMUUxQjc0REFCOEJFQzNGODkyOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pruv5X0AAAP1SURBVHja7FV/TNRlGP8cd4C7nT+wA8/OTBIMGNHxozJsK0BEHdpkhAyWCNK0XwKjlKJkmCzRHII6svjhXIoYJQp4IQYMoWlEHAzitiNQEO8OcMBAj+B7PL3v4d2o/ukvVxvP9nz3Pp/ned7P+7zPc++JiAiPW0TzpPOk/2/SGcBOxA3w5WOQCXV4BdVvqKaf44sn2vP3zBDZ8YNwrb01EuwXcrUlJVOTMz5Fsoxcbea6iJomdb1+ozWmoLw3MWibui4g8Hyzb/DlVvVPRpuP6/4cbfamHQ3qvCLNXiuGmd6yyOGiFf10hNnHQJNGjcrqXOZdagS2U1DkDzRpic5mmkJnqvQ7ubk57loVkMawTx9pLG1OaKiy5h8u6koDMmZ98q/JRso/JW0UrVLFEhUysy/zAMdatKN+swmfk2FsWjEhkAw4RPbS45bk0qt3o4D3CE6n6JpmfEO3UXCLTWo6p67vt1Uq87gwbjmo40lGWkidunEvGymrYgHQT77L1hKZwqo5Fp2qKQGSyDPwYhe3iy73JQAfk09IGSel+L23WPYHJHY9SwaBFHOvlOu3tYORQCZ5BJfT6rArLPYoFX/XY7khO95XR2AyfOdYZatxEy6VhfzIsQvF2mhAjITdXoXcrmkwhAJmLHZaZJmFXfGu7CuHuVcHhSRHH/FW06W5s3L4RPNHbGJwJN0f78S4MeQ+WjpG/C1O20BU6BL5dT6/tbFN0yOogCx2uhxbH1Sh37cCn9CO1BtklSv1RoJzAc3G7iNnj2+GeOzolLAEOMiwLy1xbb1jbJ1OPmHVbbZKuQT5KmoBJ7S19Phs3V3Tyqvalqgqt/r1t8eeBOzx3JqFtmq2vOoCGtyF5Pw3mOWMIW2n3DRjlp4v/z0GECBxXYjTpf3IL2gH37u9Q+/zkCCVWDd4RinrcQ96ultXp3PrGzAwRIb9ST7Z3KcdMHkYdeMu7OcM1QtPhf4hmBs/O6k1Jca4Y5WLA55VSlnUGEtZDuPI9IMTuR3MXgLhzhD2RH/F1sxvvxi4N4rfOoe9JHP7oPKWa3R1zawBDlixzv/uS95Lb3K86ZeRV4A7bPUE1vsuvX70dOe+rJQcZKWsYS8K6zHxQ7KJLovYXnF9QNHVdCMXWIm8kteTVjqL+x5MiqWxcVXn2FXgbOVg3F9I333T89TNxntrxSYSvjjg/6EVly4QHmK5N8IDlZXcfu1lZb2r38bbhu77iulpkUTh7mnIPPhiRlSY8uLb6b/mSxatFpKTA46/H7Uqz7rH8KEAeWoaHXOUiCb/5dtLrPeifzyRU+xKuMr4mD4S0xSkDg6YEvOm/k3MgITj839t86TzpP990j8FGACgrVUC9ZhSWwAAAABJRU5ErkJggg==">
+				</a>
+				<a target="_blank" href="http://cn.unionpay.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MzBGMzJBQTIzRTQ1RTAxMUFBRTRBNEYyNjRENUI2NkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkU2RkI0M0M1OTREMTFFMkJEN0E5RDhGMjcxNkIyODIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkU2RkI0M0I1OTREMTFFMkJEN0E5RDhGMjcxNkIyODIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTQwQzMwQTNBMjU4RTIxMTlCQjU5MzJFNEM2Q0VCMDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzBGMzJBQTIzRTQ1RTAxMUFBRTRBNEYyNjRENUI2NkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4IPPqTAAAEiElEQVR42uxWS2xUVRj+7nOed9pOsS19AH3YQLSP1FKxEhcmGEgImyYsutG4MWpMDBoTNrpySWJg4ULjxvg2JiWEsEAFYqQNkoBlSqGl7VA67bRlpswMM53Hvdfv3plppw8biUkXxpP8mXvPnP98//P7r2CaJrZridjGta1gMqX/X+h//SSHhf9szoSp3pdK31+nfEx5qrjhMnWcVXfiI88zCAkO7pREwnpUKU8LgG/tX+tWgnJKLtmoo5ymeFYTamJRdOBD9z7Mim5ellt7hUGppfgp2S2dKqO8XArWDcPIAwm01DCgMMjjsodAro1A1pIomgVk5IHFLbNyY/Vf03weigLB7bKVBI8HCjGvy+UElzaqWiFjVAWngDKnC5rTaRv4NytDuSwXgGBmswd2nPwAufA80rcC8B07itiJ9zAkETyj85Bun8uXFa3I8GJHFv1dPTjR04N0TseXfw7j099+BxQ1b40VIUtEcYwbt/JghlElejztrt4XEDn1CZydHQxNFpn2TshaG17U/BBZKNFYik4KiCaW0brTj6AYweHmZgyHF1CreXGkpQXXgtOI20aZtNGAwedgdOkaDZy0wcyc3qY27qkUaFF6ZBReeoVEAhVnTuNMMovgwzgkWuhSZWhuFfNLSXQ11eCXmSD8Dmf+wkcxtFb68dXxPgQWCe7VUOP14NWBcwguPhyCKOuFnJn7BTnvZOX778LMZCDGY7h/fw6hxUc2UCSRgtelIkRgWRJxJTCNFL3XVBV9P/yEt85fgJs5B6N2cWKKXukYnAnh8t1xHYo8WKQrCA5HbzowgvDb70CsqECGz27Ng8/8HeyxOqiCjghD2L6nCqFoAkl6u6PBjcwuAw5RQnR5GS5Zwsmff0W5Q8Ufc2G81tHO90usWClIiIkimNUDHVYi06N37CIQ6WWcYTwfj2NCCXOPxaGbqOtuxptHn8ONe2Ec3N8AxSFiiNa/0tSIwy1N7AADi8kk+tuexcDdMUwSFE7HTd4fK9JVa6GhITAk9BIKi2BG1fDASVqQeYRWg/l640gX/F4n+nr3orOhGp011Vjg5YcItstXBockobO6Bo0V5fiGFW3rAYOl3NhdaM+VpZoGApIPSbFAT6yqhiofqss90OmhIRuIpFKYf5y0wep8GuLM84NYHLvLfDh7ZwxTkagVQuu6q6VgBzfr15uyFV0BRUZJLGftqgsEF6Cq+WI6NzaOBp8PsXTaLiIPIzNNwOH5BRgEpx7jiNFSIr7N370rGwVOPKYdwHWlMp8vG0/AvvpK5HIsilqC1QPx5QzmE4/JIE5Us8zTuRxmmWurKkNsBTbzRaoeKh2ezWunqYEQuXBSsojXKGEzEyMTcyQAIc/0VoQMmx2QpGezS0srjLGEVJEnr66f1MpGIhNJTsJGhlPkwlgR8pp6kZClzfgwQvlxzTyLfv7FdPbehIsKZjGMEm/81lGPS0pVYY6sGyvWbKgV8P3o7YFNZpjlEl3Dd5Qr6z8LLvyDiS0WYBIl/lgwx5/0G0RbLbutzxbAzBIw8/8PHmv9JcAA/AawLhfTUgcAAAAASUVORK5CYII="></a>
+				<a target="_blank" href="http://www.jcb.tw/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAbCAYAAACX6BTbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MzBGMzJBQTIzRTQ1RTAxMUFBRTRBNEYyNjRENUI2NkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkU2RkI0NDA1OTREMTFFMkJEN0E5RDhGMjcxNkIyODIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkU2RkI0M0Y1OTREMTFFMkJEN0E5RDhGMjcxNkIyODIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTQwQzMwQTNBMjU4RTIxMTlCQjU5MzJFNEM2Q0VCMDEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzBGMzJBQTIzRTQ1RTAxMUFBRTRBNEYyNjRENUI2NkEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7m/9bkAAAEw0lEQVR42uxWW2wUZRT+/n8unb3MtrvbbZG2NoWSCvHBC1FCpYEHKhhjokaLPmpCYoIPxnjFhCCKIcQm1Bg14gPxQvXBBCKEhCBREUiVptI0lVoQWnohre1uO7tzn/H800Kj1CfDG2dzMpuZf87lO993MiwMQ9wq47iFdjv4oiaTP0C+c3zSWD1rewo4D0PGIUkc9dkYZM4QBgGM4TEw14MEBu6HkPQE5KWVUZBZ28CUOQ3G6T6jGyxAZWyJxAozpalX9xxJH+sZRbEsBi+RgKXGUZErR+/bG2D3/YYTb+wG/30YGYsh4zCUGxaqH9+MTOcu7DvzFQ70HKTAM9BjAVIxH4pSwo7mjyDv6TiW3v/1WSRrquEzFa7iw4YPJ2QoTEzi0Muvw+wZRI2chG9L8Cl46JiIhxKODnXjpaPtyCU5cjqH6gewfR8BNxFQDH767ABSiTIoMkFBEAhn5GqZirGBQUwODUNL6WASAUJQCRdoSpKMExfPEWQhNEUFJygXXIBH8AkRMcYWHYhPVTC++MzD+R/+491ooP8OXLI8iurBpaFx6sB3XTiGDcdkcG1Ojzi17EUF2XQOdhGGE0CWfEhygJjKCfMFtsxVQkUISNoeakBZMoFBW4Zp5pGprcE9a1tQt7wRmk/QTRQQHO+C49horlmF4po21FXoKFMEygauGn0YKZ3/J899wk6RJXzw/IM4sHU1muuTyDQ0Ytuhb7Dx3e1wTRv5c70A0VLf1Awz9PDsyvV4Z+MLKBAVs/FK7GjZiY7WA8jGquAF7kLl161oe8jR1SFOp3KViKc1nHpvH85vb8dSJUkQEB0JliVPPhGdnyoVcHHqCuIqKKCHS/k/YHqlaLCyZbnwiEKMcHG84EYSAVFAAxWWvzwMSVUgx+NCY4A1O4cjWTqeQuvyFtyRSsHyLEyUxqFwVYwa8vp1d2Hy+wFco8NrmqpQn0tGL12aKEX0FHbvc89g5qduhKMFKNXUTaaRAJ17Nj47ib0/f4K6dALr6tdi/Z2bcGGqixKZYD29Q+G04cCjNpoaKpE3PXz8wxV09s/gyKNJWD1duLt1IyRij3t1AmWqiqCrH+HpPjhfvIbR/DimrSkkqLPqZBYjxp/Yf34XXrx/J+Rtr3yOYSNAuq4aRUXDGFHN8OlgUy0ss4Tvdu9Fd/t+1OpZZKFBnywiMTKOFVuexlu/fIuOk59iWVYn6fvQVBuyPEMFWLSTCEaJlJcvGMhLebjJJAI9CabJEOzn1LqgZUDcL45eg2ZxaJScdByJxyWe266NWRoyl4LIY6RsmXuRzGShIbEBucCXru68qIJQ6G/uv1CpeM4VChyKe454N0qOG5JH5GxeuUEY3EzFSFDEnkxMIe6yKMnN0icOL68hOvAbrLluIiilgq5WQC6WbMzQCuWaTVULCtFKL9fw5sPLUMEuwyjMQvfVSPoeweIRXdWGFeBbH4PZd5BoadA+D6h7ojOtAHAHmxufwrLyVX3sw89OhuMFCh6nXU7bDTENrffVoaWpEn8NX8WZLzuhBxISHkPcCZGqSKN6yyNQaqtwuP8UfrzyK3Fdoc1ISWm3rMw1YkP9pgsSk9pIO+H7Uaf/38QwLPIB8sPk0+z2d8ti9rcAAwCYC/hWVGhjdAAAAABJRU5ErkJggg=="></a>
+				<a target="_blank" href="https://www.americanexpress.com/"><img src="data:image/png;base64,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"></a>
+				<a target="_blank" href="http://internationalhealth.org.tw"><img src="data:image/jpeg;base64,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"></a>
+			</p>
+		</div>
+	</div>
+</footer>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/pic_tab.js"></script>
+<script type="text/javascript">
+jq('#demo1').banqh({
+	box:"#demo1",//总框架
+	pic:"#ban_pic1",//大图框架
+	pnum:"#ban_num1",//小图框架
+	prev_btn:"#prev_btn1",//小图左箭头
+	next_btn:"#next_btn1",//小图右箭头
+	pop_prev:"#prev2",//弹出框左箭头
+	pop_next:"#next2",//弹出框右箭头
+	prev:"#prev1",//大图左箭头
+	next:"#next1",//大图右箭头
+	pop_div:"#demo2",//弹出框框架
+	pop_pic:"#ban_pic2",//弹出框图片框架
+	pop_xx:".pop_up_xx",//关闭弹出框按钮
+	mhc:".mhc",//朦灰层
+	autoplay:true,//是否自动播放
+	interTime:5000,//图片自动切换间隔
+	delayTime:400,//切换一张图片时间
+	pop_delayTime:400,//弹出框切换一张图片时间
+	order:0,//当前显示的图片（从0开始）
+	picdire:true,//大图滚动方向（true为水平方向滚动）
+	mindire:true,//小图滚动方向（true为水平方向滚动）
+	min_picnum:5,//小图显示数量
+	pop_up:true//大图是否有弹出框
+})
+</script>
+<script>
+	$('.value-plus1').on('click', function(){
+		var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)+1;
+		divUpd.val(newVal);
+	});
+
+	$('.value-minus1').on('click', function(){
+		var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)-1;
+		if(newVal>=1) divUpd.val(newVal);
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+(function(w,d,s,u){var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src=u;f.parentNode.insertBefore(j,f)})(window,document,"script","https://www.likr.com.tw/liontravel/include_code_customer/20170531000003.js");
