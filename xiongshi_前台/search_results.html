@@ -26,183 +26,11 @@
 <link href="css/core.css" rel="stylesheet" />
 <link href="css/product.css" rel="stylesheet" />
 <link href="css/searchResult.css" rel="stylesheet" />
-<style>
-        .no-js #loader {
-            display: none;
-        }
 
-        .js #loader {
-            display: block;
-            position: absolute;
-            left: 100px;
-            top: 0;
-        }
-
-        .se-pre-con {
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-            background: url(/Content/Images/loading.gif) center no-repeat #fff;
-        }
-		
-		.menu1 {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			width: 15px;
-			height: 15px;
-			background-color: #bebebe;
-			border-radius: 50%;
-			cursor: pointer;
-		}
-		.menu1 span {
-		  display: block;
-		  width: 50%;
-		  height: 1px;
-		  background-color: #fff;
-		}
-		.menu1 span:nth-of-type(1) {
-		 transform: translateY(0.7px) translateX(0.3px) rotate(45deg);
-		}
-		.menu1 span:nth-of-type(2) {
-		  transform: translateY(-0.7px) translateX(0.3px) rotate(-45deg);
-		}
-		.triangle3 {
-		border-color: #ff8400 transparent transparent transparent;
-		border-style: solid solid solid solid;
-
-		/* 設定邊框大小可拼湊出任意形狀的三角形 */
-		border-width: 50px 50px 0px 0px;
-
-		/* 設定 width、height 可更好理解原理 */
-		height: 0px;
-		width: 0px;
-		}
-		.page_btn{
-		padding:4px 10px;
-		margin-left:5px;
-		}
-		.page_btn:hover{
-		padding:4px 10px;
-		margin-left:5px;
-		background:#e10500;
-		color:#fff;
-		}
-</style>
 <script src="js/bundles.js"></script>
 <link type="text/css" rel="stylesheet" href="css/hscheckdata.css">
-<style>
-        .mainselectCity {
-            display: inline-block;
-			cursor: pointer;
-        }
-
-        .mainselectCity > div {
-            position: relative;
-            display: inline-block
-        }
-
-        .mainselectCity #showCityName {
-            line-height: 28px;
-            display: inline-block;
-			width:250px;
-			text-overflow:ellipsis;
-			overflow:hidden;
-        }
-
-        .mainselectCity #maincontent {
-            position: absolute;
-            width: 540px;
-            border: 1px solid #cccccc;
-            text-align: center;
-			z-index:10;
-        }
-
-        .mainselectCity .normal {
-            padding: 2px 20px;
-            display: inline-block;
-			width: 150px;
-        }
-
-        .mainselectCity .main-content-input {
-            padding: 2px 8px 2px 8px;
-            display: block
-        }
-
-        .mainselectCity .main-content {
-            display: block;
-            font-size: 14px;
-            font-weight: 700;
-            text-align: left;
-            background-color: #ffffff;
-			color: #000;
-        }
-
-        input[type=checkbox]:hover {
-            cursor: pointer;
-        }
-    </style>
-    <script>
-       /* var data = [
-            {
-                "name": "常用",
-                "city": [
-                    {"cityName": "南京", "cityNumber": "001", "selected": true},
-                    {"cityName": "上海", "cityNumber": "002"},
-                    {"cityName": "苏州", "cityNumber": "003", "selected": true}
-                ]
-            },
-
-            {
-                "name": "全部",
-                "city": [
-                    {"cityName": "遊程", "cityNumber": "001"},
-                    {"cityName": "租車/包車", "cityNumber": "002"},
-                    {"cityName": "交通票卡", "cityNumber": "003"},
-                    {"cityName": "體驗活動", "cityNumber": "004"},
-                    {"cityName": "美食餐廳", "cityNumber": "005"},
-					{"cityName": "電影/文化展演", "cityNumber": "006"},
-                    {"cityName": "接送服務", "cityNumber": "007"},
-                    {"cityName": "SPA&溫泉", "cityNumber": "008"},
-                    {"cityName": "景區/樂園", "cityNumber": "009"},
-                    {"cityName": "網路活動", "cityNumber": "010"},
-					{"cityName": "戶外活動", "cityNumber": "011"},
-                    {"cityName": "水上活動", "cityNumber": "012"},
-                    {"cityName": "空中活動", "cityNumber": "013"},
-                    {"cityName": "住宿/休憩卷", "cityNumber": "014"}
-                ]
-            }
-        ];
 
 
-        //传入的参数
-        var slidownSelectOptionse1 = {
-            el: 'aaaaaa',//容器名称
-            type: 'double',//插件类型
-            width: '70px',//宽度
-            height: '28px',//高度
-            background: '#ffffff',//默认背景色
-            color: '#999999',//默认字体颜色
-            selectBackground: '#fff',//选中背景色
-            selectColor: '#000',//选中字体颜色
-            show: 'false',//是否展开
-            content: '遊程、租車/包車、交通票卡...',//默认要显示的内容
-            data: data//数据
-        }
-
-        //调用方法
-        $(document).ready(function () {
-            rltTools.slidownSelect(slidownSelectOptionse1)
-            rltTools.slidownSelect(slidownSelectOptionse2)
-            rltTools.slidownSelect(slidownSelectOptionse3)
-            rltTools.slidownSelect(slidownSelectOptionse4)
-        })*/
-
-    </script>
 </head>
 <body class="bg-lter">
 <header>
@@ -673,7 +501,6 @@
 		</div>
 	</div>
 </footer>
-<script src="js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="js/citydata.js"></script>
 <script type="text/javascript" src="js/hscheckdata.js"></script>
 <script type="text/javascript" src="js/city.js"></script>
@@ -681,16 +508,6 @@
 <script type="text/javascript" src="js/jquery.pagination.js"></script>
 <script type="text/javascript" src="js/searchResult.js"></script>
 
-<script type="text/javascript">
-var Data1=[
-{"11":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
-{"12":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
-{"11":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
-{"12":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
-];
-
-</script>
-
-<div id="goTop" class="display" style="position:fixed; bottom:10px; right:2%; cursor:pointer;"><img style="width:100%" src="images/top.png" ></div>
+<div id="goTop" class="display" style="position:fixed; bottom:10px; right:2%; cursor:pointer;z-index:1000;"><img style="width:100%" src="images/top.png" ></div>
 </body>
 </html>

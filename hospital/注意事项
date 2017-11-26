@@ -1,0 +1,11 @@
+1、自己的页面 base.css main.css 加自己引入一个css
+
+2、自己引入的样式模板
+
+如大屏显示不正常 可以自己写媒体查询适配
+
+@media  screen and  (max-width: 640px) {
+
+  兼容手机的样式
+
+}

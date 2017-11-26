@@ -1,0 +1,44 @@
+
+.login-col{background: url("../img/loginBg.jpg") right center;background-size:cover;height:100%;min-height:1080px;overflow: hidden;}
+
+.login-form{position: relative;float:right;}
+.login-form .text{font-size:12px;color:#888888;position: absolute;top:80%;width:80%;left:7%}
+.login-form .bg{width:630px;}
+
+.login-btn{width:67%;position: absolute;top:73%;left:13%;cursor: pointer;}
+.login-btn:hover{opacity: 0.9;}
+
+
+.login-form input{width:67%;position: absolute;border:1px solid #eee;left:13%;height:4.8%;background: transparent;padding-left:10%;line-height: 5.5%;border-radius: 4px;}
+
+.login-form input:focus{border:1px solid #009896;}
+
+.login-form .user{top:47.3%;}
+
+.login-form .pass{top:53.3%;}
+
+.login-form .code{top:65.5%;width:58%;z-index:10;}
+
+.verification-code img{width:30%;position: absolute;top:59%;left:13%;cursor: pointer;}
+
+.refresh{width:8%;position: absolute;height:5%;display: inline-block;top:67.5%;right:19.5%;cursor: pointer;}
+
+.forget-pass{position: absolute;top:89%;width:50%;left:50%;margin-left:-25%;}
+.forget-pass img{width:100%;}
+.forget-pass a{display: block;width:50%;height:100%;position: absolute;}
+.forget-pass .login{left:0;bottom:0;}
+.forget-pass .reg{right:0;bottom:0;}
+
+@media screen  and  (max-width: 1500px) {
+    .login-col{min-height:650px;}
+    .login-form .bg{width:380px;}
+    .login-form .user{top:47.3%;}
+    .login-form .pass{top:53.3%;}
+    .verification-code img{top:59%;}
+    .login-form .code{top:65.3%;width:58%;z-index:10;}
+    .forget-pass{top:79%;}
+    .login-btn{top:72%;}
+    .login-form .text{top:90%;}
+}
+
+

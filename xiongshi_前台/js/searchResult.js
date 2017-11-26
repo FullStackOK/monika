@@ -789,4 +789,11 @@ $(".open-list").click(function()
 });
 
 
+var Data1=[
+    {"11":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
+    {"12":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
+    {"11":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
+    {"12":"美國(US)-紐約-NEW YORK(NYC)-拉瓜地拉瓜地拉-LGLGA NEWYORK(LGA)"},
+];
+
 
