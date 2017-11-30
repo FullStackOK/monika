@@ -13,11 +13,18 @@
 
 .messageMiddle{margin: 10px 0px; color: #ff3333}
 
-.messageBottom .messageBoard{background-color: #f1f1f1; width: 10%; padding: 20px 20px 20px 50px; display: inline-block;}
-.messageBottom .messageBoard a{color: red;}
-.messageBottom .messageBoard a span{color: #000}
-.messageBottom div{display: inline-block}
+.messageSex .messageBoard{background-color: #f1f1f1; width: 9%; padding: 20px 20px 20px 50px; display: inline-block;}
+.messageSex .messageBoard a{color: red;}
+.messageSex .messageBoard a span{color: #000}
+.messageSex div{display: inline-block}
 
+.manSex{margin-left: 10px;}
+.manSex input{margin-right: 10px;}
+.womanSex{margin-left: 70px;}
+.womanSex input{margin-right: 10px;}
+
+.message-btn{background:#fff;color:#186d3b;width:236px;line-height: 44px;border-radius: 4px;font-size:18px; border: solid 1px #186d3b}
+.message-btn:hover{background: #f0f4f4;}
 
 @media screen  and  (max-width: 1500px) {
     .movie{width:100%; }

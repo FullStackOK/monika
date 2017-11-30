@@ -10,11 +10,9 @@
     <link href="assets/css/base.css" rel="stylesheet"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
     <link href="assets/css/movie.css" rel="stylesheet">
+    <link href="assets/css/gongneng.css" rel="stylesheet"/>
 </head>
 <body>
-
-
-
     <header class="header danwei-header">
 
         <div class="top-col">
@@ -150,14 +148,11 @@
       	 <a href="###">醫藥訊息</a>
       	 <a href="###">資訊公開</a>
       	 <a href="###">特色醫療中心</a>
+            <a href="###" class="search">
+                <input type="text" />
+                <img src="assets/img/home_03.png" />
+            </a>
       	</div>
-
-          <div class="themiddleof_search box-shadow">
-              <a href="###" class="search">
-                  <input type="text" placeholder="關鍵字搜索"/>
-                  <img src="assets/img/home_03.png" />
-              </a>
-          </div>
 
 
       </div>
@@ -432,19 +427,77 @@
                      </div>
                  </div>
 
-                 <div class="messageMiddle">請填寫正確姓名</div>
+                 <div class="error-text">請填寫正確姓名</div>
 
-                 <div class="messageBottom">
-                     <div class="messageBoard">
-                         <a href="#">*<span>您的性別</span></a>
+                 <div class="rightnavigation_content" style="margin-bottom: 20px;">
+
+                     <div class="middle contact-us">
+
+                         <div class="messageSex">
+
+                             <div class="messageBoard">
+                                 <label><em class="red-text">*</em>您的性別</label>
+                             </div>
+
+                             <div>
+                                 <label class="manSex"><input type="radio" name="sex" checked="checked">男性</label>
+                                 <label class="womanSex"><input type="radio" name="sex">女性</label>
+                             </div>
+
+                         </div>
+
+                         <ul class="form-list">
+
+                             <li><label><em class="red-text">*</em>您的姓名</label><input  style="width:406px;" placeholder="請輸入姓名" type="text" /></li>
+                             <li class="clearfix" style="height:auto;"><label style="height:112px;"><em class="red-text">*</em>留言內容</label>
+
+                                 <textarea placeholder="請輸入留言內容，內容字數請勿超過300個中文字。"></textarea>
+                             </li>
+
+                             <li style="height:82px;background: #f1f1f1;" class="clearfix">
+
+                                 <label style="border-top:1px solid #ddd;"><em class="red-text">*</em>驗證碼</label>
+
+
+                                 <div class="yanzhengma">
+                                <span class="yanzhengma-col">
+                                    <img src="assets/img/gongneng/lianxiImg_03.png"/>
+                                </span>
+
+                                     <span class="btn1">
+                                     <img src="assets/img/gongneng/lianxiImg_06.png"/>
+                                     重新產生
+                                 </span>
+
+                                     <span class="btn2">
+                                     <img src="assets/img/gongneng/lianxiImg_08.png"/>
+                                     語音播放
+                                 </span>
+
+                                 </div>
+
+                             </li>
+
+                             <li class="clearfix" style="background: #f1f1f1;">
+                                 <label>&nbsp;</label>
+                                 <input style="width:120px;"  type="text" placeholder="請輸入驗證碼"/>
+                             </li>
+
+                         </ul>
+
+                         <div class="btn-col">
+                             <button type="button" class="message-btn">我要留言</button>
+                         </div>
+
+
                      </div>
 
-                     <div>
-                         <label ><input type="checkbox"> </label>
-                         <input type="checkbox">
-                     </div>
+
 
                  </div>
+
+
+
              </div>
 
       	 </div>
