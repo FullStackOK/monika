@@ -1,0 +1,22 @@
+.error-text{color:#ff0000!important;margin-top:16px;margin-left:18px;}
+
+.contact-us .form-list li{height:58px;}
+.contact-us .form-list label{display:block;font-size:16px;background: #f1f1f1;float:left;line-height: 58px;width:146px;box-sizing: border-box;padding-right:22px;text-align: right;}
+.contact-us .form-list li input,.contact-us .form-list li textarea{font-size:16px;color:#9c9c9c;line-height: 32px;float:left;display: block;margin-top:12px;margin-left:15px;border-radius: 4px;width:678px;}
+.contact-us .form-list li textarea{height:88px;resize:none;}
+.contact-us .form-list li .error{border:1px solid #ff0000;}
+
+.btn-col{text-align: center;margin:44px 0 20px 0;}
+.btn-col button{margin:0 4px;}
+.left-btn{background:#dddddd;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+
+.right-btn{background:#007bbb;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+.right-btn:hover{background: #04689c;}
+
+.yanzhengma .btn1{background: #186d3b;color:#fff;width:120px;height:44px;display: inline-block;cursor: pointer;border-radius: 4px;text-align: center;margin:0 4px;vertical-align: middle;position: relative;top:-2px;}
+.yanzhengma .btn2{background: #b28850;color:#fff;width:120px;height:44px;display: inline-block;cursor: pointer;border-radius: 4px;text-align: center;margin:0 4px;vertical-align: middle;position: relative;top:-2px;}
+.yanzhengma .btn1 img,.yanzhengma .btn2 img{position: relative;top:8px;}
+.yanzhengma-col{height:82px;display: inline-block;vertical-align: middle;margin:10px 2px 0 10px;}
+.yanzhengma-col img{width:200px;height:60px;}
+
+

@@ -189,9 +189,11 @@ body{min-width:1300px;}
 
 .header .menu{float:right;margin-top:10px;}
 .header .menu a,.header .menu span{display: inline-block;margin:0 5px;cursor: pointer;position: relative;padding:10px 0;}
-.header .menu span .xiala-list{position: absolute;border:1px solid #eee;border-top:0;padding:5px 0;display:none;background: #fff;left:-25px;width:120px;z-index:1000;top:50px;text-align: center;line-height: normal;}
+.header .menu span .xiala-list{position: absolute;border:1px solid #eee;border-top:0;padding:5px 0;display:none;background: #fff;left:-25px;width:120px;z-index:1000;top:40px;text-align: center;line-height: normal;}
 .header .menu span .xiala-list a{display: block;padding:5px 0;}
-.header .menu span .xiala-list>div{padding:5px 0;color:#000;}
+.header .menu span .xiala-list .has-child{color:#000;position: relative;line-height: normal;}
+.header .menu span .xiala-list .has-child .child-list{background: #fff;width:120px;left:120px;padding:5px 0;top:0;border:1px solid #eee;border-left:0;position: absolute;display: none;}
+.header .menu span .xiala-list .has-child:hover .child-list{display: block;}
 .header .menu span:hover .xiala-list{display: block;}
 .header .menu .share{margin:0 10px 0 10px;position: relative;top:9px;cursor: pointer;position: relative;z-index:100;padding:5px 0  10px 0;display: inline-block;}
 .header .menu .share .hover-col{position: fixed;top:108px;right:0px;display: none;width:328px;}
