@@ -12,9 +12,11 @@
 .messageRemark div ul li{margin: 5px auto}
 
 .messageMiddle{margin: 10px 0px; color: #ff3333}
-.messageBoard{background-color: #f1f1f1}
-.messageBoard a{color: red; margin-left: 30px;}
-.messageBoard a span{margin-right: 10px;}
+
+.messageBottom .messageBoard{background-color: #f1f1f1; width: 10%; padding: 20px 20px 20px 50px; display: inline-block;}
+.messageBottom .messageBoard a{color: red;}
+.messageBottom .messageBoard a span{color: #000}
+.messageBottom div{display: inline-block}
 
 
 @media screen  and  (max-width: 1500px) {
