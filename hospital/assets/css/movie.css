@@ -26,6 +26,24 @@
 .message-btn{background:#fff;color:#186d3b;width:236px;line-height: 44px;border-radius: 4px;font-size:18px; border: solid 1px #186d3b}
 .message-btn:hover{background: #f0f4f4;}
 
+.divider{width: 100%; height: 1px; background-color: #f1f1f1}
+.msgContent{padding: 10px 0px;}
+.msgContent div{display: inline-block}
+.msgContent .right{margin-left: 60px}
+.msgContent .circle{width:50px;height:50px;background-color:#cb18f8;border-radius:50px; margin-right: 10px;}
+.msgContent .right .title{position: relative; top: -50px;}
+.msgContent .right .content{position: relative; top: -30px;}
+
+.bottom{ background-color: #f1f1f1; margin-bottom: 10px;}
+.bottom .left{width: 100px; text-align: center; background-color: #2c3e50; display: inline-block}
+.bottom .left span{color: white;}
+
+/*.bottom .right{position: relative; top: -80px; left: 140px; width: 720px;}*/
+.bottom .right{margin: 30px 10px 30px 10px; width: 720px; display: inline-block}
+.bottom .right .content{width: 100%}
+.bottom .right .time{float: right}
+
+
 @media screen  and  (max-width: 1500px) {
     .movie{width:100%; }
 }
