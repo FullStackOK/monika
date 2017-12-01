@@ -2,14 +2,14 @@
 .movie{width:100%;}
 .movieRemark{border-bottom: solid 1px #000; background-color: #f1f1f1; padding: 20px 5px 20px 30px;}
 .movieRemark .content{margin-top: 10px; width: 100%}
-.movieRemark .bottom{margin-top: 20px;}
-.movieRemark .bottom img{margin-right:5px;position: relative;top:6px;}
+.movieRemark .btm{margin-top: 20px;}
+.movieRemark .btm img{margin-right:5px;position: relative;top:6px;}
 
 .message{font-size: 35px; margin: 30px 0px 5px;}
-.messageRemark{background-color: #ff9999; padding: 10px;}
+.messageRemark{background-color: #f9dfdf; padding: 10px;}
 .messageRemark div{display: inline-block}
 .messageRemark div img{margin: 20px 20px;}
-.messageRemark div ul li{margin: 5px auto}
+.messageRemark div ul li{margin: 5px auto; color: #A6797B}
 
 .messageMiddle{margin: 10px 0px; color: #ff3333}
 
@@ -50,8 +50,22 @@
 .backBtn span{position: relative; top: 5px; margin-right: 10px;}
 .backBtn:hover{background-color: #f0f4f4;}
 
-@media screen  and  (max-width: 1500px) {
-    .movie{width:100%; }
+@media screen  and  (max-width: 960px) {
+    .messageRemark div{display: inline-block; width: 100%; text-align: center;}
+    .messageRemark div img{margin: 20px 20px;}
+    .messageRemark div ul li{margin: 5px auto; color: #A6797B; text-align: justify}
+
+    .error-text{margin-left: 0px;}
+    .messageSex .messageBoard{background-color: #f1f1f1; padding: 20px 20px 20px 50px; display: inline-block;}
+    .messageSex .messageBoard a{color: red;}
+    .messageSex .messageBoard a span{color: #000}
+    .messageSex div{display: inline-block}
+
+    .manSex{margin-left: 10px;}
+    .manSex input{margin-right: 10px;}
+    .womanSex{margin-left: 10px;}
+    .womanSex input{margin-right: 10px;}
+
 }
 
 
