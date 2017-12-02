@@ -13,7 +13,8 @@
 
 .messageMiddle{margin: 10px 0px; color: #ff3333}
 
-.messageSex .messageBoard{background-color: #f1f1f1; width: 9%; padding: 20px 20px 20px 50px; display: inline-block;}
+.messageSex{border-bottom: solid 1px #E8E8E8; border-top: solid 1px #E8E8E8}
+.messageSex .messageBoard{background-color: #f1f1f1; width: 9%; padding: 20px 20px 20px 50px; display: inline-block; font-size: 16px;}
 .messageSex .messageBoard a{color: red;}
 .messageSex .messageBoard a span{color: #000}
 .messageSex div{display: inline-block}
@@ -41,7 +42,7 @@
         display: inline-block; position: absolute; top: 0px; left: 0px; height: 100%; text-align: center;}
 .bottom .left span{color: white;  position: relative; top: 50%; margin-top: -10px; display: inline-block;}
 
-.bottom .right{margin: 30px 10px 30px 10px; width: 720px; display: inline-block}
+.bottom .right{margin: 30px 10px 10px 10px; display: inline-block; box-sizing: border-box;}
 .bottom .right .content{width: 100%}
 .bottom .right .time{float: right; margin-top: 10px;}
 
@@ -50,22 +51,34 @@
 .backBtn span{position: relative; top: 5px; margin-right: 10px;}
 .backBtn:hover{background-color: #f0f4f4;}
 
-@media screen  and  (max-width: 960px) {
+.form-list .identifyCode{height:82px;background: #f1f1f1;}
+
+@media screen  and  (max-width: 640px) {
     .messageRemark div{display: inline-block; width: 100%; text-align: center;}
     .messageRemark div img{margin: 20px 20px;}
     .messageRemark div ul li{margin: 5px auto; color: #A6797B; text-align: justify}
 
-    .error-text{margin-left: 0px;}
-    .messageSex .messageBoard{background-color: #f1f1f1; padding: 20px 20px 20px 50px; display: inline-block;}
-    .messageSex .messageBoard a{color: red;}
-    .messageSex .messageBoard a span{color: #000}
-    .messageSex div{display: inline-block}
+    .error-text{margin-left: 0px!important;}
+    .messageSex .messageBoard{background-color: #f1f1f1; width: auto; padding: 20px 9px 20px 10px; display: inline-block; font-size: 14px}
 
-    .manSex{margin-left: 10px;}
-    .manSex input{margin-right: 10px;}
     .womanSex{margin-left: 10px;}
-    .womanSex input{margin-right: 10px;}
+    .rightnavigation_nav .rightnavigation_content .middle{padding: 20px 0px!important;}
 
+    .contact-us .form-list li input, .contact-us .form-list li textarea{font-size:14px!important;color:#9c9c9c;line-height: 32px;display: block;border-radius: 4px; width: 70%!important; margin-left: 5px!important;}
+
+
+    .bottom{ background-color: #f1f1f1; margin-bottom: 10px; padding: 30px 15px 10px 0px;}
+    .bottom .left{width: 100%; background-color: #2c3e50; text-align: center; height: 50px;}
+    .bottom .left span{color: white; }
+
+    .bottom .right{margin: 30px 10px 10px 10px; box-sizing: border-box; width: 100%;}
+
+    .pageBottom{background-color: white; position: relative; height: 80px;}
+    .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: 50px;}
+    .backBtn span{position: relative; top: 5px; margin-right: 10px;}
+    .backBtn:hover{background-color: #f0f4f4;}
+
+    .form-list .identifyCode{height:140px!important;background: #f1f1f1;}
 }
 
 
