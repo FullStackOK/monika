@@ -61,6 +61,12 @@
 .zixun-page-list li .movieItem{cursor: pointer;position: relative;}
 .zixun-page-list li .movieItem:hover .middle-col{display: block;}
 
+#movieDetailContent .movieTitle{  background-color: black; padding: 10px 10px 12px 20px;}
+#movieDetailContent .movieTitle span{color: white; }
+#movieDetailContent .movieTitle div{float: right; }
+.videoItem{position: relative}
+.videoItem img{width: 60px; height: 60px; position: absolute; top: 50%; left: 50%; margin-left: -30px; margin-top: -30px;}
+
 @media screen  and  (max-width: 640px) {
     .messageRemark div{display: inline-block; width: 100%; text-align: center;}
     .messageRemark div img{margin: 20px 20px;}
