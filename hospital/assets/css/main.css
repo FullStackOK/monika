@@ -336,7 +336,7 @@ audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure
 .danwei-intro .danwei-intro-list li a:hover{color:#009896;}
 
 .zixun-page-list li{width:248px;float:left;margin-right:36px;position: relative;}
-.zixun-page-list li .img-col img{width:250px;height:166px;}
+.zixun-page-list li .top-col .img-col img{width:250px;height:166px;}
 .zixun-page-list li .top-col{cursor: pointer;position: relative;}
 .zixun-page-list li .top-col:hover .middle-col{display: block;}
 .zixun-page-list li .middle-col{width:250px;height:166px;position: absolute;left:0;top:0;background: rgba(0,152,150,0.8);color:#fff;text-align: center;box-sizing: border-box;padding-top:40px;}
