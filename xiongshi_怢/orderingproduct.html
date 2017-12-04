@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=/info/lightspeedutility/upgrade_browser.html" />
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--當用手機選擇看電腦版時請使用以下viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雄獅旅遊網：規劃旅遊行程、機票、訂房、自由行的首選網站</title>
+<meta name='description' content='雄獅旅遊網提供國外團體旅遊、台灣團體旅遊、機票、訂房、自由行、航空假期、票券、高鐵及主題旅遊等全方位服務，提供最完善的旅遊資訊，致力成為全球旅人最愛的旅遊網站' />
+<link href="images/favicon.ico" rel="shortcut icon">
+<link href="css/localtour.css" rel="stylesheet">
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="js/001.js"></script>
+
+<link href="css/myorder.css" rel="stylesheet" />
+<link href="css/PagedList.css" rel="stylesheet" />
+<link href="css/core.css" rel="stylesheet" />
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+	$(window).load(function(){
+		$(window).bind('scroll resize', function(){
+			var $this = $(this);
+			var $this_Top=$this.scrollTop();
+			
+			if($this_Top < 260){
+				$('#price').removeClass("fixed");
+				}
+			if($this_Top > 260){
+				$('#price').addClass("fixed");
+						
+			}
+		}).scroll();
+	});
+});
+</script>
+</head>
+<body class="bg-lter">
+<header>
+	<!--PC版 header-->
+	<div class="hd-ln fix-to-md hidden">
+		<h1 class="site-name d-no">雄獅旅遊 LionTravel</h1>
+		<a href="index.html">
+			<img class="logo" src="images/49d7c8edb044a517f45c95589c969797.png" alt="雄獅旅遊 LionTravel">
+		</a>
+		<ul class="tp">
+			<li><a href="#">會員服務</a></li>
+			<li><a href="order.html">我的訂單</a></li>
+			<li><a href="#">門市服務據點</a></li>
+			<li><a href="#">企業專區</a></li>
+			<li><a href="#">旅遊資訊</a></li>
+			<li>
+				<a class="dp">雄獅集團網群</a>
+				<ul class="sm">
+					<li><a href="#" title="中國雄獅網" target="_blank"><span>中國雄獅網</span></a>
+					</li>
+					<li><a href="#" title="香港雄獅網" target="_blank"><span>香港雄獅網</span></a></li>
+					<li><a href="#" title="美國雄獅網" target="_blank"><span>美國雄獅網</span></a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="dp">語系/Language</a>
+				<ul class="sm">
+					<li><a id="englishLightbox" href="#" title="ENGLISH"><span>ENGLISH</span></a></li>
+					<li><a href="#" title="正體中文"><span>正體中文</span></a></li>
+				</ul>
+			</li>
+			<li><a href="#">護照簽證</a></li>
+		</ul>
+		<ul class="bt">
+			<li><i class="ic-ln toolmemberf"></i><a href="#" target="_blank">會員登入 / 註冊</a></li>
+			<li><i class="ic-ln toolfbf"></i><a href="#" target="_blank">粉絲家族</a></li>
+			<li><i class="ic-ln toolcellf"></i><a href="#">手機App下載</a></li>
+			<li><i class="ic-ln tooltaiwanf"></i><a href="#">赴台旅遊</a></li>
+			<li><i class="ic-ln toolsurveyf"></i><a href="#">旅客滿意調查</a></li>
+		</ul>
+	</div>
+	<nav class="nvm-lnmg fix-to-md hidden">
+		<div class="wrap">
+		<h3 class="lb"><span>國外</span></h3>
+		<ul class="menu">
+			<li id="aboardGroupMenu" class="w-f"><a href="#" title="國外團體旅遊">團體</a></li>
+			<li id="abroadHotelMenu"><a href="#" title="國外訂房">訂房</a></li>
+			<li class="link"><a href="#" title="機票">機票</a></li>
+			<li id="freeLionMenu"><a href="#" title="國外雄獅自由行">雄獅自由行</a></li>
+			<li id="freeAirMenu"><a href="#" title="航空自由行">航空自由行</a></li>
+			<li class="link"><a href="#" title="郵輪">郵輪</a></li>
+		</ul>
+		<h3 class="lb"><span>台灣</span></h3>
+		<ul class="menu">
+			<li id="domesticGroupMenu" class="pos-stc"><a href="#" title="台灣團體旅遊">團體</a></li>
+			<li id="domesticHotelMenu"><a href="#" title="台灣訂房">訂房</a></li>
+			<li id="freeTaiwanMenu"><a href="#" title="台灣自由行">自由行</a></li>
+			<li id="thsrcTaiwanMenu" class="m-r-xxs"><a href="#" title="高鐵/台鐵旅行">鐵道</a></li>
+		</ul>
+		<h3 class="lb"><span>更多</span></h3>
+		<ul class="menu">
+			<li id="taichungMenu"><a href="#" title="台中出發">台中出發</a></li>
+			<li id="kaohsiungMenu"><a href="#" title="高雄出發">高雄出發</a></li>
+			<li id="ticketMenu" class="link"><a href="#" title="當地遊">當地遊</a></li>
+			<li id="themeTripMenu"><a href="#" title="主題旅遊">主題旅遊</a></li>
+		</ul>
+		</div>
+	</nav>
+	<!--PC版 header-->
+	<!--mobile版 header-->
+	<div class="display titlebar">
+		<div class="pl" style="position:absolute;top:0;left:10px;"><img src="images/icon27.png"/></div>
+		填寫產品資料
+		<div class="pr padder-sm" style="position:absolute;top:0;right:0;"><img src="images/member.png"/></div>
+		<div class="pr padder-sm" style="position:absolute;top:0;right:40px;"><img src="images/share.png"/></div>
+	</div>
+	<!--mobile版 header-->
+</header>
+
+<main class="nvb_gplt member-main" data-xthreshold="75">
+	<div style="width:100%;max-width:1200px;margin-left:auto;margin-right:auto;">
+		<div class="hidden" style="padding:30px;background:#fff;">
+			<div style="width:100%;">
+				<div class="project_list01">
+					<div class="project_line"></div>
+					<div class="project_text">確認明細頁</div>
+				</div>
+				<div class="project_list01">
+					<div class="project_line"></div>
+					<div class="project_text">旅客資料頁</div>
+				</div>
+				<div class="project_list01 active">
+					<div class="project_line"></div>
+					<div class="project_text">產品訂購資料頁</div>
+				</div>
+				<div class="project_list02">
+					<div class="project_line"></div>
+					<div class="project_text">付款</div>
+				</div>
+				<div class="project_list03">
+					<div class="project_line"></div>
+					<div class="project_text">完成頁</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="opt">
+			<div class="row">
+				<div class="col-xs-24 col-sm-24 col-md-18">
+					<div style="background:#f7f7f7;padding:10px 5px 0 5px;">
+						<div style="font-size:14px;">產品代碼：123456789</div>
+						<div style="font-size:20px;font-weight:bold;margin-top:5px;">白馬市極光奇景3日之旅</div>
+						<div style="margin:15px 0;border:2px solid #7cceb7;background:#dff5e4;padding:10px;">
+							<div style="float:left;width:22px;margin-right:10px;"><img src="images/icon14.png"/></div>
+							<div style="float:left;color:#24a07c;width:calc(100% - 32px);">
+								 可先進行付款以成立訂單，請於付款後6小時內至「<span style="color:#0077b3;font-weight:bold;"> 我的訂單 ></span> <span><img src="images/icon15.png"/></span> <span style="color:#0077b3;font-weight:bold;">補填資料</span> 」 補填資料
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="tab blue">
+							<input id="tab-one" class="tab-input" type="checkbox" name="tabs">
+							<label for="tab-one">產品資訊</label>
+							<div class="tab-content">
+								<div class="tab-list">
+									<p class="f-s-lb" style="color:#666666;line-height:200%;">東京迪士尼2日券<span class="btn_01">優惠組合</span></p>
+									<div class="tab-text tab-combin">
+										<p class="texttitle">迪士尼樂園門票-陸地-成人*2</p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：Best Western Gold Rush Inn雙人房</p>
+										<p class="textcontent">場次：21：30</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="texttitle">迪士尼樂園門票-陸地-成人*2</p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：Best Western Gold Rush Inn雙人房</p>
+										<p class="textcontent">場次：21：30</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+									</div>
+								</div>
+								<div class="tab-list">
+									<p class="f-s-lb" style="color:#666666;line-height:200%;">歐洲任選3國火車通行證彈性火車票</p>
+									<div class="tab-text tab-combin">
+										<p class="textcontent more-row"><span class="head-text">使用國家：</span><span>比利時比利時比利時、荷蘭荷蘭荷蘭荷蘭荷蘭、盧森堡</span></p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：頭等廂</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+										<p class="textcontent">成人 <span class="color-or">$7,425</span> ×2位</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="opt_title"><span style="font-size:16px;font-weight:bold;">產品訂購資料</span></div>
+						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
+						<div style="clear:both;"></div>
+						<div style="margin:20px 0 10px 0;border-bottom:5px dashed #d1d1d1">
+							<div style="font-size:16px;margin-bottom:10px;">產品資料</div>
+							<div style="width:100%;padding-bottom:20px;">
+								<div style="font-size:14px;margin-bottom:10px;">海外取件地點</div>
+								<div>
+									<select name="select7" class="opt_table02">
+										<option value=''>請選擇</option>
+									</select>
+								</div>
+								<div style="font-size:14px;margin:10px 0;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+								<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-6" style="font-size:14px;">
+										<div class="m-b-sm">駕駛姓名</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-6" style="font-size:14px;">
+										<div class="m-b-sm">駕駛效期</div>
+										<div><input name="textfield3" type="text" class="opt_table03 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="m-b-sm">駕駛人手機</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入手機"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">白天電話(02-22222222 #1234)</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">晚上電話(02-22222222 #1234)</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
+						<div style="clear:both;"></div>
+						<div style="margin:20px 0 0 0;background:#dee3e9;width:100%;">
+							<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
+								<img src="images/icon17.png"/>
+								<div class="opt_tra">旅客(1)</div>
+							</div>
+							<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-bottom:20px;padding-left:5px;padding-top:10px;">
+								<div style="font-size:14px;margin-bottom:10px;">姓名</div>
+								<div style="color:#4f74a6;font-weight:bold;">
+									劉清群
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">護照號碼</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">身分證字號</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">台胞證號碼</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">手機</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">LineID</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">E-MAIL</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div style="clear:both;"></div>
+								<div class="m-b-sm" style="font-size:14px;">海外取件地點</div>
+								<div>
+									<select name="select7" class="opt_table02">
+										<option value=''>飯店名稱</option>
+										<option value=''>地址</option>
+										<option value=''>飯店預約者名</option>
+									</select>
+								</div>
+								<div class="m-b-sm" style="font-size:14px;">飯店名稱|地址|飯店預約者名</div>
+								<div>
+									<input name="textfield3" type="text" class="opt_table02">
+								</div>
+								<div class="m-b-sm" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+								<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+								<div class="m-b-sm" style="font-size:14px;">接駁飯店</div>
+								<div>
+									<select name="select7" class="opt_table02">
+										<option value=''>請選擇</option>
+									</select>
+								</div>
+								<div class="m-b-sm" style="font-size:14px;">歐鐵券 <span style="color:#24a07d;">請選擇 n 項</span></div>
+								<div>
+									<select name="select7" class="opt_table02">
+										<option value=''>請選擇</option>
+									</select>
+								</div>
+								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">回程搭機時間</div> <div class="clear02" style="color:#24a07d;">搭機18小時前不可浮潛(100字)</div></div>
+								<div>
+									<textarea class="opt_table04"></textarea>
+								</div>
+								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">環球影城入園日期</div><div class="clear02" style="color:#24a07d;">必須在阿陪野入園日後4天內(例:7/5阿倍野, 則環球影城需在7/9(含)前)</div></div>
+								<div>
+									<textarea class="opt_table04"></textarea>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">左眼近視度數 ( 帶隱形眼鏡者填”無”)</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">右眼近視度數 ( 帶隱形眼鏡者填”無”)</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">身高( CM )</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">體重( KG )</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
+										<div class="m-b-sm">腳掌長( CM )</div>
+										<div><input name="textfield3" type="text" class="opt_table01"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="m-b-sm">緊急聯絡人</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="m-b-sm">緊急聯絡人手機</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入手機"></div>
+									</div>
+								</div>
+								<div class="display" style="color:#24a07d;margin-left:5px;margin-top:40px;">
+									※ 建議您先完成訂購資料填寫!<br>
+									以利業務人員能盡快處理您的訂單。
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="opt_payed">
+							<div class="hidden triangle01" style="float:left;color:#0077b3;line-height:50px;">上一步</div>
+							<div class="opt_send" style="float:right;">
+								<div class="triangle02 clear02" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;">
+									<span class="hidden">稍後填寫，</span>下一步
+								</div>
+								<div class="display" style="float:right;margin-right:5px;">
+									<div style="float:right;" class="cost-col"><span style="margin-right:5px;"><img src="images/icon34.png"/></span><span style="color:#999999;vertical-align:middle">費用</span></div>
+									<div style="color:#e00500;font-size:20px;float:right;clear:both;font-weight:bold;">NTD1,234,567<span style="color:#000;font-size:14px;font-weight:normal;">起</span></div>
+								</div>
+								<div class="hidden" style="color:#24a07d;margin-right:10px;margin-left:5px;float:right;">
+									※ 建議您先完成訂購資料填寫!<br>
+									以利業務人員能盡快處理您的訂單。
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6 hidden">
+					<div class="pricebox" id="price">
+						<div style="border:1px solid #e0e0e0;">
+							<div style="padding:10px;background:#f1f1f1;font-weight:bold;">費用</div>
+							<div style="padding:10px;">白馬市極光奇景3日之旅旅旅旅旅旅旅旅旅旅 共四十字共四十字共四十字共四十字共四十 </div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;">白馬市極光奇景2日之旅</div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;background:#f1f1f1;font-weight:bold;">加購項目</div>
+							<div style="padding:10px;">白馬市極光奇景3日之旅</div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;background:#f1f1f1;">
+								<div style="text-align:right;">
+									<span style="font-size:16px;font-weight:bold;color:#e00500;">總價：</span><span style="font-size:24px;font-weight:bold;color:#e00500;">TWD34,567</span>
+								</div>
+								<div style="color:#24a07c;margin-top:10px;">本售價按該行程所有出發日期中最低房價的費用，您最後的價格會依出發日期、出行人數、所選飯店而有所不同。</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+</main>
+<div id="goTop" class="display" style="position:fixed;bottom:70px;right:2%;cursor:pointer;z-index:2;"><img style="width:100%" src="images/top.png" ></div>
+</body>
+<script src="./js/moment.min.js"></script>
+<script src="./js/index.script.bundle.js"></script>
+
+<!--费用浮层-->
+
+<div class="cost-dialog" style="display: none;">
+
+	<div class="title-col">费用</div>
+	<div class="text-col">
+		测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+	</div>
+
+	<div class="xiaoji">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+		<div class="xiaoji-bottom">测试次而是测试二</div>
+
+	</div>
+	<div class="xiaoji" style="border:0;">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+
+	</div>
+
+	<div class="title-col">加费项目</div>
+	<div class="xiaoji" style="border:0;">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+	</div>
+
+	<div class="all-price"><span class="text">总价：</span><span>TWD89348585</span></div>
+
+	<div class="detail-text">
+		测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测
+		试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+	</div>
+
+	<div class="close-col">
+		<img  src="images/add/closeIcon.png" />
+	</div>
+
+</div>
+
+
+<script>
+
+	//费用浮层
+	$(".cost-col").click(function()
+	{
+		$(".cost-dialog").show();
+	});
+
+	$(".cost-dialog .close-col img").click(function()
+	{
+		$(".cost-dialog").hide();
+	});
+
+</script>
+
+</html>

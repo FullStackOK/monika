@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=/info/lightspeedutility/upgrade_browser.html" />
+<![endif]-->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--當用手機選擇看電腦版時請使用以下viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>雄獅旅遊網：規劃旅遊行程、機票、訂房、自由行的首選網站</title>
+<meta name='description' content='雄獅旅遊網提供國外團體旅遊、台灣團體旅遊、機票、訂房、自由行、航空假期、票券、高鐵及主題旅遊等全方位服務，提供最完善的旅遊資訊，致力成為全球旅人最愛的旅遊網站' />
+<link href="images/favicon.ico" rel="shortcut icon">
+<link href="css/localtour.css" rel="stylesheet">
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet" />
+<script type="text/javascript" src="js/001.js"></script>
+
+<link href="css/myorder.css" rel="stylesheet" />
+<link href="css/PagedList.css" rel="stylesheet" />
+<link href="css/core.css" rel="stylesheet" />
+
+<style>
+.inputbox input[type=checkbox]{
+  width:0px;
+  height:0px;
+  margin:0;
+  padding:0;
+}
+.inputbox input[type=checkbox] + label{
+  height:24px;
+  display:inline-block;
+  background-image: url(images/checks.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  line-height:26px;
+}
+.inputbox input[type=checkbox]:checked + label{
+  background-position : 0 -24px;
+}
+.inputbox input[type=radio]{
+  width:0px;
+  height:0px;
+  margin:0;
+  padding:0;
+}
+.inputbox input[type=radio] + label{
+  height:24px;
+  display:inline-block;
+  background-image: url(images/radio.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  line-height:26px;
+}
+.inputbox input[type=radio]:checked + label{
+  background-position : 0 -24px;
+}
+.inputbox label span{margin-left:24px;}
+</style>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+	$(window).load(function(){
+		$(window).bind('scroll resize', function(){
+			var $this = $(this);
+			var $this_Top=$this.scrollTop();
+			
+			if($this_Top < 260){
+				$('#price').removeClass("fixed");
+				}
+			if($this_Top > 260){
+				$('#price').addClass("fixed");
+						
+			}
+		}).scroll();
+	});
+});
+</script>
+</head>
+<body class="bg-lter">
+<header>
+	<!--PC版 header-->
+	<div class="hd_lnsp hd-lnsp nim">
+  	    <a href="#">
+  	        <div class="img clearfix"></div>
+  	    </a>
+  	</div>
+	<!--PC版 header-->
+	<!--mobile版 header-->
+	<div class="display titlebar">
+		<div class="pl" style="position:absolute;top:0;left:10px;"><img src="images/icon27.png"/></div>
+		填寫旅客資料
+		<div class="pr padder-sm" style="position:absolute;top:0;right:0;"><img src="images/member.png"/></div>
+		<div class="pr padder-sm" style="position:absolute;top:0;right:40px;"><img src="images/share.png"/></div>
+	</div>
+	<!--mobile版 header-->
+</header>
+
+<main class="nvb_gplt member-main" data-xthreshold="75">
+	<div style="width:100%;max-width:1200px;margin-left:auto;margin-right:auto;">
+		<div class="hidden" style="padding:30px;background:#fff;">
+			<div style="width:100%;">
+				<div class="project_list01">
+					<div class="project_line"></div>
+					<div class="project_text">產品介紹</div>
+				</div>
+				<div class="project_list01 active">
+					<div class="project_line"></div>
+					<div class="project_text">填寫旅客資料</div>
+				</div>
+				<div class="project_list01">
+					<div class="project_line"></div>
+					<div class="project_text">填寫產品資料</div>
+				</div>
+				<div class="project_list02">
+					<div class="project_line"></div>
+					<div class="project_text">付款</div>
+				</div>
+				<div class="project_list03">
+					<div class="project_line"></div>
+					<div class="project_text">完成</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div class="opt">
+			<div class="row">
+				<div class="col-xs-24 col-sm-24 col-md-18">
+					<div style="background:#f4f4f4;padding:10px 10px 0 10px;">
+						<div style="font-size:14px;">產品代碼：123456789</div>
+						<div style="font-size:20px;font-weight:bold;margin:5px 0;">白馬市極光奇景3日之旅</div>
+						<div class="tab blue">
+							<input id="tab-one" class="tab-input" type="checkbox" name="tabs">
+							<label for="tab-one">產品資訊</label>
+							<div class="tab-content">
+								<div class="tab-list">
+									<p class="f-s-lb" style="color:#666666;line-height:200%;">東京迪士尼2日券<span class="btn_01">優惠組合</span></p>
+									<div class="tab-text tab-combin">
+										<p class="texttitle">迪士尼樂園門票-陸地-成人*2</p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：Best Western Gold Rush Inn雙人房</p>
+										<p class="textcontent">場次：21：30</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="texttitle">迪士尼樂園門票-陸地-成人*2</p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：Best Western Gold Rush Inn雙人房</p>
+										<p class="textcontent">場次：21：30</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+									</div>
+								</div>
+								<div class="tab-list">
+									<p class="f-s-lb" style="color:#666666;line-height:200%;">歐洲任選3國火車通行證彈性火車票</p>
+									<div class="tab-text tab-combin">
+										<p class="textcontent">使用國家：比利時比利時比利時、荷蘭荷蘭荷蘭荷蘭荷蘭、盧森堡</p>
+										<p class="textcontent">使用日期：2016/12/31</p>
+										<p class="textcontent">選項：頭等廂</p>
+									</div>
+									<div class="tab-text tab-combin">
+										<p class="textcontent">成人 <span class="color-or">$11,593</span> ×2位</p>
+										<p class="textcontent">成人 <span class="color-or">$7,425</span> ×2位</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="margin:20px 0 0 0;color:#3f484c;">
+							<div style="float:left;"><span style="font-size:24px;">■</span> <span style="font-size:16px;font-weight:bold;">聯絡人資料</span></div>
+							<div class="hidden" style="float:right;">
+								<a href="javascript:void(0)" class="open-info-list">
+									<span class="btn_03">+</span>
+									<span>新增其他聯絡電話</span>
+								</a>
+							</div>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin:0px 0 10px 0;border-bottom:5px dashed #d1d1d1">
+							<div style="width:100%;float:left;padding-bottom:20px;padding-left:5px;padding-right:5px;">
+								<div style="margin-left:-5px;margin-right:-5px;">
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="hidden m-b-xs">姓名</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="hidden m-b-xs">手機</div>
+										<div>
+											<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="+國碼"><input name="textfield3" type="text" class="opt_table07" placeholder="請輸入手機">
+										</div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
+										<div class="hidden m-b-xs">E-mail</div>
+										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入E-mail"></div>
+									</div>
+								</div>
+								<div style="clear:both;"></div>
+								<div style="background:#eaedf1;" class="info-list">
+									<div style="margin-left:-5px;margin-right:-5px;padding:10px;">
+										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
+											<div class="m-b-xs">白天</div>
+											<div>
+												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table08 nb1" placeholder="電話"><input name="textfield3" type="text" class="opt_table06" placeholder="分機">
+											</div>
+										</div>
+										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
+											<div class="m-b-xs">晚上</div>
+											<div>
+												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table07" placeholder="電話">
+											</div>
+										</div>
+										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
+											<div class="m-b-xs">傳真</div>
+											<div>
+												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table07" placeholder="電話">
+											</div>
+										</div>
+										<div style="clear:both;"></div>
+									</div>
+								</div>
+								<div>
+									<div class="display info-list-btn" style="margin-left:auto;margin-right:auto;width:140px;">
+										<a href="javascript:void(0)">
+										<span class="btn_03">+</span>
+										<span>新增其他聯絡電話</span>
+									</a>
+								</div>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="opt_title"><span style="font-size:16px;font-weight:bold;">旅客資料</span></div>
+						<div style="margin:15px 0;border:2px solid #ffb15e;background:#ffe9c9;padding:10px 0;">
+							<div style="margin-left:20px;">
+								<span style="color:#ff6839;">好眼光！這間住宿有高達8.2分的評價。</span>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
+						<div style="clear:both;"></div>
+						<div style="border-bottom:5px dashed #d1d1d1;">
+							<div style="margin:20px 0;background:#dee3e9;width:100%;">
+								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
+									<img src="images/icon17.png"/>
+									<div class="opt_tra">旅客(1)</div>
+								</div>
+								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
+											<select name="select7" class="opt_table03">
+												<option value=''>請選擇帶入旅客名單</option>
+											</select>
+										</div>
+										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
+											<div class="inputbox" style="float:left;">
+												<input id="option01" type="checkbox" name="field" value="option">
+												<label for="option01"><span>加入常用名單</span></label>
+											</div>
+											<div class="inputbox" style="float:left;">
+												<input id="option02" type="checkbox" name="field" value="option">
+												<label for="option02"><span>同聯絡人</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">中文姓名</div>
+											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">出生年月日</div>
+											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
+											<div class="m-b-xs">性別</div>
+											<div>
+												<select name="select7" class="opt_table10">
+													<option value=''>男</option>
+													<option value=''>女</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
+											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
+											<div class="m-b-xs">國籍</div>
+											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div class="btn_02"><span style="font-size:16px;">白馬市極光奇景3日之旅</span></div>
+						<div style="clear:both;"></div>
+						<div style="padding-bottom:20px;border-bottom:5px dashed #d1d1d1;">
+							<div style="margin-top:20px;background:#dee3e9;width:100%;">
+								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
+									<img src="images/icon17.png"/>
+									<div class="opt_tra">旅客(1)</div>
+								</div>
+								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
+											<select name="select7" class="opt_table03">
+												<option value=''>請選擇帶入旅客名單</option>
+											</select>
+										</div>
+										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
+											<div class="inputbox" style="float:left;">
+												<input id="option11" type="checkbox" name="field" value="option">
+												<label for="option11"><span>加入常用名單</span></label>
+											</div>
+											<div class="inputbox" style="float:left;">
+												<input id="option12" type="checkbox" name="field" value="option">
+												<label for="option12"><span>同聯絡人</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">中文姓名</div>
+											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">出生年月日</div>
+											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
+											<div class="m-b-xs">性別</div>
+											<div>
+												<select name="select7" class="opt_table10">
+													<option value=''>男</option>
+													<option value=''>女</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
+											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
+											<div class="m-b-xs">國籍</div>
+											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+							<div style="border-bottom:2px dotted #d9d9d9;padding:5px 0;"></div>
+							<div style="margin-top:10px;background:#dee3e9;width:100%;">
+								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
+									<img src="images/icon17.png"/>
+									<div class="opt_tra">旅客(2)</div>
+								</div>
+								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
+											<select name="select7" class="opt_table03">
+												<option value=''>請選擇帶入旅客名單</option>
+											</select>
+										</div>
+										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
+											<div class="inputbox" style="float:left;">
+												<input id="option31" type="checkbox" name="field" value="option">
+												<label for="option31"><span>加入常用名單</span></label>
+											</div>
+											<div class="inputbox" style="float:left;">
+												<input id="option32" type="checkbox" name="field" value="option">
+												<label for="option32"><span>同聯絡人</span></label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">中文姓名</div>
+											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
+											<div class="m-b-xs">出生年月日</div>
+											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYNNDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
+											<div class="m-b-xs">性別</div>
+											<div>
+												<select name="select7" class="opt_table10">
+													<option value=''>男</option>
+													<option value=''>女</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
+											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
+											<div class="m-b-xs">國籍</div>
+											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+										</div>
+									</div>
+									<div style="clear:both;"></div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+						</div>
+						<div style="border-bottom:2px solid #e1e1e1;padding-bottom:10px;">
+							<div class="opt_title"><span style="font-size:16px;font-weight:bold;">其它資料</span></div>
+							<div class="row">
+								<div class="col-xs-24 col-sm-24 col-md-3" style="font-size:16px;line-height:150%;color:#444444;padding-top:8px;">特殊需求</div>
+								<div class="col-xs-24 col-sm-24 col-md-21" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table02" placeholder="中英字數150個字"></div>
+								<div style="clear:both;"></div>
+							</div>
+							<div class="display" style="border-bottom:2px dotted #d9d9d9;padding:5px 0;"></div>
+							<div class="row">
+								<div class="col-xs-24 col-sm-24 col-md-3" style="font-size:16px;color:#444444;padding-top:8px;">代轉資料</div>
+								<div class="col-xs-24 col-sm-24 col-md-21">
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">抬頭</div>
+										<div class="col-xs-24 col-sm-24 col-md-10" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入抬頭"></div>
+										<div class="col-xs-24 col-sm-24 col-md-13" style="color:#24a07d;">旅行業使用「代收轉付」收據代替發票。</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">統一編號</div>
+										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入統一編號"></div>
+										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">代轉備註</div>
+										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table02" placeholder="請輸入代轉備註"></div>
+									</div>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+							<div class="display" style="border-bottom:2px dotted #d9d9d9;padding:5px 0;"></div>
+							<div class="row">
+								<div class="col-xs-24 col-sm-24 col-md-3" style="font-size:16px;color:#444444;padding-top:8px;">取件方式</div>
+								<div class="col-xs-24 col-sm-24 col-md-21">
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="padding-top:8px;margin-bottom:5px;color:#24a07d;">(相關資料、代轉資料....等)</div>
+									</div>
+									<div class="col-xs-24 col-sm-24 col-md-24" style="margin-bottom:5px;padding-left:5px;">
+										<div class="inputbox" style="float:left;">
+											<input id="option41" type="radio" name="sSts" value="1">
+											<label for="option41"><span>自 取</span></label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="background:#ebeef2;padding:10px;margin-bottom:5px;">
+											<div style="line-height:50px;">
+												<select name="select7" class="opt_table12 nb1"><option value=''>台北</option></select><select name="select7" class="opt_table11"><option value=''>台北市瑞湖街111號2樓</option></select>
+											</div>
+											<div style="line-height:150%;">
+											門市名稱：台北總公司 <br>
+											地址：台北市瑞湖街111號2樓 <br>
+											電話：02-87939000<br>
+											</div>
+										</div>
+									</div>
+									<div style="margin-bottom:5px;padding-left:5px;">
+										<div class="inputbox" style="float:left;">
+											<input id="option51" type="radio" name="sSts" value="0">
+											<label for="option51"><span>郵 寄</span></label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-24 col-sm-24 col-md-24" style="background:#ebeef2;padding:10px;margin-bottom:5px;">
+											<div class="row" style="padding-top:8px;margin-bottom:5px;">
+												<div class="col-xs-24 col-sm-24 col-md-12">
+													<div class="m-b-xs">
+														<div style="float:left;">姓名</div> 
+														<div class="inputbox" style="float:left;margin-left:20px;">
+															<input id="option61" type="checkbox" name="field" value="option">
+															<label for="option61"><span>同聯絡人</span></label>
+														</div>
+													</div>
+													<div style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入姓名"></div>
+												</div>
+												<div class="col-xs-24 col-sm-24 col-md-12">
+													<div class="m-b-xs">手機</div>
+													<div style="line-height:50px;"><input name="textfield3" class="opt_table01" placeholder="請輸入手機"></div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-24 col-sm-24 col-md-24">
+													<div class="m-b-xs">地址</div>
+													<div style="line-height:50px;">
+														<select name="select7" class="opt_table05 nb1"><option value=''>請選擇城市</option></select><select name="select7" class="opt_table05 nb1"><option value=''>請選擇地區</option></select><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入寄送地址">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-24 col-sm-24 col-md-24">
+													<div class="m-b-xs">電話</div>
+													<div style="line-height:50px;"><input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table08 nb1" placeholder="電話"><input name="textfield3" type="text" class="opt_table06" placeholder="分機"></div>
+												</div>
+												<div style="clear:both;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="clear:both;">
+						<div class="hidden triangle01" style="float:left;color:#0077b3;line-height:50px;">上一步</div>
+							<div class="opt_send" style="float:right;">
+								<div class="triangle02 clear02" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;">
+									下一步
+								</div>
+								<div class="display" style="float:right;margin-right:5px;">
+									<div style="float:right;" class="cost-col"><span style="margin-right:5px;"><img src="images/icon34.png"/></span><span style="color:#999999;vertical-align:middle">費用</span></div>
+									<div style="color:#e00500;font-size:20px;float:right;clear:both;font-weight:bold;">NTD1,234,567<span style="color:#000;font-size:14px;font-weight:normal;">起</span></div>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+					</div>
+				</div>
+				<div class="col-xs-24 col-sm-24 col-md-6 hidden" style="width:287.5px;" id="second_side">
+					<div class="pricebox" id="price">
+						<div style="border:1px solid #e0e0e0;background:#fff;">
+							<div style="padding:10px;background:#f1f1f1;font-weight:bold;">費用</div>
+							<div style="padding:10px;">白馬市極光奇景3日之旅旅旅旅旅旅旅旅旅旅 共四十字共四十字共四十字共四十字共四十 </div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;">白馬市極光奇景2日之旅</div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;background:#f1f1f1;font-weight:bold;">加購項目</div>
+							<div style="padding:10px;">白馬市極光奇景3日之旅</div>
+							<div style="border-bottom:1px solid #e0e0e0;margin:0 10px;"></div>
+							<div style="padding:10px;text-align:right;"><span style="color:#666666;font-weight:bold;">小計：</span><span style="color:#e00500;font-weight:bold;">$28,900</span></div>
+							<div style="padding:10px;background:#f1f1f1;">
+								<div style="text-align:right;">
+									<span style="font-size:16px;font-weight:bold;color:#e00500;">總價：</span><span style="font-size:24px;font-weight:bold;color:#e00500;">TWD34,567</span>
+								</div>
+								<div style="color:#24a07c;margin-top:10px;">本售價按該行程所有出發日期中最低房價的費用，您最後的價格會依出發日期、出行人數、所選飯店而有所不同。</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+	<div style="clear:both;"></div>
+</main>
+
+<div id="goTop" class="display" style="position:fixed;bottom:60px;right:2%;cursor:pointer;z-index:2;"><img style="width:100%" src="images/top.png" ></div>
+
+
+
+<!--费用浮层-->
+
+<div class="cost-dialog" style="display: none;">
+
+	<div class="title-col">费用</div>
+	<div class="text-col">
+		测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+	</div>
+
+	<div class="xiaoji">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+		<div class="xiaoji-bottom">测试次而是测试二</div>
+
+	</div>
+	<div class="xiaoji" style="border:0;">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+
+	</div>
+
+	<div class="title-col">加费项目</div>
+	<div class="xiaoji" style="border:0;">
+		<div class="xiaoji-text">小计：<span class="red-text">$4344783</span></div>
+	</div>
+
+	<div class="all-price"><span class="text">总价：</span><span>TWD89348585</span></div>
+
+	<div class="detail-text">
+		测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测
+		试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+	</div>
+
+	<div class="close-col">
+		<img  src="images/add/closeIcon.png" />
+	</div>
+
+</div>
+
+
+
+</body>
+<script src="./js/moment.min.js"></script>
+<script src="./js/index.script.bundle.js"></script>
+
+<script>
+
+	$(".info-list-btn").click(function()
+	{
+		if($(".info-list").hasClass("active"))
+		{
+			$(".info-list").removeClass("active");
+			$(".info-list-btn .btn_03").text("+");
+		}
+		else {
+			$(".info-list").addClass("active");
+			$(".info-list-btn .btn_03").text("-");
+		}
+
+
+	});
+
+	$(".open-info-list").click(function()
+	{
+		if($(".info-list").hasClass("active"))
+		{
+			$(".info-list").removeClass("active");
+			$(".open-info-list .btn_03").text("+");
+		}
+		else {
+			$(".info-list").addClass("active");
+			$(".open-info-list .btn_03").text("-");
+		}
+
+
+	});
+
+
+
+
+
+	//费用浮层
+	$(".cost-col").click(function()
+	{
+		$(".cost-dialog").show();
+	});
+
+	$(".cost-dialog .close-col img").click(function()
+	{
+		$(".cost-dialog").hide();
+	});
+
+
+
+
+
+</script>
+
+</html>
