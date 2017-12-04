@@ -68,6 +68,11 @@
 .videoItem img{width: 60px; height: 60px; position: absolute; top: 50%; left: 50%; margin-left: -30px; margin-top: -30px;}
 
 .picDetailWrap .rightnavigation_nav .picBtm{line-height: 50px; height: 50px;}
+.picDetailTitle{text-align: left; margin-bottom: 20px;}
+#picDetailContent ul li p{margin-top: 5px; margin-bottom: 20px;}
+.picPageBottom{background-color: white; }
+.modal-dialog-col div img{vertical-align: middle;}
+.modal-dialog-col .modalPicWrap{width: 900px; display: block; overflow:hidden;}
 
 @media screen  and  (max-width: 640px) {
     .messageRemark div{display: inline-block; width: 100%; text-align: center;}
@@ -90,13 +95,18 @@
     .btmRemark .right{margin: 30px 10px 10px 10px; box-sizing: border-box; width: 100%;}
 
     .pageBottom{background-color: white; position: relative; height: 80px;}
-    .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: 50px;}
-    .backBtn span{position: relative; top: 5px; margin-right: 10px;}
-    .backBtn:hover{background-color: #f0f4f4;}
+    .pageBottom .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: 50px;}
+    .pageBottom .backBtn span{position: relative; top: 5px; margin-right: 10px;}
+    .pageBottom .backBtn:hover{background-color: #f0f4f4;}
 
     .form-list .identifyCode{height:140px!important;background: #f1f1f1;}
     .identifyText{display: block!important;}
     .identifyInput{margin-top: 12px!important; width: 120px!important;}
+    .zixun-page-list li .movieItem .img-col{background-image: url("../img/zixun/zixun_03.jpg"); width: 100%; height: 166px; text-align: center}
+    .picDetailWrap .title-col{display: none;}
+
+    .picPageBottom .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: -40px;}
+    .picPageBottom .page-col{margin-top: 30px; padding: 10px 0px 0px;}
 }
 
 
