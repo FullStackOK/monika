@@ -1,0 +1,14 @@
+.questionSearch{height: 40px; vertical-align: middle; margin-bottom: 20px;}
+.questionSearch input{ width: 265px; height: 37px; border: 1px solid #dddddd; border-radius: 5px; display: inline-block;}
+.questionSearch div{display: inline-block; border: 2px solid #1B4782; line-height: 37px; border-radius: 7px;
+    height: 80%; width: 100px; text-align: center; vertical-align: middle;}
+.questionSearch div span{font-size: 16px; color: #1B4782; }
+.questionSearch div img{margin-top: -12px; margin-left: 5px;}
+
+
+.questionList{border: 1px solid #dddddd; border-radius: 5px; height: 37px; width: 200px; padding-left: 10px; line-height: 37px; margin: 20px 0px;}
+.questionList img{position: relative; top: -5px; left: 90px;}
+@media screen  and  (max-width: 640px) {
+}
+
+
