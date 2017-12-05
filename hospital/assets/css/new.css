@@ -1,0 +1,13 @@
+.newContent{overflow: auto; display: block;}
+.newContent table{min-width: 100%;}
+.newContent table td{min-width: 100px; width: 10%;}
+.newContent table tr{height: 50px; text-align: center;}
+.newContent table tr>th{background-color: #283646; text-align: center; color: white;}
+
+.newContent table tr .aboutNews{width: 30%;}
+.newContent table tr .aboutNews:hover{color: #38A8E2; text-decoration: underline;}
+
+@media screen  and  (max-width: 640px) {
+}
+
+
