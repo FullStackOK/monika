@@ -1,261 +1,417 @@
 var dataList=[
     {
-        id:1,
-        desc:'【探索魔幻極光】黃刀鎮魔幻極光三日～璀燦天空之舞共四十個字共四十個字共四十個字共',
-        big_rice:1488,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        new:1,
-        time_value:1,
-        location:'加拿大-多倫多,東京,京士頓,大阪,渥太華...',
-        img:'images/pic01.png'
+        ID : 1,
+        Description : '日本東京五日遊',
+        B2CMaxPrice : 30000.0000,
+        AdultPrice : 3080.0000,
+        StudentPrice : 4000.0000,
+        ChildPrice : 3000.0000,
+        ElderPrice : 4000.0000,
+        BabyPrice : 2000.0000,
+        Image : 'images/pic01.png',
+        Country : 'JP',
+        City : 'OSA,TYO,KYO',
+        ClassA : '0,1,2,3,5,7,9',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 80,
+        ShowDate : '2017/12/01',
+        SaleStart : '2017/12/15',
+        Recommend : 'true',
+        ProductBuyCount : '10',
+        HaveProduct : 'true'
     },
     {
-        id:2,
-        desc:'【探索魔幻極光】1',
-        big_rice:2488,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,東京,渥太華...',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 2,
+        Description : '韓國濟州島',
+        B2CMaxPrice : 34567.0000,
+        AdultPrice : 4600.0000,
+        StudentPrice : 2000.0000,
+        ChildPrice : 1000.0000,
+        ElderPrice : 2000.0000,
+        BabyPrice : 500.0000,
+        Image : 'images/pic01.png',
+        Country : 'KR',
+        City : 'SEL,CJU',
+        ClassA : '0,1,2,3,6,8,10',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/12/05',
+        SaleStart : '2017/12/20',
+        Recommend : 'false',
+        ProductBuyCount : '0',
+        HaveProduct : 'true'
     },
     {
-        id:3,
-        desc:'【探索魔幻極光】2',
-        big_rice:188,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:1,
-        new:1,
-        time_value:1,
-        location:'加拿大,京士頓,渥太華...',
-        img:'images/pic01.png'
+        ID : 3,
+        Description : '台灣輕旅行',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/12/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:4,
-        desc:'【探索魔幻極光】3',
-        big_rice:1588,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,渥太華...',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 4,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:5,
-        desc:'【探索魔幻極光】4',
-        big_rice:1588,
-        price_type:1,
-        small_price:'1,888',
-        category_id:1,
-        category_child_id:5,
-        location:'加拿大,大阪',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 5,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 4200.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:6,
-        desc:'【探索魔幻極光】5',
-        big_rice:188,
-        price_type:1,
-        small_price:'1,888',
-        category_id:2,
-        category_child_id:10,
-        location:'加拿大,京士頓,東京,渥太華,三重',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 6,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 5000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:7,
-        desc:'【探索魔幻極光】6',
-        big_rice:188,
-        price_type:1,
-        small_price:'1,888',
-        category_id:3,
-        category_child_id:14,
-        location:'加拿大,京士頓,渥太華,東京,名古屋',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 7,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 6000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:8,
-        desc:'【探索魔幻極光】7',
-        big_rice:9188,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,渥太華,東京,京都',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 8,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:9,
-        desc:'【探索魔幻極光】8',
-        big_rice:18888,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,渥太華,東京,北海道',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 9,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:10,
-        desc:'【探索魔幻極光】9',
-        big_rice:1458,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,東京,渥太華...',
-        new:2,
-        time_value:3,
-        img:'images/pic01.png'
+        ID : 10,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:11,
-        desc:'【探索魔幻極光】10',
-        big_rice:788,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,東京,渥太華...',
-        new:1,
-        time_value:1,
-        img:'images/pic01.png'
+        ID : 11,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     },
     {
-        id:12,
-        desc:'【探索魔幻極光】11',
-        big_rice:758,
-        price_type:1,
-        small_price:'1,888',
-        category_id:0,
-        category_child_id:3,
-        location:'加拿大,京士頓,渥太華...',
-        new:1,
-        time_value:2,
-        img:'images/pic01.png'
+        ID : 12,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
+    },
+    {
+        ID : 13,
+        Description : '台灣輕旅行1',
+        B2CMaxPrice : 15000.0000,
+        AdultPrice : 3000.0000,
+        StudentPrice :2500.0000,
+        ChildPrice : 1500.0000,
+        ElderPrice : 2500.0000,
+        BabyPrice : 1000.0000,
+        Image : 'images/pic01.png',
+        Country : 'TW',
+        City : 'TPE,TCH,KHH',
+        ClassA : '2,4,6,8,12',
+        ClassB : [[1,2,5],[1,2,3]],
+        TravelTime : 60,
+        ShowDate : '2017/10/03',
+        SaleStart : '2017/12/17',
+        Recommend : 'false',
+        ProductBuyCount : '20',
+        HaveProduct : 'false'
     }
+
 ];
 
+var cityList=[];
+var cityArray=[];
 
-//城市json
-var cityList=[
+
+//获取搜索结果里面的城市列表和自动分价格范围
+var priceColList=[];
+for(var i=0;i<dataList.length;i++)
+{
+    for(var j=0;j<dataList[i].City.split(",").length;j++)
     {
-        id:1,
-        cityText:'東京'
-    },
-    {
-        id:1,
-        cityText:'大阪'
-    },
-    {
-        id:1,
-        cityText:'京都'
-    },
-    {
-        id:1,
-        cityText:'大阪'
-    },
-    {
-        id:1,
-        cityText:'北海道'
-    },
-    {
-        id:1,
-        cityText:'福岡'
-    },
-    {
-        id:1,
-        cityText:'九州'
-    },
-    {
-        id:1,
-        cityText:'名古屋'
-    },
-    {
-        id:1,
-        cityText:'奈良'
-    },
-    {
-        id:1,
-        cityText:'長崎'
-    },
-    {
-        id:1,
-        cityText:'熊本'
-    },
-    {
-        id:1,
-        cityText:'神戶'
-    },
-    {
-        id:1,
-        cityText:'三重'
+
+        var cityObj={};
+        if(!(cityList.indexOf(dataList[i].City.split(",")[j])>-1))
+        {
+            cityObj.code=dataList[i].City.split(",")[j];
+            cityObj.name=CityArr["_"+dataList[i].Country]["_"+dataList[i].City.split(",")[j]];
+            cityList.push(dataList[i].City.split(",")[j]);
+            cityArray.push(cityObj);
+        }
+
     }
-]
+
+    priceColList.push(dataList[i].AdultPrice);
+
+
+
+}
+
+
+var maxPriceValue=Math.max.apply(null, priceColList);
+var minPriceValue=Math.min.apply(null, priceColList);
+
+console.log(maxPriceValue-minPriceValue);
+
+var xValue=Math.round((maxPriceValue-minPriceValue)/1000)*1000;
+
+console.log(xValue);
 
 var cityColHtml="";
-for(var i=0;i<cityList.length;i++)
+for(var i=0;i<cityArray.length;i++)
 {
-    cityColHtml=cityColHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="1" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts"  ><label style="font-size:14px;">'+cityList[i].cityText+'</label> </div>';
+    cityColHtml=cityColHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="1" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts" value="'+cityArray[i].code+'"  ><label style="font-size:14px;">'+cityArray[i].name+'</label> </div>';
 }
 
 $("#cityCol").append(cityColHtml);
+
+
+
+
 
 
 //价格json
 var priceList=[
     {
         id:1,
-        priceText:"9,999以下",
-        count:10
+        priceText:(parseInt(xValue-1))+"以下",
+        count:0
     },
     {
         id:2,
-        priceText:"10,000~12,499",
-        count:5
+        priceText:xValue+"~"+(parseInt(xValue+999)),
+        count:0
     },
     {
         id:3,
-        priceText:"12,500~14,999",
-        count:6
+        priceText:(parseInt(xValue+1000))+"~"+(parseInt(xValue+1999)),
+        count:0
     },
     {
         id:4,
-        priceText:"15,000~17,499",
-        count:8
+        priceText:(parseInt(xValue+2000))+"~"+(parseInt(xValue+2999)),
+        count:0
     },
     {
         id:5,
-        priceText:"17,500~19,999",
-        count:10
+        priceText:(parseInt(xValue+3000))+"~"+(parseInt(xValue+3999)),
+        count:0
     }
 ]
+
+
+for(var i=0;i<dataList.length;i++)
+{
+    dataList[i].ClassBStr=[];
+    for(var k=0;k<dataList[i].ClassB.length;k++)
+    {
+        for(var n=0;n<dataList[i].ClassB[k].length;n++)
+        {
+            dataList[i].ClassBStr.push(dataList[i].ClassA.split(",")[k]+"-"+dataList[i].ClassB[k][n]);
+        }
+    }
+
+
+
+    if(dataList[i].AdultPrice<=parseInt(xValue-1))
+    {
+        priceList[0].count=priceList[0].count+1;
+        dataList[i].price_type=1;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+999))&&(dataList[i].AdultPrice>=xValue))
+    {
+        priceList[1].count=priceList[1].count+1;
+        dataList[i].price_type=2;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+1999))&&(dataList[i].AdultPrice>=parseInt(xValue+1000)))
+    {
+        priceList[2].count=priceList[2].count+1;
+        dataList[i].price_type=3;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+2999))&&(dataList[i].AdultPrice>=parseInt(xValue+2000)))
+    {
+        priceList[3].count=priceList[3].count+1;
+        dataList[i].price_type=4;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+3999))&&(dataList[i].AdultPrice>=parseInt(xValue+3000)))
+    {
+        priceList[4].count=priceList[4].count+1;
+        dataList[i].price_type=5;
+    }
+
+}
+
+console.log(priceList);
 
 var pirceColHtml="";
 for(var i=0;i<priceList.length;i++)
 {
-    pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+
+    if(priceList[i].count==0)
+    {
+        pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" disabled type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;color:#999;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+    }
+    else {
+        pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+    }
+
+
 }
 
 $("#pirceCol").append(pirceColHtml);
@@ -396,7 +552,7 @@ for(var i=0;i<categoryList.length;i++)
 
     for(var j=0;j<categoryList[i].list.length;j++)
     {
-        childCategoryHtml=childCategoryHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="3" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts" value="'+categoryList[i].list[j].id+'" ><label style="font-size:14px;">'+categoryList[i].list[j].name+'</label></div>';
+        childCategoryHtml=childCategoryHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="3" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts" value="'+categoryList[i].id+'-'+categoryList[i].list[j].id+'" ><label style="font-size:14px;">'+categoryList[i].list[j].name+'</label></div>';
     }
 
     childCategoryHtml=childCategoryHtml+"</div></li>"
@@ -404,27 +560,21 @@ for(var i=0;i<categoryList.length;i++)
 }
 $("#zhonglei").append(categoryHtml);
 $(".child-type-list").append(childCategoryHtml);
-$(".child-type-list li").eq(0).show();
 var dataListPrev=dataList;
 
 
 
 $("#zhonglei input").click(function()
 {
-    if($(this).is(':checked'))
+
+
+    $(".child-type-list li").hide();
+    $("#zhonglei input:checked").each(function()
     {
         var indexValue=$("#zhonglei>div").index($(this).parent());
+        $(".child-type-list li").eq(indexValue).show();
 
-    }
-    else {
-
-        var lastCheckbox=$("#zhonglei input:checked").length-1;
-        var checkboxSelector=$("#zhonglei input:checked").eq(lastCheckbox);
-
-        var indexValue=$("#zhonglei>div").index(checkboxSelector.parent());
-    }
-    $(".child-type-list li").hide();
-    $(".child-type-list li").eq(indexValue).show();
+    });
 
     checkboxSelect();
 
@@ -432,7 +582,7 @@ $("#zhonglei input").click(function()
 });
 
 
-var pageSize=3; //每页显示4条记录
+var pageSize=2; //每页显示4条记录
 $(".textfield3").val(pageSize);
 
 //此demo通过Ajax加载分页元素
@@ -442,7 +592,7 @@ var initPagination = function() {
     // 创建分页
     $("#Pagination").pagination(num_entries, {
         num_edge_entries: 1, //边缘页数
-        num_display_entries: 2, //主体页数
+        num_display_entries: 5, //主体页数
         callback: pageselectCallback,
         items_per_page: pageSize,
         prev_text: "&nbsp;",
@@ -457,7 +607,7 @@ var initPagination1 = function() {
     // 创建分页
     $("#pageCol").pagination(num_entries, {
         num_edge_entries: 1, //边缘页数
-        num_display_entries: 2, //主体页数
+        num_display_entries: 5, //主体页数
         callback: pageselectCallback,
         items_per_page: pageSize,
         prev_text: "&nbsp;",
@@ -493,13 +643,43 @@ function pageselectCallback(page_index, jq){
     var html="";
     for(var i=startPage;i<endPage;i++)
     {
+
+        var priceHtml='大人 <font style="font-size:20px;color:#e10500;">$'+dataList[i].AdultPrice+'</font> 起';
+
+        var tuijianHtml="";
+
+        if(dataList[i].Recommend=='true')
+        {
+            tuijianHtml='<div style="position:absolute;top:0;left:0;z-index:2;" class="triangle3"></div><div style="position:absolute;top:2px;left:2px;z-index:3;color:#fff;font-size:14px;">精選</div>';
+
+        }
+
+        if(dataList[i].ChildPrice) priceHtml=priceHtml+'/孩童 <font style="font-size:20px;color:#e10500;">$'+dataList[i].ChildPrice+'</font> 起';
+
+        var stringTime = dataList[i].ShowDate+" 00:00:00";
+        var dayCha =(new Date().getTime()- Date.parse(new Date(stringTime)))/(1000*3600*24);
+        var newHtml="";
+        if(0<=dayCha&&dayCha<=14)
+        {
+            newHtml='<div style="float:left;background:#24a07d;color:#fff;padding:1px 8px;margin-top:3px;font-size:14px;margin-top:5px;">新品<span class="hidden">上架</span></div>';
+        }
+
+        var cityListCol="";
+        for(var k=0;k<dataList[i].City.split(",").length;k++)
+        {
+            cityListCol=cityListCol+","+CityArr["_"+dataList[i].Country]["_"+dataList[i].City.split(",")[k]];
+        }
+
+        cityListCol=cityListCol.substr(1,cityListCol.length);
+
+
         html=html+'<div class="col-xs-24 col-sm-24 col-md-12 boxlist2" style="margin-bottom:20px;">'+
             '<a style="text-decoration:none;" href="product.html">'+
             '<div class="view view-first" style="box-shadow:0px 5px 8px rgba(0,0,0,0.2);">'+
-            '<img style="width:100%;" src="'+dataList[i].img+'">'+
+            '<img style="width:100%;" src="'+dataList[i].Image+'">'+
             '<div class="itext">'+
             '<div class="ititle display" style="background:#fff;padding:10px 10px 0 10px;">'+
-            '<div class="pl"><img src="images/icon28.png"><span style="vertical-align:middle;color:#666666;margin-left:5px;">'+dataList[i].location+'</span>'+
+            '<div class="pl"><img src="images/icon28.png"><span style="vertical-align:middle;color:#666666;margin-left:5px;">'+cityListCol+'</span>'+
             '</div>'+
             '<div class="pr display">'+
             '<div class="collection">'+
@@ -510,11 +690,10 @@ function pageselectCallback(page_index, jq){
             '<div class="clearboth"></div>'+
             '</div>'+
             '<div class="ibox2">'+
-            '<div class="iboxtitle" style="font-weight:bold;">'+dataList[i].desc+
+            '<div class="iboxtitle" style="font-weight:bold;">'+dataList[i].Description+
             '</div>'+
-            '<div style="margin-top:10px;">'+
-            '<div style="float:left;background:#24a07d;color:#fff;padding:1px 8px;margin-top:3px;font-size:14px;margin-top:5px;">新品<span class="hidden">上架</span></div>'+
-            '<div style="float:right;font-size:14px;">大人 <font style="font-size:20px;color:#e10500;">$'+dataList[i].big_rice+'</font> 起/孩童 <font style="font-size:20px;color:#e10500;">$'+dataList[i].small_price+'</font> 起</div>'+
+            '<div style="margin-top:10px;">'+newHtml+
+            '<div style="float:right;font-size:14px;">'+priceHtml+'</div>'+
             '</div>'+
             '<div style="clear:both;"></div>'+
             '</div>'+
@@ -527,9 +706,7 @@ function pageselectCallback(page_index, jq){
             '</div>'+
             '<p style="font-size:16px;font-weight:bold">【探索魔幻極光】黃刀鎮魔幻極光三日～璀燦天空之舞共四十個字共四十個字共四十個字共</p>'+
             '</div>'+
-            '</div>'+
-            '<div style="position:absolute;top:0;left:0;z-index:2;" class="triangle3"></div>'+
-            '<div style="position:absolute;top:2px;left:2px;z-index:3;color:#fff;font-size:14px;">精選</div>'+
+            '</div>'+tuijianHtml+
             '</div>'+
             '</a>'+
             '</div>';
@@ -632,7 +809,7 @@ function checkboxSelect()
             var typeValue=$(this).attr("data-type");
             if(typeValue==1)
             {
-                typeStr1=typeStr1+"#"+$(this).next().text().trim();
+                typeStr1=typeStr1+"#"+$(this).val()
             }
             else if(typeValue==2)
             {
@@ -665,20 +842,26 @@ function checkboxSelect()
         {
 
 
+
+
             if(
-                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].location.split(","), typeStr1.split("#")))&&
+                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].City.split(","), typeStr1.split("#")))&&
                 (typeStr6==""? 1:($.inArray(dataListPrev[i].new.toString(),typeStr6.split("#"))>-1))&&
-                (typeStr5==""? 1:($.inArray(dataListPrev[i].time_value.toString(),typeStr5.split("#"))>-1))&&
+                (typeStr5==""? 1:($.inArray(dataListPrev[i].TravelTime.toString(),typeStr5.split("#"))>-1))&&
                 (typeStr4==""? 1:($.inArray(dataListPrev[i].price_type.toString(),typeStr4.split("#"))>-1))&&
-                (typeStr3==""? 1:($.inArray(dataListPrev[i].category_child_id.toString(),typeStr3.split("#"))>-1))&&
-                (typeStr2==""? 1:($.inArray(dataListPrev[i].category_id.toString(),typeStr2.split("#"))>-1))
+                (typeStr3==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassBStr, typeStr3.split("#")))&&
+                (typeStr2==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassA.split(","), typeStr2.split("#")))
+
               )
             {
-                //console.log($.inArray(dataListPrev[i].id,dataListTempArray));
-                if(!($.inArray(dataListPrev[i].id,dataListTempArray)>-1))
+
+                console.log($.inArray(dataListPrev[i].ID,dataListTempArray));
+                if(!($.inArray(dataListPrev[i].ID,dataListTempArray)>-1))
                 {
+                    console.log(typeStr1.split("#"));
+                    console.log(dataListPrev[i].City.split(","));
                     dataListTemp.push(dataListPrev[i]);
-                    dataListTempArray.push(dataListPrev[i].id);
+                    dataListTempArray.push(dataListPrev[i].ID);
                 }
 
             }
@@ -725,15 +908,27 @@ $("#qingkong").click(function()
 $("#select7").change(function()
 {
 
-    if($(this).val().trim()=="價格低→高")
+    if($(this).val().trim()==1)
     {
         dataList.sort(function(a,b){
-            return a.big_rice- b.big_rice;
+            return a.AdultPrice- b.AdultPrice;
+        });
+    }
+    else if($(this).val().trim()==2)
+    {
+        dataList.sort(function(a,b){
+            return b.AdultPrice- a.AdultPrice;
+        });
+    }
+    else if($(this).val().trim()==3)
+    {
+        dataList.sort(function(a,b){
+            return a.ProductBuyCount- b.ProductBuyCount;
         });
     }
     else {
         dataList.sort(function(a,b){
-            return b.big_rice- a.big_rice;
+            return b.ProductBuyCount- a.ProductBuyCount;
         });
     }
 
@@ -747,6 +942,10 @@ $("#select7").change(function()
 
 
 });
+
+
+
+
 
 //每页显示多少条记录
 function isPositiveInteger(s){//是否为正整数
