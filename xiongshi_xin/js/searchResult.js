@@ -3,7 +3,7 @@ var dataList=[
         ID : 1,
         Description : '日本東京五日遊',
         B2CMaxPrice : 30000.0000,
-        AdultPrice : 5000.0000,
+        AdultPrice : 3080.0000,
         StudentPrice : 4000.0000,
         ChildPrice : 3000.0000,
         ElderPrice : 4000.0000,
@@ -12,7 +12,7 @@ var dataList=[
         Country : 'JP',
         City : 'OSA,TYO,KYO',
         ClassA : '0,1,2,3,5,7,9',
-        ClassB : '1,2,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 80,
         ShowDate : '2017/12/01',
         SaleStart : '2017/12/15',
@@ -24,7 +24,7 @@ var dataList=[
         ID : 2,
         Description : '韓國濟州島',
         B2CMaxPrice : 34567.0000,
-        AdultPrice : 3000.0000,
+        AdultPrice : 4600.0000,
         StudentPrice : 2000.0000,
         ChildPrice : 1000.0000,
         ElderPrice : 2000.0000,
@@ -33,7 +33,7 @@ var dataList=[
         Country : 'KR',
         City : 'SEL,CJU',
         ClassA : '0,1,2,3,6,8,10',
-        ClassB : '2,4,8',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/12/05',
         SaleStart : '2017/12/20',
@@ -54,7 +54,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/12/03',
         SaleStart : '2017/12/17',
@@ -75,7 +75,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -87,7 +87,7 @@ var dataList=[
         ID : 5,
         Description : '台灣輕旅行1',
         B2CMaxPrice : 15000.0000,
-        AdultPrice : 3000.0000,
+        AdultPrice : 4200.0000,
         StudentPrice :2500.0000,
         ChildPrice : 1500.0000,
         ElderPrice : 2500.0000,
@@ -96,7 +96,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -108,7 +108,7 @@ var dataList=[
         ID : 6,
         Description : '台灣輕旅行1',
         B2CMaxPrice : 15000.0000,
-        AdultPrice : 3000.0000,
+        AdultPrice : 5000.0000,
         StudentPrice :2500.0000,
         ChildPrice : 1500.0000,
         ElderPrice : 2500.0000,
@@ -117,7 +117,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -129,7 +129,7 @@ var dataList=[
         ID : 7,
         Description : '台灣輕旅行1',
         B2CMaxPrice : 15000.0000,
-        AdultPrice : 3000.0000,
+        AdultPrice : 6000.0000,
         StudentPrice :2500.0000,
         ChildPrice : 1500.0000,
         ElderPrice : 2500.0000,
@@ -138,7 +138,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -159,7 +159,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -180,7 +180,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -201,7 +201,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -222,7 +222,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -243,7 +243,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -264,7 +264,7 @@ var dataList=[
         Country : 'TW',
         City : 'TPE,TCH,KHH',
         ClassA : '2,4,6,8,12',
-        ClassB : '3,4,5',
+        ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
         ShowDate : '2017/10/03',
         SaleStart : '2017/12/17',
@@ -280,6 +280,7 @@ var cityArray=[];
 
 
 //获取搜索结果里面的城市列表和自动分价格范围
+var priceColList=[];
 for(var i=0;i<dataList.length;i++)
 {
     for(var j=0;j<dataList[i].City.split(",").length;j++)
@@ -295,8 +296,22 @@ for(var i=0;i<dataList.length;i++)
         }
 
     }
+
+    priceColList.push(dataList[i].AdultPrice);
+
+
+
 }
 
+
+var maxPriceValue=Math.max.apply(null, priceColList);
+var minPriceValue=Math.min.apply(null, priceColList);
+
+console.log(maxPriceValue-minPriceValue);
+
+var xValue=Math.round((maxPriceValue-minPriceValue)/1000)*1000;
+
+console.log(xValue);
 
 var cityColHtml="";
 for(var i=0;i<cityArray.length;i++)
@@ -307,39 +322,96 @@ for(var i=0;i<cityArray.length;i++)
 $("#cityCol").append(cityColHtml);
 
 
+
+
+
+
 //价格json
 var priceList=[
     {
         id:1,
-        priceText:"9,999以下",
-        count:10
+        priceText:(parseInt(xValue-1))+"以下",
+        count:0
     },
     {
         id:2,
-        priceText:"10,000~12,499",
-        count:5
+        priceText:xValue+"~"+(parseInt(xValue+999)),
+        count:0
     },
     {
         id:3,
-        priceText:"12,500~14,999",
-        count:6
+        priceText:(parseInt(xValue+1000))+"~"+(parseInt(xValue+1999)),
+        count:0
     },
     {
         id:4,
-        priceText:"15,000~17,499",
-        count:8
+        priceText:(parseInt(xValue+2000))+"~"+(parseInt(xValue+2999)),
+        count:0
     },
     {
         id:5,
-        priceText:"17,500~19,999",
-        count:10
+        priceText:(parseInt(xValue+3000))+"~"+(parseInt(xValue+3999)),
+        count:0
     }
 ]
+
+
+for(var i=0;i<dataList.length;i++)
+{
+    dataList[i].ClassBStr=[];
+    for(var k=0;k<dataList[i].ClassB.length;k++)
+    {
+        for(var n=0;n<dataList[i].ClassB[k].length;n++)
+        {
+            dataList[i].ClassBStr.push(dataList[i].ClassA.split(",")[k]+"-"+dataList[i].ClassB[k][n]);
+        }
+    }
+
+
+
+    if(dataList[i].AdultPrice<=parseInt(xValue-1))
+    {
+        priceList[0].count=priceList[0].count+1;
+        dataList[i].price_type=1;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+999))&&(dataList[i].AdultPrice>=xValue))
+    {
+        priceList[1].count=priceList[1].count+1;
+        dataList[i].price_type=2;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+1999))&&(dataList[i].AdultPrice>=parseInt(xValue+1000)))
+    {
+        priceList[2].count=priceList[2].count+1;
+        dataList[i].price_type=3;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+2999))&&(dataList[i].AdultPrice>=parseInt(xValue+2000)))
+    {
+        priceList[3].count=priceList[3].count+1;
+        dataList[i].price_type=4;
+    }
+    else if((dataList[i].AdultPrice<=parseInt(xValue+3999))&&(dataList[i].AdultPrice>=parseInt(xValue+3000)))
+    {
+        priceList[4].count=priceList[4].count+1;
+        dataList[i].price_type=5;
+    }
+
+}
+
+console.log(priceList);
 
 var pirceColHtml="";
 for(var i=0;i<priceList.length;i++)
 {
-    pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+
+    if(priceList[i].count==0)
+    {
+        pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" disabled type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;color:#999;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+    }
+    else {
+        pirceColHtml=pirceColHtml+'<div class="col-xs-24 col-sm-24 col-md-24" style="margin-top:2px;margin-bottom:2px;"><input data-type="4"  style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts"  value="'+priceList[i].id+'"><label style="font-size:14px;">'+priceList[i].priceText+'('+priceList[i].count+')</label></div>';
+    }
+
+
 }
 
 $("#pirceCol").append(pirceColHtml);
@@ -480,7 +552,7 @@ for(var i=0;i<categoryList.length;i++)
 
     for(var j=0;j<categoryList[i].list.length;j++)
     {
-        childCategoryHtml=childCategoryHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="3" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts" value="'+categoryList[i].list[j].id+'" ><label style="font-size:14px;">'+categoryList[i].list[j].name+'</label></div>';
+        childCategoryHtml=childCategoryHtml+'<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top:2px;margin-bottom:2px;"><input data-type="3" style="vertical-align:middle;margin-bottom:3px;margin-right:5px;" type="checkbox" name="sSts" value="'+categoryList[i].id+'-'+categoryList[i].list[j].id+'" ><label style="font-size:14px;">'+categoryList[i].list[j].name+'</label></div>';
     }
 
     childCategoryHtml=childCategoryHtml+"</div></li>"
@@ -494,20 +566,15 @@ var dataListPrev=dataList;
 
 $("#zhonglei input").click(function()
 {
-    if($(this).is(':checked'))
+
+
+    $(".child-type-list li").hide();
+    $("#zhonglei input:checked").each(function()
     {
         var indexValue=$("#zhonglei>div").index($(this).parent());
+        $(".child-type-list li").eq(indexValue).show();
 
-    }
-    else {
-
-        var lastCheckbox=$("#zhonglei input:checked").length-1;
-        var checkboxSelector=$("#zhonglei input:checked").eq(lastCheckbox);
-
-        var indexValue=$("#zhonglei>div").index(checkboxSelector.parent());
-    }
-    //$(".child-type-list li").hide();
-    $(".child-type-list li").eq(indexValue).show();
+    });
 
     checkboxSelect();
 
@@ -578,7 +645,15 @@ function pageselectCallback(page_index, jq){
     {
 
         var priceHtml='大人 <font style="font-size:20px;color:#e10500;">$'+dataList[i].AdultPrice+'</font> 起';
-        
+
+        var tuijianHtml="";
+
+        if(dataList[i].Recommend=='true')
+        {
+            tuijianHtml='<div style="position:absolute;top:0;left:0;z-index:2;" class="triangle3"></div><div style="position:absolute;top:2px;left:2px;z-index:3;color:#fff;font-size:14px;">精選</div>';
+
+        }
+
         if(dataList[i].ChildPrice) priceHtml=priceHtml+'/孩童 <font style="font-size:20px;color:#e10500;">$'+dataList[i].ChildPrice+'</font> 起';
 
         var stringTime = dataList[i].ShowDate+" 00:00:00";
@@ -631,9 +706,7 @@ function pageselectCallback(page_index, jq){
             '</div>'+
             '<p style="font-size:16px;font-weight:bold">【探索魔幻極光】黃刀鎮魔幻極光三日～璀燦天空之舞共四十個字共四十個字共四十個字共</p>'+
             '</div>'+
-            '</div>'+
-            '<div style="position:absolute;top:0;left:0;z-index:2;" class="triangle3"></div>'+
-            '<div style="position:absolute;top:2px;left:2px;z-index:3;color:#fff;font-size:14px;">精選</div>'+
+            '</div>'+tuijianHtml+
             '</div>'+
             '</a>'+
             '</div>';
@@ -736,7 +809,7 @@ function checkboxSelect()
             var typeValue=$(this).attr("data-type");
             if(typeValue==1)
             {
-                typeStr1=typeStr1+"#"+$(this).next().text().trim();
+                typeStr1=typeStr1+"#"+$(this).val()
             }
             else if(typeValue==2)
             {
@@ -769,20 +842,26 @@ function checkboxSelect()
         {
 
 
+
+
             if(
-                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].location.split(","), typeStr1.split("#")))&&
+                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].City.split(","), typeStr1.split("#")))&&
                 (typeStr6==""? 1:($.inArray(dataListPrev[i].new.toString(),typeStr6.split("#"))>-1))&&
-                (typeStr5==""? 1:($.inArray(dataListPrev[i].time_value.toString(),typeStr5.split("#"))>-1))&&
+                (typeStr5==""? 1:($.inArray(dataListPrev[i].TravelTime.toString(),typeStr5.split("#"))>-1))&&
                 (typeStr4==""? 1:($.inArray(dataListPrev[i].price_type.toString(),typeStr4.split("#"))>-1))&&
-                (typeStr3==""? 1:($.inArray(dataListPrev[i].category_child_id.toString(),typeStr3.split("#"))>-1))&&
-                (typeStr2==""? 1:($.inArray(dataListPrev[i].category_id.toString(),typeStr2.split("#"))>-1))
+                (typeStr3==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassBStr, typeStr3.split("#")))&&
+                (typeStr2==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassA.split(","), typeStr2.split("#")))
+
               )
             {
-                //console.log($.inArray(dataListPrev[i].id,dataListTempArray));
-                if(!($.inArray(dataListPrev[i].id,dataListTempArray)>-1))
+
+                console.log($.inArray(dataListPrev[i].ID,dataListTempArray));
+                if(!($.inArray(dataListPrev[i].ID,dataListTempArray)>-1))
                 {
+                    console.log(typeStr1.split("#"));
+                    console.log(dataListPrev[i].City.split(","));
                     dataListTemp.push(dataListPrev[i]);
-                    dataListTempArray.push(dataListPrev[i].id);
+                    dataListTempArray.push(dataListPrev[i].ID);
                 }
 
             }
