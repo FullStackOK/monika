@@ -174,7 +174,7 @@
                 <div class="rightnavigation_nav">
                     <h5 style="font-size: 35px; margin: 20px 0px; ">常見問題</h5>
 
-                    <div id="movieDetailContent">
+                    <div id="questionContent">
 
                         <div class="questionSearch">
                             <span>關鍵字</span>
@@ -187,31 +187,120 @@
 
                         <div class="divider"></div>
 
-                        <div class="questionList">
-                            <span>常見問題類別</span>
-                            <img src="assets/img/sanjiao.jpg" align="middle">
+                        <!--<div class="questionList">-->
+                            <!--<span>常見問題類別</span>-->
+                            <!--<img src="assets/img/sanjiao.jpg" align="middle">-->
+                        <!--</div>-->
+
+
+                        <select>
+                            <option value="1">常見問題類別</option>
+                            <option value="2">常見問題類別2</option>
+                            <option value="3">常見問題類別3</option>
+                            <option value="4">常見問題類別4</option>
+                        </select>
+
+                        <ul id="accordion" class="accordion">
+                            <li>
+                                <div class="link">
+                                    <i class="fa fa-paint-brush"></i>
+                                        Q02: 查詢病症應該那一科?
+                                    <i class="fa fa-chevron-down"></i>
+
+                                    <img src="assets/img/danwei/danwei_30.png" align="middle">
+                                </div>
+
+                                <div class="submenu">
+                                    服務時間: 週一~週五 08:00~17:00</br>
+                                    總院:(02)2356-2504`2356-2505</br>
+                                    兒醫:(02)2312-3456 轉分機 70171` 70170</br>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="link">
+                                    <i class="fa fa-paint-brush"></i>
+                                    Q02: 查詢病症應該那一科?
+                                    <i class="fa fa-chevron-down"></i>
+
+                                    <img src="assets/img/danwei/danwei_30.png" align="middle">
+                                </div>
+
+                                <div class="submenu">
+                                    服務時間: 週一~週五 08:00~17:00</br>
+                                    總院:(02)2356-2504`2356-2505</br>
+                                    兒醫:(02)2312-3456 轉分機 70171` 70170</br>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="link">
+                                    <i class="fa fa-paint-brush"></i>
+                                    Q02: 查詢病症應該那一科?
+                                    <i class="fa fa-chevron-down"></i>
+
+                                    <img src="assets/img/danwei/danwei_30.png" align="middle">
+                                </div>
+
+                                <div class="submenu">
+                                    服務時間: 週一~週五 08:00~17:00</br>
+                                    總院:(02)2356-2504`2356-2505</br>
+                                    兒醫:(02)2312-3456 轉分機 70171` 70170</br>
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <div class="link">
+                                    <i class="fa fa-paint-brush"></i>
+                                    Q02: 查詢病症應該那一科?
+                                    <i class="fa fa-chevron-down"></i>
+
+                                    <img src="assets/img/danwei/danwei_30.png" align="middle">
+                                </div>
+
+                                <div class="submenu">
+                                    服務時間: 週一~週五 08:00~17:00</br>
+                                    總院:(02)2356-2504`2356-2505</br>
+                                    兒醫:(02)2312-3456 轉分機 70171` 70170</br>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="link">
+                                    <i class="fa fa-paint-brush"></i>
+                                    Q02: 查詢病症應該那一科?
+                                    <i class="fa fa-chevron-down"></i>
+
+                                    <img src="assets/img/danwei/danwei_30.png" align="middle">
+                                </div>
+
+                                <div class="submenu">
+                                    服務時間: 週一~週五 08:00~17:00</br>
+                                    總院:(02)2356-2504`2356-2505</br>
+                                    兒醫:(02)2312-3456 轉分機 70171` 70170</br>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                        <div class="page-col">
+                            <span class="left-one"></span>
+                            <span class="left-two"></span>
+                            <a href="###" class="active">1</a>
+                            <a href="###" class="border">2</a>
+                            <a href="###">3</a>
+                            <a href="###">4</a>
+                            <a href="###">5</a>
+                            <span class="right-one"></span>
+                            <span class="right-two"></span>
                         </div>
 
-                        <div class="pageBottom">
 
-                            <div class="backBtn">
-                                <img src="assets/img/pageIcon_04.gif" align="middle">
-                                <span>回列表</span>
-                            </div>
-
-                            <div class="page-col">
-                                <span class="left-one"></span>
-                                <span class="left-two"></span>
-                                <a href="###" class="active">1</a>
-                                <a href="###" class="border">2</a>
-                                <a href="###">3</a>
-                                <a href="###">4</a>
-                                <a href="###">5</a>
-                                <span class="right-one"></span>
-                                <span class="right-two"></span>
-                            </div>
-
-                        </div>
 
 
 
@@ -293,6 +382,33 @@
 <script src="assets/lib/swiper.min.js"></script>
 <script src="assets/js/common.js"></script>
 <script>
+
+    var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
+
+        // Variables privadas
+        var links = this.el.find('.link');
+        // Evento
+        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+
+        //$('.accordion .link >img').attr('src', 'assets/img/xiasanjiao.jpg');
+    }
+
+    Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el;
+        $this = $(this),
+                $next = $this.next();
+
+        $next.slideToggle();
+        $this.parent().toggleClass('open');
+
+        if (!e.data.multiple) {
+            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+        };
+    }
+
+    var accordion = new Accordion($('#accordion'), false);
 
 
     $("table tr .aboutNews").click(function() {

@@ -8,7 +8,7 @@
 
 .btn-col{text-align: center;margin:44px 0 20px 0;}
 .btn-col button{margin:0 4px;}
-.left-btn{background:#dddddd;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+.left-btn{background:#636A72;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
 
 .right-btn{background:#007bbb;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
 .right-btn:hover{background: #04689c;}
@@ -18,7 +18,8 @@
 .yanzhengma .btn1 img,.yanzhengma .btn2 img{position: relative;top:8px;}
 .yanzhengma-col{height:82px;display: inline-block;vertical-align: middle;margin:10px 2px 0 15px;}
 .yanzhengma-col img{width:200px;height:60px;}
-
+.agreeWrap{text-align: center; margin-top: 20px;}
+.agreeWrap span span{text-decoration: underline; color: #01a1c5}
 
 @media screen  and  (max-width: 640px) {
     .contact-us .form-list label{display:block;font-size:14px;background: #f1f1f1;float:left;line-height: 58px;width:80px;box-sizing: border-box;padding-right:5px;text-align: right; padding-left: 10px;}
