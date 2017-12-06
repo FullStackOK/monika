@@ -153,3 +153,5 @@
 input[type=checkbox]:hover {
     cursor: pointer;
 }
+
+.child-type-list>li{margin-top:40px;}
