@@ -215,7 +215,7 @@
                      
                      <div class="agreeWrap" >
                          <input type="checkbox" value="1" name="radio">
-                         <span>我已詳細并明確<span>留言板同意書</span>內容</span>
+                         <span>我已詳細并明確<span class="book">留言板同意書</span>內容</span>
                      </div>
 
                      <div class="btn-col">
@@ -238,13 +238,6 @@
     </div>
 
     </div>
-
-
-
-
-
-
-
 
 
 
@@ -306,12 +299,46 @@
     </footer>
 
 
+    <div class="modal-agree-col">
+
+            <div class="modal-agree-dialog-col">
+                <span class="title">同意書內容如下:</span>
+                <span class="content">書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+                書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看書中便民的內容如下看看
+            </span>
+                <button class="close-col" type="button">
+                    了 解
+                </button>
+
+            </div>
+
+
+    </div>
+
+
+
 
 <script src="assets/lib/jquery-1.8.2.min.js"></script>
     <script src="assets/lib/circle-progress.js"></script>
     <script src="assets/lib/swiper.min.js"></script>
 <script src="assets/js/common.js"></script>
 <script>
+
+    $(".modal-agree-dialog-col .close-col").click(function() {
+        $(".modal-agree-col").hide();
+    });
+
+    $(".agreeWrap .book").click(function() {
+        if($(".agreeWrap input").attr('checked')){
+            $(".modal-agree-col").show();
+        }
+
+    });
 
 
     $(".rightnavigation .rightnavigation_nav .rightnavigation_content .bottom li .top").click(function()
