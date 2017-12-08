@@ -7,6 +7,10 @@
 .content ul li .remark{margin: 20px 0px; }
 
 @media screen  and  (max-width: 640px) {
+    .newsBtm :nth-child(3){display: block; position: relative; top: 10px; left: 32px;}
+    .newsBtm :nth-child(2){position: relative; top: 10px;}
+    .newsBtm img{position: relative; top: 20px;}
+    .yanzhengma{font-size: 14px;}
 }
 
 

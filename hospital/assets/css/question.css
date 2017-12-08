@@ -93,6 +93,12 @@
 
 
 @media screen  and  (max-width: 640px) {
+    .questionSearch{text-align: center;}
+    .questionSearch input{width: 100%;}
+    .questionSearch >span{display: none}
+    .questionSearch div{margin-top: 10px;}
+
+    .divider{margin-top: 60px;}
 }
 
 

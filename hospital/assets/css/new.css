@@ -5,7 +5,7 @@
 /*.newContent table tr>th{background-color: #283646; text-align: center; color: white;}*/
 
 /*.newContent table tr .aboutNews{width: 30%;}*/
-/*.newContent table tr .aboutNews:hover{color: #38A8E2; text-decoration: underline;}*/
+.newContent table tr .aboutNews:hover{color: #38A8E2; text-decoration: underline;}
 
 .rightnavigation_nav .title{font-size: 20px; margin: 20px;}
 
@@ -38,7 +38,8 @@ td, th {
 
     table, thead, tbody, th, td, tr {
         display: block;
-        text-align: right;
+        text-align: left;
+        padding: 0px;
     }
 
     thead tr {
@@ -47,23 +48,24 @@ td, th {
         left: -9999px;
     }
 
-    /*tr { border: 1px solid #ccc; }*/
-
     td {
         /* Behave  like a "row" */
         border: none;
         border-bottom: 1px solid #D8D8D8;
         position: relative;
-        padding-left: 50%;
-        height: 50px;
+        padding-left: 55%;
+        height: 40px;
+        line-height: 40px;
+        white-space: nowrap;
+        text-overflow: ellipsis; overflow: hidden;
     }
 
     td:before {
         /* Now like a table header */
         position: absolute;
         /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
+        top: 0px;
+        left: 0px;
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
@@ -72,20 +74,24 @@ td, th {
     /*
     Label the data
     */
-    td:nth-of-type(1):before { content: "發佈日期"; background-color: #283646; color: white; height: 55px; line-height: 55px;}
-    td:nth-of-type(2):before { content: "相關資訊"; background-color: #283646;color: white; height: 55px; line-height: 55px;}
-    td:nth-of-type(3):before { content: "發佈者"; background-color: #283646;color: white; height: 55px; line-height: 55px;}
-    td:nth-of-type(4):before { content: "發佈單位"; background-color: #283646;color: white; height: 55px; line-height: 55px;}
-    td:nth-of-type(5):before { content: "公告期限"; background-color: #283646;color: white; height: 55px; line-height: 55px;}
+    td:nth-of-type(1):before { content: "發佈日期"; background-color: #283646; color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(2):before { content: "相關資訊"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(3):before { content: "發佈者"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(4):before { content: "發佈單位"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(5):before { content: "公告期限"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
 
-    /*tr:nth-of-type(2n+) {*/
-        /*height: auto;*/
-    /*}*/
-
-    tr:nth-of-type(odd) {
+    tr:nth-of-type(2n+1) {
         background: #efefef;
         height: auto;
         text-align: left;
+        margin-bottom: 10px;
+    }
+
+    tr:nth-of-type(2n) {
+        background: #efefef;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
     }
 }
 
