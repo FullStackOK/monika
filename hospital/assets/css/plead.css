@@ -1,0 +1,27 @@
+.stepWrap span{width: 18%; display: inline-block; border-radius: 3px;margin-bottom: 5px;
+    border: solid 1px #f1f1f1; padding: 10px 0px; text-align: center;}
+
+.stepWrap .selectItem{background-color: #008D8B; color: white;}
+
+.title{font-size: 25px; margin-bottom: 20px;}
+
+.noteWrap{vertical-align: middle; margin: 20px 0px; position: relative; padding-left: 80px;}
+.noteWrap .noteTitle{ display: inline-block; position: absolute; left: 0px; top: 0px;}
+
+.flow div{margin: 20px 0px;}
+
+.getGoodsContent{margin-top: 20px;}
+.getGoodsContent ul .item{margin-bottom: 30px;}
+.getGoodsContent ul li span span{color: red;}
+
+.btn-col{text-align: center;margin:44px 0 20px 0;}
+.btn-col button{margin:0 4px;}
+.left-btn{background:#636A72;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+
+.right-btn{background:#007bbb;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+.right-btn:hover{background: #04689c;}
+
+@media screen  and  (max-width: 640px) {
+}
+
+
