@@ -14,12 +14,42 @@
 .getGoodsContent ul .item{margin-bottom: 30px;}
 .getGoodsContent ul li span span{color: red;}
 
-.btn-col{text-align: center;margin:44px 0 20px 0;}
+.btn-col{margin:44px 0 20px 0; text-align: left;}
 .btn-col button{margin:0 4px;}
-.left-btn{background:#636A72;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+.left-btn{background:#008D8B;color:white;width:100px;line-height: 34px;border-radius: 4px;font-size:14px;}
 
-.right-btn{background:#007bbb;color:#fff;width:118px;line-height: 44px;border-radius: 4px;font-size:18px;}
+.right-btn{background:white;color:#008D8B;width:100px;line-height: 34px;border-radius: 4px;font-size:14px; border: #008D8B solid 1px;}
 .right-btn:hover{background: #04689c;}
+
+.leafletWrap{background-color: #273646; position: relative; vertical-align: middle;}
+.leafletWrap .left{position: absolute; top: 15px; color: white; left: 70px;}
+.leafletWrap .right{float: right; margin-top: 15px; color: white;}
+
+.rightnavigation .rightnavigation_nav .rightnavigation_content .middle{ padding: 0px;}
+
+
+/*.rightnavigation_content .contact-us .form-list li .radio{width: 20px;}*/
+
+.postMethod{position: relative;}
+.postMethod .up{position: absolute; top: 10px; left: 200px;}
+.postMethod .down{position: absolute; top: 36px; left: 200px;}
+.postMethod .up span{color: #04689c; text-decoration: underline; margin-left: 20px;}
+.postMethod .down span{color: #04689c; text-decoration: underline; margin-left: 20px;}
+
+.postMethod .up span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+.postMethod .down span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+
+.getGoodsNum{margin: auto 10px;}
+.agreeWrap{text-align: left; margin: 20px 160px;}
+
+
+.btm-btn-col{margin:44px 0 20px 0; text-align: center;}
+.btm-btn-col button{margin:0 4px;}
+.left-btn{background:#d8d8d8;color:black;width:100px;line-height: 34px;border-radius: 4px;font-size:14px;}
+
+.right-btn{background:#0070b2;color:white;width:100px;line-height: 34px;border-radius: 4px;font-size:14px; border: #008D8B solid 1px;}
+
+
 
 @media screen  and  (max-width: 640px) {
 }
