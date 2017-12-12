@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>病歷複製申請</title>
+    <title>費用證明申請</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -182,8 +182,8 @@
                         <span>出生證明申請</span>
 
                         <span>死亡證明申請</span>
-                        <span class="selectItem">病症複製申請</span>
-                        <span>費用證明申請</span>
+                        <span>病症複製申請</span>
+                        <span class="selectItem">費用證明申請</span>
                         <span>證明書申請查詢</span>
                         <span>自然人證明說明</span>
 
@@ -201,18 +201,20 @@
                             </li>
 
                             <li>
-                                3.費用: 已申請病症張數計費,10張以內,每張20元; 10張以上,第11張起每張5元。
+                                3.費用: 每份50元。
                             </li>
 
                             <li>
-                                4.<span style="color: #55B0E5; text-decoration: underline;">
-                                病症資料申請授權書</span>
-                                現場取件用(下載)
+                                4.限已完成計費案件。
+                            </li>
+
+                            <li>
+                                5.<span style="color: #60B4E6; text-decoration: underline;">醫用計費委託書</span>現場取件用(下載)
                             </li>
 
                             <li>
                                 <span style="color: red;">
-                                5.保險公司體局提寶石病人鎖錢高廓形條款之同意書,不是同上向所中之委託書</span>
+                                6.本服務項目不含申請,請洽談 一種榮民總醫院 健康管理中心辦理。</span>
                             </li>
                         </ul>
 
@@ -226,7 +228,7 @@
 
                     <div class="leafletWrap">
                         <img src="assets/img/home_36.png" align="middle">
-                        <span class="left">病歷複製</span>
+                        <span class="left">醫療費用證明</span>
                         <span class="right">提示 <span style="color: red">*</span>的展位請務必填寫 </span>
                     </div>
 
@@ -237,70 +239,12 @@
                             <ul class="form-list">
 
 
-                                <li><label><em class="red-text">*</em>患者姓名</label><input class="error" style="width:406px;" type="text" /></li>
+                                <li>
+                                    <label style="width: 200px;">
+                                        <em class="red-text">*</em>病患身份證字號</label>
+                                    <input style="width: 200px;" placeholder="身份證字號搜索" type="text" />
 
-                                <li style="border-bottom: #E5e5e5 solid 1px;"><label><em class="red-text">*</em>患者身份證字號</label><input placeholder="非台灣人可輸入台灣居留證號,外籍護照證號" type="text" /></li>
-
-                                <li><label><em class="red-text">*</em>聯絡人姓名</label><input placeholder="請輸入您的姓名" type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人手機</label><input placeholder="請輸入您的手機，如02-XXXXXX" type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人市話</label><input placeholder="請輸入您的電話，如02-XXXXXX" type="text" /></li>
-                                <li><label><em class="red-text">*</em>與患者者關係</label><input type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人E-MAIL</label><input placeholder="請輸入您的電子郵箱" type="text" /></li>
-
-                                <li style="height: 120px;"><label style="height: 100%;"><em class="red-text">*</em>申請件數</label>
-
-                                    <div>
-                                        <span class="selectLeft">門診</span>
-                                        <select class="selectSelf">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-
-                                        <span class="selectLeft">急診</span>
-                                        <select class="selectSelf">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-                                    </div>
-
-                                    <div>
-                                        <span class="selectLeft">門診</span>
-                                        <select style="margin: 0px 10px;">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-                                    </div>
-
-
-                                </li>
-
-                                <li class="clearfix" style="height:auto; position: relative;"><label style="height:112px;"><em class="red-text">*</em>申請內容</label>
-
-                                    <textarea placeholder="限75個中文字或300個英文字"></textarea>
-                                </li>
-
-                                <li><label><em class="red-text">*</em>取件方式</label>
-                                    <div class="postMethod"> <input class="radio" type="radio" name="method" checked/>
-                                        <span class="up">自取
-                                            <span>到院取件診斷證明委託書 <span>附件</span> </span>
-                                        </span>
-                                    </div>
-                                    <div class="postMethod" > <input class="radio" type="radio" name="method"/>
-                                        <span class="down">郵寄
-                                            <span>郵寄取件申請書 <span>附件</span> </span>
-                                        </span>
-                                    </div>
-
-
+                                    <span class="searchCode">(台灣居留證號、外籍護照證號)</span>
                                 </li>
 
                                 <li style="height:82px;background: #f1f1f1;" class="clearfix">

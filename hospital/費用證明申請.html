@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>病歷複製申請</title>
+    <title>費用證明申請</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -182,8 +182,8 @@
                         <span>出生證明申請</span>
 
                         <span>死亡證明申請</span>
-                        <span class="selectItem">病症複製申請</span>
-                        <span>費用證明申請</span>
+                        <span>病症複製申請</span>
+                        <span class="selectItem">費用證明申請</span>
                         <span>證明書申請查詢</span>
                         <span>自然人證明說明</span>
 
@@ -201,18 +201,20 @@
                             </li>
 
                             <li>
-                                3.費用: 已申請病症張數計費,10張以內,每張20元; 10張以上,第11張起每張5元。
+                                3.費用: 每份50元。
                             </li>
 
                             <li>
-                                4.<span style="color: #55B0E5; text-decoration: underline;">
-                                病症資料申請授權書</span>
-                                現場取件用(下載)
+                                4.限已完成計費案件。
+                            </li>
+
+                            <li>
+                                5.<span style="color: #60B4E6; text-decoration: underline;">醫用計費委託書</span>現場取件用(下載)
                             </li>
 
                             <li>
                                 <span style="color: red;">
-                                5.保險公司體局提寶石病人鎖錢高廓形條款之同意書,不是同上向所中之委託書</span>
+                                6.本服務項目不含申請,請洽談 一種榮民總醫院 健康管理中心辦理。</span>
                             </li>
                         </ul>
 
@@ -226,7 +228,7 @@
 
                     <div class="leafletWrap">
                         <img src="assets/img/home_36.png" align="middle">
-                        <span class="left">病歷複製</span>
+                        <span class="left">醫療費用證明</span>
                         <span class="right">提示 <span style="color: red">*</span>的展位請務必填寫 </span>
                     </div>
 
@@ -247,7 +249,18 @@
                                 <li><label><em class="red-text">*</em>與患者者關係</label><input type="text" /></li>
                                 <li><label><em class="red-text">*</em>聯絡人E-MAIL</label><input placeholder="請輸入您的電子郵箱" type="text" /></li>
 
-                                <li style="height: 120px;"><label style="height: 100%;"><em class="red-text">*</em>申請件數</label>
+                                <li class="selectBig"><label style="height: 100%;">報稅寄費證明</label>
+
+                                    <div>
+                                        <span class="selectLeft">(限當年度費用資料含門、急、住費用總額)</span>
+                                        <select style="margin: 10px 10px 0px;">
+                                            <option value="1"></option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="4">3</option>
+                                        </select>
+                                        <span>份</span>
+                                    </div>
 
                                     <div>
                                         <span class="selectLeft">門診</span>
@@ -270,8 +283,8 @@
                                     </div>
 
                                     <div>
-                                        <span class="selectLeft">門診</span>
-                                        <select style="margin: 0px 10px;">
+                                        <span class="selectLeft">住院</span>
+                                        <select style="margin: 0px 0px 0px 10px;">
                                             <option value="1"></option>
                                             <option value="2">1</option>
                                             <option value="3">2</option>
@@ -283,12 +296,20 @@
 
                                 </li>
 
-                                <li class="clearfix" style="height:auto; position: relative;"><label style="height:112px;"><em class="red-text">*</em>申請內容</label>
+                                <li class="clearfix textareWrap" ><label class="labelBig">就醫激費說明 <span style="color: red;">請註明就醫日期</span> </label>
+                                    <div class="instruction">
+                                        <img src="assets/img/home_36.png" align="middle">
+                                        <ul>
+                                            <li>1.多次者請依日期逐一列出,依原始就醫激費證按件計費。</li>
+                                            <li>2.限申請日起回溯6個月內之激費記錄,超過次期限外之資料請多限月內之激費記之資料請多。</li>
+                                            <li>3.以下輸入框,限75個中文字或300個英文字。</li>
+                                        </ul>
 
-                                    <textarea placeholder="限75個中文字或300個英文字"></textarea>
+                                    </div>
+                                    <textarea style="height: 200px;" placeholder="申請 年 月 日, 年 月 日費用說明"></textarea>
                                 </li>
 
-                                <li><label><em class="red-text">*</em>取件方式</label>
+                                <li style="height: 80px;"><label style="height: 100%"><em class="red-text">*</em>取件方式</label>
                                     <div class="postMethod"> <input class="radio" type="radio" name="method" checked/>
                                         <span class="up">自取
                                             <span>到院取件診斷證明委託書 <span>附件</span> </span>

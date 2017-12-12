@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>病歷複製申請</title>
+    <title>證明書申請查詢</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -10,7 +10,7 @@
     <link href="assets/css/base.css" rel="stylesheet"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
     <link href="assets/css/mediainform.css" rel="stylesheet">
-    <link href="assets/css/gongneng.css" rel="stylesheet"/>
+    <link href="assets/css/gongneng.css" rel="stylesheet">
     <link href="assets/css/plead.css" rel="stylesheet">
 </head>
 <body>
@@ -182,51 +182,17 @@
                         <span>出生證明申請</span>
 
                         <span>死亡證明申請</span>
-                        <span class="selectItem">病症複製申請</span>
+                        <span>病症複製申請</span>
                         <span>費用證明申請</span>
-                        <span>證明書申請查詢</span>
+                        <span class="selectItem">證明書申請查詢</span>
                         <span>自然人證明說明</span>
 
                     </div>
 
 
-                    <div class="getGoodsContent">
-                        <ul>
-                            <li>
-                                <span>1.承辦人: 病症組柜台人員 <span style="text-decoration: underline;">chuanch@vghtc.gov.tw</span></span>
-                            </li>
-
-                            <li>
-                                2.聯絡電話: 04-23592525 分機2578
-                            </li>
-
-                            <li>
-                                3.費用: 已申請病症張數計費,10張以內,每張20元; 10張以上,第11張起每張5元。
-                            </li>
-
-                            <li>
-                                4.<span style="color: #55B0E5; text-decoration: underline;">
-                                病症資料申請授權書</span>
-                                現場取件用(下載)
-                            </li>
-
-                            <li>
-                                <span style="color: red;">
-                                5.保險公司體局提寶石病人鎖錢高廓形條款之同意書,不是同上向所中之委託書</span>
-                            </li>
-                        </ul>
-
-
-                        <div class="btn-col">
-                            <button type="button" class="left-btn">申 請</button>
-                            <button type="button" class="right-btn">查 詢</button>
-                        </div>
-
-                    </div>
-
                     <div class="leafletWrap">
                         <img src="assets/img/home_36.png" align="middle">
-                        <span class="left">病歷複製</span>
+                        <span class="left">申請書查詢</span>
                         <span class="right">提示 <span style="color: red">*</span>的展位請務必填寫 </span>
                     </div>
 
@@ -236,71 +202,17 @@
 
                             <ul class="form-list">
 
-
-                                <li><label><em class="red-text">*</em>患者姓名</label><input class="error" style="width:406px;" type="text" /></li>
-
-                                <li style="border-bottom: #E5e5e5 solid 1px;"><label><em class="red-text">*</em>患者身份證字號</label><input placeholder="非台灣人可輸入台灣居留證號,外籍護照證號" type="text" /></li>
-
-                                <li><label><em class="red-text">*</em>聯絡人姓名</label><input placeholder="請輸入您的姓名" type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人手機</label><input placeholder="請輸入您的手機，如02-XXXXXX" type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人市話</label><input placeholder="請輸入您的電話，如02-XXXXXX" type="text" /></li>
-                                <li><label><em class="red-text">*</em>與患者者關係</label><input type="text" /></li>
-                                <li><label><em class="red-text">*</em>聯絡人E-MAIL</label><input placeholder="請輸入您的電子郵箱" type="text" /></li>
-
-                                <li style="height: 120px;"><label style="height: 100%;"><em class="red-text">*</em>申請件數</label>
-
-                                    <div>
-                                        <span class="selectLeft">門診</span>
-                                        <select class="selectSelf">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-
-                                        <span class="selectLeft">急診</span>
-                                        <select class="selectSelf">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-                                    </div>
-
-                                    <div>
-                                        <span class="selectLeft">門診</span>
-                                        <select style="margin: 0px 10px;">
-                                            <option value="1"></option>
-                                            <option value="2">1</option>
-                                            <option value="3">2</option>
-                                            <option value="4">3</option>
-                                        </select>
-                                        <span>份</span>
-                                    </div>
-
-
+                                <li class="applyQueryLi"><label class="applyQueryLabel"><em class="red-text">*</em>患者身份證字號</label>
+                                    <input placeholder="身份證字號搜索" type="text" />
+                                    <span style="color: red;">(台灣居留證號、外籍護照證號)</span>
                                 </li>
 
-                                <li class="clearfix" style="height:auto; position: relative;"><label style="height:112px;"><em class="red-text">*</em>申請內容</label>
+                                <li class="queryPicLi">
+                                    <span >
+                                        郵寄取件若使用自然人憑證檢核身份,則不須郵寄申請人身份證正本,請證人查詢書面后點金憑證檢核聯結,位置說明如下圖。
+                                    </span>
 
-                                    <textarea placeholder="限75個中文字或300個英文字"></textarea>
-                                </li>
-
-                                <li><label><em class="red-text">*</em>取件方式</label>
-                                    <div class="postMethod"> <input class="radio" type="radio" name="method" checked/>
-                                        <span class="up">自取
-                                            <span>到院取件診斷證明委託書 <span>附件</span> </span>
-                                        </span>
-                                    </div>
-                                    <div class="postMethod" > <input class="radio" type="radio" name="method"/>
-                                        <span class="down">郵寄
-                                            <span>郵寄取件申請書 <span>附件</span> </span>
-                                        </span>
-                                    </div>
-
-
+                                    <img src="assets/img/home_70.png" >
                                 </li>
 
                                 <li style="height:82px;background: #f1f1f1;" class="clearfix">
@@ -433,8 +345,15 @@
 <script>
 
 
-    $("table tr .aboutNews").click(function() {
-        window.location.href = "最新消息詳情.html"
+    $(".modal-agree-dialog-col .close-col").click(function() {
+        $(".modal-agree-col").hide();
+    });
+
+    $(".agreeWrap .book").click(function() {
+        if($(".agreeWrap input").attr('checked')){
+            $(".modal-agree-col").show();
+        }
+
     });
 
 
