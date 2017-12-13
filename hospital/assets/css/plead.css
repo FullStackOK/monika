@@ -21,9 +21,10 @@
 .right-btn{background:white;color:#008D8B;width:100px;line-height: 34px;border-radius: 4px;font-size:14px; border: #008D8B solid 1px;}
 .right-btn:hover{background: #04689c;}
 
-.leafletWrap{background-color: #273646; position: relative; vertical-align: middle; margin-top: 20px;}
-.leafletWrap .left{position: absolute; top: 15px; color: white; left: 70px;}
-.leafletWrap .right{float: right; margin-top: 15px; color: white; margin-right: 10px;}
+.leafletWrap{background-color: #273646; position: relative; vertical-align: middle; margin-top: 20px; height: 50px; line-height: 50px;}
+.leafletWrap .left{color: white; }
+.leafletWrap .right{float: right; color: white; margin-right: 10px;}
+.leafletWrap img{margin: 0px 10px 10px;}
 
 .rightnavigation .rightnavigation_nav .rightnavigation_content .middle{ padding: 0px;}
 
@@ -87,7 +88,19 @@
 .queryPicLi{background-color: white; padding: 30px; font-size: 18px; height: 100px!important; margin: 10px auto;}
 
 .queryPicLi img{width: 100%; height: 50px; }
+
+
 @media screen  and  (max-width: 640px) {
+
+    .stepWrap span{width: 48%;}
+    .noteWrap{padding-top: 20px; padding-left: 0px;}
+    .btn-col{text-align: center;}
+    .leafletWrap{height: 50px; line-height: 10px; text-align: center; padding: 10px; margin-bottom: 10px;}
+    .leafletWrap .right{float: none; display: block;}
+    .longLabel{line-height: 12px!important; height: 100%; padding: 20px 5px 10px 20px!important; }
+    .longLabel span{display: inline-block; width: 40%;}
+
+    .blank{display:inline-block; width: 40%;}
 }
 
 
