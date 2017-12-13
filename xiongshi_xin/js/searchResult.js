@@ -1,3 +1,20 @@
+//日期格式化
+Date.prototype.Format = function (fmt) { //author: meizz
+    var o = {
+        "M+": this.getMonth() + 1, //月份
+        "d+": this.getDate(), //日
+        "h+": this.getHours(), //小时
+        "m+": this.getMinutes(), //分
+        "s+": this.getSeconds(), //秒
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+        "S": this.getMilliseconds() //毫秒
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+
 var dataList=[
     {
         ID : 1,
@@ -9,13 +26,13 @@ var dataList=[
         ElderPrice : 4000.0000,
         BabyPrice : 2000.0000,
         Image : 'images/pic01.png',
-        Country : 'JP',
-        City : 'OSA,TYO,KYO',
+        Country : ["JP","KR"],
+        City : [["OSA","TYO","KYO"],["SEL","CJU"]],
         ClassA : '0,1,2,3,5,7,9',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 80,
-        ShowDate : '2017/12/01',
-        SaleStart : '2017/12/15',
+        ShowDate : '2017/10/01',
+        SaleStart : '2017/12/05',
         Recommend : 'true',
         ProductBuyCount : '10',
         HaveProduct : 'true'
@@ -30,13 +47,13 @@ var dataList=[
         ElderPrice : 2000.0000,
         BabyPrice : 500.0000,
         Image : 'images/pic01.png',
-        Country : 'KR',
-        City : 'SEL,CJU',
+        Country : ["JP","KR"],
+        City : [["OSA","TYO","KYO"],["SEL","CJU"]],
         ClassA : '0,1,2,3,6,8,10',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
-        ShowDate : '2017/12/05',
-        SaleStart : '2017/12/20',
+        ShowDate : '2017/10/05',
+        SaleStart : '2017/10/08',
         Recommend : 'false',
         ProductBuyCount : '0',
         HaveProduct : 'true'
@@ -51,8 +68,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -72,8 +89,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -93,8 +110,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -114,8 +131,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -135,8 +152,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -156,8 +173,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -177,8 +194,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -198,8 +215,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+       City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -219,8 +236,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+        City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -240,8 +257,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+        City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -261,8 +278,8 @@ var dataList=[
         ElderPrice : 2500.0000,
         BabyPrice : 1000.0000,
         Image : 'images/pic01.png',
-        Country : 'TW',
-        City : 'TPE,TCH,KHH',
+        Country : ["TW"],
+        City : [["TPE","TCH","KHH"]],
         ClassA : '2,4,6,8,12',
         ClassB : [[1,2,5],[1,2,3]],
         TravelTime : 60,
@@ -283,25 +300,38 @@ var cityArray=[];
 var priceColList=[];
 for(var i=0;i<dataList.length;i++)
 {
-    for(var j=0;j<dataList[i].City.split(",").length;j++)
+    var proCityList=[];
+    for(var j=0;j<dataList[i].Country.length;j++)
     {
 
-        var cityObj={};
-        if(!(cityList.indexOf(dataList[i].City.split(",")[j])>-1))
+        for(var h=0;h<dataList[i].City[j].length;h++)
         {
-            cityObj.code=dataList[i].City.split(",")[j];
-            cityObj.name=CityArr["_"+dataList[i].Country]["_"+dataList[i].City.split(",")[j]];
-            cityList.push(dataList[i].City.split(",")[j]);
-            cityArray.push(cityObj);
+
+            var cityObj={};
+            if(!(cityList.indexOf(dataList[i].City[j][h])>-1))
+            {
+                cityObj.code=dataList[i].City[j][h];
+                console.log(dataList[i].City);
+                cityObj.name=CityArr["_"+dataList[i].Country[j]]["_"+dataList[i].City[j][h]];
+                cityList.push(dataList[i].City[j][h]);
+                cityArray.push(cityObj);
+            }
+
+            proCityList.push(dataList[i].City[j][h]);
+
+
         }
+
+
 
     }
 
     priceColList.push(dataList[i].AdultPrice);
 
-
+    dataList[i].CityList=proCityList;
 
 }
+
 
 
 var maxPriceValue=Math.max.apply(null, priceColList);
@@ -358,6 +388,56 @@ var priceList=[
 
 for(var i=0;i<dataList.length;i++)
 {
+
+    //计算是否是新品
+    var stringTime = dataList[i].SaleStart+" 00:00:00";
+    var dayCha =(new Date().getTime()- Date.parse(new Date(stringTime)))/(1000*3600*24);
+
+
+    var time1 = new Date().Format("yyyy/MM/dd");
+
+   if(time1>=dataList[i].ShowDate&&time1<=dataList[i].SaleStart)
+   {
+       dataList[i].isPrev=1;
+   }
+    else {
+       dataList[i].isPrev=0;
+   }
+
+    if(0<=dayCha&&dayCha<=14)
+    {
+        dataList[i].isNew=1;
+    }
+    else {
+        dataList[i].isNew=0;
+    }
+
+    //判断属于那个活动时间段
+    if(dataList[i].TravelTime<=4)
+    {
+        dataList[i].timeType=1;
+    }
+    else if(dataList[i].TravelTime<=8&&dataList[i].TravelTime>=5)
+    {
+        dataList[i].timeType=2;
+    }
+    else if(dataList[i].TravelTime<=24&&dataList[i].TravelTime>=9)
+    {
+        dataList[i].timeType=31;
+    }
+    else if(dataList[i].TravelTime==48)
+    {
+        dataList[i].timeType=4;
+    }
+    else if(dataList[i].TravelTime>72)
+    {
+        dataList[i].timeType=5;
+    }
+    else {
+        dataList[i].timeType=0;
+    }
+
+
     dataList[i].ClassBStr=[];
     for(var k=0;k<dataList[i].ClassB.length;k++)
     {
@@ -622,10 +702,6 @@ initPagination();
 
 
 
-
-
-
-
 function pageselectCallback(page_index, jq){
 
     console.log($(jq).attr("id"));
@@ -656,18 +732,26 @@ function pageselectCallback(page_index, jq){
 
         if(dataList[i].ChildPrice) priceHtml=priceHtml+'/孩童 <font style="font-size:20px;color:#e10500;">$'+dataList[i].ChildPrice+'</font> 起';
 
-        var stringTime = dataList[i].ShowDate+" 00:00:00";
-        var dayCha =(new Date().getTime()- Date.parse(new Date(stringTime)))/(1000*3600*24);
+
         var newHtml="";
-        if(0<=dayCha&&dayCha<=14)
+        if(dataList[i].isNew==1)
         {
             newHtml='<div style="float:left;background:#24a07d;color:#fff;padding:1px 8px;margin-top:3px;font-size:14px;margin-top:5px;">新品<span class="hidden">上架</span></div>';
         }
 
-        var cityListCol="";
-        for(var k=0;k<dataList[i].City.split(",").length;k++)
+        if(dataList[i].isPrev==1)
         {
-            cityListCol=cityListCol+","+CityArr["_"+dataList[i].Country]["_"+dataList[i].City.split(",")[k]];
+            newHtml=newHtml+'<div style="float:left;background:#24a07d;color:#fff;padding:1px 8px;margin-top:3px;font-size:14px;margin-top:5px;">搶先<span class="hidden">預告</span></div>';
+        }
+
+        var cityListCol="";
+        for(var k=0;k<dataList[i].Country.length;k++)
+        {
+            for(var n=0;n<dataList[i].City.length;n++)
+            {
+                cityListCol=cityListCol+","+CityArr["_"+dataList[i].Country[k]]["_"+dataList[i].City[k][n]];
+            }
+
         }
 
         cityListCol=cityListCol.substr(1,cityListCol.length);
@@ -837,17 +921,16 @@ function checkboxSelect()
 
 
         var cityValue=$(this).next().text().trim();
-        //console.log(cityValue);
+        console.log(typeStr5);
         for(var i=0;i<dataListPrev.length;i++)
         {
 
 
 
-
             if(
-                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].City.split(","), typeStr1.split("#")))&&
-                (typeStr6==""? 1:($.inArray(dataListPrev[i].new.toString(),typeStr6.split("#"))>-1))&&
-                (typeStr5==""? 1:($.inArray(dataListPrev[i].TravelTime.toString(),typeStr5.split("#"))>-1))&&
+                (typeStr1==""?1:Array.ExistsSameValues(dataListPrev[i].CityList, typeStr1.split("#")))&&
+                (typeStr6==""? 1:($.inArray(dataListPrev[i].isNew.toString(),typeStr6.split("#"))>-1))&&
+                (typeStr5==""? 1:($.inArray(dataListPrev[i].timeType.toString(),typeStr5.split("#"))>-1))&&
                 (typeStr4==""? 1:($.inArray(dataListPrev[i].price_type.toString(),typeStr4.split("#"))>-1))&&
                 (typeStr3==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassBStr, typeStr3.split("#")))&&
                 (typeStr2==""? 1:Array.ExistsSameValues(dataListPrev[i].ClassA.split(","), typeStr2.split("#")))
@@ -859,7 +942,6 @@ function checkboxSelect()
                 if(!($.inArray(dataListPrev[i].ID,dataListTempArray)>-1))
                 {
                     console.log(typeStr1.split("#"));
-                    console.log(dataListPrev[i].City.split(","));
                     dataListTemp.push(dataListPrev[i]);
                     dataListTempArray.push(dataListPrev[i].ID);
                 }

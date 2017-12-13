@@ -1,38 +1,6 @@
 
 $(document).ready(function(){
 
-    //js绑定键盘
-    document.onkeydown=function(e){
-        e=window.event||e;
-        switch(e.keyCode){
-            case 38: //向上键
-                console.log("top");
-                var div = document.getElementById('selectCityList');
-                div.scrollTop = div.scrollTop-25;
-
-                var listCol= document.getElementById('keywordCol');
-                listCol.scrollTop = listCol.scrollTop-25;
-
-                break;
-            case 40: //向下键
-                console.log("down");
-
-                var div = document.getElementById('selectCityList');
-                div.scrollTop = div.scrollTop+25;
-
-               var listCol= document.getElementById('keywordCol');
-                listCol.scrollTop = listCol.scrollTop+25;
-
-
-
-                break;
-            default:
-                break;
-        }
-    }
-
-
-
 
     $(".main_visual").hover(function(){
         $("#btn_prev,#btn_next").fadeIn()
@@ -176,12 +144,6 @@ $('#cityDuoXuan').hsCheckData({
     data: Data2
 });
 
-
-
-$(".sildernav .silderitem .menu2").live("click",function()
-{
-    $(this).parent().remove();
-});
 
 
 $("#shareCol").click(function()
