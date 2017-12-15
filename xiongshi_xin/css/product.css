@@ -242,6 +242,24 @@
 .ic__prev:hover, .ic__next:hover{background: #e10500!important;}
 
 
+.detail-btn{background:#e10500;border:1px solid transparent;border-radius:4px;color:#fff;padding:5px 15px;}
+.detail-btn.active{background: #66bb3c;}
+.detail-btn .detail-btn-col.open span{ transform:rotate(180deg)!important;-webkit-transform:rotate(90deg)!important; }
+
+.detail-btn .gouxuan-btn-col{display: none;}
+.detail-btn .quxiao-btn-col{display: none;}
+
+.detail-btn.active .gouxuan-btn-col{display: inline-block;}
+.detail-btn.active .detail-btn-col{display: none;}
+
+.detail-btn.active:hover{background: #88979c;}
+.detail-btn.active:hover .gouxuan-btn-col{display: none;}
+.detail-btn.active:hover .quxiao-btn-col{display: inline-block;}
+
+
+
+
+
 
 
 

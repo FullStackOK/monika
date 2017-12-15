@@ -284,6 +284,8 @@ $(function(){
             $("#dateCol").val(date.substr(0,10));
             $("#dateContent").text(date.substr(0,10));
 
+            $(".detail-btn1").addClass("active");
+
             var priceText;
             for(var i=0;i<priceList.length;i++)
             {
@@ -314,12 +316,33 @@ $(function(){
 $('.value-plus1').on('click', function(){
     var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)+1+"位";
     divUpd.val(newVal);
+
 });
 
 $('.value-minus1').on('click', function(){
     var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)-1+"位";
     if(newVal>=1) divUpd.val(newVal);
+
 });
+
+
+$(".detail-btn-col").click(function()
+{
+
+    $(this).parent().parent().parent().next().toggle();
+    $(this).toggleClass("open");
+
+});
+
+
+$(".quxiao-btn-col").click(function()
+{
+
+    $(this).parent().removeClass("active");
+    $(this).parent().parent().parent().parent().find(".select02").html('選項<font style="color:red;">*</font> 請選擇');
+
+});
+
 
 $(document).ready(function(){
     $("#textclose").click(function(){
