@@ -31,10 +31,10 @@
 
 /*.rightnavigation_content .contact-us .form-list li .radio{width: 20px;}*/
 
-.postMethod{position: relative;}
-.postMethod .radio{display: inline-block; width: auto!important;}
-.postMethod .up{position: absolute; top: 10px; left: 200px;}
-.postMethod .down{position: absolute; top: 36px; left: 200px;}
+.postMethod{display: block; margin-bottom: 10px;}
+.postMethod .radio{margin-top: 3px!important; width: auto!important;}
+.postMethod .up{padding-left: 10px;}
+.postMethod .down{padding-left: 10px;}
 .postMethod .middle{color: #04689c; text-decoration: underline; margin-left: 20px;}
 .postMethod .down span{color: #04689c; text-decoration: underline; margin-left: 20px;}
 
@@ -103,13 +103,18 @@
 
     .blank{display:inline-block; width: 40%;}
 
-    .postMethod .radio{margin-right: 100px!important; }
-    .postMethod .up{position: absolute; top: 10px; left: 140px;}
-    .postMethod .down{position: absolute; top: 36px; left: 140px;}
-    .postMethod .up span{color: #04689c; text-decoration: underline; margin-left: 20px; box-sizing: border-box;}
+    .radioWrap{height: 170px!important;}
+    .radioWrap label{height: 100%; padding-top: 0px!important;}
+    .postMethod{display: block; margin-bottom: 0px;}
+    .postMethod .radio{margin-top: 3px!important; width: auto!important;}
+    .postMethod .up{padding-left: 10px; display: inline-block; padding-right: 40%;}
+    .postMethod .gap{display: block;}
+    .postMethod .attach{display: inline-block; margin: 5px 20px 10px;}
+    .postMethod .down{padding-left: 10px; display: inline-block; padding-right: 40%;}
+    .postMethod .middle{color: #04689c; text-decoration: underline; display: inline-block; margin: 5px 0px 5px 20px;}
     .postMethod .down span{color: #04689c; text-decoration: underline; margin-left: 20px;}
 
-    .postMethod .up span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px; display: block;}
+    .postMethod .attach{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
     .postMethod .down span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
 
 }
