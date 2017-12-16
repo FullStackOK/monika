@@ -187,32 +187,770 @@ $("#closeSelectDate").click(function()
 
 //pc日期控件添加价格
 
-    var priceList=[
+    var optionList= [
         {
-            date:"2017-11-01",
-            price:"$4839"
+        id:1,
+        name:"选项1",
+        time:[
+            {
+            id:1,
+            name: "07:00",
+            identity:[
+                {
+                    id:1,
+                    name:"成人",
+                    pricelist: [
+                        {
+                            id:1,
+                            date: "2017-11-01",
+                            price: "$4839"
+                        },
+                        {
+                            id:2,
+                            date: "2017-11-02",
+                            price: "$48239"
+                        },
+                        {
+                            id:3,
+                            date: "2017-11-03",
+                            price: "$48339"
+                        },
+                        {
+                            id:4,
+                            date: "2017-11-04",
+                            price: "$839"
+                        },
+                        {
+                            id:5,
+                            date: "2017-11-05",
+                            price: "$439"
+                        },
+                        {
+                            id:6,
+                            date: "2017-12-06",
+                            price: "$4839"
+                        }
+
+                    ]
+                },
+                {
+                    id:2,
+                    name:"儿童",
+                    pricelist: [
+                        {
+                            id:1,
+                            date: "2017-11-01",
+                            price: "$4839"
+                        },
+                        {
+                            id:2,
+                            date: "2017-11-02",
+                            price: "$48239"
+                        },
+                        {
+                            id:3,
+                            date: "2017-11-03",
+                            price: "$48339"
+                        },
+                        {
+                            id:4,
+                            date: "2017-11-04",
+                            price: "$839"
+                        },
+                        {
+                            id:5,
+                            date: "2017-11-05",
+                            price: "$439"
+                        },
+                        {
+                            id:6,
+                            date: "2017-12-06",
+                            price: "$4839"
+                        }
+
+                    ]
+                },
+                {
+                    id:3,
+                    name:"少儿",
+                    pricelist: [
+                        {
+                            id:1,
+                            date: "2017-11-01",
+                            price: "$4839"
+                        },
+                        {
+                            id:2,
+                            date: "2017-11-02",
+                            price: "$48239"
+                        },
+                        {
+                            id:3,
+                            date: "2017-11-03",
+                            price: "$48339"
+                        },
+                        {
+                            id:4,
+                            date: "2017-11-04",
+                            price: "$839"
+                        },
+                        {
+                            id:5,
+                            date: "2017-11-05",
+                            price: "$439"
+                        },
+                        {
+                            id:6,
+                            date: "2017-12-06",
+                            price: "$4839"
+                        }
+
+                    ]
+                }
+            ]
+
+            },
+            {
+                id:2,
+                name: "08:00",
+                identity:[
+                    {
+                        id:1,
+                        name:"老人",
+                        pricelist: [
+                            {
+                                id:1,
+                                date: "2017-11-01",
+                                price: "$4839"
+                            },
+                            {
+                                id:2,
+                                date: "2017-11-02",
+                                price: "$48239"
+                            },
+                            {
+                                id:3,
+                                date: "2017-11-03",
+                                price: "$48339"
+                            },
+                            {
+                                id:4,
+                                date: "2017-11-04",
+                                price: "$839"
+                            },
+                            {
+                                id:5,
+                                date: "2017-11-05",
+                                price: "$439"
+                            },
+                            {
+                                id:6,
+                                date: "2017-12-06",
+                                price: "$4839"
+                            }
+
+                        ]
+                    },
+                    {
+                        id:2,
+                        name:"儿童",
+                        pricelist: [
+                            {
+                                id:1,
+                                date: "2017-11-01",
+                                price: "$4839"
+                            },
+                            {
+                                id:2,
+                                date: "2017-11-02",
+                                price: "$48239"
+                            },
+                            {
+                                id:3,
+                                date: "2017-11-03",
+                                price: "$48339"
+                            },
+                            {
+                                id:4,
+                                date: "2017-11-04",
+                                price: "$839"
+                            },
+                            {
+                                id:5,
+                                date: "2017-11-05",
+                                price: "$439"
+                            },
+                            {
+                                id:6,
+                                date: "2017-12-06",
+                                price: "$4839"
+                            }
+
+                        ]
+                    },
+                    {
+                        id:3,
+                        name:"少儿",
+                        pricelist: [
+                            {
+                                id:1,
+                                date: "2017-11-01",
+                                price: "$4839"
+                            },
+                            {
+                                id:2,
+                                date: "2017-11-02",
+                                price: "$48239"
+                            },
+                            {
+                                id:3,
+                                date: "2017-11-03",
+                                price: "$48339"
+                            },
+                            {
+                                id:4,
+                                date: "2017-11-04",
+                                price: "$839"
+                            },
+                            {
+                                id:5,
+                                date: "2017-11-05",
+                                price: "$439"
+                            },
+                            {
+                                id:6,
+                                date: "2017-12-06",
+                                price: "$4839"
+                            }
+
+                        ]
+                    }
+                ]
+
+            }
+        ]
         },
         {
-            date:"2017-11-02",
-            price:"$48239"
+            id:2,
+            name:"选项2",
+            time:[
+                {
+                    name: "09:00",
+                    identity:[
+                        {
+                            id:1,
+                            name:"成人",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:2,
+                            name:"儿童",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:3,
+                            name:"少儿",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        }
+                    ]
+
+                },
+                {
+                    name: "10:00",
+                    identity:[
+                        {
+                            id:1,
+                            name:"成人",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:2,
+                            name:"儿童",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:3,
+                            name:"少儿",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        }
+                    ]
+
+                }
+            ]
         },
         {
-            date:"2017-11-03",
-            price:"$48339"
-        },
-        {
-            date:"2017-11-04",
-            price:"$839"
-        },
-        {
-            date:"2017-11-05",
-            price:"$439"
-        },
-        {
-            date:"2017-12-06",
-            price:"$4839"
+            id:3,
+            name:"选项3",
+            time:[
+                {
+                    id:1,
+                    name: "10:00",
+                    identity:[
+                        {
+                            name:"少儿",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            name:"儿童",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            name:"成人",
+                            pricelist: [
+                                {
+                                    id:1,
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    id:2,
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    id:3,
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    id:4,
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    id:5,
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    id:6,
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        }
+                    ]
+
+                },
+                {
+                    id:2,
+                    name: "11:00",
+                    identity:[
+                        {
+                            id:1,
+                            name:"老人",
+                            pricelist: [
+                                {
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:2,
+                            name:"儿童",
+                            pricelist: [
+                                {
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        },
+                        {
+                            id:3,
+                            name:"少儿",
+                            pricelist: [
+                                {
+                                    date: "2017-11-01",
+                                    price: "$4839"
+                                },
+                                {
+                                    date: "2017-11-02",
+                                    price: "$48239"
+                                },
+                                {
+                                    date: "2017-11-03",
+                                    price: "$48339"
+                                },
+                                {
+                                    date: "2017-11-04",
+                                    price: "$839"
+                                },
+                                {
+                                    date: "2017-11-05",
+                                    price: "$439"
+                                },
+                                {
+                                    date: "2017-12-06",
+                                    price: "$4839"
+                                }
+
+                            ]
+                        }
+                    ]
+
+                }
+            ]
         }
     ]
+
+
+    var selectHtml="";
+    for(var i=0;i<optionList.length;i++)
+    {
+
+        selectHtml=selectHtml+"<option value='"+optionList[i].id+"'>"+optionList[i].name+"</option>";
+
+    }
+
+    $("#xuanxiangText").append(selectHtml);
+
+
+    //联动
+    $("#xuanxiangText").change(function()
+    {
+        var optionId=parseInt($(this).val()-1);
+        initTimeSelect(optionId);
+
+    });
+
+
+    $("#changciText").change(function()
+    {
+        var optionId=parseInt($(this).val()-1);
+        initIdentitySelect(optionId);
+
+    });
+
+    function initIdentitySelect(optionId2)
+    {
+
+        var optionId1=parseInt($("#xuanxiangText").val()-1);
+
+
+        $("#shenfenText").empty();
+        var identityHtml="";
+        for(var i=0;i<optionList[optionId1].time[optionId2].identity.length;i++)
+        {
+            identityHtml=identityHtml+"<option value='"+optionList[optionId1].time[optionId2].identity[i].id+"'>"+optionList[optionId1].time[optionId2].identity[i].name+"</option>"
+        }
+        $("#shenfenText").append(identityHtml);
+    }
+
+
+    function initTimeSelect(optionId)
+    {
+        $("#changciText").empty();
+        var timeHtml="";
+        for(var i=0;i<optionList[optionId].time.length;i++)
+        {
+            timeHtml=timeHtml+"<option value='"+optionList[optionId].time[i].id+"'>"+optionList[optionId].time[i].name+"</option>"
+        }
+        $("#changciText").append(timeHtml);
+    }
+
+    initTimeSelect(0);
+    initIdentitySelect(0);
+
 
 
     function initPrice()
