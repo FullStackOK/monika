@@ -213,7 +213,7 @@ $("#closeSelectDate").click(function()
                         {
                             id:3,
                             date: "2017-11-03",
-                            price: "$48339"
+                            price: "$4339"
                         },
                         {
                             id:4,
@@ -228,7 +228,7 @@ $("#closeSelectDate").click(function()
                         {
                             id:6,
                             date: "2017-12-06",
-                            price: "$4839"
+                            price: "$39"
                         }
 
                     ]
@@ -265,7 +265,7 @@ $("#closeSelectDate").click(function()
                         {
                             id:6,
                             date: "2017-12-06",
-                            price: "$4839"
+                            price: "$639"
                         }
 
                     ]
@@ -302,7 +302,7 @@ $("#closeSelectDate").click(function()
                         {
                             id:6,
                             date: "2017-12-06",
-                            price: "$4839"
+                            price: "$8839"
                         }
 
                     ]
@@ -435,6 +435,7 @@ $("#closeSelectDate").click(function()
             name:"选项2",
             time:[
                 {
+                    id:1,
                     name: "09:00",
                     identity:[
                         {
@@ -552,6 +553,7 @@ $("#closeSelectDate").click(function()
 
                 },
                 {
+                    id:2,
                     name: "10:00",
                     identity:[
                         {
@@ -679,6 +681,7 @@ $("#closeSelectDate").click(function()
                     name: "10:00",
                     identity:[
                         {
+                            id:1,
                             name:"少儿",
                             pricelist: [
                                 {
@@ -715,6 +718,7 @@ $("#closeSelectDate").click(function()
                             ]
                         },
                         {
+                            id:2,
                             name:"儿童",
                             pricelist: [
                                 {
@@ -751,6 +755,7 @@ $("#closeSelectDate").click(function()
                             ]
                         },
                         {
+                            id:3,
                             name:"成人",
                             pricelist: [
                                 {
@@ -798,26 +803,32 @@ $("#closeSelectDate").click(function()
                             name:"老人",
                             pricelist: [
                                 {
+                                    id:1,
                                     date: "2017-11-01",
                                     price: "$4839"
                                 },
                                 {
+                                    id:2,
                                     date: "2017-11-02",
                                     price: "$48239"
                                 },
                                 {
+                                    id:3,
                                     date: "2017-11-03",
                                     price: "$48339"
                                 },
                                 {
+                                    id:4,
                                     date: "2017-11-04",
                                     price: "$839"
                                 },
                                 {
+                                    id:5,
                                     date: "2017-11-05",
                                     price: "$439"
                                 },
                                 {
+                                    id:6,
                                     date: "2017-12-06",
                                     price: "$4839"
                                 }
@@ -829,26 +840,32 @@ $("#closeSelectDate").click(function()
                             name:"儿童",
                             pricelist: [
                                 {
+                                    id:1,
                                     date: "2017-11-01",
                                     price: "$4839"
                                 },
                                 {
+                                    id:2,
                                     date: "2017-11-02",
                                     price: "$48239"
                                 },
                                 {
+                                    id:3,
                                     date: "2017-11-03",
                                     price: "$48339"
                                 },
                                 {
+                                    id:4,
                                     date: "2017-11-04",
                                     price: "$839"
                                 },
                                 {
+                                    id:5,
                                     date: "2017-11-05",
                                     price: "$439"
                                 },
                                 {
+                                    id:6,
                                     date: "2017-12-06",
                                     price: "$4839"
                                 }
@@ -860,26 +877,32 @@ $("#closeSelectDate").click(function()
                             name:"少儿",
                             pricelist: [
                                 {
+                                    id:1,
                                     date: "2017-11-01",
                                     price: "$4839"
                                 },
                                 {
+                                    id:2,
                                     date: "2017-11-02",
                                     price: "$48239"
                                 },
                                 {
+                                    id:3,
                                     date: "2017-11-03",
                                     price: "$48339"
                                 },
                                 {
+                                    id:4,
                                     date: "2017-11-04",
                                     price: "$839"
                                 },
                                 {
+                                    id:5,
                                     date: "2017-11-05",
                                     price: "$439"
                                 },
                                 {
+                                    id:6,
                                     date: "2017-12-06",
                                     price: "$4839"
                                 }
@@ -891,7 +914,7 @@ $("#closeSelectDate").click(function()
                 }
             ]
         }
-    ]
+    ];
 
 
     var selectHtml="";
@@ -911,6 +934,10 @@ $("#closeSelectDate").click(function()
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
+        var optionId2=parseInt($("#changciText").val()-1);
+        console.log("optionId2:"+optionId2);
+        initIdentitySelect(optionId2);
+        initPrice();
     });
 
 
@@ -918,6 +945,14 @@ $("#closeSelectDate").click(function()
     {
         var optionId=parseInt($(this).val()-1);
         initIdentitySelect(optionId);
+        initPrice();
+
+    });
+
+    $("#shenfenText").change(function()
+    {
+
+        initPrice();
 
     });
 
@@ -956,7 +991,17 @@ $("#closeSelectDate").click(function()
     function initPrice()
     {
 
+        var optionId1=parseInt($("#xuanxiangText").val())-1;
+        var optionId2=parseInt($("#changciText").val())-1;
+        var optionId3=parseInt($("#shenfenText").val())-1;
+
+        var priceList=optionList[optionId1].time[optionId2].identity[optionId3].pricelist;
+
+        console.log(priceList);
+
         var yearMoth=$("#calendar04 .ic__year").attr("data-value");
+
+
 
         for(var i=0;i<priceList.length;i++)
         {
@@ -1023,6 +1068,12 @@ $(function(){
             $("#dateContent").text(date.substr(0,10));
 
             $(".detail-btn1").addClass("active");
+
+            var optionId1=$("#xuanxiangText").val();
+            var optionId2=$("#changciText").val();
+            var optionId3=$("#shenfenText").val();
+
+            var priceList=optionList[optionId1].time[optionId2].identity[optionId3].pricelist;
 
             var priceText;
             for(var i=0;i<priceList.length;i++)
