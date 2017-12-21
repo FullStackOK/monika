@@ -23,13 +23,11 @@ $("#lvkeZiliao").text(textList[indexValue]);
 $("#nextBtn").click(function()
 {
 
-    var verifyFlag=1;
 
     if($("#name").val()=="")
     {
         $("#name").addClass("form-error");
         $("#name").parent().next().addClass("form-error-active");
-        verifyFlag=0;
     }
     else {
         $("#name").removeClass("form-error");
@@ -45,7 +43,6 @@ $("#nextBtn").click(function()
             $("#mobileCode").addClass("form-error");
             $("#mobileCode").parent().next().text("國碼需要为数字");
             $("#mobileCode").parent().next().addClass("form-error-active");
-            verifyFlag=0;
         }
         else {
             $("#mobileCode").removeClass("form-error");
@@ -60,14 +57,14 @@ $("#nextBtn").click(function()
     {
         $("#mobile").addClass("form-error");
         $("#mobile").parent().next().next().addClass("form-error-active");
-        verifyFlag=0;
+       
     }
     else if(!mobileReg.test($("#mobile").val()))
     {
         $("#mobile").addClass("form-error");
         $("#mobile").parent().next().next().text("請輸入正確的手機號碼");
         $("#mobile").parent().next().next().addClass("form-error-active");
-        verifyFlag=0;
+       
     }
     else {
         $("#mobile").removeClass("form-error");
@@ -80,14 +77,14 @@ $("#nextBtn").click(function()
     {
         $("#email").addClass("form-error");
         $("#email").parent().next().addClass("form-error-active");
-        verifyFlag=0;
+       
     }
     else if(!emailReg.test($("#email").val()))
     {
         $("#email").addClass("form-error");
         $("#email").parent().next().text("請輸入正確的E-mail");
         $("#email").parent().next().addClass("form-error-active");
-        verifyFlag=0;
+        
     }
     else {
         $("#email").removeClass("form-error");
@@ -108,7 +105,7 @@ $("#nextBtn").click(function()
 
             $("#telephone1").parent().next().text("白天和晚上聯絡電話必须填写一个完整的");
             $("#telephone1").parent().next().addClass("form-error-active");
-            verifyFlag=0;
+            
         }
 
         if(($("#telephone6").val()!=""&&$("#telephone7").val()=="")||($("#telephone6").val()==""&&$("#telephone7").val()!=""))
@@ -204,9 +201,111 @@ $("#nextBtn").click(function()
 
     });
 
+    //郵寄-電話
+    if($("#quma").val()!=""&&$("#dianhua").val()!=""&&$("#fenji").val()!="")
+    {
+
+        $("#quma").removeClass("form-error");
+        $("#dianhua").removeClass("form-error");
+        $("#quma").parent().next().removeClass("form-error-active");
+
+    }
+    else if($("#quma").val()==""&&$("#dianhua").val()==""&&$("#fenji").val()=="")
+    {
+        $("#quma").removeClass("form-error");
+        $("#dianhua").removeClass("form-error");
+        $("#quma").parent().next().removeClass("form-error-active");
+    }
+    else {
+
+        if($("#fenji").val()!="")
+        {
+            $("#dianhua").addClass("form-error");
+            $("#quma").parent().next().text("請輸入完整電話");
+        }
+        else if($("#quma").val()!="")
+        {
+            $("#dianhua").addClass("form-error");
+            $("#quma").parent().next().text("請輸入電話");
+        }
+        else if($("#dianhua").val()!="")
+        {
+            $("#quma").addClass("form-error");
+            $("#quma").parent().next().text("請輸入區碼");
+        }
+        else {
+            $("#dianhua").addClass("form-error");
+            $("#quma").parent().next().text("請輸入完整電話");
+        }
+
+        $("#quma").parent().next().addClass("form-error-active");
+        verifyFlag=0;
+    }
+
+    //中文姓名
+    var pattern = /^[\u4e00-\u9fa5]+$/;
+    if($("#xingming").val()=="")
+    {
+        $("#xingming").addClass("form-error");
+        $("#xingming").parent().next().text("姓名必填");
+        $("#xingming").parent().next().addClass("form-error-active");
+    }
+    else
+    {
+        if(pattern.test($("#xingming").val()))
+        {
+            $("#xingming").removeClass("form-error");
+            $("#xingming").parent().next().removeClass("form-error-active");
+        }
+        else {
+            $("#xingming").addClass("form-error");
+            $("#xingming").parent().next().text("旅客中文姓名僅可輸入中文");
+            $("#xingming").parent().next().addClass("form-error-active");
+            verifyFlag=0;
+        }
+    }
 
 
-    if(verifyFlag==1)
+    //勾选郵寄
+    if($("#option51").prop("checked"))
+    {
+        if($("#shouji1").val()!=""||($("#dianhua").val()!=""&&$("#dianhua").val()!=""&&$("#fenji").val()!=""))
+        {
+
+            $("#shouji1").removeClass("form-error");
+            $("#shouji1").parent().next().removeClass("form-error-active");
+
+        }
+        else
+        {
+            $("#shouji1").addClass("form-error");
+            $("#shouji1").parent().next().text("手機與電話兩者擇一必填");
+            $("#shouji1").parent().next().addClass("form-error-active");
+            verifyFlag=0;
+        }
+    }
+
+    //郵寄-手機
+    var mobileReg=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+
+    if($("#shouji1").val()!="")
+    {
+
+        if(!mobileReg.test($("#shouji1").val()))
+        {
+            $("#shouji1").addClass("form-error");
+            $("#shouji1").parent().next().text("請輸入正確的手機號碼");
+            $("#shouji1").parent().next().addClass("form-error-active");
+            verifyFlag=0;
+        }
+        else {
+            $("#shouji1").removeClass("form-error");
+            $("#shouji1").parent().next().removeClass("form-error-active");
+        }
+    }
+
+
+    if($(".form-error-active").length==0)
     {
         clearLocalStorage();
         alert("請確認資料是否填寫齊全");
@@ -282,15 +381,31 @@ $( "#basicForm" ).sisyphus();
 //清楚缓存
 function clearLocalStorage()
 {
-    for(var i in localStorage) {//不使用过滤
+    for(var i in localStorage) {
 
-        if(localStorage[i].indexOf("basicForm")>-1)
+        //console.log(localStorage[i])
+
+        if(localStorage[i].toString().indexOf("basicForm")>-1)
         {
             localStorage[i]="";
         }
     }
 }
 
+
+//初始化城市和地区选择
+var cityHtml="";
+for(i in CityArr["_TW"])
+{
+    cityHtml=cityHtml+"<option value='"+i+"'>"+CityArr["_TW"][i]+"</option>"
+}
+$("#citySelect").append(cityHtml);
+
+
+$("#citySelect").change(function()
+{
+
+});
 
 //超過 60 分鐘後
 var timeCount=1;

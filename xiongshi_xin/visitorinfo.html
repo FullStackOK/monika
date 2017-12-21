@@ -544,21 +544,23 @@ $(function(){
 															<label for="option61"><span>同聯絡人</span></label>
 														</div>
 													</div>
-													<div style="line-height:50px;"><input name="xingming" id="xingming" type="text" class="opt_table01" placeholder="請輸入姓名"></div>
+													<div style="line-height:50px;"><input name="xingming" id="xingming" maxlength="10" type="text" class="opt_table01" placeholder="請輸入姓名"></div>
+													<div class="form-error-text"></div>
 												</div>
 												<div class="col-xs-24 col-sm-24 col-md-12">
 													<div class="m-b-xs">手機</div>
-													<div style="line-height:50px;"><input name="shouji1" id="shouji1" class="opt_table01" placeholder="請輸入手機"></div>
+													<div style="line-height:50px;"><input name="shouji1" id="shouji1" type="text" maxlength="20" class="opt_table01 number-text" placeholder="請輸入手機"></div>
+													<div class="form-error-text"></div>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-xs-24 col-sm-24 col-md-24">
 													<div class="m-b-xs">地址</div>
 													<div style="line-height:50px;">
-														<select name="select7" class="opt_table05 nb1">
+														<select name="city-select" id="citySelect" class="opt_table05 nb1">
 															<option value=''>請選擇城市</option>
 														</select>
-														<select name="select7" class="opt_table05 nb1">
+														<select name="diqu-select" id="diquSelect" class="opt_table05 nb1">
 															<option value=''>請選擇地區</option>
 														</select>
 														<input name="dizhi" id="dizhi" type="text" maxlength="60" class="opt_table01" placeholder="請輸入寄送地址">
@@ -568,9 +570,12 @@ $(function(){
 											<div class="row">
 												<div class="col-xs-24 col-sm-24 col-md-24">
 													<div class="m-b-xs">電話</div>
-													<div style="line-height:50px;"><input name="quma" id="quma" type="number" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
+													<div style="line-height:50px;">
+														<input name="quma" id="quma" type="number" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
 														<input name="dianhua" id="dianhua" type="number" class="opt_table08 nb1" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
-														<input name="fenji" id="fenji" type="number" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)"></div>
+														<input name="fenji" id="fenji" type="number" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)">
+													</div>
+													<div class="form-error-text"></div>
 												</div>
 												<div style="clear:both;"></div>
 											</div>
@@ -673,6 +678,7 @@ $(function(){
 <script src="./js/moment.min.js"></script>
 <script src="./js/index.script.bundle.js"></script>
 <script src="./js/sisyphus.min.js"></script>
+<script src="./js/city.js"></script>
 <script src="./js/visitorinfo.js"></script>
 <script>
 
