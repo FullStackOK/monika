@@ -3358,7 +3358,9 @@ body.right-active .titlebar.active{right:270px;}
 .share-col .form-col label{position: absolute;top:6px;left:10px;font-size:13px;}
 
 
-
+.form-error{border:1px solid red!important;}
+.form-error-text{font-size:12px;color:red;padding-left:2px;display: none;}
+.form-error-active{display: block;}
 
 
 

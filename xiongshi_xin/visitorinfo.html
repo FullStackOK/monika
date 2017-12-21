@@ -61,6 +61,15 @@
   background-position : 0 -24px;
 }
 .inputbox label span{margin-left:24px;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type="number"]{
+	-moz-appearance: textfield;
+}
+
 </style>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
@@ -129,6 +138,7 @@ $(function(){
 			</div>
 		</div>
 		<div class="opt">
+			<form accept-charset="UTF-8"   id="basicForm" >
 			<div class="row">
 				<div class="col-xs-24 col-sm-24 col-md-18">
 					<div style="background:#f4f4f4;padding:10px 10px 0 10px;">
@@ -186,17 +196,22 @@ $(function(){
 								<div style="margin-left:-5px;margin-right:-5px;">
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="hidden m-b-xs">姓名</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+										<div><input name="username" id="name" type="text" class="opt_table03" maxlength="20" placeholder="請輸入姓名"></div>
+										<div class="form-error-text">姓名不能为空</div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="hidden m-b-xs">手機</div>
 										<div>
-											<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="+國碼"><input name="textfield3" type="text" class="opt_table07" placeholder="請輸入手機">
+											<input name="mobileCode" id="mobileCode" maxlength="3"  type="text" class="opt_table06 nb1" placeholder="+國碼">
+											<input name="mobile" id="mobile" maxlength="20" type="text" class="opt_table07" placeholder="請輸入手機">
 										</div>
+										<div class="form-error-text form-error-text1">國碼格式不正确</div>
+										<div class="form-error-text form-error-text2">手機不能为空</div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="hidden m-b-xs">E-mail</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入E-mail"></div>
+										<div><input name="email" id="email" maxlength="40"  type="text" class="opt_table03" placeholder="請輸入E-mail"></div>
+										<div class="form-error-text">E-mail不能为空</div>
 									</div>
 								</div>
 								<div style="clear:both;"></div>
@@ -205,20 +220,27 @@ $(function(){
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">白天</div>
 											<div>
-												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table08 nb1" placeholder="電話"><input name="textfield3" type="text" class="opt_table06" placeholder="分機">
+												<input name="telephone1" type="number" id="telephone1" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
+												<input name="telephone2" type="number" id="telephone2" class="opt_table08 nb1" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
+												<input name="telephone3" type="number" id="telephone3" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)">
 											</div>
+											<div class="form-error-text">E-mail不能为空</div>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">晚上</div>
 											<div>
-												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table07" placeholder="電話">
+												<input name="telephone4" type="number" id="telephone4" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
+												<input name="telephone5" type="number" id="telephone5" class="opt_table07" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
 											</div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">傳真</div>
 											<div>
-												<input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table07" placeholder="電話">
+												<input name="telephone6" type="number" id="telephone6" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
+												<input name="telephone7" type="number" id="telephone7" class="opt_table07" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
 											</div>
+											<div class="form-error-text">請輸入完整的傳真</div>
 										</div>
 										<div style="clear:both;"></div>
 									</div>
@@ -237,14 +259,14 @@ $(function(){
 						<div class="opt_title"><span style="font-size:16px;font-weight:bold;">旅客資料</span></div>
 						<div style="margin:15px 0;border:2px solid #ffb15e;background:#ffe9c9;padding:10px 0;">
 							<div style="margin-left:20px;">
-								<span style="color:#ff6839;">好眼光！這間住宿有高達8.2分的評價。</span>
+								<span style="color:#ff6839;" id="lvkeZiliao"></span>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
 						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
 						<div style="clear:both;"></div>
 						<div style="border-bottom:5px dashed #d1d1d1;">
-							<div style="margin:20px 0;background:#dee3e9;width:100%;">
+							<div style="margin:20px 0;background:#dee3e9;width:100%;" class="traveller-col">
 								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
 									<img src="images/icon17.png"/>
 									<div class="opt_tra">旅客(1)</div>
@@ -258,11 +280,11 @@ $(function(){
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option01" type="checkbox" name="field" value="option">
+												<input id="option01" type="checkbox" name="option01" value="option">
 												<label for="option01"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
-												<input id="option02" type="checkbox" name="field" value="option">
+												<input id="option02" type="checkbox" name="option02" value="option">
 												<label for="option02"><span>同聯絡人</span></label>
 											</div>
 										</div>
@@ -270,11 +292,13 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">中文姓名</div>
-											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+											<div><input name="textfield3" type="text" class="opt_table09 zhongwen-name" maxlength="10" placeholder="請輸入姓名"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
 											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
@@ -289,13 +313,18 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
 											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
-											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+											<div>
+												<input name="textfield3" type="text" class="opt_table05 nb1 english-name1" maxlength="20" placeholder="英文姓氏 LastName">
+												<input name="textfield3" type="text" class="opt_table05 english-name2" maxlength="30" placeholder="英文名字 FirstName">
+											</div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
 											<div class="m-b-xs">國籍</div>
-											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+											<div><input name="textfield3" type="text" class="opt_table11 nationality" placeholder="請選擇 洲別 / 國家"></div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div style="clear:both;"></div>
@@ -306,7 +335,7 @@ $(function(){
 						<div class="btn_02"><span style="font-size:16px;">白馬市極光奇景3日之旅</span></div>
 						<div style="clear:both;"></div>
 						<div style="padding-bottom:20px;border-bottom:5px dashed #d1d1d1;">
-							<div style="margin-top:20px;background:#dee3e9;width:100%;">
+							<div style="margin:20px 0;background:#dee3e9;width:100%;" class="traveller-col">
 								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
 									<img src="images/icon17.png"/>
 									<div class="opt_tra">旅客(1)</div>
@@ -320,23 +349,25 @@ $(function(){
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option11" type="checkbox" name="field" value="option">
-												<label for="option11"><span>加入常用名單</span></label>
+												<input id="option03" type="checkbox" name="option03" value="option">
+												<label for="option03"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
-												<input id="option12" type="checkbox" name="field" value="option">
-												<label for="option12"><span>同聯絡人</span></label>
+												<input id="option04" type="checkbox" name="option04" value="option">
+												<label for="option04"><span>同聯絡人</span></label>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">中文姓名</div>
-											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+											<div><input name="textfield3" type="text" class="opt_table09 zhongwen-name" maxlength="10" placeholder="請輸入姓名"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
 											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
@@ -351,13 +382,18 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
 											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
-											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+											<div>
+												<input name="textfield3" type="text" class="opt_table05 nb1 english-name1" maxlength="20" placeholder="英文姓氏 LastName">
+												<input name="textfield3" type="text" class="opt_table05 english-name2" maxlength="30" placeholder="英文名字 FirstName">
+											</div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
 											<div class="m-b-xs">國籍</div>
-											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+											<div><input name="textfield3" type="text" class="opt_table11 nationality" placeholder="請選擇 洲別 / 國家"></div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div style="clear:both;"></div>
@@ -365,37 +401,39 @@ $(function(){
 								<div style="clear:both;"></div>
 							</div>
 							<div style="border-bottom:2px dotted #d9d9d9;padding:5px 0;"></div>
-							<div style="margin-top:10px;background:#dee3e9;width:100%;">
+							<div style="margin:20px 0;background:#dee3e9;width:100%;" class="traveller-col">
 								<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
 									<img src="images/icon17.png"/>
-									<div class="opt_tra">旅客(2)</div>
+									<div class="opt_tra">旅客(1)</div>
 								</div>
 								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
-											<select name="select7" class="opt_table03">
+											<select name="select8" class="opt_table03">
 												<option value=''>請選擇帶入旅客名單</option>
 											</select>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option31" type="checkbox" name="field" value="option">
-												<label for="option31"><span>加入常用名單</span></label>
+												<input id="option05" type="checkbox" name="option05" value="option">
+												<label for="option05"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
-												<input id="option32" type="checkbox" name="field" value="option">
-												<label for="option32"><span>同聯絡人</span></label>
+												<input id="option06" type="checkbox" name="option06" value="option">
+												<label for="option06"><span>同聯絡人</span></label>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">中文姓名</div>
-											<div><input name="textfield3" type="text" class="opt_table09" placeholder="請輸入姓名"></div>
+											<div><input name="zhongwen-name3" type="text" class="opt_table09 zhongwen-name" maxlength="10" placeholder="請輸入姓名"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
-											<div><input name="textfield3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYNNDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div><input name="calendar3" type="text" class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
@@ -410,13 +448,18 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
 											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
-											<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+											<div>
+												<input name="english-name12" type="text" class="opt_table05 nb1 english-name1" maxlength="20" placeholder="英文姓氏 LastName">
+												<input name="english-name22" type="text" class="opt_table05 english-name2" maxlength="30" placeholder="英文名字 FirstName">
+											</div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24" style="font-size:14px;">
 											<div class="m-b-xs">國籍</div>
-											<div><input name="textfield3" type="text" class="opt_table11" placeholder="請選擇 洲別 / 國家"></div>
+											<div><input name="guoji3" type="text" class="opt_table11 nationality" placeholder="請選擇 洲別 / 國家"></div>
+											<div class="form-error-text"></div>
 										</div>
 									</div>
 									<div style="clear:both;"></div>
@@ -428,7 +471,9 @@ $(function(){
 							<div class="opt_title"><span style="font-size:16px;font-weight:bold;">其它資料</span></div>
 							<div class="row">
 								<div class="col-xs-24 col-sm-24 col-md-3" style="font-size:16px;line-height:150%;color:#444444;padding-top:8px;">特殊需求</div>
-								<div class="col-xs-24 col-sm-24 col-md-21" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table02" placeholder="中英字數150個字"></div>
+								<div class="col-xs-24 col-sm-24 col-md-21" style="line-height:50px;">
+									<input name="xuqiu" id="xuqiu" type="text" maxlength="150" class="opt_table02" placeholder="中英字數150個字">
+								</div>
 								<div style="clear:both;"></div>
 							</div>
 							<div class="display" style="border-bottom:2px dotted #d9d9d9;padding:5px 0;"></div>
@@ -437,14 +482,18 @@ $(function(){
 								<div class="col-xs-24 col-sm-24 col-md-21">
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">抬頭</div>
-										<div class="col-xs-24 col-sm-24 col-md-10" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入抬頭"></div>
+										<div class="col-xs-24 col-sm-24 col-md-10" style="line-height:50px;">
+											<input name="taitou" type="text" id="taitou" class="opt_table01" maxlength="60" placeholder="請輸入抬頭"></div>
 										<div class="col-xs-24 col-sm-24 col-md-13" style="color:#24a07d;">旅行業使用「代收轉付」收據代替發票。</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">統一編號</div>
-										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入統一編號"></div>
+										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;">
+											<input name="bianma" id="bianma" type="text" class="opt_table01 number-text" maxlength="8" placeholder="請輸入統一編號">
+										</div>
 										<div class="col-xs-24 col-sm-24 col-md-24 m-b-xs" style="padding-top:8px;">代轉備註</div>
-										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;"><input name="textfield3" type="text" class="opt_table02" placeholder="請輸入代轉備註"></div>
+										<div class="col-xs-24 col-sm-24 col-md-24" style="line-height:50px;">
+											<input name="beizhu" type="text" maxlength="80" id="beizhu" class="opt_table02" placeholder="請輸入代轉備註"></div>
 									</div>
 								</div>
 								<div style="clear:both;"></div>
@@ -465,7 +514,11 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24" style="background:#ebeef2;padding:10px;margin-bottom:5px;">
 											<div style="line-height:50px;">
-												<select name="select7" class="opt_table12 nb1"><option value=''>台北</option></select><select name="select7" class="opt_table11"><option value=''>台北市瑞湖街111號2樓</option></select>
+												<select name="select71" id="select71" class="opt_table12 nb1">
+													<option value=''>台北</option></select>
+												<select name="select72" id="select72" class="opt_table11">
+													<option value=''>台北市瑞湖街111號2樓</option>
+											    </select>
 											</div>
 											<div style="line-height:150%;">
 											門市名稱：台北總公司 <br>
@@ -487,29 +540,37 @@ $(function(){
 													<div class="m-b-xs">
 														<div style="float:left;">姓名</div> 
 														<div class="inputbox" style="float:left;margin-left:20px;">
-															<input id="option61" type="checkbox" name="field" value="option">
+															<input id="option61" type="checkbox" name="option61" value="option">
 															<label for="option61"><span>同聯絡人</span></label>
 														</div>
 													</div>
-													<div style="line-height:50px;"><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入姓名"></div>
+													<div style="line-height:50px;"><input name="xingming" id="xingming" type="text" class="opt_table01" placeholder="請輸入姓名"></div>
 												</div>
 												<div class="col-xs-24 col-sm-24 col-md-12">
 													<div class="m-b-xs">手機</div>
-													<div style="line-height:50px;"><input name="textfield3" class="opt_table01" placeholder="請輸入手機"></div>
+													<div style="line-height:50px;"><input name="shouji1" id="shouji1" class="opt_table01" placeholder="請輸入手機"></div>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-xs-24 col-sm-24 col-md-24">
 													<div class="m-b-xs">地址</div>
 													<div style="line-height:50px;">
-														<select name="select7" class="opt_table05 nb1"><option value=''>請選擇城市</option></select><select name="select7" class="opt_table05 nb1"><option value=''>請選擇地區</option></select><input name="textfield3" type="text" class="opt_table01" placeholder="請輸入寄送地址">
+														<select name="select7" class="opt_table05 nb1">
+															<option value=''>請選擇城市</option>
+														</select>
+														<select name="select7" class="opt_table05 nb1">
+															<option value=''>請選擇地區</option>
+														</select>
+														<input name="dizhi" id="dizhi" type="text" maxlength="60" class="opt_table01" placeholder="請輸入寄送地址">
 													</div>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-xs-24 col-sm-24 col-md-24">
 													<div class="m-b-xs">電話</div>
-													<div style="line-height:50px;"><input name="textfield3" type="text" class="opt_table06 nb1" placeholder="區碼"><input name="textfield3" type="text" class="opt_table08 nb1" placeholder="電話"><input name="textfield3" type="text" class="opt_table06" placeholder="分機"></div>
+													<div style="line-height:50px;"><input name="quma" id="quma" type="number" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
+														<input name="dianhua" id="dianhua" type="number" class="opt_table08 nb1" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
+														<input name="fenji" id="fenji" type="number" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)"></div>
 												</div>
 												<div style="clear:both;"></div>
 											</div>
@@ -522,7 +583,7 @@ $(function(){
 					<div style="clear:both;">
 						<div class="hidden triangle01" style="float:left;color:#0077b3;line-height:50px;">上一步</div>
 							<div class="opt_send" style="float:right;">
-								<div class="triangle02 clear02" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;">
+								<div class="triangle02 clear02" id="nextBtn" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;cursor: pointer;">
 									下一步
 								</div>
 								<div class="display" style="float:right;margin-right:5px;">
@@ -558,6 +619,7 @@ $(function(){
 				</div>
 				<div style="clear:both;"></div>
 			</div>
+			</form>
 		</div>
 		<div style="clear:both;"></div>
 	</div>
@@ -610,7 +672,8 @@ $(function(){
 </body>
 <script src="./js/moment.min.js"></script>
 <script src="./js/index.script.bundle.js"></script>
-
+<script src="./js/sisyphus.min.js"></script>
+<script src="./js/visitorinfo.js"></script>
 <script>
 
 	$(".info-list-btn").click(function()
