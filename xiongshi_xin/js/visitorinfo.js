@@ -24,6 +24,26 @@ $("#nextBtn").click(function()
 {
 
 
+     verifyFunc();
+
+    if($(".form-error-active").length==0)
+    {
+        clearLocalStorage();
+        alert("請確認資料是否填寫齊全");
+    }
+    else {
+        $("html,body").animate({scrollTop: ($($(".form-error-active")[0]).offset().top-80)}, 500);
+    }
+
+
+});
+
+
+
+
+//校验
+function nameFunc()
+{
     if($("#name").val()=="")
     {
         $("#name").addClass("form-error");
@@ -33,6 +53,60 @@ $("#nextBtn").click(function()
         $("#name").removeClass("form-error");
         $("#name").parent().next().removeClass("form-error-active");
     }
+}
+function mobileFunc()
+{
+
+
+    var mobileReg=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+
+    if($("#mobile").val()=="")
+    {
+        $("#mobile").addClass("form-error");
+        $("#mobile").parent().next().next().addClass("form-error-active");
+
+    }
+    else if(!mobileReg.test($("#mobile").val()))
+    {
+        $("#mobile").addClass("form-error");
+        $("#mobile").parent().next().next().text("請輸入正確的手機號碼");
+        $("#mobile").parent().next().next().addClass("form-error-active");
+
+    }
+    else {
+        $("#mobile").removeClass("form-error");
+        $("#mobile").parent().next().next().removeClass("form-error-active");
+    }
+
+}
+
+function emailFunc()
+{
+    var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+
+    if($("#email").val()=="")
+    {
+        $("#email").addClass("form-error");
+        $("#email").parent().next().addClass("form-error-active");
+
+    }
+    else if(!emailReg.test($("#email").val()))
+    {
+        $("#email").addClass("form-error");
+        $("#email").parent().next().text("請輸入正確的E-mail");
+        $("#email").parent().next().addClass("form-error-active");
+
+    }
+    else {
+        $("#email").removeClass("form-error");
+        $("#email").parent().next().removeClass("form-error-active");
+    }
+}
+
+function verifyFunc()
+{
+    nameFunc();
+
 
     var mobileCodeReg=/^[0-9]*$/;
 
@@ -50,47 +124,9 @@ $("#nextBtn").click(function()
         }
     }
 
+    mobileFunc();
 
-    var mobileReg=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
-
-    if($("#mobile").val()=="")
-    {
-        $("#mobile").addClass("form-error");
-        $("#mobile").parent().next().next().addClass("form-error-active");
-       
-    }
-    else if(!mobileReg.test($("#mobile").val()))
-    {
-        $("#mobile").addClass("form-error");
-        $("#mobile").parent().next().next().text("請輸入正確的手機號碼");
-        $("#mobile").parent().next().next().addClass("form-error-active");
-       
-    }
-    else {
-        $("#mobile").removeClass("form-error");
-        $("#mobile").parent().next().next().removeClass("form-error-active");
-    }
-
-    var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-
-    if($("#email").val()=="")
-    {
-        $("#email").addClass("form-error");
-        $("#email").parent().next().addClass("form-error-active");
-       
-    }
-    else if(!emailReg.test($("#email").val()))
-    {
-        $("#email").addClass("form-error");
-        $("#email").parent().next().text("請輸入正確的E-mail");
-        $("#email").parent().next().addClass("form-error-active");
-        
-    }
-    else {
-        $("#email").removeClass("form-error");
-        $("#email").parent().next().removeClass("form-error-active");
-    }
-
+    emailFunc();
 
     //校验白天和晚上电话和传真
 
@@ -105,7 +141,7 @@ $("#nextBtn").click(function()
 
             $("#telephone1").parent().next().text("白天和晚上聯絡電話必须填写一个完整的");
             $("#telephone1").parent().next().addClass("form-error-active");
-            
+
         }
 
         if(($("#telephone6").val()!=""&&$("#telephone7").val()=="")||($("#telephone6").val()==""&&$("#telephone7").val()!=""))
@@ -304,18 +340,25 @@ $("#nextBtn").click(function()
         }
     }
 
-
-    if($(".form-error-active").length==0)
-    {
-        clearLocalStorage();
-        alert("請確認資料是否填寫齊全");
-    }
-    else {
-        $("html,body").animate({scrollTop: ($($(".form-error-active")[0]).offset().top-80)}, 500);
-    }
+}
 
 
+$("#name").on("input",function()
+{
+    nameFunc();
 });
+
+$("#mobile").on("input",function()
+{
+    mobileFunc();
+});
+
+$("#email").on("input",function()
+{
+    emailFunc();
+});
+
+
 
 //英文姓名只能输入字母
 $(".english-name1").on("input",function()
@@ -353,9 +396,6 @@ $(".number-text").on("input",function()
         $obj.val($obj.val().slice(0,($obj.val().length-1)));
     }
 });
-
-
-
 
 
 $(".calendar").on("input",function()

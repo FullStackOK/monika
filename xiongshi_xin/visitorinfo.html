@@ -220,25 +220,25 @@ $(function(){
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">白天</div>
 											<div>
-												<input name="telephone1" type="number" id="telephone1" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
-												<input name="telephone2" type="number" id="telephone2" class="opt_table08 nb1" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
-												<input name="telephone3" type="number" id="telephone3" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)">
+												<input name="telephone1" type="number" id="telephone1" class="opt_table06 nb1 number-text" placeholder="區碼" maxlength="4" >
+												<input name="telephone2" type="number" id="telephone2" class="opt_table08 nb1 number-text" placeholder="電話" maxlength="10">
+												<input name="telephone3" type="number" id="telephone3" class="opt_table06 number-text" placeholder="分機" maxlength="5" >
 											</div>
 											<div class="form-error-text">E-mail不能为空</div>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">晚上</div>
 											<div>
-												<input name="telephone4" type="number" id="telephone4" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
-												<input name="telephone5" type="number" id="telephone5" class="opt_table07" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
+												<input name="telephone4" type="number" id="telephone4" class="opt_table06 nb1 number-text" placeholder="區碼" maxlength="4">
+												<input name="telephone5" type="number" id="telephone5" class="opt_table07 number-text" placeholder="電話" maxlength="10">
 											</div>
 											<div class="form-error-text"></div>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-8" style="font-size:14px;">
 											<div class="m-b-xs">傳真</div>
 											<div>
-												<input name="telephone6" type="number" id="telephone6" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
-												<input name="telephone7" type="number" id="telephone7" class="opt_table07" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
+												<input name="telephone6" type="number" id="telephone6" class="opt_table06 nb1 number-text" placeholder="區碼" maxlength="4" >
+												<input name="telephone7" type="number" id="telephone7" class="opt_table07 number-text" placeholder="電話" maxlength="10" >
 											</div>
 											<div class="form-error-text">請輸入完整的傳真</div>
 										</div>
@@ -571,9 +571,9 @@ $(function(){
 												<div class="col-xs-24 col-sm-24 col-md-24">
 													<div class="m-b-xs">電話</div>
 													<div style="line-height:50px;">
-														<input name="quma" id="quma" type="number" class="opt_table06 nb1" placeholder="區碼" maxlength="4" oninput="if(value.length>4)value=value.slice(0,4)">
-														<input name="dianhua" id="dianhua" type="number" class="opt_table08 nb1" placeholder="電話" maxlength="10" oninput="if(value.length>10)value=value.slice(0,10)">
-														<input name="fenji" id="fenji" type="number" class="opt_table06" placeholder="分機" maxlength="5" oninput="if(value.length>5)value=value.slice(0,5)">
+														<input name="quma" id="quma" type="text" class="opt_table06 nb1 number-text" placeholder="區碼" maxlength="4" >
+														<input name="dianhua" id="dianhua" type="number" class="opt_table08 nb1 number-text" placeholder="電話" maxlength="10" >
+														<input name="fenji" id="fenji" type="number" class="opt_table06 number-text" placeholder="分機" maxlength="5" >
 													</div>
 													<div class="form-error-text"></div>
 												</div>
@@ -679,6 +679,7 @@ $(function(){
 <script src="./js/index.script.bundle.js"></script>
 <script src="./js/sisyphus.min.js"></script>
 <script src="./js/city.js"></script>
+<script src="./js/jquery.validate.min.js"></script>
 <script src="./js/visitorinfo.js"></script>
 <script>
 
