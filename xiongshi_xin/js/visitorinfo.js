@@ -1,6 +1,81 @@
 /**
  * Created by tuyao on 2017/12/21.
  */
+var TWList= {
+        '_TPE': '台北',
+        '_TAO': '桃園'
+};
+
+var TWAreaList={
+    '_TPE':{
+        '_ZZ':'中正区',
+        '_SS':'松山区'
+    },
+    '_TAO':{
+        '_BD':'八德区',
+        '_LZ':'芦竹区'
+    }
+
+}
+
+//自取地址
+var takeAddressList=[
+    {
+        id:'1',
+        code:'_TPE',
+        name:'台北',
+        address_detail:[
+            {
+                id:'1',
+                detail:'台北市瑞湖街111號2樓1'
+            },
+            {
+                id:'2',
+                detail:'台北市瑞湖街111號2樓2'
+            }
+        ]
+    },
+    {
+        id:'2',
+        code:'_TAO',
+        name:'桃園',
+        address_detail:[
+            {
+                id:'1',
+                detail:'桃園瑞湖街111號2樓1'
+            },
+            {
+                id:'2',
+                detail:'桃園瑞湖街111號2樓2'
+            }
+        ]
+    }
+]
+
+var takeAddressCityHtml="";
+for(var i=0;i<takeAddressList.length;i++)
+{
+    takeAddressCityHtml=takeAddressCityHtml+'<option value="'+takeAddressList[i].id+'">'+takeAddressList[i].name+'</option>';
+}
+$("#select71").append(takeAddressCityHtml);
+
+$("#select71").change(function()
+{
+    var takeAddressCityDetailHtml="";
+
+    var indexValue=parseInt($("#select71").val())-1;
+
+    for(var i=0;i<takeAddressList[indexValue].address_detail.length;i++)
+    {
+        takeAddressCityDetailHtml=takeAddressCityDetailHtml+'<option>'+takeAddressList[indexValue].address_detail[i].detail+'</option>'
+    }
+
+    $("#select72").empty();
+    $("#select72").append(takeAddressCityDetailHtml);
+
+});
+
+
 //旅客资料
 var textList=[
     "愛我別走~~~快填完嚕♥",
@@ -20,202 +95,93 @@ $("#lvkeZiliao").text(textList[indexValue]);
 
 
 
+//校验
+$.validator.setDefaults({
+    submitHandler: function() {
+
+        if($(".form-error-active").length==0)
+        {
+
+            clearLocalStorage();
+            alert("請確認資料是否填寫齊全");
+        }
+        else {
+            $("html,body").animate({scrollTop: ($($(".form-error-active")[0]).offset().top-80)}, 500);
+        }
+
+    }
+});
+
+$("#basicForm").validate({
+    errorClass: "form-error",
+    errorPlacement: function (error, element) {
+
+        $(element).parent().parent().append(error);
+    }
+});
+
+
+
 $("#nextBtn").click(function()
 {
 
+    verifyFunc();
 
-     verifyFunc();
-
-    if($(".form-error-active").length==0)
-    {
-        clearLocalStorage();
-        alert("請確認資料是否填寫齊全");
-    }
-    else {
-        $("html,body").animate({scrollTop: ($($(".form-error-active")[0]).offset().top-80)}, 500);
-    }
+    $("#basicForm").submit();
 
 
 });
 
 
-
-
-//校验
-function nameFunc()
-{
-    if($("#name").val()=="")
-    {
-        $("#name").addClass("form-error");
-        $("#name").parent().next().addClass("form-error-active");
-    }
-    else {
-        $("#name").removeClass("form-error");
-        $("#name").parent().next().removeClass("form-error-active");
-    }
-}
-function mobileFunc()
+//同联络人
+$(".tonglianluo").change(function()
 {
 
-
-    var mobileReg=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
-
-    if($("#mobile").val()=="")
+    if($(this).prop("checked"))
     {
-        $("#mobile").addClass("form-error");
-        $("#mobile").parent().next().next().addClass("form-error-active");
+        var $objParent=$(this).parent().parent().parent().parent();
+        $objParent.find(".zhongwen-name").val($("#name").val());
+
+        $objParent.find(".mobile-text").val($("#mobile").val());
+
 
     }
-    else if(!mobileReg.test($("#mobile").val()))
-    {
-        $("#mobile").addClass("form-error");
-        $("#mobile").parent().next().next().text("請輸入正確的手機號碼");
-        $("#mobile").parent().next().next().addClass("form-error-active");
 
-    }
-    else {
-        $("#mobile").removeClass("form-error");
-        $("#mobile").parent().next().next().removeClass("form-error-active");
-    }
+});
 
-}
-
-function emailFunc()
+//只填写分机
+$("#fenji").on("input",function()
 {
-    var emailReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
 
-    if($("#email").val()=="")
-    {
-        $("#email").addClass("form-error");
-        $("#email").parent().next().addClass("form-error-active");
+    fenjiFunc();
 
-    }
-    else if(!emailReg.test($("#email").val()))
+});
+
+function fenjiFunc()
+{
+    if(($("#quma").val()==""||$("#dianhua").val()=="")&&$("#fenji").val()!="")
     {
-        $("#email").addClass("form-error");
-        $("#email").parent().next().text("請輸入正確的E-mail");
-        $("#email").parent().next().addClass("form-error-active");
+        $("#fenji").addClass("form-error-input");
+        if( $("#fenji").parent().parent().find(".form-error-active").length>0)
+        {
+            $("#fenji").parent().parent().find(".form-error-active").text("請輸入完整電話");
+        }
+        else
+        {
+            $("#fenji").parent().parent().append("<label class='form-error-active'>請輸入完整電話</label>");
+        }
 
     }
     else {
-        $("#email").removeClass("form-error");
-        $("#email").parent().next().removeClass("form-error-active");
+        $("#fenji").removeClass("form-error-input");
+        $("#fenji").parent().parent().find(".form-error-active").remove();
     }
 }
 
-function verifyFunc()
+
+//中文和英文名两者必须填写一个
+function nameVerify()
 {
-    nameFunc();
-
-
-    var mobileCodeReg=/^[0-9]*$/;
-
-    if($("#mobileCode").val()!="")
-    {
-        if(!mobileCodeReg.test($("#mobileCode").val()))
-        {
-            $("#mobileCode").addClass("form-error");
-            $("#mobileCode").parent().next().text("國碼需要为数字");
-            $("#mobileCode").parent().next().addClass("form-error-active");
-        }
-        else {
-            $("#mobileCode").removeClass("form-error");
-            $("#mobileCode").parent().next().removeClass("form-error-active");
-        }
-    }
-
-    mobileFunc();
-
-    emailFunc();
-
-    //校验白天和晚上电话和传真
-
-    if($(".info-list").hasClass("active"))
-    {
-        if(($("#telephone1").val()!=""&&$("#telephone2").val()!=""&&$("#telephone3").val()!="")||($("#telephone4").val()!=""&&$("#telephone5").val()!=""))
-        {
-
-            $("#telephone1").parent().next().removeClass("form-error-active");
-        }
-        else {
-
-            $("#telephone1").parent().next().text("白天和晚上聯絡電話必须填写一个完整的");
-            $("#telephone1").parent().next().addClass("form-error-active");
-
-        }
-
-        if(($("#telephone6").val()!=""&&$("#telephone7").val()=="")||($("#telephone6").val()==""&&$("#telephone7").val()!=""))
-        {
-            if($("#telephone6").val()=="")
-            {
-                $("#telephone6").addClass("form-error");
-            }
-            else {
-                $("#telephone7").addClass("form-error");
-            }
-            $("#telephone7").parent().next().addClass("form-error-active");
-            verifyFlag=0;
-        }
-        else {
-            $("#telephone7").removeClass("form-error");
-            $("#telephone6").removeClass("form-error");
-            $("#telephone7").parent().next().removeClass("form-error-active");
-        }
-    }
-
-
-    //旅客资料校验
-    $(".zhongwen-name").each(function()
-    {
-        if($(this).val()!="")
-        {
-            var pattern = /^[\u4e00-\u9fa5]+$/;
-            if(pattern.test($(this).val()))
-            {
-                $(this).removeClass("form-error");
-                $(this).parent().next().removeClass("form-error-active");
-            }
-            else {
-                $(this).addClass("form-error");
-                $(this).parent().next().text("旅客中文姓名僅可輸入中文");
-                $(this).parent().next().addClass("form-error-active");
-                verifyFlag=0;
-            }
-
-        }
-
-    });
-
-    $(".nationality").each(function()
-    {
-        if($(this).val()=="")
-        {
-            $(this).addClass("form-error");
-            $(this).parent().next().text("國籍必填");
-            $(this).parent().next().addClass("form-error-active");
-            verifyFlag=0;
-        }
-        else {
-            $(this).removeClass("form-error");
-            $(this).parent().next().removeClass("form-error-active");
-        }
-    });
-
-    $(".calendar").each(function()
-    {
-        if($(this).val()=="")
-        {
-            $(this).addClass("form-error");
-            $(this).parent().next().text("出生日期必填");
-            $(this).parent().next().addClass("form-error-active");
-            verifyFlag=0;
-        }
-        else {
-            $(this).removeClass("form-error");
-            $(this).parent().next().removeClass("form-error-active");
-        }
-    });
-
 
     $(".traveller-col").each(function()
     {
@@ -223,179 +189,81 @@ function verifyFunc()
         if($(this).find(".zhongwen-name").val()==""&&($(this).find(".english-name1").val()==""||$(this).find(".english-name2").val()==""))
         {
             console.log($(this).find(".zhongwen-name"));
-            $(this).find(".zhongwen-name").addClass("form-error");
-            $(this).find(".zhongwen-name").parent().next().text("英文姓名兩者擇一必填");
-            $(this).find(".zhongwen-name").parent().next().addClass("form-error-active");
+            $(this).find(".zhongwen-name").addClass("form-error-input");
 
-            verifyFlag=0;
+            if( $(this).find(".zhongwen-name").parent().parent().find(".form-error-active").length>0)
+            {
+                $(this).find(".zhongwen-name").parent().parent().find(".form-error-active").text("英文姓名兩者擇一必填");
+            }
+            else {
+                $(this).find(".zhongwen-name").parent().parent().append('<label class="form-error-active">英文姓名兩者擇一必填</label>');
+            }
 
         }
         else {
-            $(this).find(".zhongwen-name").removeClass("form-error");
+
+            $(this).find(".zhongwen-name").removeClass("form-error-input");
             $(this).find(".zhongwen-name").parent().next().removeClass("form-error-active");
         }
 
     });
+}
 
-    //郵寄-電話
-    if($("#quma").val()!=""&&$("#dianhua").val()!=""&&$("#fenji").val()!="")
-    {
-
-        $("#quma").removeClass("form-error");
-        $("#dianhua").removeClass("form-error");
-        $("#quma").parent().next().removeClass("form-error-active");
-
-    }
-    else if($("#quma").val()==""&&$("#dianhua").val()==""&&$("#fenji").val()=="")
-    {
-        $("#quma").removeClass("form-error");
-        $("#dianhua").removeClass("form-error");
-        $("#quma").parent().next().removeClass("form-error-active");
-    }
-    else {
-
-        if($("#fenji").val()!="")
-        {
-            $("#dianhua").addClass("form-error");
-            $("#quma").parent().next().text("請輸入完整電話");
-        }
-        else if($("#quma").val()!="")
-        {
-            $("#dianhua").addClass("form-error");
-            $("#quma").parent().next().text("請輸入電話");
-        }
-        else if($("#dianhua").val()!="")
-        {
-            $("#quma").addClass("form-error");
-            $("#quma").parent().next().text("請輸入區碼");
-        }
-        else {
-            $("#dianhua").addClass("form-error");
-            $("#quma").parent().next().text("請輸入完整電話");
-        }
-
-        $("#quma").parent().next().addClass("form-error-active");
-        verifyFlag=0;
-    }
-
-    //中文姓名
-    var pattern = /^[\u4e00-\u9fa5]+$/;
-    if($("#xingming").val()=="")
-    {
-        $("#xingming").addClass("form-error");
-        $("#xingming").parent().next().text("姓名必填");
-        $("#xingming").parent().next().addClass("form-error-active");
-    }
-    else
-    {
-        if(pattern.test($("#xingming").val()))
-        {
-            $("#xingming").removeClass("form-error");
-            $("#xingming").parent().next().removeClass("form-error-active");
-        }
-        else {
-            $("#xingming").addClass("form-error");
-            $("#xingming").parent().next().text("旅客中文姓名僅可輸入中文");
-            $("#xingming").parent().next().addClass("form-error-active");
-            verifyFlag=0;
-        }
-    }
-
-
-    //勾选郵寄
+//勾选郵寄
+function youjiFunc()
+{
     if($("#option51").prop("checked"))
     {
         if($("#shouji1").val()!=""||($("#dianhua").val()!=""&&$("#dianhua").val()!=""&&$("#fenji").val()!=""))
         {
 
-            $("#shouji1").removeClass("form-error");
-            $("#shouji1").parent().next().removeClass("form-error-active");
+            $("#shouji1").removeClass("form-error-input");
+            $("#shouji1").parent().parent().remove("form-error-active");
 
         }
         else
         {
-            $("#shouji1").addClass("form-error");
-            $("#shouji1").parent().next().text("手機與電話兩者擇一必填");
-            $("#shouji1").parent().next().addClass("form-error-active");
-            verifyFlag=0;
+            $("#shouji1").addClass("form-error-input");
+            if( $("#shouji1").parent().parent().find(".form-error-active").length>0)
+            {
+                $("#shouji1").parent().parent().find(".form-error-active").text("手機與電話兩者擇一必填");
+            }
+            else
+            {
+                $("#shouji1").parent().parent().append("<label class='form-error-active'>手機與電話兩者擇一必填</label>");
+            }
         }
     }
+}
 
-    //郵寄-手機
-    var mobileReg=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
 
-    if($("#shouji1").val()!="")
+function verifyFunc()
+{
+
+    $("form input[allInput]").each(function()
     {
+        allInputFunc($(this));
+    });
 
-        if(!mobileReg.test($("#shouji1").val()))
-        {
-            $("#shouji1").addClass("form-error");
-            $("#shouji1").parent().next().text("請輸入正確的手機號碼");
-            $("#shouji1").parent().next().addClass("form-error-active");
-            verifyFlag=0;
-        }
-        else {
-            $("#shouji1").removeClass("form-error");
-            $("#shouji1").parent().next().removeClass("form-error-active");
-        }
-    }
+    nameVerify();
+    youjiFunc();
+    fenjiFunc();
 
 }
 
 
-$("#name").on("input",function()
-{
-    nameFunc();
-});
 
-$("#mobile").on("input",function()
-{
-    mobileFunc();
-});
-
-$("#email").on("input",function()
-{
-    emailFunc();
-});
-
-
-
-//英文姓名只能输入字母
-$(".english-name1").on("input",function()
+$(".zhongwen-name").on("input",function()
 {
 
-    var $obj=$(this);
-
-    var reg = /^[a-z]+$/i;
-    if(!reg.test($obj.val()))
+    if($(this).val()!="")
     {
-        $obj.val($obj.val().slice(0,($obj.val().length-1)));
+        $(this).removeClass("form-error-input");
+        $(this).parent().parent().find(".form-error-active").remove();
     }
+
 });
 
-$(".english-name2").on("input",function()
-{
-    var $obj=$(this);
-    var reg = /^[a-z]+$/i;
-    if(!reg.test($obj.val()))
-    {
-        $obj.val($obj.val().slice(0,($obj.val().length-1)));
-    }
-});
-
-
-//只能输入数字
-$(".number-text").on("input",function()
-{
-
-    var $obj=$(this);
-
-    var reg = /^[0-9]*$/;
-    if(!reg.test($obj.val()))
-    {
-        $obj.val($obj.val().slice(0,($obj.val().length-1)));
-    }
-});
 
 
 $(".calendar").on("input",function()
@@ -435,17 +303,95 @@ function clearLocalStorage()
 
 //初始化城市和地区选择
 var cityHtml="";
-for(i in CityArr["_TW"])
+for(i in TWList)
 {
-    cityHtml=cityHtml+"<option value='"+i+"'>"+CityArr["_TW"][i]+"</option>"
+    cityHtml=cityHtml+"<option value='"+i+"'>"+TWList[i]+"</option>"
 }
 $("#citySelect").append(cityHtml);
 
 
 $("#citySelect").change(function()
 {
+    var selectValue=$("#citySelect option:selected").val();
+    var selectHtml="";
+    for(i in TWAreaList[selectValue])
+    {
+        selectHtml=selectHtml+'<option value="'+i+'">'+TWAreaList[selectValue][i]+'</option>';
+    }
+    $("#diquSelect").empty();
+    $("#diquSelect").append(selectHtml);
+
 
 });
+
+//国籍
+var CountryArrList=[];
+for(i in CountryArr)
+{
+    CountryArrList.push(CountryArr[i]+'-'+i.slice(1));
+}
+
+
+$(".nationality").on("input",function()
+{
+    if($(this).val().trim().length<=0)
+    {
+        $(this).parent().find(".select-country-list").hide();
+    }
+    else {
+
+
+        var CountryHtml="";
+        var inputValue=$(this).val();
+        for(var i=0;i<CountryArrList.length;i++)
+        {
+            if(CountryArrList[i].indexOf(inputValue)>-1)
+            {
+
+                var countryStr=CountryArrList[i].replace(inputValue,"<span class='red-text'>"+inputValue+"</span>");
+                CountryHtml=CountryHtml+'<li>'+countryStr+'</li>';
+
+            }
+
+        }
+
+
+        $(this).parent().find(".select-country-list ul").empty();
+        if(CountryHtml=="")
+        {
+            CountryHtml="<div style='text-align: center;'>很抱歉，找不到符合的項目</div>";
+        }
+        $(this).parent().find(".select-country-list ul").append(CountryHtml);
+
+
+        $(this).parent().find(".select-country-list").show();
+    }
+});
+
+$(".select-list-close").click(function()
+{
+
+    $(this).parent().hide();
+
+});
+
+$(".select-country-list ul").on("click","li",function()
+{
+    $(this).parent().parent().prev().val($(this).text());
+    $(this).parent().parent().hide();
+});
+
+
+//点击国籍外面消失
+document.onclick =function(e){
+    var target = e.target;
+    var parentStr=$(target).parents('.nationality-col').length;
+    if(parentStr<=0)
+    {
+        $(".select-country-list").hide();
+    }
+
+}
 
 //超過 60 分鐘後
 var timeCount=1;

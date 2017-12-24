@@ -249,7 +249,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 		<div style="padding:15px;width:100%;">
 			<div style="min-height:600px;">
 				<div class="silderitem">
-					<div class="menu2" id="thisNode">
+					<div class="menu2" >
 						<span></span>
 						<span></span>
 					</div>
@@ -261,7 +261,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 					<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>
 				</div>
 				<div class="silderitem">
-					<div class="menu2" id="thisNode">
+					<div class="menu2" >
 						<span></span>
 						<span></span>
 					</div>
@@ -273,7 +273,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 					<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>
 				</div>
 				<div class="silderitem">
-					<div class="menu2" id="thisNode">
+					<div class="menu2" >
 						<span></span>
 						<span></span>
 					</div>
@@ -349,6 +349,8 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							<div style="float:left;">
 								<select name="select7" style="width:120px;height:30px;border:1px solid #dddddd;padding:0 2px;">
 									<option value='依收藏日期'>依收藏日期</option>
+									<option value='依價格低→高'>依價格低→高</option>
+									<option value='依價格高→低'>依價格高→低</option>
 								</select>
 							</div>
 							<div style="float:right;line-height:30px;margin-left:5px;">
@@ -372,10 +374,10 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div style="clear:both;"></div>
 						</div>
-						<div class="grid">
+						<div class="grid grid-col">
 							<div class="grid-item" id="demo">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -396,7 +398,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -443,7 +445,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -465,7 +467,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -487,7 +489,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -511,7 +513,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -534,7 +536,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -558,7 +560,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -581,7 +583,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -605,7 +607,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -626,7 +628,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="disabled item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -649,7 +651,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 							<div class="grid-item">
 								<div class="disabled item">
-									<div class="menu" id="thisNode">
+									<div class="menu" >
 										<span></span>
 										<span></span>
 									</div>
@@ -672,16 +674,7 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 							</div>
 						</div>
 						
-						<script>
-						$(function(){
-							$('.grid').masonry({
-							// options
-							itemSelector: '.grid-item',
-							columnWidth: 370
-							});
-						});
-						</script>
-						<!-- 桌上型裝置 -->
+
 					</div>
 				</div>
 			</div>
@@ -774,10 +767,22 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 	</div>
 </footer>
 <script src="js/jquery.fancybox.pack.js"></script>
+
 <script type="text/javascript">
-document.getElementById("thisNode").onclick=function(){
-    this.parentNode.removeChild(this);
-}
+
+
+	$(".grid-col").on("click",".menu",function()
+	{
+
+		$(this).parent().parent().remove();
+
+	});
+
+
+
+
+	
+
 </script>
 </body>
 </html>

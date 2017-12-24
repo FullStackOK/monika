@@ -203,39 +203,43 @@ $(function(){
 						<div class="opt_title"><span style="font-size:16px;font-weight:bold;">產品訂購資料</span></div>
 						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
 						<div style="clear:both;"></div>
+						<form id="myForm">
 						<div style="margin:20px 0 10px 0;border-bottom:5px dashed #d1d1d1">
 							<div style="font-size:16px;margin-bottom:10px;">產品資料</div>
 							<div style="width:100%;padding-bottom:20px;">
 								<div style="font-size:14px;margin-bottom:10px;">海外取件地點</div>
 								<div>
-									<select name="select7" class="opt_table02">
-										<option value=''>請選擇</option>
+									<select name="qujiandidian" required class="opt_table02">
+										<option value="">請選擇</option>
 									</select>
 								</div>
 								<div style="font-size:14px;margin:10px 0;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
-								<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+								<div>
+									<input name="yingwenx" required type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName">
+									<input name="yingwenm" required type="text" class="opt_table05" placeholder="英文名字 FirstName">
+								</div>
 								<div class="row">
 									<div class="col-xs-12 col-sm-12 col-md-6" style="font-size:14px;">
 										<div class="m-b-sm">駕駛姓名</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+										<div><input name="jiashirenxm" required type="text" class="opt_table03" placeholder="請輸入姓名"></div>
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-6" style="font-size:14px;">
 										<div class="m-b-sm">駕駛效期</div>
-										<div><input name="textfield3" type="text" class="opt_table03 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+										<div><input name="youxiaoqi" required type="text" class="opt_table03 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="m-b-sm">駕駛人手機</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入手機"></div>
+										<div><input name="jiashirenshouji" required type="text" class="opt_table03" placeholder="請輸入手機"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">白天電話(02-22222222 #1234)</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="baitiandianhua" required type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">晚上電話(02-22222222 #1234)</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="wanshangdianhua" required type="text" class="opt_table01"></div>
 									</div>
 								</div>
 							</div>
@@ -243,6 +247,7 @@ $(function(){
 						</div>
 						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
 						<div style="clear:both;"></div>
+
 						<div style="margin:20px 0 0 0;background:#dee3e9;width:100%;">
 							<div class="col-xs-24 col-sm-24 col-md-2 opt_left">
 								<img src="images/icon17.png"/>
@@ -256,31 +261,31 @@ $(function(){
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">護照號碼</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="zhizhao" required type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">身分證字號</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="shenfenzheng" required type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">台胞證號碼</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="dengjima" required type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">手機</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="mobile" required type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">LineID</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="lineID"  required type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">E-MAIL</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input name="email"  required type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div style="clear:both;"></div>
@@ -294,64 +299,69 @@ $(function(){
 								</div>
 								<div class="m-b-sm" style="font-size:14px;">飯店名稱|地址|飯店預約者名</div>
 								<div>
-									<input name="textfield3" type="text" class="opt_table02">
+									<input name="dizhi" required type="text" class="opt_table02">
 								</div>
-								<div class="m-b-sm" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
-								<div><input name="textfield3" type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName"><input name="textfield3" type="text" class="opt_table05" placeholder="英文名字 FirstName"></div>
+								<div class="m-b-sm" style="font-size:14px;">
+									<span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+								<div>
+									<input name="lastName" required type="text" class="opt_table05 nb1" placeholder="英文姓氏 LastName">
+									<input name="firstName" required type="text" class="opt_table05" placeholder="英文名字 FirstName">
+								</div>
 								<div class="m-b-sm" style="font-size:14px;">接駁飯店</div>
 								<div>
-									<select name="select7" class="opt_table02">
+									<select name="fandian" required class="opt_table02">
 										<option value=''>請選擇</option>
 									</select>
 								</div>
 								<div class="m-b-sm" style="font-size:14px;">歐鐵券 <span style="color:#24a07d;">請選擇 n 項</span></div>
 								<div>
-									<select name="select7" class="opt_table02">
+									<select name="outie" required class="opt_table02">
 										<option value=''>請選擇</option>
 									</select>
 								</div>
 								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">回程搭機時間</div> <div class="clear02" style="color:#24a07d;">搭機18小時前不可浮潛(100字)</div></div>
 								<div>
-									<textarea class="opt_table04"></textarea>
+									<textarea required name="huichengshijian" class="opt_table04"></textarea>
 								</div>
-								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">環球影城入園日期</div><div class="clear02" style="color:#24a07d;">必須在阿陪野入園日後4天內(例:7/5阿倍野, 則環球影城需在7/9(含)前)</div></div>
+								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">環球影城入園日期</div>
+									<div class="clear02" style="color:#24a07d;">必須在阿陪野入園日後4天內(例:7/5阿倍野, 則環球影城需在7/9(含)前)</div></div>
 								<div>
-									<textarea class="opt_table04"></textarea>
+									<textarea required name="ruweiriqi" class="opt_table04"></textarea>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">左眼近視度數 ( 帶隱形眼鏡者填”無”)</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input required name="zuoyan" type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">右眼近視度數 ( 帶隱形眼鏡者填”無”)</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input required name="youyan" type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">身高( CM )</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input required name="shengao" type="text" class="opt_table01"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">體重( KG )</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input required name="tizhong" type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-10" style="font-size:14px;">
 										<div class="m-b-sm">腳掌長( CM )</div>
-										<div><input name="textfield3" type="text" class="opt_table01"></div>
+										<div><input required name="jiaozhang" type="text" class="opt_table01"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="m-b-sm">緊急聯絡人</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
+										<div><input required name="xingming" type="text" class="opt_table03" placeholder="請輸入姓名"></div>
 									</div>
 									<div class="col-xs-24 col-sm-24 col-md-6" style="font-size:14px;">
 										<div class="m-b-sm">緊急聯絡人手機</div>
-										<div><input name="textfield3" type="text" class="opt_table03" placeholder="請輸入手機"></div>
+										<div><input required name="shouji" type="text" class="opt_table03" placeholder="請輸入手機"></div>
 									</div>
 								</div>
 								<div class="display" style="color:#24a07d;margin-left:5px;margin-top:40px;">
@@ -361,10 +371,11 @@ $(function(){
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+						</form>
 						<div class="opt_payed">
 							<div class="hidden triangle01" style="float:left;color:#0077b3;line-height:50px;">上一步</div>
 							<div class="opt_send" style="float:right;">
-								<div class="triangle02 clear02" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;">
+								<div class="triangle02 clear02" id="nextStep" style="padding:10px 20px;background:#e00500;color:#fff;font-size:20px;float:right;cursor: pointer;">
 									<span class="hidden">稍後填寫，</span>下一步
 								</div>
 								<div class="display" style="float:right;margin-right:5px;">
@@ -452,7 +463,7 @@ $(function(){
 
 </div>
 
-
+<script src="js/jquery.validate.min.js"></script>
 <script>
 
 	//费用浮层
@@ -465,6 +476,41 @@ $(function(){
 	{
 		$(".cost-dialog").hide();
 	});
+
+
+	$.validator.setDefaults({
+		submitHandler: function() {
+
+
+				alert("請確認填寫資料是否正確");
+
+
+		}
+	});
+
+	$("#myForm").validate({
+		errorClass: "form-error-col",
+		errorPlacement: function (error, element) {
+
+			if($(element).parent().find("label.form-error-col").length==0)
+			{
+				$(element).parent().append(error);
+			}
+
+
+		}
+	});
+
+
+	$("#nextStep").click(function()
+	{
+
+		$("#myForm").submit();
+
+	});
+
+
+
 
 </script>
 

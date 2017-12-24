@@ -163,6 +163,8 @@
 						</div>
 					</div>
 					<div style="padding:20px 0 0 0;">
+
+						<div id="picCol">
 						<div style="font-size:14px;">產品代碼：123456789</div>
 						<div style="font-size:20px;font-weight:bold;margin-top:5px;">白馬市極光奇景3日之旅</div>
 						<div style="border:1px solid #e3e3e3;margin-top:20px;">
@@ -251,6 +253,8 @@
 								</div>
 							</div>
 						</div>
+						</div>>
+
 						<div style="border:1px solid #e3e3e3;margin-top:20px;">
 							<div style="background:#f7f7f7;padding:10px 10px;background:#eaedf1;color:#666666;font-size:16px;font-weight:bold;"><span style="font-size:24px;line-height:16px;">■</span> <span style="font-size:16px;">聯絡人資料</span></div>
 							<div style="background:#fff;">
@@ -522,5 +526,23 @@
 	</div>
 </footer>
 <div id="goTop" class="display" style="position:fixed;bottom:10px;right:2%;cursor:pointer;z-index:2;"><img style="width:100%" src="images/top.png" ></div>
+
+<script src="js/html2canvas.min.js"></script>
+
+<script>
+
+	html2canvas(document.getElementById("picCol"), {
+		onrendered: function (canvas) {
+
+
+			var picCol=canvas.toDataURL("image/png");
+			localStorage.picCol=picCol;
+
+
+		}
+	});
+
+</script>
+
 </body>
 </html>
