@@ -3357,12 +3357,12 @@ body.right-active .titlebar.active{right:270px;}
 .share-col .form-col .form-row{position: relative;margin-top:12px;}
 .share-col .form-col label{position: absolute;top:6px;left:10px;font-size:13px;}
 
-input.form-error,.form-error-input,textarea.form-error,input.form-error-col,textarea.form-error-col,select.form-error-col{border:1px solid red!important;}
+input.form-error,.form-error-input,textarea.form-error,input.form-error-col,textarea.form-error-col,select.form-error-col{border:1px solid red!important;color:red;}
 input.form-error::-webkit-input-placeholder,.form-error-input::-webkit-input-placeholder,textarea.form-error::-webkit-input-placeholder{color: red;}
 label.form-error{font-size:12px;color:red;padding-left:2px;}
 .form-error-active{font-size:12px;color:red;padding-left:2px;}
 
-.text-hover{position: relative;cursor: pointer;}
+.text-hover{position: relative;cursor: pointer;z-index:2000;}
 .text-hover:hover .talkbox{display: block;}
 .nationality-col{position: relative;z-index:1000;}
 
@@ -3375,6 +3375,8 @@ label.form-error-col{font-size:12px;color:red;padding-left:2px;display: block;}
 .select-country-list ul li:hover{background: #ff615d;color:#fff;}
 .select-country-list ul li:hover .red-text{color:#fff;}
 .select-country-list .select-list-close{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;font-style: normal;}
+
+.input-text{position: relative;}
 
 
 .grid-col {

@@ -256,6 +256,8 @@ $(function(){
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+
+						<div class="traveller-info">
 						<div class="btn_02"><div class="wrap">白馬市極光奇景3日之旅</div></div>
 						<div style="clear:both;"></div>
 						<div style="border-bottom:5px dashed #d1d1d1;">
@@ -267,13 +269,13 @@ $(function(){
 								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
-											<select name="select7" class="opt_table03">
+											<select name="select7" class="opt_table03 manifest">
 												<option value=''>請選擇帶入旅客名單</option>
 											</select>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option01" type="checkbox" name="option01" value="option">
+												<input id="option01" type="checkbox" class="common-use" >
 												<label for="option01"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
@@ -285,16 +287,16 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">中文姓名</div>
-											<div><input name="textfield3" type="text" class="opt_table09 zhongwen-name" isChinese="true" maxlength="10" placeholder="請輸入姓名"></div>
+											<div><input name="zhongwen-name1" type="text" class="opt_table09 zhongwen-name" isChinese="true" maxlength="10" placeholder="請輸入姓名"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
-											<div><input name="calendar1" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div><input name="calendar1" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須小於今日" data-minDate="100000" data-maxDate="0" autocomplete="off"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
 											<div>
-												<select name="sex" required class="opt_table10" style="width:80px;">
+												<select name="sex1" required class="opt_table10 sex-col" style="width:80px;">
 													<option value="">请选择</option>
 													<option value='男'>男</option>
 													<option value='女'>女</option>
@@ -309,7 +311,7 @@ $(function(){
 												<span class="text-hover">
 												<img src="images/icon10.png"/>
 
-											   <div id="talkbox01" class="talkbox" >英文姓名格示範例：姓名為張小美，英文 姓請填 CHANG，英文名請填 HSIAOMEI，請勿輸入任 何符號及空白，如 -*/,.等，請確認與護照相同。</div>
+											    <div class="talkbox" >英文姓名格示範例：姓名為張小美，英文 姓請填 CHANG，英文名請填 HSIAOMEI，請勿輸入任 何符號及空白，如 -*/,.等，請確認與護照相同。</div>
 
 											</span></div>
 											<div>
@@ -337,6 +339,10 @@ $(function(){
 								<div style="clear:both;"></div>
 							</div>
 						</div>
+						</div>
+
+
+						<div class="traveller-info">
 						<div class="btn_02"><span style="font-size:16px;">白馬市極光奇景3日之旅</span></div>
 						<div style="clear:both;"></div>
 						<div style="padding-bottom:20px;border-bottom:5px dashed #d1d1d1;">
@@ -348,13 +354,13 @@ $(function(){
 								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
-											<select name="select7" class="opt_table03">
+											<select name="select7" class="opt_table03 manifest">
 												<option value=''>請選擇帶入旅客名單</option>
 											</select>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option03" type="checkbox" name="option03" value="option">
+												<input id="option03" type="checkbox"  class="common-use">
 												<label for="option03"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
@@ -366,25 +372,36 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">中文姓名</div>
-											<div><input name="textfield3" type="text" class="opt_table09 zhongwen-name" isChinese="true" maxlength="10" placeholder="請輸入姓名"></div>
+											<div><input name="zhongwen-name2" type="text" class="opt_table09 zhongwen-name" isChinese="true" maxlength="10" placeholder="請輸入姓名"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
-											<div><input name="calendar2" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div><input name="calendar2" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須小於今日" data-minDate="100000" data-maxDate="0" autocomplete="off"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
 											<div>
-												<select name="select7" class="opt_table10">
-													<option value=''>男</option>
-													<option value=''>女</option>
+												<select name="sex2" style="width:80px;" required class="opt_table10 sex-col">
+													<option value="">请选择</option>
+													<option value='男'>男</option>
+													<option value='女'>女</option>
 												</select>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
-											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+											<div class="m-b-xs" style="font-size:14px;">
+												<span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span>
+
+												<span class="text-hover">
+												<img src="images/icon10.png">
+
+											     <div class="talkbox">英文姓名格示範例：姓名為張小美，英文 姓請填 CHANG，英文名請填 HSIAOMEI，請勿輸入任 何符號及空白，如 -*/,.等，請確認與護照相同。</div>
+
+												 </span>
+
+											</div>
 											<div>
 												<input name="textfield3" type="text" class="opt_table05 nb1 english-name english-name1" maxlength="20" placeholder="英文姓氏 LastName">
 												<input name="textfield3" type="text" class="opt_table05 english-name english-name2" maxlength="30" placeholder="英文名字 FirstName">
@@ -418,13 +435,13 @@ $(function(){
 								<div class="col-xs-24 col-sm-24 col-md-22" style="background:#f4f4f4;padding-left:5px;padding-top:10px;">
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-6" style="float:left;">
-											<select name="select8" class="opt_table03">
+											<select name="select8" class="opt_table03 manifest">
 												<option value=''>請選擇帶入旅客名單</option>
 											</select>
 										</div>
 										<div class="col-xs-24 col-sm-24 col-md-18" style="line-height:40px;">
 											<div class="inputbox" style="float:left;">
-												<input id="option05" type="checkbox" name="option05" value="option">
+												<input id="option05" type="checkbox"  class="common-use" >
 												<label for="option05"><span>加入常用名單</span></label>
 											</div>
 											<div class="inputbox" style="float:left;">
@@ -440,21 +457,29 @@ $(function(){
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-9" style="font-size:14px;">
 											<div class="m-b-xs">出生年月日</div>
-											<div><input name="calendar3" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須大於今日" data-minDate="1" data-maxDate="730" autocomplete="off"></div>
+											<div><input name="calendar3" type="text" required class="opt_table09 calendar" data-toggle="cy-ln" data-cy-ln="range" placeholder="YYYYMMDD" data-required="true" data-reqString="請選擇出發日期" data-save="dateStart" data-toggleAlert="true" data-beforeMinAlert="日期必須小於今日" data-minDate="100000" data-maxDate="0" autocomplete="off"></div>
 										</div>
 										<div class="col-xs-12 col-sm-12 col-md-4" style="font-size:14px;">
 											<div class="m-b-xs">性別</div>
 											<div>
-												<select name="select7" class="opt_table10">
-													<option value=''>男</option>
-													<option value=''>女</option>
+												<select name="sex3" style="width:80px;" required class="opt_table10 sex-col">
+													<option value="">请选择</option>
+													<option value='男'>男</option>
+													<option value='女'>女</option>
 												</select>
 											</div>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-12" style="font-size:14px;">
-											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
+											<div class="m-b-xs" style="font-size:14px;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span>
+												<span class="text-hover">
+												<img src="images/icon10.png">
+
+											   <div  class="talkbox">英文姓名格示範例：姓名為張小美，英文 姓請填 CHANG，英文名請填 HSIAOMEI，請勿輸入任 何符號及空白，如 -*/,.等，請確認與護照相同。</div>
+
+											</span>
+											</div>
 											<div>
 												<input name="english-name12" type="text" class="opt_table05 nb1 english-name english-name1" maxlength="20" placeholder="英文姓氏 LastName">
 												<input name="english-name22" type="text" class="opt_table05 english-name english-name2" maxlength="30" placeholder="英文名字 FirstName">
@@ -479,6 +504,8 @@ $(function(){
 								<div style="clear:both;"></div>
 							</div>
 						</div>
+						</div>
+
 						<div style="border-bottom:2px solid #e1e1e1;padding-bottom:10px;">
 							<div class="opt_title"><span style="font-size:16px;font-weight:bold;">其它資料</span></div>
 							<div class="row">
@@ -526,16 +553,16 @@ $(function(){
 									<div class="row">
 										<div class="col-xs-24 col-sm-24 col-md-24" style="background:#ebeef2;padding:10px;margin-bottom:5px;">
 											<div style="line-height:50px;">
-												<select name="select71" id="select71" class="opt_table12 nb1">
-													<option>請選擇城市</option></select>
-												<select name="select72" id="select72" class="opt_table11">
-													<option>請選擇城市地址</option>
+												<select  id="select71" class="opt_table12 nb1">
+													<option value="">請選擇城市</option></select>
+												<select  id="select72" class="opt_table11">
+													<option value="">請選擇城市地址</option>
 											    </select>
 											</div>
-											<div style="line-height:150%;">
-											門市名稱：台北總公司 <br>
-											地址：台北市瑞湖街111號2樓 <br>
-											電話：02-87939000<br>
+											<div style="line-height:150%;" class="input-text">
+											門市名稱：<span id="cityCol"></span> <br>
+											地址：<span id="addressCol"></span><br>
+											電話：<span id="dianhuaCol"></span><br>
 											</div>
 										</div>
 									</div>

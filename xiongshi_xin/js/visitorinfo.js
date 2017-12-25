@@ -27,11 +27,14 @@ var takeAddressList=[
         address_detail:[
             {
                 id:'1',
-                detail:'台北市瑞湖街111號2樓1'
+                detail:'台北市瑞湖街111號2樓1',
+                phone:'02-87939001'
+
             },
             {
                 id:'2',
-                detail:'台北市瑞湖街111號2樓2'
+                detail:'台北市瑞湖街111號2樓2',
+                phone:'02-87939002'
             }
         ]
     },
@@ -42,15 +45,29 @@ var takeAddressList=[
         address_detail:[
             {
                 id:'1',
-                detail:'桃園瑞湖街111號2樓1'
+                detail:'桃園瑞湖街111號2樓1',
+                phone:'02-87939003'
             },
             {
                 id:'2',
-                detail:'桃園瑞湖街111號2樓2'
+                detail:'桃園瑞湖街111號2樓2',
+                phone:'02-87939004'
             }
         ]
     }
 ]
+
+//台灣地區 1代表是 0代表否
+var IsTaiwan=1;
+
+//產品預購 1代表后台有勾选 0代表没有勾选
+var PurchaseBefore=1
+
+if(PurchaseBefore==1)
+{
+    alert("本產品為預訂商品，業務將於 1-3 日內與您聯繫是否訂購成功，我們將以最快的速度為您處理，謝謝！");
+}
+
 
 var takeAddressCityHtml="";
 for(var i=0;i<takeAddressList.length;i++)
@@ -63,15 +80,30 @@ $("#select71").change(function()
 {
     var takeAddressCityDetailHtml="";
 
-    var indexValue=parseInt($("#select71").val())-1;
-
-    for(var i=0;i<takeAddressList[indexValue].address_detail.length;i++)
+    if($("#select71").val())
     {
-        takeAddressCityDetailHtml=takeAddressCityDetailHtml+'<option>'+takeAddressList[indexValue].address_detail[i].detail+'</option>'
+        var indexValue=parseInt($("#select71").val())-1;
+
+        for(var i=0;i<takeAddressList[indexValue].address_detail.length;i++)
+        {
+            takeAddressCityDetailHtml=takeAddressCityDetailHtml+'<option data-phone="'+takeAddressList[indexValue].address_detail[i].phone+'">'+takeAddressList[indexValue].address_detail[i].detail+'</option>'
+        }
+
+        $("#select72").empty();
+        $("#select72").append(takeAddressCityDetailHtml);
+        $("#cityCol").text($("#select71 option:checked").text());
+        $("#addressCol").text($("#select72 option").eq(0).text());
+        $("#dianhuaCol").text($("#select72 option").eq(0).attr("data-phone"));
     }
 
-    $("#select72").empty();
-    $("#select72").append(takeAddressCityDetailHtml);
+
+
+});
+
+$("#select72").change(function()
+{
+
+    $("#dianhuaCol").text($("#select72 option:checked").attr("data-phone"));
 
 });
 
@@ -245,12 +277,102 @@ function verifyFunc()
         allInputFunc($(this));
     });
 
+
     nameVerify();
+    sameNameVerify();
     youjiFunc();
     fenjiFunc();
 
+
 }
 
+//校验中文名与中文名，英文名和英文名重复问题
+function sameNameVerify()
+{
+    $(".traveller-info").each(function()
+    {
+        var zhongwenNameList=[];
+        $(this).find(".zhongwen-name").each(function()
+        {
+            zhongwenNameList.push($(this).val());
+        });
+
+        var isHasSameElementRs=isHasSameElement(zhongwenNameList);
+
+        console.log("重复元素:"+isHasSameElementRs);
+
+        if(isHasSameElementRs!=-1&&$(this).find(".zhongwen-name").eq(isHasSameElementRs).val()!="")
+        {
+            $(this).find(".zhongwen-name").eq(isHasSameElementRs).addClass("form-error-input");
+
+            if($(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().find(".form-error-active").length>0)
+            {
+                $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().find(".form-error-active").text("不能出现重复的中文姓名");
+            }
+            else {
+                $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().append('<label class="form-error-active">不能出现重复的中文姓名</label>');
+            }
+
+        }
+        else{
+            $(this).find(".zhongwen-name").eq(isHasSameElementRs).removeClass("form-error-input");
+            $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().find(".form-error-active").remove();
+        }
+
+
+        var englishNameList=[];
+        $(this).find(".english-name1").each(function()
+        {
+            englishNameList.push($(this).val()+$(this).next().val());
+        });
+
+        var isEnglishNameRs=isHasSameElement(englishNameList);
+
+        console.log("重复元素:"+isEnglishNameRs);
+
+        if(isEnglishNameRs!=-1&&$(this).find(".english-name1").eq(isEnglishNameRs).val()!="")
+        {
+            $(this).find(".english-name1").eq(isEnglishNameRs).addClass("form-error-input");
+
+            if($(this).find(".english-name1").eq(isEnglishNameRs).parent().parent().find(".form-error-active").length>0)
+            {
+                $(this).find(".english-name1").eq(isEnglishNameRs).parent().parent().find(".form-error-active").text("不能出现重复的英文姓名");
+            }
+            else {
+                $(this).find(".english-name1").eq(isEnglishNameRs).parent().parent().append('<label class="form-error-active">不能出现重复的英文姓名</label>');
+            }
+
+        }
+        else{
+            $(this).find(".english-name1").eq(isEnglishNameRs).removeClass("form-error-input");
+            $(this).find(".english-name1").eq(isEnglishNameRs).parent().parent().find(".form-error-active").remove();
+        }
+
+
+
+    });
+}
+
+//判断数组中是否存在相同元素
+function isHasSameElement (ary)
+{
+
+
+    var nary=ary.sort();
+
+    for(var i=0;i<ary.length;i++){
+
+        if (nary[i]==nary[i+1]){
+
+            return i;
+
+        }
+        else {
+            return -1;
+        }
+
+    }
+}
 
 
 $(".zhongwen-name").on("input",function()
@@ -410,3 +532,124 @@ setInterval(function()
         window.location.reload();
     }
 },1000)
+
+
+//加入常用名單
+$(".common-use").click(function()
+{
+
+    if($(this).prop("checked"))
+    {
+
+        var $parentObj=$(this).parent().parent().parent().parent().parent();
+
+        var zhongwenName=$parentObj.find(".zhongwen-name").val();
+        var calendarCol=$parentObj.find(".calendar").val();
+        var sexCol=$parentObj.find(".sex-col").val();
+        var nationalityCol=$parentObj.find(".nationality").val();
+
+        var englishName1=$parentObj.find(".english-name1").val();
+        var englishName2=$parentObj.find(".english-name2").val();
+
+
+        if(zhongwenName==""||calendarCol==""||sexCol==""||nationalityCol=="")
+        {
+            alert("当前旅客资料填写完整才能加入常用名單！");
+            $(this).removeAttr("checked");
+            return;
+        }
+
+        if(!localStorage.nameList)
+        {
+            localStorage.nameList="[]";
+        }
+
+        var existFlag=0;
+        var nameList=JSON.parse(localStorage.nameList);
+        for(var i=0;i<nameList.length;i++)
+        {
+            if(nameList[i].zhongwenName==zhongwenName)
+            {
+                existFlag=1;
+                break;
+            }
+        }
+
+        if(existFlag==0)
+        {
+            var nameObj={};
+            nameObj.zhongwenName=zhongwenName;
+            nameObj.calendarCol=calendarCol;
+            nameObj.sexCol=sexCol;
+            nameObj.nationalityCol=nationalityCol;
+            nameObj.englishName1=englishName1;
+            nameObj.englishName2=englishName2;
+            nameList.push(nameObj);
+            localStorage.nameList=JSON.stringify(nameList);
+
+
+            manifestInit();
+
+        }
+
+
+
+
+    }
+
+});
+
+function manifestInit()
+{
+    if(!localStorage.nameList)
+    {
+        localStorage.nameList="[]";
+    }
+    var nameList=JSON.parse(localStorage.nameList);
+
+    var manifestHtml='<option value="">請選擇帶入旅客名單</option>';
+    for(var i=0;i<nameList.length;i++)
+    {
+        manifestHtml=manifestHtml+'<option data-zhongwenName="'+nameList[i].zhongwenName+'" ' +
+            'data-zhongwenName="'+nameList[i].zhongwenName+'" ' +
+            'data-calendarCol="'+nameList[i].calendarCol+'"' +
+            ' data-sexCol="'+nameList[i].sexCol+'" ' +
+            'data-nationalityCol="'+nameList[i].nationalityCol+'" ' +
+            'data-englishName1="'+nameList[i].englishName1+'" ' +
+            'data-englishName2="'+nameList[i].englishName2+'">'+nameList[i].zhongwenName+'</option>'
+    }
+    $(".manifest").empty();
+    $(".manifest").append(manifestHtml);
+}
+
+manifestInit();
+
+//选择選擇帶入旅客名單
+$(".manifest").change(function()
+{
+
+    if($(this).val())
+    {
+
+        var $parentObj=$(this).parent().parent().parent();
+
+
+       $parentObj.find(".zhongwen-name").val($(this).find("option:checked").attr("data-zhongwenName"));
+        $parentObj.find(".calendar").val($(this).find("option:checked").attr("data-calendarCol"));
+       $parentObj.find(".sex-col").val($(this).find("option:checked").attr("data-sexCol"));
+        $parentObj.find(".nationality").val($(this).find("option:checked").attr("data-nationalityCol"));
+
+       $parentObj.find(".english-name1").val($(this).find("option:checked").attr("data-englishName1"));
+        $parentObj.find(".english-name1").val($(this).find("option:checked").attr("data-englishName2"));
+
+    }
+
+});
+
+
+$(".common-use").removeAttr("checked");
+
+
+
+
+
