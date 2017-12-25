@@ -3368,6 +3368,7 @@ label.form-error{font-size:12px;color:red;padding-left:2px;}
 
 label.form-error-col{font-size:12px;color:red;padding-left:2px;display: block;}
 
+.english-name-col label.form-error{width:50%;display: inline-block;}
 
 .select-country-list{background: #fff;max-height:300px;width:250px;overflow: auto;position: absolute;left:0;top:40px;border:1px solid #ccc;z-index:10;box-sizing: border-box;padding:5px 0;display: none;}
 .select-country-list ul{list-style: none;padding:0;margin:0;max-height:290px;overflow: auto;}
@@ -3377,6 +3378,7 @@ label.form-error-col{font-size:12px;color:red;padding-left:2px;display: block;}
 .select-country-list .select-list-close{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;font-style: normal;}
 
 .input-text{position: relative;}
+
 
 
 .grid-col {

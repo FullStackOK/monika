@@ -211,6 +211,7 @@ $(function(){
 								<div>
 									<select name="qujiandidian" required class="opt_table02">
 										<option value="">請選擇</option>
+										<option value="1">海外取件地點</option>
 									</select>
 								</div>
 								<div style="font-size:14px;margin:10px 0;"><span style="vertical-align:middle;">取件代表人英文姓名(同護照)</span> <span><img src="images/icon10.png"/></span></div>
@@ -292,9 +293,9 @@ $(function(){
 								<div class="m-b-sm" style="font-size:14px;">海外取件地點</div>
 								<div>
 									<select name="select7" class="opt_table02">
-										<option value=''>飯店名稱</option>
-										<option value=''>地址</option>
-										<option value=''>飯店預約者名</option>
+										<option value='1'>飯店名稱</option>
+										<option value='2'>地址</option>
+										<option value='3'>飯店預約者名</option>
 									</select>
 								</div>
 								<div class="m-b-sm" style="font-size:14px;">飯店名稱|地址|飯店預約者名</div>
@@ -311,12 +312,14 @@ $(function(){
 								<div>
 									<select name="fandian" required class="opt_table02">
 										<option value=''>請選擇</option>
+										<option value='1'>接駁飯店1</option>
 									</select>
 								</div>
 								<div class="m-b-sm" style="font-size:14px;">歐鐵券 <span style="color:#24a07d;">請選擇 n 項</span></div>
 								<div>
 									<select name="outie" required class="opt_table02">
 										<option value=''>請選擇</option>
+										<option value='1'>歐鐵券</option>
 									</select>
 								</div>
 								<div class="m-b-sm" style="font-size:14px;"><div class="clear02">回程搭機時間</div> <div class="clear02" style="color:#24a07d;">搭機18小時前不可浮潛(100字)</div></div>
@@ -509,6 +512,55 @@ $(function(){
 
 	});
 
+
+	$("#myForm input").on("input",function()
+	{
+
+		verifyFunc();
+
+	});
+
+	$("#myForm select").change(function()
+	{
+		verifyFunc();
+	});
+
+	function verifyFunc()
+	{
+		var verifyFlag=1;
+		$("#myForm input").each(function()
+		{
+
+			if($(this).val()=="")
+			{
+				console.log($(this).val());
+				verifyFlag=0;
+				return;
+			}
+		});
+		$("#myForm select").each(function()
+		{
+
+			console.log($(this).val());
+			if($(this).val()=="")
+			{
+				verifyFlag=0;
+				return;
+			}
+		});
+
+		console.log(verifyFlag);
+
+		if(verifyFlag==1)
+		{
+			$("#nextStep .hidden").hide();
+		}
+		else {
+			$("#nextStep .hidden").show();
+		}
+
+
+	}
 
 
 
