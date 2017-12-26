@@ -236,17 +236,22 @@ function nameVerify()
 
                 if( $(this).find(".zhongwen-name").parent().parent().find(".form-error-active").length>0)
                 {
-                    $(this).find(".zhongwen-name").parent().parent().find(".form-error-active").text("英文姓名兩者擇一必填");
+                    $(this).find(".zhongwen-name").parent().parent().find(".form-error-active").text("中文名和英文姓名兩者擇一必填");
                 }
                 else {
-                    $(this).find(".zhongwen-name").parent().parent().append('<label class="form-error-active">英文姓名兩者擇一必填</label>');
+                    $(this).find(".zhongwen-name").parent().parent().append('<label class="form-error-active">中文名和英文姓名兩者擇一必填</label>');
                 }
 
             }
             else {
 
-                $(this).find(".zhongwen-name").removeClass("form-error-input");
-                $(this).find(".zhongwen-name").parent().next().removeClass("form-error-active");
+
+                if(!$(this).find(".zhongwen-name").parent().next().hasClass("form-error-active1"))
+                {
+                    $(this).find(".zhongwen-name").removeClass("form-error-input");
+                    $(this).find(".zhongwen-name").parent().next().remove();
+                }
+
             }
         }
 
@@ -312,6 +317,8 @@ function sameNameVerify()
 
         var isHasSameElementRs=isHasSameElement(zhongwenNameList);
 
+        console.log("重复"+isHasSameElementRs);
+
         if(isHasSameElementRs!=-1&&$(this).find(".zhongwen-name").eq(isHasSameElementRs).val()!="")
         {
             $(this).find(".zhongwen-name").eq(isHasSameElementRs).addClass("form-error-input");
@@ -321,7 +328,7 @@ function sameNameVerify()
                 $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().find(".form-error-active").text("不能出现重复的中文姓名");
             }
             else {
-                $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().append('<label class="form-error-active">不能出现重复的中文姓名</label>');
+                $(this).find(".zhongwen-name").eq(isHasSameElementRs).parent().parent().append('<label class="form-error-active form-error-active1">不能出现重复的中文姓名</label>');
             }
 
         }
@@ -337,11 +344,11 @@ function sameNameVerify()
             englishNameList.push($(this).val()+$(this).next().val());
         });
 
-        console.log(englishNameList);
+
 
         var isEnglishNameRs=isHasSameElement(englishNameList);
 
-        console.log("重复元素:"+isEnglishNameRs);
+
 
         if(isEnglishNameRs!=-1&&$(this).find(".english-name1").eq(isEnglishNameRs).val()!="")
         {
@@ -660,7 +667,7 @@ $(".manifest").change(function()
         $parentObj.find(".nationality").val($(this).find("option:checked").attr("data-nationalityCol"));
 
        $parentObj.find(".english-name1").val($(this).find("option:checked").attr("data-englishName1"));
-        $parentObj.find(".english-name1").val($(this).find("option:checked").attr("data-englishName2"));
+        $parentObj.find(".english-name2").val($(this).find("option:checked").attr("data-englishName2"));
 
     }
 
