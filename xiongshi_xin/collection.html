@@ -23,6 +23,7 @@
 <link href="css/myorder.css" rel="stylesheet" />
 <link href="css/PagedList.css" rel="stylesheet" />
 <link href="css/core.css" rel="stylesheet" />
+<link href="css/searchResult.css" rel="stylesheet" />
 <script type="text/javascript" src="js/001.js"></script>
 <style>
 .no-js #loader {
@@ -45,6 +46,9 @@ height: 100%;
 z-index: 9999;
 background: url(/Content/Images/loading.gif) center no-repeat #fff;
 }
+
+
+
 </style>
 <script src="js/masonry.pkgd.js"></script>
 
@@ -321,41 +325,22 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 					<div class="cd_opls half2">
 						<div class="m-b-sm" style="background-color:#efece7;padding:0 10px;">
 							<h3 class="heading th_lnop" style="line-height:50px;color:#666666;">我的收藏</h3>
-							<div style="border-bottom:1px dashed #dcd7ce;border-top:1px dashed #dcd7ce;padding:15px 0;">
-								<div style="float:left;margin-right:20px;"><span style="font-size:16px;">篩選條件</span></div>
-								<div style="float:left;width:calc(100% - 84px)">
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">全部(111)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">團體(111)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">自由行(111)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">訂房(20)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">票券(20)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">機票(20)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" disabled> <span style="vertical-align:text-bottom;color:#999999;">護照／簽證(20)</span></div>
-									<div style="float:left;margin-right:20px;"><input type="checkbox" name="sSts" value="1" > <span style="vertical-align:text-bottom;">過期產品(20)</span></div>
-									<div style="clear:both;"></div>
-								</div>
-								<div style="clear:both;"></div>
-							</div>
-							<div style="clear:both;"></div>
-							<div style="padding:10px 0;">
-								<div style="background:#ff615d;color:#fff;padding:5px 18px;float:left;border-radius:30px;">
-									<span><img src="images/icon25.png"/></span>
-									<span style="vertical-align:middle;margin-left:5px;">將篩選的產品全部刪除</span>
-								</div>
-								<div style="clear:both;"></div>
-							</div>
 						</div>
 						<div class="hidden" style="width:100%;padding:10px;background:#fff;margin-bottom:10px;">
 							<div style="float:left;">
-								<select name="select7" style="width:120px;height:30px;border:1px solid #dddddd;padding:0 2px;">
-									<option value='依收藏日期'>依收藏日期</option>
-									<option value='依價格低→高'>依價格低→高</option>
-									<option value='依價格高→低'>依價格高→低</option>
+								<select name="select7" id="sortCol" style="width:120px;height:30px;border:1px solid #dddddd;padding:0 2px;">
+									<option value='0'>依收藏日期</option>
+									<option value='1'>依價格低→高</option>
+									<option value='2'>依價格高→低</option>
 								</select>
 							</div>
+
+
+
+
 							<div style="float:right;line-height:30px;margin-left:5px;">
 								每頁 
-								<select name="select7" style="width:40px;height:30px;border:1px solid #dddddd;padding:0 2px;">
+								<select name="select7" id="pageCount" style="width:40px;height:30px;border:1px solid #dddddd;padding:0 2px;">
 									<option value='1'>1</option>
 									<option value='2'>2</option>
 									<option value='3'>3</option>
@@ -364,18 +349,26 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 								</select>
 								筆
 							</div>
+
+
 							<div style="float:right;line-height:30px;margin-left:15px;">
-								<div style="border:1px solid #dddddd;padding:0px 12px 0 10px;float:left;background:#fff;"><img style="margin-top:-3px;" src="images/icon07.png"/></div>
-								<div style="float:left;margin-left:10px;margin-right:10px;">2/10</div>
-								<div style="border:1px solid #dddddd;padding:0px 10px 0 10px;float:left;color:#0077b3;background:#fff;">下一頁<img style="margin-left:5px;margin-top:-3px;" src="images/icon08.png"/></div>
+
+								<div class="pagination-col">
+									<div id="pageCol" class="pagination pagination-top">
+
+									</div>
+									<div class="pagination-middle"><span id="pageNow"></span> / <span id="pageAll"></span></div>
+								</div>
+
 							</div>
 							<div style="float:right;line-height:30px;">
-								共 <font style="font-size:16px;color:#e10500;">479</font> 筆相關產品
+								共 <font style="font-size:16px;color:#e10500;" id="allCount"></font> 筆相關產品
 							</div>
 							<div style="clear:both;"></div>
 						</div>
-						<div class="grid grid-col">
-							<div class="grid-item" id="demo">
+						<div class="grid" id="gridCol">
+
+							<!--<div class="grid-item">
 								<div class="item">
 									<div class="menu" >
 										<span></span>
@@ -395,283 +388,9 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 										<div class="clearboth"></div>
 									</div>
 								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>訂房</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">【東京銀座】APA飯店〈新富町車站前〉</div>
-									<div class="tripadvisor">
-										<span class="logo"><a href="https://www.tripadvisor.com/WidgetEmbed-cdspropertydetail?locationId=344146&amp;partnerId=FE0141C95CBF428EACADF6544055C6CD&amp;display=true&amp;lang=zh_TW" target="newwindow"><img src="http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/3.5-18038-4.gif" alt=""></a></span>		  			
-										<a style="color:#151515;text-decoration:underline;vertical-align:middle;margin-left:5px;" class="txt" target="_blank"><span>共564則評語</span></a>
-									</div>
-									<div class="item_ct">
-										<p>
-										<div style="float:left;">參考星等：</div>
-										<div style="float:left;">
-										<form id="score_form">
-											<div class="star_evaluate">
-												<input type="radio" id="scoreId_1" class="score score_1" name="score" value="1"/>
-												<label for="scoreId_1" class="star star_1"></label>
-												<input type="radio" id="scoreId_2" class="score score_2" name="score" value="2"/>
-												<label for="scoreId_2" class="star star_2"></label>
-												<input type="radio" id="scoreId_3" class="score score_3" name="score" value="3"/>
-												<label for="scoreId_3" class="star star_3"></label>
-												<input type="radio" id="scoreId_4" class="score score_4" name="score" value="4"/>
-												<label for="scoreId_4" class="star star_4"></label>
-												<input type="radio" id="scoreId_5" class="score score_5" name="score" value="5"/>
-												<label for="scoreId_5" class="star star_5"></label>
-											</div>
-										</form>
-										</div>
-										<div class="clearboth"></div>
-										</p>    
-										<p>入住日期：2016/08/15(一)</p>
-										<p>退房日期：2016/08/17(三)</p>
-										<p>人數：3位大人/ 1位小孩</p>
-										<p>房間數：1間</p>
-										<div class="item_price">$1,333,900</div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>護照/簽證</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">【泰國】觀光簽證</div>
-									<div class="item_ct">
-										<p>效期及入境次數： 三個月單次</p>
-										<p>入境可停留天數： 60天 </p>
-										<p>辦證天數： 約 2 個工作天 (代辦約加4個工 作天)</p>
-										<div class="item_price">$1,900</div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>自由行</span></div>
-									<div class="item_img" style="background-image: url(images/c2.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">【精省高鐵】台中成旅晶贊飯店 2 天 1 夜</div>
-									<div class="item_ct">
-										<p>適用期間：2016/07/01(一)~2016/09/30(五)</p>
-										<p>出發日期：2016/08/19(一)</p>
-										<p>出發城市：台北</p>
-										<div class="item_price"><span class="item_text">每人</span> $33,900 <span class="item_text">起</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>自由行</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">Sweet夏日．東京+橫濱3~14天</div>
-									<div class="item_ct">
-										<p>適用期間：2016/07/01(一)~2016/09/30(五)</p>
-										<p>航班 去程  2016/08/12(五) 台北→東京               
-										<p>回程  2016/08/19(五) 東京→台北</p>
-										<p>飯店 住宿1 香港-迪士尼酒店 3晚</p>
-										<p>住宿2 澳門-威尼斯人酒店 2晚</p>
-										<div class="item_price"><span class="item_text">每人</span> $33,900 <span class="item_text">起</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>自由行</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">ANA 自遊行~東京 2 天 1 夜</div>
-									<div class="item_ct">
-										<p>適用期間：2016/07/01(一)~2016/09/30(五)</p>
-										<p>機票效期：10天</p>
-										<p>出發日期：2016/08/19(一)</p>
-										<p>出發城市：台北</p>
-										<div class="item_price"><span class="item_text">每人</span> $33,900 <span class="item_text">起</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>機票</span></div>
-									<div class="item_img" style="background-image: url(images/c2.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">桃園國際機場→東京成田；大阪關西→桃園國際機場</div>
-									<div class="item_ct">
-										<p>航空公司：長榮航空(BR)</p>
-										<p>出發日期：2016/08/19(一)</p>
-										<p>回程日期：2016/0</p>
-										<p>票編：1-160806764</p>
-										<div class="item_price">$33,900 <span class="item_text">起(未稅)</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-										<div class="item_text2"><img src="images/icon14.png"/>票價有可能變動，實際金額請以當次查 詢結果為主</div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>機票</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">【單程】 桃園國際機場-曼谷</div>
-									<div class="item_ct">
-										<p>航空公司：長榮航空(BR)</p>
-										<p>出發日期：2016/08/19 (一)</p>               
-										<p>票編：1-160806764</p>
-										<div class="item_price">$33,900 <span class="item_text">起(未稅)</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-										<div class="item_text2"><img src="images/icon14.png"/>票價有可能變動，實際金額請以當次查 詢結果為主</div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>機票</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">【來回】桃園國際機場-深圳寶安國際機場</div>
-									<div class="item_ct">
-										<p>航空公司：長榮航空(BR)</p>
-										<p>出發日期：2016/08/19(一)</p>
-										<p>回程日期：2016/0</p>
-										<p>票編：1-160806764</p>
-										<div class="item_price">$33,900 <span class="item_text">起(未稅)</span></div>
-										<div class="item_btn"><input style="width:20px;height:20px;vertical-align:text-top;background:#fff;" type="checkbox" name="sSts" value="1" > 加入比較</div>
-										<div class="clearboth"></div>
-										<div class="item_text2"><img src="images/icon14.png"/>票價有可能變動，實際金額請以當次查 詢結果為主</div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag"><span>當地遊</span></div>
-									<div class="item_img" style="background-image: url(images/c2.png);">
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">白馬市極光奇景3日之旅最多四十個字</div>
-									<div class="item_ct">
-										<div class="item_price clearboth">
-											<span class="item_text">大人</span> $33,900 <span class="item_text">起</span><br>
-											<span class="item_text">孩童</span> $33,900 <span class="item_text">起</span>
-										</div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="disabled item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag_disabled"><span>自由行</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="expired"><img src="images/expired.png"/></div>
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">ANA 自遊行~東京 2 天 1 夜</div>
-									<div class="item_ct">
-										<p>適用期間：2016/07/01(一)~2016/09/30(五)</p>
-										<p>機票效期：10天</p>               
-										<p>出發日期：2016/08/19(一)</p>
-										<p>出發城市：台北</p>
-										<div class="item_price"><span class="item_text">每人</span> $33,900 <span class="item_text">起</span></div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
-							<div class="grid-item">
-								<div class="disabled item">
-									<div class="menu" >
-										<span></span>
-										<span></span>
-									</div>
-									<div class="item_tag_disabled"><span>自由行</span></div>
-									<div class="item_img" style="background-image: url(images/c1.png);">
-										<div class="expired"><img src="images/expired.png"/></div>
-										<div class="btn1"><img src="images/icon26.png"/></div>
-									</div>
-									<div class="item_date">收藏日期：2016/08/04(四)</div>
-									<div class="item_title">ANA 自遊行~東京 2 天 1 夜</div>
-									<div class="item_ct">
-										<p>適用期間：2016/07/01(一)~2016/09/30(五)</p>
-										<p>機票效期：10天</p>
-										<p>出發日期：2016/08/19(一)</p>
-										<p>出發城市：台北</p>
-										<div class="item_price"><span class="item_text">每人</span> $33,900 <span class="item_text">起</span></div>
-										<div class="clearboth"></div>
-									</div>
-								</div>
-							</div>
+							</div>-->
+
+
 						</div>
 						
 
@@ -768,21 +487,9 @@ background: url(/Content/Images/loading.gif) center no-repeat #fff;
 </footer>
 <script src="js/jquery.fancybox.pack.js"></script>
 
-<script type="text/javascript">
+<script src="js/jquery.pagination.js"></script>
 
+<script src="js/collection.js"></script>
 
-	$(".grid-col").on("click",".menu",function()
-	{
-
-		$(this).parent().parent().remove();
-
-	});
-
-
-
-
-	
-
-</script>
 </body>
 </html>
