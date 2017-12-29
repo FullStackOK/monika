@@ -187,7 +187,6 @@ var initPagination = function() {
         next_text: "下一頁"
     });
 
-
 };
 
 initPagination();
