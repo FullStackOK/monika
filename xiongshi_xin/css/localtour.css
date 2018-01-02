@@ -2394,12 +2394,14 @@ padding:18px 30px 0 0;
 .in-search-keyword{float:left;padding:5px;margin-left:10px;background:#fff;width:calc(100% - 630px);}
 .in-search-bt{float:right;padding:12px 10px;border-radius:5px;background:#e00500;color:#fff;font-size:22px;cursor: pointer;}
 .tagbox{height:30px;overflow:hidden;width:calc(100% - 11px);float:left;}
+.tagbox.active{height:auto;}
 .tag1{
 padding:3px 4px;
 border:1px solid #dff2ee;
 color:#24a07c;
 margin-right:5px;
 float:left;
+margin-bottom:5px;
 }
 .tagdropdown{width:11px;float:right;}
 .pricebox{width:100%;background:#fff;}

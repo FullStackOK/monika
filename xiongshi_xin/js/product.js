@@ -52,11 +52,43 @@ $(function(){
 
 });
 
-$(document).ready(function(){
-    $(".talkbox").hide();
-});
+
+//倒计时开抢
+var putawayTime="2018/01/05 08:00:00";  //上架时间
 
 
+
+function leftTimer(timeStr){
+
+    var timestampStart=new Date(timeStr).getTime();
+
+    var timestampNow=new Date().getTime();
+
+    var leftTime=timestampStart-timestampNow; //计算剩余的毫秒数
+
+    var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数
+    var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时
+    var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟
+    var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+    var millisecond  = parseInt(leftTime % 1000, 10);//计算剩余的毫秒
+    days = checkTime(days);
+    hours = checkTime(hours);
+    minutes = checkTime(minutes);
+    seconds = checkTime(seconds);
+    millisecond = checkTime(millisecond);
+
+    document.getElementById("timer").innerHTML = days+" 天 " + hours+" 時 " + minutes+" 分 "+seconds+" 秒 <span class='millisecond'>"+millisecond+"</span>";
+}
+
+setInterval("leftTimer(putawayTime)",1);
+
+function checkTime(i){ //将0-9的数字前面加上0，例1变为01
+    if(i<10)
+    {
+        i = "0" + i;
+    }
+    return i;
+}
 
 var galleryTop1;
 var galleryThumbs1;
@@ -1199,9 +1231,6 @@ $('article').readmore({
     speed: 500
 });
 
-var toggleNode = document.querySelector('.toggle');
-
-toggleNode.addEventListener("click", toggleFunc);
 
 function toggleFunc(E) {
     E.preventDefault();
@@ -1211,66 +1240,59 @@ function toggleFunc(E) {
 }
 
 
+if($(".tagbox-col").height()>34)
+{
+    $(".toggle-tag").show();
+}
 
+$(".toggle-tag").click(function()
+{
 
-$(function(){
-    // 先取得 #abgne-110223 及 ul, li 及 .caption 元素
-    // 並預設先顯示第幾個, 還有動畫速度
-    var $block = $('#abgne-110223'),
-        $wrap = $block.find('.swiper-container'),
-        $ul = $wrap.find('.swiper-wrapper'),
-        $li = $ul.find('.swiper-slide'),
-        $caption = $block.find('.caption'),
-        _default = 0,
-        _width = $wrap.width(),
-        animateSpeed = 400;
-
-    // 先把 ul 的寬度設成 li 數量 x $wrap 的寬
-    //$ul.width(_width * $li.length);
-    // 如果 .arrows 中的 a 被點擊時
-    $block.find('.arrows').delegate('div', 'click', function(event){
-        // 先找出 .selected 的元素後移掉該樣式
-        var $selected = $li.filter('.swiper-slide-active').removeClass('swiper-slide-active'),
-        // 找出目前顯示的元素是第幾個
-            _index = $li.index($selected);
-
-        // 依點擊的是上一張或下一張來切換
-        _index = (event.target.className == 'swiper-button-prev' ? _index - 1 + $li.length : _index + 1) % $li.length;
-        //$ul.animate({
-        //	left: _index * _width * -1
-        //}, animateSpeed);
-        // 改變標題
-        $caption.hide().html($li.eq(_index).addClass('swiper-slide-active').find('img').attr('alt')).fadeIn(animateSpeed);
-
-        return false;
-    });
-
-    // 先顯示預設的
-    //$ul.css('left', _default * _width * -1);
-    $caption.html($li.eq(_default).addClass('swiper-slide-active').find('img').attr('alt'));
-
-    $block.find('div').focus(function(){
-        this.blur();
-    });
-
-
-    //鼠标悬浮样式
-    $(".hover-text").mouseover(function()
-    {
-        $(this).find(".talkbox").show();
-    }).mouseout(function()
-    {
-        $(this).find(".talkbox").hide();
-    });
-
-    //加入收藏样式
-    $(".shoucang").click(function()
-    {
-        $(this).toggleClass("active");
-    });
-
+    $(".tagbox").toggleClass("active");
 
 });
+
+
+//播放视频
+$(".play-control").click(function()
+{
+    $(this).hide();
+    $(this).parent().find("video").attr("controls","controls");
+    $(this).parent().find("video")[0].play();
+});
+
+
+//加入收藏 取消收藏
+$(".shoucang").click(function()
+{
+    if($(this).hasClass("active"))
+    {
+        $(this).removeClass("active");
+
+    }
+    else
+    {
+        $(this).addClass("active");
+
+        var describeText=$('.describe-text').text();
+        var priceText=$(".price-text").text();
+
+        $("#silderitemList").prepend('<div class="silderitem">'+
+            '<div class="sildertitle">自由行</div>'+
+            '<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">'+
+            describeText+'<br>'+
+            '適用期間：2016/07/01~2016/09/30'+
+            '</div>'+
+            '<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">'+priceText+'</span> 起</div>'+
+            '</div>');
+
+        $("#sildermenu").attr("checked","checked");
+    }
+
+});
+
+
+
 
 
 
