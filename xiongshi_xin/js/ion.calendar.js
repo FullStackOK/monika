@@ -130,8 +130,15 @@
 
 					// head date
                     var y = parseInt(timeNowLocal.format("YYYY"));
-                    var m = parseInt(timeNowLocal.format("M"))
-                    html += '<div class="ic__year" data-value="'+y+'-'+m+'">';
+                    var m = parseInt(timeNowLocal.format("M"));
+
+                    var mText=m;
+                    if(m<10)
+                    {
+                        mText="0"+m;
+                    }
+
+                    html += '<div class="ic__year" data-value="'+y+'-'+mText+'">';
 
                     html +=  y +' 年 ';
 
@@ -254,22 +261,40 @@
                     } else {
                         $prev.on("click", function(e){
                             e.preventDefault();
+
+                            var chaTime=timeNowLocal._d.getTime()-new Date().getTime();
+
+                            chaTime=chaTime/1000/3600/24;
+
+                            if(chaTime<=0)
+                            {
+                                return;
+                            }
+
                             timeNowLocal.subtract("months", 1);
                             if(parseInt(timeNowLocal.format("YYYY")) < fromYear) {
                                 timeNowLocal.add("months", 1);
                             }
                             removeHTML();
-                            console.log("prev");
+
                             ic__prev();
                         });
                         $next.on("click", function(e){
                             e.preventDefault();
+
+                            var chaTime=timeNowLocal._d.getTime()-new Date().getTime();
+
+                            chaTime=chaTime/1000/3600/24;
+
+                            if(chaTime>=60)
+                            {
+                                return;
+                            }
                             timeNowLocal.add("months", 1);
                             if(parseInt(timeNowLocal.format("YYYY")) > toYear) {
                                 timeNowLocal.subtract("months", 1);
                             }
                             removeHTML();
-                            console.log("next");
                             ic__next();
                         });
                     }

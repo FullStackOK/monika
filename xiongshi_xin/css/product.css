@@ -268,7 +268,9 @@
 .toggle-tag{cursor: pointer;display: none;}
 .millisecond{display: inline-block;width:25px;}
 
-
+.product-top{background:#f7f7f7;padding:20px 15px;margin-top:10px;}
+.product-top.active{background: #fff9e3;}
+.product-select{background:#fefcf0;padding:20px 15px;margin-top:10px;}
 
 
 
