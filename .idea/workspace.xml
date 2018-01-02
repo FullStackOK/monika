@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="785bf29e-9eda-48d2-aca1-53d86bb02cc1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiongshi_xin/images/add/playIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xiongshi_xin/video/video.mp4" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/前台修改1218.docx" afterPath="$PROJECT_DIR$/前台修改1218.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/localtour.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/localtour.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/product.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/index.html" afterPath="$PROJECT_DIR$/xiongshi_xin/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/product.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/product.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/product.html" afterPath="$PROJECT_DIR$/xiongshi_xin/product.html" />
     </list>
@@ -34,7 +31,7 @@
       <file leaf-file-name="visitorinfo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/visitorinfo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.142858">
+            <state vertical-scroll-proportion="0.0">
               <caret line="524" column="60" selection-start-line="524" selection-start-column="60" selection-end-line="524" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,36 +67,43 @@
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/product.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-1.4173913">
-              <caret line="427" column="90" selection-start-line="427" selection-start-column="89" selection-end-line="427" selection-end-column="90" />
+              <caret line="639" column="76" selection-start-line="639" selection-start-column="64" selection-end-line="639" selection-end-column="76" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#7;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/product.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5240848">
-              <caret line="268" column="43" selection-start-line="268" selection-start-column="43" selection-end-line="268" selection-end-column="43" />
+            <state vertical-scroll-proportion="-12.821428">
+              <caret line="271" column="41" selection-start-line="271" selection-start-column="41" selection-end-line="271" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -108,29 +112,49 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="22.869566">
-              <caret line="316" column="61" selection-start-line="316" selection-start-column="47" selection-end-line="316" selection-end-column="61" />
-              <folding />
+            <state vertical-scroll-proportion="42.42857">
+              <caret line="311" column="119" selection-start-line="311" selection-start-column="12" selection-end-line="311" selection-end-column="119" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="product.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/js/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.762712">
-              <caret line="79" column="126" selection-start-line="79" selection-start-column="115" selection-end-line="79" selection-end-column="126" />
+            <state vertical-scroll-proportion="0.57586837">
+              <caret line="3253" column="0" selection-start-line="3253" selection-start-column="0" selection-end-line="3253" selection-end-column="0" />
               <folding>
                 <element signature="e#12#1138#0" expanded="false" />
-                <element signature="e#4671#31578#0" expanded="false" />
-                <marker date="1514814656781" expanded="true" signature="36710:36720" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="38223:38240" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="38254:38282" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="38368:38385" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="38399:38427" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="39511:39559" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="39686:39720" placeholder="..." />
-                <marker date="1514814656781" expanded="true" signature="39738:39791" placeholder="..." />
+                <element signature="e#5752#6641#0" expanded="false" />
+                <element signature="e#59075#65540#0" expanded="false" />
+                <element signature="e#65566#72106#0" expanded="false" />
+                <element signature="e#72132#78672#0" expanded="false" />
+                <element signature="e#78945#85410#0" expanded="false" />
+                <element signature="e#85436#91976#0" expanded="false" />
+                <element signature="e#92002#98542#0" expanded="false" />
+                <element signature="e#98720#105185#0" expanded="false" />
+                <element signature="e#105211#111751#0" expanded="false" />
+                <element signature="e#111777#118317#0" expanded="false" />
+                <element signature="e#130888#132302#0" expanded="false" />
+                <marker date="1514910805331" expanded="true" signature="123592:123631" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="123981:123997" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="124059:124140" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="124178:124201" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="124286:124316" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="124610:124691" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="126294:126304" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="127807:127824" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="127838:127866" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="127952:127969" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="127983:128011" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="129095:129143" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="129270:129304" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="129322:129375" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="132809:132823" placeholder="..." />
+                <marker date="1514910805331" expanded="true" signature="134166:134180" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -149,7 +173,7 @@
       <file leaf-file-name="purchase.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/purchase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.178572">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
@@ -159,7 +183,7 @@
       <file leaf-file-name="localtour.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/localtour.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2068965">
+            <state vertical-scroll-proportion="0.0">
               <caret line="2396" column="27" selection-start-line="2396" selection-start-column="27" selection-end-line="2396" selection-end-column="27" />
               <folding />
             </state>
@@ -186,9 +210,9 @@
         <option value="$PROJECT_DIR$/xiongshi_xin/js/visitorinfo.js" />
         <option value="$PROJECT_DIR$/xiongshi_xin/index.html" />
         <option value="$PROJECT_DIR$/xiongshi_xin/css/localtour.css" />
+        <option value="$PROJECT_DIR$/xiongshi_xin/css/product.css" />
         <option value="$PROJECT_DIR$/xiongshi_xin/product.html" />
         <option value="$PROJECT_DIR$/xiongshi_xin/js/product.js" />
-        <option value="$PROJECT_DIR$/xiongshi_xin/css/product.css" />
       </list>
     </option>
   </component>
@@ -232,8 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,44 +288,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiongshi_xin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="monika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xiongshi_xin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="484" column="7" selection-start-line="484" selection-start-column="4" selection-end-line="484" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -716,9 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="343" column="10" selection-start-line="343" selection-start-column="10" selection-end-line="343" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,25 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="303" column="38" selection-start-line="303" selection-start-column="38" selection-end-line="303" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#div#6;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#6;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#span#0;n#div#10;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#12;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#18;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#24;n#div#1;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#7;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,22 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiongshi_xin/print.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiongshi_xin/purchase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -789,6 +738,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xiongshi_xin/visitorinfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="524" column="60" selection-start-line="524" selection-start-column="60" selection-end-line="524" selection-end-column="60" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiongshi_xin/print.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiongshi_xin/purchase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/localtour.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2396" column="27" selection-start-line="2396" selection-start-column="27" selection-end-line="2396" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xiongshi_xin/js/visitorinfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -800,28 +783,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/localtour.css">
+    <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/product.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2068965">
-          <caret line="2396" column="27" selection-start-line="2396" selection-start-column="27" selection-end-line="2396" selection-end-column="27" />
+        <state vertical-scroll-proportion="-12.821428">
+          <caret line="271" column="41" selection-start-line="271" selection-start-column="41" selection-end-line="271" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiongshi_xin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="22.869566">
-          <caret line="316" column="61" selection-start-line="316" selection-start-column="47" selection-end-line="316" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiongshi_xin/visitorinfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858">
-          <caret line="524" column="60" selection-start-line="524" selection-start-column="60" selection-end-line="524" selection-end-column="60" />
+        <state vertical-scroll-proportion="42.42857">
+          <caret line="311" column="119" selection-start-line="311" selection-start-column="12" selection-end-line="311" selection-end-column="119" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -829,54 +804,71 @@
     <entry file="file://$PROJECT_DIR$/xiongshi_xin/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4173913">
-          <caret line="427" column="90" selection-start-line="427" selection-start-column="89" selection-end-line="427" selection-end-column="90" />
+          <caret line="639" column="76" selection-start-line="639" selection-start-column="64" selection-end-line="639" selection-end-column="76" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#7;n#div#1;n#div#1;n#div#2;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#5;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#span#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#1;n#div#2;n#div#3;n#div#1;n#div#0;n#div#6;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#span#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#span#0;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#span#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#span#0;n#div#2;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xiongshi_xin/js/product.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.762712">
-          <caret line="79" column="126" selection-start-line="79" selection-start-column="115" selection-end-line="79" selection-end-column="126" />
+        <state vertical-scroll-proportion="0.57586837">
+          <caret line="3253" column="0" selection-start-line="3253" selection-start-column="0" selection-end-line="3253" selection-end-column="0" />
           <folding>
             <element signature="e#12#1138#0" expanded="false" />
-            <element signature="e#4671#31578#0" expanded="false" />
-            <marker date="1514814656781" expanded="true" signature="36710:36720" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="38223:38240" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="38254:38282" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="38368:38385" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="38399:38427" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="39511:39559" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="39686:39720" placeholder="..." />
-            <marker date="1514814656781" expanded="true" signature="39738:39791" placeholder="..." />
+            <element signature="e#5752#6641#0" expanded="false" />
+            <element signature="e#59075#65540#0" expanded="false" />
+            <element signature="e#65566#72106#0" expanded="false" />
+            <element signature="e#72132#78672#0" expanded="false" />
+            <element signature="e#78945#85410#0" expanded="false" />
+            <element signature="e#85436#91976#0" expanded="false" />
+            <element signature="e#92002#98542#0" expanded="false" />
+            <element signature="e#98720#105185#0" expanded="false" />
+            <element signature="e#105211#111751#0" expanded="false" />
+            <element signature="e#111777#118317#0" expanded="false" />
+            <element signature="e#130888#132302#0" expanded="false" />
+            <marker date="1514910805331" expanded="true" signature="123592:123631" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="123981:123997" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="124059:124140" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="124178:124201" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="124286:124316" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="124610:124691" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="126294:126304" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="127807:127824" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="127838:127866" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="127952:127969" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="127983:128011" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="129095:129143" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="129270:129304" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="129322:129375" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="132809:132823" placeholder="..." />
+            <marker date="1514910805331" expanded="true" signature="134166:134180" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xiongshi_xin/css/product.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5240848">
-          <caret line="268" column="43" selection-start-line="268" selection-start-column="43" selection-end-line="268" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>

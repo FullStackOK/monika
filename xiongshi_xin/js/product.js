@@ -147,11 +147,7 @@ var galleryThumbs1;
         $(this).parent().parent().removeClass("active");
     });
 
-    $("body").on("click","#countryList li input",function()
-    {
-      $(".calendar-col").show();
 
-    });
 
 
 
@@ -240,11 +236,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:1,  //表示倍数购买
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:1,  //表示倍数购买
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -257,11 +257,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:3,
+                                    ismultiple:1,  //表示倍数购买
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,  //表示倍数购买
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -273,14 +277,12 @@ $("#closeSelectDate").click(function()
                             identity_list:[
                                 {
                                     id:1,
-                                    name:'大人',
+                                    name:'',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                },
-                                {
-                                    id:2,
-                                    name:'儿童',
-                                    tip:'測試文字測試文字'
                                 }
+
                             ]
                         },
                         {
@@ -291,6 +293,8 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
@@ -308,11 +312,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -325,11 +333,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -349,11 +361,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -366,11 +382,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -383,11 +403,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -400,11 +424,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -417,11 +445,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -434,11 +466,15 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                 },
                                 {
                                     id:2,
                                     name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
                                     tip:'測試文字測試文字'
                                 }
                             ]
@@ -448,41 +484,138 @@ $("#closeSelectDate").click(function()
                 },
                 {
                     id:3,
-                    name:"少儿",
+                    name:"老人",
                     pricelist: [
                         {
                             id:1,
-                            date: "2017-02-03",
-                            price: "$39"
+                            date: "2018-02-01",
+                            price: "$1839",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         },
                         {
                             id:2,
-                            date: "2017-02-04",
-                            price: "$48239"
+                            date: "2018-02-02",
+                            price: "$239",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         },
                         {
                             id:3,
-                            date: "2017-11-03",
-                            price: "$48339"
+                            date: "2018-02-03",
+                            price: "$48339",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         },
                         {
                             id:4,
-                            date: "2017-02-05",
-                            price: "$839"
+                            date: "2018-02-04",
+                            price: "$839",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         },
                         {
                             id:5,
-                            date: "2017-11-05",
-                            price: "$439"
+                            date: "2018-02-05",
+                            price: "$439",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         },
                         {
                             id:6,
-                            date: "2017-12-06",
-                            price: "$8839"
+                            date: "2018-02-06",
+                            price: "$639",
+                            identity_list:[
+                                {
+                                    id:1,
+                                    name:'大人',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                },
+                                {
+                                    id:2,
+                                    name:'儿童',
+                                    minvalue:1,
+                                    ismultiple:0,
+                                    tip:'測試文字測試文字'
+                                }
+                            ]
                         }
 
                     ]
                 }
+
             ]
 
             },
@@ -497,16 +630,20 @@ $("#closeSelectDate").click(function()
                             {
                                 id:1,
                                 date: "2018-01-01",
-                                price: "$4839",
+                                price: "$839",
                                 identity_list:[
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:1,  //表示倍数购买
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:1,  //表示倍数购买
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -519,11 +656,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:3,
+                                        ismultiple:1,  //表示倍数购买
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,  //表示倍数购买
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -536,11 +677,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -553,6 +698,8 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
@@ -570,11 +717,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -587,11 +738,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -606,16 +761,20 @@ $("#closeSelectDate").click(function()
                             {
                                 id:1,
                                 date: "2018-02-01",
-                                price: "$4839",
+                                price: "$1839",
                                 identity_list:[
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -623,16 +782,20 @@ $("#closeSelectDate").click(function()
                             {
                                 id:2,
                                 date: "2018-02-02",
-                                price: "$48239",
+                                price: "$239",
                                 identity_list:[
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -645,11 +808,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -662,11 +829,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -679,11 +850,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -696,11 +871,15 @@ $("#closeSelectDate").click(function()
                                     {
                                         id:1,
                                         name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                     },
                                     {
                                         id:2,
                                         name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
                                         tip:'測試文字測試文字'
                                     }
                                 ]
@@ -710,41 +889,138 @@ $("#closeSelectDate").click(function()
                     },
                     {
                         id:3,
-                        name:"少儿",
+                        name:"老人",
                         pricelist: [
                             {
                                 id:1,
-                                date: "2017-11-01",
-                                price: "$4839"
+                                date: "2018-02-01",
+                                price: "$1839",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             },
                             {
                                 id:2,
-                                date: "2017-11-02",
-                                price: "$48239"
+                                date: "2018-02-02",
+                                price: "$239",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             },
                             {
                                 id:3,
-                                date: "2017-11-03",
-                                price: "$48339"
+                                date: "2018-02-03",
+                                price: "$48339",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             },
                             {
                                 id:4,
-                                date: "2017-11-04",
-                                price: "$839"
+                                date: "2018-02-04",
+                                price: "$839",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             },
                             {
                                 id:5,
-                                date: "2017-11-05",
-                                price: "$439"
+                                date: "2018-02-05",
+                                price: "$439",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             },
                             {
                                 id:6,
-                                date: "2017-12-06",
-                                price: "$8839"
+                                date: "2018-02-06",
+                                price: "$639",
+                                identity_list:[
+                                    {
+                                        id:1,
+                                        name:'大人',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                    },
+                                    {
+                                        id:2,
+                                        name:'儿童',
+                                        minvalue:1,
+                                        ismultiple:0,
+                                        tip:'測試文字測試文字'
+                                    }
+                                ]
                             }
 
                         ]
                     }
+
                 ]
 
             }
@@ -765,16 +1041,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-01-01",
-                                    price: "$4839",
+                                    price: "$839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -787,11 +1067,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:3,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -804,11 +1088,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -821,6 +1109,8 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
@@ -838,11 +1128,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -855,11 +1149,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -874,16 +1172,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-02-01",
-                                    price: "$4839",
+                                    price: "$1839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -891,16 +1193,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:2,
                                     date: "2018-02-02",
-                                    price: "$48239",
+                                    price: "$239",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -913,11 +1219,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -930,11 +1240,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -947,11 +1261,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -964,11 +1282,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -978,41 +1300,138 @@ $("#closeSelectDate").click(function()
                         },
                         {
                             id:3,
-                            name:"少儿",
+                            name:"老人",
                             pricelist: [
                                 {
                                     id:1,
-                                    date: "2017-11-01",
-                                    price: "$4839"
+                                    date: "2018-02-01",
+                                    price: "$1839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:2,
-                                    date: "2017-11-02",
-                                    price: "$48239"
+                                    date: "2018-02-02",
+                                    price: "$239",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:3,
-                                    date: "2017-11-03",
-                                    price: "$48339"
+                                    date: "2018-02-03",
+                                    price: "$48339",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:4,
-                                    date: "2017-11-04",
-                                    price: "$839"
+                                    date: "2018-02-04",
+                                    price: "$839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:5,
-                                    date: "2017-11-05",
-                                    price: "$439"
+                                    date: "2018-02-05",
+                                    price: "$439",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:6,
-                                    date: "2017-12-06",
-                                    price: "$8839"
+                                    date: "2018-02-06",
+                                    price: "$639",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 }
 
                             ]
                         }
+
                     ]
 
                 },
@@ -1027,16 +1446,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-01-01",
-                                    price: "$4839",
+                                    price: "$839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1049,11 +1472,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:3,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1066,11 +1493,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1083,6 +1514,8 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
@@ -1100,11 +1533,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1117,11 +1554,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1136,16 +1577,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-02-01",
-                                    price: "$4839",
+                                    price: "$1839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1153,16 +1598,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:2,
                                     date: "2018-02-02",
-                                    price: "$48239",
+                                    price: "$239",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1175,11 +1624,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1192,11 +1645,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1209,11 +1666,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1226,11 +1687,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1240,41 +1705,138 @@ $("#closeSelectDate").click(function()
                         },
                         {
                             id:3,
-                            name:"少儿",
+                            name:"老人",
                             pricelist: [
                                 {
                                     id:1,
-                                    date: "2017-11-01",
-                                    price: "$4839"
+                                    date: "2018-02-01",
+                                    price: "$1839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:2,
-                                    date: "2017-11-02",
-                                    price: "$48239"
+                                    date: "2018-02-02",
+                                    price: "$239",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:3,
-                                    date: "2017-11-03",
-                                    price: "$48339"
+                                    date: "2018-02-03",
+                                    price: "$48339",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:4,
-                                    date: "2017-11-04",
-                                    price: "$839"
+                                    date: "2018-02-04",
+                                    price: "$839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:5,
-                                    date: "2017-11-05",
-                                    price: "$439"
+                                    date: "2018-02-05",
+                                    price: "$439",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:6,
-                                    date: "2017-12-06",
-                                    price: "$8839"
+                                    date: "2018-02-06",
+                                    price: "$639",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 }
 
                             ]
                         }
+
                     ]
 
                 }
@@ -1294,17 +1856,21 @@ $("#closeSelectDate").click(function()
                             pricelist: [
                                 {
                                     id:1,
-                                    date: "2018-01-04",
-                                    price: "$4839",
+                                    date: "2018-01-01",
+                                    price: "$839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1317,11 +1883,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:3,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1334,11 +1904,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1351,6 +1925,8 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
@@ -1368,11 +1944,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1385,11 +1965,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1404,16 +1988,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-02-01",
-                                    price: "$4839",
+                                    price: "$1839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1421,16 +2009,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:2,
                                     date: "2018-02-02",
-                                    price: "$48239",
+                                    price: "$239",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1443,11 +2035,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1460,11 +2056,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1477,11 +2077,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1494,11 +2098,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1508,41 +2116,138 @@ $("#closeSelectDate").click(function()
                         },
                         {
                             id:3,
-                            name:"少儿",
+                            name:"老人",
                             pricelist: [
                                 {
                                     id:1,
-                                    date: "2017-11-01",
-                                    price: "$4839"
+                                    date: "2018-02-01",
+                                    price: "$1839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:2,
-                                    date: "2017-11-02",
-                                    price: "$48239"
+                                    date: "2018-02-02",
+                                    price: "$239",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:3,
-                                    date: "2017-11-03",
-                                    price: "$48339"
+                                    date: "2018-02-03",
+                                    price: "$48339",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:4,
-                                    date: "2017-11-04",
-                                    price: "$839"
+                                    date: "2018-02-04",
+                                    price: "$839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:5,
-                                    date: "2017-11-05",
-                                    price: "$439"
+                                    date: "2018-02-05",
+                                    price: "$439",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:6,
-                                    date: "2017-12-06",
-                                    price: "$8839"
+                                    date: "2018-02-06",
+                                    price: "$639",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 }
 
                             ]
                         }
+
                     ]
 
                 },
@@ -1557,16 +2262,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-01-01",
-                                    price: "$4839",
+                                    price: "$839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1579,11 +2288,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:3,
+                                            ismultiple:1,  //表示倍数购买
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,  //表示倍数购买
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1596,11 +2309,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1613,6 +2330,8 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
@@ -1630,11 +2349,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1647,11 +2370,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1666,16 +2393,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:1,
                                     date: "2018-02-01",
-                                    price: "$4839",
+                                    price: "$1839",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1683,16 +2414,20 @@ $("#closeSelectDate").click(function()
                                 {
                                     id:2,
                                     date: "2018-02-02",
-                                    price: "$48239",
+                                    price: "$239",
                                     identity_list:[
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1705,11 +2440,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1722,11 +2461,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1739,11 +2482,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1756,11 +2503,15 @@ $("#closeSelectDate").click(function()
                                         {
                                             id:1,
                                             name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                         },
                                         {
                                             id:2,
                                             name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
                                             tip:'測試文字測試文字'
                                         }
                                     ]
@@ -1770,41 +2521,138 @@ $("#closeSelectDate").click(function()
                         },
                         {
                             id:3,
-                            name:"少儿",
+                            name:"老人",
                             pricelist: [
                                 {
                                     id:1,
-                                    date: "2017-11-01",
-                                    price: "$4839"
+                                    date: "2018-02-01",
+                                    price: "$1839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:2,
-                                    date: "2017-11-02",
-                                    price: "$48239"
+                                    date: "2018-02-02",
+                                    price: "$239",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:3,
-                                    date: "2017-11-03",
-                                    price: "$48339"
+                                    date: "2018-02-03",
+                                    price: "$48339",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:4,
-                                    date: "2017-11-04",
-                                    price: "$839"
+                                    date: "2018-02-04",
+                                    price: "$839",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:5,
-                                    date: "2017-11-05",
-                                    price: "$439"
+                                    date: "2018-02-05",
+                                    price: "$439",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 },
                                 {
                                     id:6,
-                                    date: "2017-12-06",
-                                    price: "$8839"
+                                    date: "2018-02-06",
+                                    price: "$639",
+                                    identity_list:[
+                                        {
+                                            id:1,
+                                            name:'大人',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                        },
+                                        {
+                                            id:2,
+                                            name:'儿童',
+                                            minvalue:1,
+                                            ismultiple:0,
+                                            tip:'測試文字測試文字'
+                                        }
+                                    ]
                                 }
 
                             ]
                         }
+
                     ]
 
                 }
@@ -1990,11 +2838,27 @@ $(function(){
 
 
             var identity_list_html="";
+            var shenfenColText="";
             if(priceIndex!=-1)
             {
 
                 for(var i=0;i<priceList[priceIndex].identity_list.length;i++)
                 {
+
+                    if(priceList[priceIndex].identity_list[i].name)
+                    {
+                        shenfenColText=shenfenColText+priceList[priceIndex].identity_list[i].name+priceList[priceIndex].identity_list[i].minvalue+"位、";
+                    }
+                    else
+                    {
+                        shenfenColText=shenfenColText+priceList[priceIndex].identity_list[i].minvalue+"位";
+                    }
+
+
+                    if((shenfenColText.indexOf("、")>-1)&&(i==priceList[priceIndex].identity_list.length-1))
+                    {
+                        shenfenColText=shenfenColText.substring(0,shenfenColText.length-1);
+                    }
 
                     identity_list_html=identity_list_html+'<div class="col-xs-3 col-sm-3 col-md-3 identity-col">'+
                         '<div>'+
@@ -2005,7 +2869,7 @@ $(function(){
                         '</div>'+
                         '<div style="margin-top:10px;">'+
                         '<span class="minus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">'+
-                        '<input class="middle-text" type="text" size="3" style="height:24px;text-align:center;" value="1">'+
+                        '<input class="middle-text" type="text" size="3" style="height:24px;text-align:center;" data-multiple="'+priceList[priceIndex].identity_list[i].ismultiple+'" data-minvalue="'+priceList[priceIndex].identity_list[i].minvalue+'" value="'+priceList[priceIndex].identity_list[i].minvalue+'">'+
                         '</span>'+
                         '<span class="plus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>'+
                         '</div>'+
@@ -2013,7 +2877,9 @@ $(function(){
                 }
             }
 
+            $("#shenfenColText").text(shenfenColText);
 
+            $(".identity-list .identity-col").remove();
             $(".identity-list").prepend(identity_list_html);
 
             $("#priceCol").val(priceText);
@@ -2197,10 +3063,22 @@ $(".shoucang").click(function()
 $("body").on("click",".minus-text",function()
 {
 
-   var prevNum=parseInt($(this).parent().find(".middle-text").val());
+    var prevNum=parseInt($(this).parent().find(".middle-text").val());
+
+    var prevValue=parseInt($(this).parent().find(".middle-text").attr("data-minvalue"));
+
+    var isMultiple=$(this).parent().find(".middle-text").attr("data-multiple");
+
     if(prevNum>1)
     {
-        prevNum--;
+        if(isMultiple=="1")
+        {
+            prevNum=prevNum-prevValue;
+        }
+        else {
+            prevNum--;
+        }
+
         if(prevNum==1)
         {
             $(this).parent().find(".middle-text").val(prevNum);
@@ -2219,11 +3097,245 @@ $("body").on("click",".plus-text",function()
 
     var prevNum=parseInt($(this).parent().find(".middle-text").val());
 
-        prevNum++;
-        $(this).parent().find(".middle-text").val(prevNum+"位");
+    var prevValue=parseInt($(this).parent().find(".middle-text").attr("data-minvalue"));
+
+    var isMultiple=$(this).parent().find(".middle-text").attr("data-multiple");
+
+
+
+           if(isMultiple=="1")
+           {
+               prevNum=prevNum+prevValue;
+           }
+           else {
+               prevNum++;
+           }
+
+        if(prevNum<=10)
+        {
+           $(this).parent().find(".middle-text").val(prevNum+"位");
+         }
+
 
 
 });
+
+
+
+//列印
+$("#shenfenTextCol").change(function()
+{
+
+    $("#calendar03").show();
+    $(".bottom-btn").show();
+
+});
+
+
+
+//国家选择json
+var proCountryList=[
+    {
+        id:1,
+        name:'荷比盧',
+        child:[
+            {
+                id:1,
+                name:'德國',
+                child:[
+                    {
+                        id:1,
+                        name:'義大利'
+                    },
+                    {
+                        id:2,
+                        name:'愛爾蘭'
+                    }
+                ]
+            },
+            {
+                id:2,
+                name:'義大利'
+            },
+            {
+                id:3,
+                name:'西班牙'
+            },
+            {
+                id:4,
+                name:'瑞士'
+            }
+
+        ]
+    },
+    {
+        id:2,
+        name:'法國',
+        child:[
+            {
+                id:1,
+                name:'斯洛伐克'
+            },
+            {
+                id:2,
+                name:'義大利'
+            },
+            {
+                id:3,
+                name:'西班牙'
+            },
+            {
+                id:4,
+                name:'瑞士'
+            }
+
+        ]
+    },
+    {
+        id:3,
+        name:'奧地利',
+        child:[
+            {
+                id:1,
+                name:'希臘'
+            },
+            {
+                id:2,
+                name:'義大利'
+            },
+            {
+                id:3,
+                name:'西班牙'
+            },
+            {
+                id:4,
+                name:'瑞士'
+            }
+
+        ]
+    }
+]
+
+//国家选择操作
+var countryListHtml="";
+
+for(var i=0;i<proCountryList.length;i++)
+{
+    var childList=[];
+    var hasChild=0;
+    if(proCountryList[i].child)
+    {
+        childList=proCountryList[i].child;
+        hasChild=1;
+    }
+
+    childList=JSON.stringify(childList);
+
+    countryListHtml=countryListHtml+'<li><input type="checkbox" class="child-level" data-level="1" data-child="'+hasChild+'" data-id="'+proCountryList[i].id+'"  /><label>'+proCountryList[i].name+'</label><span class="child-list" style="display: none;">'+childList+'</span></li>';
+}
+
+
+$("#countryList").append(countryListHtml);
+
+
+$("body").on("click",".child-level",function()
+{
+
+    if($(this).attr("data-child")=="1")
+    {
+        var dataLevel=parseInt($(this).attr("data-level"))+1;
+        var proCountryListTemp=JSON.parse($(this).parent().find(".child-list").text());
+        getChildList(dataLevel,proCountryListTemp);
+    }
+    else
+    {
+        $(".calendar-col").show();
+    }
+
+   if($("#countryInput").val()=="")
+   {
+       $("#countryInput").val($("#countryInput").val()+$(this).next().text());
+   }
+    else {
+       $("#countryInput").val($("#countryInput").val()+"、"+$(this).next().text());
+   }
+
+
+
+});
+
+function getChildList(dataLevel,proCountryListTemp)
+{
+
+    var countryCheckHtml="";
+
+
+    console.log(proCountryListTemp);
+
+    for(var i=0;i<proCountryListTemp.length;i++)
+    {
+        var childList=[];
+        var hasChild=0;
+        if(proCountryListTemp[i].child)
+        {
+            childList=proCountryListTemp[i].child;
+            hasChild=1;
+        }
+
+        childList=JSON.stringify(childList);
+        countryCheckHtml=countryCheckHtml+'<li><input type="checkbox" class="child-level" data-level="'+dataLevel+'" data-child="'+hasChild+'" data-id="'+proCountryListTemp[i].id+'" /><label>'+proCountryListTemp[i].name+'</label><span class="child-list" style="display: none;">'+childList+'</span></li>';;
+    }
+
+    $("#countryList").empty();
+    $("#countryList").append(countryCheckHtml);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
