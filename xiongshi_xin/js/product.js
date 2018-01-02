@@ -1969,20 +1969,52 @@ $(function(){
 
             $(".detail-btn1").addClass("active");
 
-            var optionId1=$("#xuanxiangText").val();
-            var optionId2=$("#changciText").val();
-            var optionId3=$("#shenfenText").val();
+            var optionId1=$("#xuanxiangText").val()-1;
+            var optionId2=$("#changciText").val()-1;
+            var optionId3=$("#shenfenText").val()-1;
 
             var priceList=optionList[optionId1].time[optionId2].identity[optionId3].pricelist;
 
             var priceText;
+            var priceIndex=-1;
             for(var i=0;i<priceList.length;i++)
             {
                 if(date.substr(0,10)==priceList[i].date)
                 {
                     priceText=priceList[i].price;
+
+                    priceIndex=i;
+
                 }
             }
+
+
+            var identity_list_html="";
+            if(priceIndex!=-1)
+            {
+
+                for(var i=0;i<priceList[priceIndex].identity_list.length;i++)
+                {
+
+                    identity_list_html=identity_list_html+'<div class="col-xs-3 col-sm-3 col-md-3 identity-col">'+
+                        '<div>'+
+                        '<span style="vertical-align:middle;margin-right:5px;">'+priceList[priceIndex].identity_list[i].name+'</span>'+
+                        '<span class="text-hover"><img src="images/icon10.png"/>'+
+                        '<div  class="talkbox">'+priceList[priceIndex].identity_list[i].tip+'</div>'+
+                        '</span>'+
+                        '</div>'+
+                        '<div style="margin-top:10px;">'+
+                        '<span class="minus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">'+
+                        '<input class="middle-text" type="text" size="3" style="height:24px;text-align:center;" value="1">'+
+                        '</span>'+
+                        '<span class="plus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>'+
+                        '</div>'+
+                        '</div>';
+                }
+            }
+
+
+            $(".identity-list").prepend(identity_list_html);
 
             $("#priceCol").val(priceText);
             $("#shenfenCol").val($("#shenfenText").val());
@@ -2160,6 +2192,38 @@ $(".shoucang").click(function()
 
 });
 
+
+//人数加和减运算
+$("body").on("click",".minus-text",function()
+{
+
+   var prevNum=parseInt($(this).parent().find(".middle-text").val());
+    if(prevNum>1)
+    {
+        prevNum--;
+        if(prevNum==1)
+        {
+            $(this).parent().find(".middle-text").val(prevNum);
+        }
+        else {
+            $(this).parent().find(".middle-text").val(prevNum+"位");
+        }
+
+    }
+
+
+
+});
+$("body").on("click",".plus-text",function()
+{
+
+    var prevNum=parseInt($(this).parent().find(".middle-text").val());
+
+        prevNum++;
+        $(this).parent().find(".middle-text").val(prevNum+"位");
+
+
+});
 
 
 

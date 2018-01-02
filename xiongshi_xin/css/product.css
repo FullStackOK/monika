@@ -272,6 +272,6 @@
 .product-top.active{background: #fff9e3;}
 .product-select{background:#fefcf0;padding:20px 15px;margin-top:10px;}
 
-
+.minus-text,.plus-text{cursor: pointer;}
 
 
