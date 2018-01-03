@@ -104,16 +104,16 @@ var galleryThumbs1;
                 prevButton: '.swiper-prev-modal',
                 spaceBetween: 10,
                 loop:true,
-                loopedSlides: 5, //looped slides should be the same
+                loopedSlides: 8, //looped slides should be the same
             });
             galleryThumbs1 = new Swiper('.gallery-thumbs-modal', {
                 nextButton: '.next-btn-modal',
                 prevButton: '.prev-btn-modal',
                 spaceBetween: 5,
-                slidesPerView: 8,
+                slidesPerView: 'auto',
                 touchRatio: 0.2,
                 loop:true,
-                loopedSlides: 5, //looped slides should be the same
+                loopedSlides: 8, //looped slides should be the same
                 slideToClickedSlide: true
             });
             galleryTop1.params.control = galleryThumbs1;
@@ -2916,9 +2916,9 @@ $('.value-minus1').on('click', function(){
 $(".detail-btn-col").click(function()
 {
 
-    $(this).parent().parent().parent().next().toggle();
     $(this).toggleClass("open");
     $(this).parent().parent().parent().toggleClass("active");
+    $(this).parent().parent().parent().next().toggleClass("active");
 
 });
 
@@ -2955,9 +2955,10 @@ var galleryThumbs = new Swiper('.gallery-thumbs-page', {
     nextButton: '.next-btn-page',
     prevButton: '.prev-btn-page',
     spaceBetween: 5,
-    slidesPerView: 6,
-    touchRatio: 0.2,
+    slidesPerView: 'auto',
     loop:true,
+    touchRatio: 0.2,
+
     loopedSlides: 5, //looped slides should be the same
     slideToClickedSlide: true
 });
