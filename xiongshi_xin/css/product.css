@@ -273,8 +273,8 @@
 
 .product-top{background:#f7f7f7;padding:20px 15px;margin-top:10px;}
 .product-top.active{background: #fff9e3;}
-.product-select{background:#f7f7f7;padding:20px 15px;margin-top:10px;}
-.product-select.active{background: #fff9e3;}
+.product-select{background:#fff9e3;padding:20px 15px;margin-top:10px;display: none;}
+
 .minus-text,.plus-text{cursor: pointer;}
 #calendar03{display: none;}
 .bottom-btn{display: none;}

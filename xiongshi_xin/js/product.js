@@ -2913,21 +2913,28 @@ $('.value-minus1').on('click', function(){
 });
 
 
-$(".detail-btn-col").click(function()
+$(".detail-btn-open").click(function()
 {
 
-    $(this).toggleClass("open");
-    $(this).parent().parent().parent().toggleClass("active");
-    $(this).parent().parent().parent().next().toggleClass("active");
+    $(this).parent().parent().parent().hide();
+    $(this).parent().parent().parent().next().show();
 
 });
+
+$(".detail-btn-close").click(function()
+{
+
+    $(this).parent().parent().parent().prev().show();
+    $(this).parent().parent().parent().hide();
+
+})
 
 
 $(".quxiao-btn-col").click(function()
 {
 
-    $(this).parent().removeClass("active");
-    $(this).parent().parent().parent().parent().find(".select02").html('選項<font style="color:red;">*</font> 請選擇');
+    $(".detail-btn1").removeClass("active");
+    $(".detail-btn1").parent().parent().parent().parent().find(".select02").html('選項<font style="color:red;">*</font> 請選擇');
 
 });
 
