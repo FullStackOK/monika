@@ -23,6 +23,7 @@
 <script type="text/javascript" src="js/001.js"></script>
 
 <link rel="stylesheet" href="css/swiper.min.css" />
+<link rel="stylesheet" href="css/home.css" />
 <link rel="stylesheet" href="css/product.css" />
 <link rel="stylesheet" href="css/baguetteBox.min.css" />
 <link rel="stylesheet" href="css/productDetail.css" />
@@ -143,7 +144,7 @@
 
 <input type="checkbox" id="sildermenu" />
 <nav class="sildernav hidden">
-	<div style="width:40px;float:left;height:100vh;">
+	<div class="left-tool-bar">
 		<label for="sildermenu" class="sildermenu">
 			<span></span>
 			<span></span>
@@ -151,16 +152,20 @@
 		<div class="silderlist">
 			<div class="silderlistbtn"><span>收藏</span><i class="listicon01"></i></div>
 			<div class="silderlistbtn"><span>看過</span><i class="listicon05"></i></div>
-			<div class="silderlistbtn" data-fancybox data-src="#hidden-content3"><span>列印</span><i class="listicon04"></i></div>
 			<div class="silderlistbtn"><span>分享</span><i class="listicon06"></i></div>
+			<div class="silderlistbtn" data-fancybox data-src="#hidden-content3"><span>列印</span><i class="listicon04"></i></div>
 			<div style="text-align:center;margin-top:80px;cursor:pointer;" id="goTop2"><i class="listicon07"></i></div>
 		</div>
 	</div>
 	<div style="float:left;width:calc(100% - 40px);background:#f1f1f1;height:100vh;overflow-y:auto">
-		<div style="padding:15px;width:100%;">
+		<div style="padding:15px;width:100%;" id="shoucangList">
 			<div style="min-height:600px;" id="silderitemList">
 				<div class="silderitem">
-					<div class="sildertitle">自由行</div>
+					<div class="menu2">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sildertitle">當地遊</div>
 					<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">
 						Love秋冬．東京+橫濱 3~14天<br>
 						適用期間：2016/07/01~2016/09/30
@@ -168,7 +173,11 @@
 					<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>
 				</div>
 				<div class="silderitem">
-					<div class="sildertitle">自由行</div>
+					<div class="menu2">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sildertitle">當地遊</div>
 					<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">
 						華航~『慕夏』促銷專案 上海 (松山-虹橋) 2天1夜2天1夜2天1夜<br>
 						適用期間：2016/07/01~2016/09/3
@@ -176,44 +185,236 @@
 					<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>
 				</div>
 				<div class="silderitem">
-					<div class="sildertitle">自由行</div>
+					<div class="menu2">
+						<span></span>
+						<span></span>
+					</div>
+					<div class="sildertitle">當地遊</div>
 					<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">
 						【精省高鐵】台中成旅晶贊飯店 2 天 1 夜<br>
 						適用期間：2016/07/01~2016/09/30
 					</div>
-					<div style="line-height:40px;text-align:right;">每人 <span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>
+					<div style="text-align:right;">成人 <span style="color:#e10500;vertical-align:baseline;">$35,568</span> 起</div>
+					<div style="text-align:right;">孩童 <span style="color:#e10500;vertical-align:baseline;">$1,500</span> 起</div>
 				</div>
 			</div>
+
+
 			<div style="padding:10px 20px;">
 				<span>團體(333)</span><span>自由行(112)</span><span>訂房(111)</span><span>票券(110)</span><span>機票(228)</span><span>護照(115)</span>
 			</div>
 			<div class="silderbtn">查看所有收藏(999)</div>
 			<div><img style="width:100%" src="images/pic7.png"/></div>
 		</div>
+
+		<div id="browseNoRecord" class="no-record">
+
+
+
+
+
+		</div>
+
+		<div id="pcShareCol" class="share-col">
+
+
+			<div class="share-list">
+				<a href="###" style="background: #0065b3;">
+					<img src="images/add/sharePC_03.png">
+					FB分享
+				</a>
+
+				<a href="###" style="background: #448aff;">
+					<img src="images/add/sharePC_06.png">
+					FB Messenger分享
+				</a>
+
+
+				<a href="###" style="background: #00c300;">
+					<img src="images/add/sharePC_08.png">
+					LINE分享
+				</a>
+
+
+				<a href="###" style="background: #f01900;">
+					<img src="images/add/sharePC_10.png">
+					G+分享
+				</a>
+
+				<a href="###" style="background: #ff9685;">
+					<img src="images/add/sharePC_12.png">
+					G+推薦好友
+
+					<img class="right" src="images/add/sanjiao.png" />
+
+				</a>
+			</div>
+
+
+			<div class="form-col">
+
+				<div class="form-row">
+					<label>主旨</label>
+					<input type="text" value="請輸入電子郵件主旨">
+				</div>
+
+				<div class="form-row">
+					<label>您的E-mail</label><input type="text" value="例：abc@xxx.com">
+				</div>
+
+				<div class="form-row">
+					<label>朋友的E-mail</label><input type="text" value="例：abc@xxx.com">
+				</div>
+
+				<div class="info-text">多個e-mail，請用英文半形分號 ; 分隔</div>
+
+				<div class="yanzhengma-top">請輸入下圖中的驗證碼：</div>
+
+				<div class="yanzhengma-col">
+					<img src="images/add/shareIcon_15.png" />
+					<span>換一張</span>
+					<input type="text" />
+				</div>
+
+				<div class="btn-col">
+
+					<button type="button" class="left">取消</button>
+					<button type="button" class="right">送出</button>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
 	</div>
 </nav>
 
+
+
 <main class="nvb_gplt member-main" data-xthreshold="75">
 	<div class="opt_payedblock" style="width:100%;max-width:1200px;margin-left:auto;margin-right:auto;">
-		<div class="lt-search hidden">
-			<div class="lt-search-icon"><img src="images/icon.png"/></div>
-			<div class="lt-search-local">
-				<div class="color-g">目的地</div>
-				<div class="color-b f-s-lb" >新加坡</div>
+
+
+		<div class="hidden" style="width:1200px;margin-left:auto;margin-right:auto;border-top:1px solid #dee1e4;border-bottom:1px solid #dee1e4;">
+
+			<div class="in-search" style="padding:10px 5px;">
+				<div>目的地<font style="color:red;">*</font></div>
+				<div class="select-list">
+					<div id="selectListCol" style="color:#999999;font-size:16px;font-weight:bold;width:235px;text-overflow:ellipsis;overflow:hidden;">
+						<input type="text" placeholder="請輸入/選擇目的地">
+					</div>
+					<div class="select-list-col" style="display: none;">
+
+						<i class="select-list-close">×</i>
+						<!--
+                                                    <div class="top-text green-text">最多可选择三个目的地</div>-->
+
+						<div class="select-list-tab">
+
+						</div>
+
+						<div class="title-col"><img src="images/add/homeIcon_07.jpg" /><span></span></div>
+
+
+						<ul class="city-list" id="cityList">
+
+						</ul>
+
+
+
+					</div>
+
+
+					<div class="select-list-col2" style="display: none;">
+						<i class="select-list-close2">×</i>
+						<ul id="selectCityList">
+						</ul>
+					</div>
+				</div>
+
 			</div>
-			<div class="lt-search-specie">
-				<div class="color-g">種類</div>
-				<div class="color-b f-s-lb">遊程、租車/包車、交通票卡...</div>
+
+
+			<div style="float:left;padding-top:10px;padding-bottom:10px;padding-left:30px;width:305px;background: #fff;margin-left:10px;">
+				<div style="color:#999;">種類</div>
+				<div class="mainselectCity" style="color:#999999;font-size:16px;font-weight:bold;position: relative;">
+					<div id="mainselectCity">
+						不限
+					</div>
+					<div class="xiala-list" style="display: none;">
+
+						<i class="select-list-close3">×</i>
+
+						<div>
+
+								<span class="main-content-input double" style="display: none; background: rgb(255, 255, 255); color: rgb(153, 153, 153);" arrm="">
+									<input class="allInput" value="" type="checkbox">全部</span>
+								<span class="normal all-normal">
+									<input type="checkbox" style="width:15px;height:15px;" value="0">遊程</span>
+								<span class="normal all-normal">
+									<input type="checkbox" style="width:15px;height:15px;" value="1">租車/包車</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="2">交通票卡</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="3">體驗活動</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="4">美食餐廳</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="5">電影/文化展演</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="6">接送服務</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="7">SPA&amp;溫泉</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="8">景區/樂園</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="9">網路活動</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="10">戶外活動</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="11">水上活動</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="12">空中活動</span>
+							<span class="normal all-normal"><input type="checkbox" style="width:15px;height:15px;" value="13">住宿/休憩卷</span>
+
+						</div>
+
+					</div>
+
+				</div>
 			</div>
-			<div class="lt-search-keyword">
-				<div class="color-g">關鍵字</div>
-				<div class="color-g2 f-s-lb">ex:三日遊、二日遊</div>
+
+			<div style="float:left;padding-top:10px;padding-bottom:10px;padding-left:10px;width:490px;margin-left:10px;background: #fff;">
+				<div style="color:#999;">關鍵字</div>
+				<div style="height:30px;position: relative;" class="search-keyword-col">
+
+					<input type="text" style="width:460px;" placeholder="ex:三日遊、二日遊" />
+
+					<div class="select-list-col4" style="display: none;">
+						<i class="select-list-close4">×</i>
+
+
+						<div class="content">
+							<div class="title-col"><img src="images/add/homeIconSelect_07.jpg">关键字</div>
+							<ul id="keywordCol">
+								<!--<li><span class="red-text">上海</span>上海上海上海上海上海上海上海上海上海上海上海上海上海上海</li>-->
+
+							</ul>
+						</div>
+
+						<div class="bottom">
+							<a href="###">搜索更多的日本商品
+								<img src="images/add/homeIconSelect_12.jpg" />
+							</a>
+						</div>
+
+					</div>
+
+				</div>
 			</div>
-			<div class="lt-search-bt">
-				<div><span class="color-b f-s-lb m-r-xs f-v-m">變更搜尋</span><img src="images/search.png"/></div>
+			<div style="float:right;padding-top:18px;padding-right:30px;position: relative;top:-13px;">
+
+				<div class="in-search-bt">
+					<div><img src="images/icon00.png">搜尋</div>
+				</div>
+
 			</div>
-			<div class="clearboth"></div>
+			<div style="clear:both;"></div>
 		</div>
+
+
 		<div class="display" style="background:#fff;padding:10px 0;">
 			<div class="row">
 				<div class="col-xs-24 col-sm-24 col-md-24" style="text-align:center;"><img src="images/search02.png"/><span style="font-size:16px;vertical-align:middle;margin-left:5px;">搜尋</span><span style="font-size:16px;vertical-align:middle;margin-left:20px;color:#0077b3;font-weight:bold;">新加坡，遊程、租車/包車...</span></div>
@@ -332,8 +533,8 @@
 										<img src="data/3.jpg" alt="777777">
 										<div class="text">666666</div>
 									</div>
-								</div>									
-							</div>							
+								</div>
+							</div>
 
 							<!-- Add Arrows -->
 							<div class="arrows">
@@ -343,7 +544,7 @@
 								<div class="swiper-button-prev swiper-button-white swiper-prev-modal" style="position:absolute;left:-85px;top:40%">
 									<img src="images/index_tab_l.png" width="28" height="51">
 								</div>
-							</div>												
+							</div>
 							<div class="footer-swiper">
 								<div class="swiper-container gallery-thumbs gallery-thumbs-modal">
 									<div class="swiper-wrapper">
@@ -356,7 +557,7 @@
 										<div class="swiper-slide"><img src="data/3.jpg" ></div>
 									</div>
 								</div>
-								<!-- Add Arrows -->								
+								<!-- Add Arrows -->
 								<div class="prev_btn1 prev-btn-modal"><img src="images/feel3.png" width="9" height="18"></div>
 								<div class="next_btn1 next-btn-modal"><img src="images/feel4.png" width="9" height="18"></div>
 							</div>
@@ -484,6 +685,78 @@
 					<div class="col-xs-6 col-sm-6 col-md-24">選購產品</div>
 				</div>
 				<div class="col-xs-24 col-sm-24 col-md-21">
+
+					<!--第一种情景-->
+					<div id="changjingCol1" class="changjing-col">
+					<div class="product-top">
+						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅</div>
+						<div style="float:left;background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;">優惠組合</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div style="float:left;font-size:16px;font-weight:bold;">東京迪士尼海陸一起玩3日遊</div>
+						<div style="float:left;background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;">優惠組合</div>
+
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;">
+							<div style="margin:10px 0;">迪士尼樂園門票-陸地</div>
+							<select name="select7" style="width:200px;height:24px;">
+								<option value="產品名稱">使用日期 2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:10px;">
+							<div style="margin:10px 0;">迪士尼樂園門票-海洋</div>
+							<select name="select7" style="width:200px;height:24px;">
+								<option value="產品名稱">使用日期 2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">大人+小孩</span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第一种情景-->
+
+
+
+					<div class="changjing-col">
 					<div class="product-top">
 						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅  <span style="color:#e10500;">特價 $1,919 起</span></div>
 						<span class="btn_01">優惠組合</span>
@@ -625,6 +898,10 @@
 							<div style="clear:both;"></div>
 						</div>
 					</div>
+					</div>
+
+
+					<div class="changjing-col">
 					<div class="product-top">
 						<div style="font-size:16px;font-weight:bold;float:left;max-width:490px;">白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅 <span style="color:#e10500;">特價 $1,919 起</span></div>
 						<div style="float:right;">
@@ -812,6 +1089,9 @@
 							<div style="clear:both;"></div>
 						</div>
 					</div>
+					</div>
+
+
 					<div class="product-top">
 						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅 <span style="color:#e10500;">特價 $1,919 起</span></div>
 						<div style="float:right;">
@@ -841,7 +1121,7 @@
 				<div style="clear:both;"></div>
 				<div style="background:#fefcf0;padding:20px 15px;margin-top:10px;">
 					<div style="float:left;font-size:16px;font-weight:bold;">白馬市極光奇景3日之旅白馬市極光奇景33日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅日之旅<span style="color:#e10500;"><br>特價 $1,919 起</span><span class="btn_01">優惠組合</span>
-					</div>						
+					</div>
 					<div style="clear:both;"></div>
 					<div style="margin-top:10px;">
 						<div name="select7" class="select-col" id="mobileSelectCountry">
@@ -950,14 +1230,14 @@
 						<div style="color:#e10500;padding:10px 0px;">提示文字提示文字</div>
 						<div>
 							<span style="color:#e10500;">此為必須購買的產品</span><span>，產品至少須購買大人1位、孩童1位，詳細內容請見「<a href="#">購買限制</a>」</span>
-						</div>						
+						</div>
 						<div style="clear:both"></div>
 						<div class="col-xs-24 col-sm-24 col-md-24" style="float:right;margin-top:10px">
 							<button style=" background:#66bb3c;border:1px solid transparent;color:#fff;padding:5px 15px;width:100%;" type="submit">已選 ✔</button>
 						</div>
-						<div style="clear:both"></div>						
+						<div style="clear:both"></div>
 					</div>
-				</div>		
+				</div>
 				<div style="background:#f7f7f7;padding:20px 15px;margin-top:10px;">
 					<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅白馬市極光奇景33日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅日之旅<span style="color:#e10500;"><br>特價 $1,919 起</span></div>
 					<div class="col-xs-24 col-sm-24 col-md-24" style="color:#24a07d;font-size:10px;text-align:center;">
@@ -1621,7 +1901,7 @@
 							<div style="margin-top:20px;">
 								<div class="ipt_title">貝斯維斯特淘金酒店</div>
 								<div class="ipt_text">
-									<div style="padding-bottom:10px;">兌換地點</div>						
+									<div style="padding-bottom:10px;">兌換地點</div>
 									<div style="text-align:center;padding-bottom:5px;">
 										<img src="images/icprice.png">
 									</div>
@@ -1630,8 +1910,8 @@
 										兌換說明<br>
 										提前兌換時間：須提前3小時兌換<br>
 										請在指定兌換地點將打印出來的兌換確認單兌換<br>
-									</div>							
-								</div>						
+									</div>
+								</div>
 								<div style="clear:both;"></div>
 							</div>
 						</div>
@@ -1655,9 +1935,9 @@
 					<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房--小孩</div>
 					<div>
 						◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 						◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 						  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 						◎機場接機導遊會持有客人名字的牌子接機。 <br>
 						◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1665,9 +1945,9 @@
 					<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房--老人</div>
 					<div>
 						◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 						◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 						  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 						◎機場接機導遊會持有客人名字的牌子接機。 <br>
 						◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1675,9 +1955,9 @@
 					<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房</div>
 					<div>
 						◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+						◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 						◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+						◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 						  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 						◎機場接機導遊會持有客人名字的牌子接機。 <br>
 						◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1687,19 +1967,19 @@
 					<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景2日之旅--Best Western Gold Rush Inn雙人房</div>
 					<div>
 						身體不適、感冒、飲酒、懷孕期間或者近期內有懷孕計劃、患有PADI健康聲明書中任何一項狀態者，不得參加。（欲下載PADI健康聲明書請點此）<br>
-						取消行程之費用 :<br>  
-						1.早於出發前30天，收取每人$50服務費<br> 
-						2.出發前21至30日，收取總費用之50%<br> 
-						3.出發前8至20日，收取總費用之75%<br> 
+						取消行程之費用 :<br>
+						1.早於出發前30天，收取每人$50服務費<br>
+						2.出發前21至30日，收取總費用之50%<br>
+						3.出發前8至20日，收取總費用之75%<br>
 						4.出發前7日內，收取全額費用<br>
 					</div>
 					<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景2日之旅--Best Western Gold Rush Inn雙人房</div>
 					<div>
 						身體不適、感冒、飲酒、懷孕期間或者近期內有懷孕計劃、患有PADI健康聲明書中任何一項狀態者，不得參加。（欲下載PADI健康聲明書請點此）<br>
-						取消行程之費用 :<br>  
-						1.早於出發前30天，收取每人$50服務費<br> 
-						2.出發前21至30日，收取總費用之50%<br> 
-						3.出發前8至20日，收取總費用之75%<br> 
+						取消行程之費用 :<br>
+						1.早於出發前30天，收取每人$50服務費<br>
+						2.出發前21至30日，收取總費用之50%<br>
+						3.出發前8至20日，收取總費用之75%<br>
 						4.出發前7日內，收取全額費用<br>
 					</div>
 					<div style="font-size:16px;color:#8e561a;font-weight:bold;"><span style="font-size:24px;">■</span> 費用說明</div>
@@ -1716,13 +1996,13 @@
 						• 旅遊保險 <br>
 						• 私人性質費用 <br>
 						• 極地防寒抗凍衣 <br>
-						• 導遊小費 • 野生動物 + 塔基尼溫泉之旅: CAD 95.00/人<br>    
-						因安全理由，兒童12歲以下禁止入溫泉池，敬請見諒<br> 
-						• 狗拉雪橇: 全天 CAD 275.00/人；半天  CAD 199.00/人<br>     
-						我們把您送往白馬市郊外的養狗場，教您如何駕馭狗拉雪橇，然後讓您大展身手，指揮帶領您的‘狗仔隊’奔馳 <br> 
-						• 冰上垂釣及郊野踏雪 CAD 175.00/人     <br> 
-						我們驅車送您到不遠處一座冰封的湖畔，教您穿上雪鞋後怎麼行走，然後帶上釣具步行到湖上的冰窟窿邊垂釣。要是運氣<br> 
-						好，說不定咱能釣上一條活蹦亂跳的湖鱒或茴魚<br> 
+						• 導遊小費 • 野生動物 + 塔基尼溫泉之旅: CAD 95.00/人<br>
+						因安全理由，兒童12歲以下禁止入溫泉池，敬請見諒<br>
+						• 狗拉雪橇: 全天 CAD 275.00/人；半天  CAD 199.00/人<br>
+						我們把您送往白馬市郊外的養狗場，教您如何駕馭狗拉雪橇，然後讓您大展身手，指揮帶領您的‘狗仔隊’奔馳 <br>
+						• 冰上垂釣及郊野踏雪 CAD 175.00/人     <br>
+						我們驅車送您到不遠處一座冰封的湖畔，教您穿上雪鞋後怎麼行走，然後帶上釣具步行到湖上的冰窟窿邊垂釣。要是運氣<br>
+						好，說不定咱能釣上一條活蹦亂跳的湖鱒或茴魚<br>
 					</div>
 					<div style="font-size:16px;color:#8e561a;font-weight:bold;"><span style="font-size:24px;">■</span> 注意事項</div>
 					<div>
@@ -1733,7 +2013,7 @@
 						◎本國際票券所屬相關使用規定，均依各國國際票券現場使用說明公告為準，使用票券前請詳閱該票券之使用規定、使用範圍及有效期限等。 <br>
 						◎本國際票券不得兌換現金或找零，逾期、撕開者，恕無法接受任何方式之更換或退費。 <br>
 						◎本國際票券一經售出，因故如需退換時，將依各國國際票券相關退票規定為準，且需憑原始購買憑證 <br>
-						（本網當初開立之旅行業代收轉付收據）辦理，並請自行負擔往來郵資與匯費。 ※特別註明：如特別標示不可退換之國際票券，恕無法接受任何方式之退換。<br> 
+						（本網當初開立之旅行業代收轉付收據）辦理，並請自行負擔往來郵資與匯費。 ※特別註明：如特別標示不可退換之國際票券，恕無法接受任何方式之退換。<br>
 						◎每筆訂購（以訂單編號為準）限寄送一個地址，恕無法拆分商品數量後寄送不同地址。如有一個以上之收件地址，請分筆訂購。 <br>
 						◎訂購人與收件人須為同一人，本公司於寄件前得與收件人聯繫確認收件人之地址及聯絡方式等資訊。 <br>
 						◎請注意：訂購本網商品須遵守本公司會員規定，不得轉售或以不正之方式利用本網之商品或服務某取個人利益，本公司有權保留暫停或終止會員資格及使用本網各項服務之權利，並依情節主動通報檢調單位。 <br>
@@ -1757,9 +2037,9 @@
 							<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房--小孩</div>
 							<div>
 								◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 								◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 								  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 								◎機場接機導遊會持有客人名字的牌子接機。 <br>
 								◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1767,9 +2047,9 @@
 							<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房--老人</div>
 							<div>
 								◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 								◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 								  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 								◎機場接機導遊會持有客人名字的牌子接機。 <br>
 								◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1777,9 +2057,9 @@
 							<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景3日之旅--Best Western Gold Rush Inn雙人房</div>
 							<div>
 								◎因安全理由，兒童12歲以下禁止單獨活動，敬請見諒。<br>
-								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br> 
+								◎白天自選活動項目最好出發前預訂，在當地報名不保證出團。<br>
 								◎詳情請參考育空極光官網：http://www.auroraborealisyukon.com/auroracast/ <br>
-								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br> 
+								◎請自備極地禦寒衣物，如需租用禦寒衣物，建議出發前預訂，才能保證及時拿到(如抵達後才預訂，<br>
 								  需額外加收$20)。二晚租用費每套$120+5%GST(包含極地防寒抗凍衣褲、手套、毛帽、防寒抗凍靴）。<br>
 								◎機場接機導遊會持有客人名字的牌子接機。 <br>
 								◎極地活動有危險性，本公司建議您購買旅遊保險。
@@ -1788,19 +2068,19 @@
 							<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景2日之旅--Best Western Gold Rush Inn雙人房</div>
 							<div>
 								身體不適、感冒、飲酒、懷孕期間或者近期內有懷孕計劃、患有PADI健康聲明書中任何一項狀態者，不得參加。（欲下載PADI健康聲明書請點此）<br>
-								取消行程之費用 :<br>  
-								1.早於出發前30天，收取每人$50服務費<br> 
-								2.出發前21至30日，收取總費用之50%<br> 
-								3.出發前8至20日，收取總費用之75%<br> 
+								取消行程之費用 :<br>
+								1.早於出發前30天，收取每人$50服務費<br>
+								2.出發前21至30日，收取總費用之50%<br>
+								3.出發前8至20日，收取總費用之75%<br>
 								4.出發前7日內，收取全額費用<br>
 							</div>
 							<div style="font-size:16px;font-weight:bold;padding:10px 0;">白馬市極光奇景2日之旅--Best Western Gold Rush Inn雙人房</div>
 							<div>
 								身體不適、感冒、飲酒、懷孕期間或者近期內有懷孕計劃、患有PADI健康聲明書中任何一項狀態者，不得參加。（欲下載PADI健康聲明書請點此）<br>
-								取消行程之費用 :<br>  
-								1.早於出發前30天，收取每人$50服務費<br> 
-								2.出發前21至30日，收取總費用之50%<br> 
-								3.出發前8至20日，收取總費用之75%<br> 
+								取消行程之費用 :<br>
+								1.早於出發前30天，收取每人$50服務費<br>
+								2.出發前21至30日，收取總費用之50%<br>
+								3.出發前8至20日，收取總費用之75%<br>
 								4.出發前7日內，收取全額費用<br>
 							</div>
 					</article>
@@ -2297,8 +2577,9 @@
 <script src="js/baguetteBox.min.js"></script>
 <script src="js/readmore.js"></script>
 <script src="js/product.js"></script>
-
-
+<script src="js/city.js"></script>
+<script src="js/searchBar.js"></script>
+<script src="js/rightToolbar.js"></script>
 
 
 

@@ -175,7 +175,7 @@
 .select-list-col2 ul li:hover,.select-list-col4 ul li:hover{background: #ff615d;color:#fff;}
 .select-list-col2 ul li:hover .red-text,.select-list-col4 ul li:hover .red-text{color:#fff;}
 
-.select-list-col .select-list-close{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;}
+.select-list-col .select-list-close{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;font-style: normal;}
 
 .select-list-col2 .select-list-close2,.select-list-col4 .select-list-close4{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;}
 
@@ -222,7 +222,7 @@
 .red-text{color:#ff624d;}
 
 .xiala-list{width:500px;background: #fff;position: absolute!important;border:1px solid #ccc;height:205px;box-sizing: border-box;padding:10px;left:-5px;bottom:-209px;z-index:100;}
-.xiala-list .select-list-close3{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;}
+.xiala-list .select-list-close3{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;font-style: normal;}
 .mainselectCity .normal{font-size:14px;padding: 3px 20px!important;}
 .search-keyword-col input{font-weight: bold;font-size:16px;border:0;}
 .search-keyword-col input:focus{border:0;}

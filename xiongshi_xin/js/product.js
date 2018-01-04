@@ -2901,13 +2901,13 @@ $(function(){
 
 
 $('.value-plus1').on('click', function(){
-    var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)+1+"位";
+    var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)+1;
     divUpd.val(newVal);
 
 });
 
 $('.value-minus1').on('click', function(){
-    var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)-1+"位";
+    var divUpd = $(this).parent().find('.value1 input'), newVal = parseInt(divUpd.val(), 10)-1;
     if(newVal>=1) divUpd.val(newVal);
 
 });
@@ -3086,13 +3086,7 @@ $("body").on("click",".minus-text",function()
             prevNum--;
         }
 
-        if(prevNum==1)
-        {
-            $(this).parent().find(".middle-text").val(prevNum);
-        }
-        else {
-            $(this).parent().find(".middle-text").val(prevNum+"位");
-        }
+        $(this).parent().find(".middle-text").val(prevNum);
 
     }
 
@@ -3120,7 +3114,7 @@ $("body").on("click",".plus-text",function()
 
         if(prevNum<=10)
         {
-           $(this).parent().find(".middle-text").val(prevNum+"位");
+           $(this).parent().find(".middle-text").val(prevNum);
          }
 
 
