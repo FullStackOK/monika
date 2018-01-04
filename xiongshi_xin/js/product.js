@@ -2946,7 +2946,6 @@ $(document).ready(function(){
 });
 
 
-
 baguetteBox.run('.baguetteBoxThree', {
     animation: 'fadeIn',
 });
