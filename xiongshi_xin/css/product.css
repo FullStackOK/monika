@@ -272,8 +272,13 @@
 .millisecond{display: inline-block;width:25px;}
 
 .product-top{background:#f7f7f7;padding:20px 15px;margin-top:10px;}
-.product-top.active{background: #fff9e3;}
-.product-select{background:#fff9e3;padding:20px 15px;margin-top:10px;display: none;}
+.product-top .product-title{font-size:16px;font-weight:bold;float:left;max-width:490px;}
+.product-select{background:#fff9e3;padding:20px 15px;margin-top:10px;}
+.product-select .product-title{float:left;font-size:16px;font-weight:bold;}
+
+.product-tag-list{float:left;}
+.product-tag{background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;display: inline-block;}
+.product-title-price{color:#e10500;}
 
 .minus-text,.plus-text{cursor: pointer;}
 #calendar03{display: none;}

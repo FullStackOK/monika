@@ -689,8 +689,8 @@
 					<!--第一种情景-->
 					<div id="changjingCol1" class="changjing-col">
 					<div class="product-top">
-						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅</div>
-						<div style="float:left;background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;">優惠組合</div>
+						<div class="product-title"><span class="product-title-text"></span></div>
+						<div class="product-tag-list"></div>
 						<div style="float:right;">
 							<button class="detail-btn"  type="button">
 
@@ -706,8 +706,8 @@
 						<div style="clear:both;"></div>
 					</div>
 					<div class="product-select">
-						<div style="float:left;font-size:16px;font-weight:bold;">東京迪士尼海陸一起玩3日遊</div>
-						<div style="float:left;background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;">優惠組合</div>
+						<div class="product-title"><span class="product-title-text"></span></div>
+						<div class="product-tag-list"></div>
 
 						<div style="float:right;">
 							<button class="detail-btn"  type="button">
@@ -724,16 +724,19 @@
 
 						<div style="clear:both;"></div>
 						<div style="margin-top:10px;">
-							<div style="margin:10px 0;">迪士尼樂園門票-陸地</div>
-							<select name="select7" style="width:200px;height:24px;">
-								<option value="產品名稱">使用日期 2016/12/31</option>
-							</select>
+							<div style="margin:10px 0;" id="firstTitle">迪士尼樂園門票-陸地</div>
+
+
+							<div class="select-info" style="width:200px;" data-fancybox="" data-src="#hidden-content" >
+								使用日期：請選擇
+							</div>
+
 						</div>
 						<div style="margin-top:10px;">
-							<div style="margin:10px 0;">迪士尼樂園門票-海洋</div>
-							<select name="select7" style="width:200px;height:24px;">
-								<option value="產品名稱">使用日期 2016/12/31</option>
-							</select>
+							<div style="margin:10px 0;" id="secondTitle">迪士尼樂園門票-海洋</div>
+							<div class="select-info" style="width:200px;" data-fancybox="" data-src="#hidden-content" >
+							使用日期：請選擇
+						</div>
 						</div>
 						<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;">
 							<div class="col-xs-3 col-sm-3 col-md-3">
@@ -742,10 +745,14 @@
 								</div>
 								<div>
 									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
+									<span  style="color:#e10500;">TWD 11,593</span>
 								</div>
 								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span>
+									<span class="value1" style="vertical-align:initial;">
+										<input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1">
+									</span>
+									<span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
 								</div>
 							</div>
 							<div style="clear:both;"></div>
@@ -754,16 +761,18 @@
 					</div>
 					<!--第一种情景-->
 
-
-
-					<div class="changjing-col">
+					<!--第二种情景-->
+					<div id="changjingCol2" class="changjing-col">
 					<div class="product-top">
-						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅  <span style="color:#e10500;">特價 $1,919 起</span></div>
+						<div class="product-title">
+							<span class="product-title-text">白馬市極光奇景3日之旅</span>
+							<span class="product-title-price">特價 $1,919 起</span>
+						</div>
 						<span class="btn_01">優惠組合</span>
 						<div style="float:right;">
-								<button class="detail-btn detail-btn1"  type="button">
+								<button class="detail-btn"  type="button">
 
-									<span class="detail-btn-col detail-btn-open">詳細 <span>▼</span></span>
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
 
 									<span class="gouxuan-btn-col">已選 <span>√</span></span>
 
@@ -775,13 +784,16 @@
 						<div style="clear:both;"></div>
 					</div>
 					<div class="product-select">
-						<div style="float:left;font-size:16px;font-weight:bold;">白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬 <span style="color:#e10500;">特價 $1,919 起</span></div>
+						<div class="product-title">
+							<span class="product-title-text">白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬</span>
+							<span class="product-title-price">特價 $1,919 起</span>
+						</div>
 						<div style="float:left;background:#66bb3c;color:#fff;padding:1px 8px;margin-left:10px;">必買</div>
 
 						<div style="float:right;">
 							<button class="detail-btn detail-btn1"  type="button">
 
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+								<span class="detail-btn-col">詳細 <span>▼</span></span>
 
 								<span class="gouxuan-btn-col">已選 <span>√</span></span>
 
@@ -899,13 +911,510 @@
 						</div>
 					</div>
 					</div>
+					<!--第二种情景-->
 
 
-					<div class="changjing-col">
+					<!--第三种情景-->
+					<div id="changjingCol3" class="changjing-col">
 					<div class="product-top">
-						<div style="font-size:16px;font-weight:bold;float:left;max-width:490px;">白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬市極光奇景3日之旅 <span style="color:#e10500;">特價 $1,919 起</span></div>
+						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
 						<div style="float:right;">
-							<button class="detail-btn detail-btn2"  type="button">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title">白馬市極光奇景3日之旅</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;">
+							<select name="select7" style="width:700px;height:24px;">
+								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 400</span><br>
+									<span style="color:#e10500;">TWD 9,600</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第三种情景-->
+
+					<!--第四种情景-->
+					<div id="changjingCol4" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title"><span class="price-title-text">白馬市極光奇景3日之旅</span></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;">
+							<select name="select7" style="width:700px;height:24px;">
+								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">一般</span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第四种情景-->
+
+
+					<!--第五种情景-->
+					<div id="changjingCol5" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;">
+							<select name="select7" style="width:700px;height:24px;">
+								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 400</span><br>
+									<span style="color:#e10500;">TWD 9,600</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第五种情景-->
+
+
+					<!--第六种情景-->
+					<div id="changjingCol6" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title">
+							<span class="price-title-text"><span class="product-title-text">白馬市極光奇景3日之旅</span></span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;">
+							<select name="select7" style="width:700px;height:24px;">
+								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
+							</select>
+						</div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">一般</span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第六种情景-->
+
+
+					<!--第七种情景-->
+					<div id="changjingCol7" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title">
+							<span class="product-title-text">威秀電影券*2+餐飲券*1+屏東海生館*2</span>
+							<span class="product-title-price">特價 $1,919 起</span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title">
+							<span class="product-title-text">威秀電影券*2+餐飲券*1+屏東海生館*2</span>
+							<span class="product-title-price">特價 $1,919 起</span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 400</span><br>
+									<span style="color:#e10500;">TWD 9,600</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 315</span><br>
+									<span style="color:#e10500;">TWD 7,425</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第七种情景-->
+
+					<!--第八种情景-->
+					<div id="changjingCol8" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title">
+							<span class="product-title-text">威秀電影券*2+餐飲券*1+美麗華摩天輪*2</span>
+							<span class="product-title-price">特價 $919 起</span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+					<div class="product-select">
+						<div class="product-title">
+							<span class="product-title-text">威秀電影券*2+餐飲券*1+美麗華摩天輪*2</span>
+							<span class="product-title-price">特價 $919 起</span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
+							<div class="col-xs-3 col-sm-3 col-md-3">
+								<div>
+									<span style="vertical-align:middle;margin-right:5px;">一般</span>
+								</div>
+								<div>
+									<span style="text-decoration:line-through;">CAD 495</span><br>
+									<span style="color:#e10500;">TWD 11,593</span>
+								</div>
+								<div style="margin-top:10px;">
+									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
+								</div>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+					</div>
+					</div>
+					<!--第八种情景-->
+
+					<!--第九种情景-->
+					<div id="changjingCol9" class="changjing-col">
+					<div class="product-top">
+						<div class="product-title">
+							<span class="product-title-text">歐洲任選3國火車通行證彈性火車票</span>
+						</div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
 
 								<span class="detail-btn-col detail-btn-open">詳細 <span>▼</span></span>
 
@@ -919,10 +1428,12 @@
 						<div style="clear:both;"></div>
 					</div>
 					<div class="product-select">
-						<div style="float:left;font-size:16px;font-weight:bold;">白馬市極光奇景3日之旅 <span style="color:#e10500;">特價 $1,919 起</span></div>
+						<div  class="product-title">
+							<span class="product-title-text">歐洲任選3國火車通行證彈性火車票</span>
+						</div>
 
 						<div style="float:right;">
-							<button class="detail-btn detail-btn1"  type="button">
+							<button class="detail-btn"  type="button">
 
 								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
 
@@ -1090,10 +1601,14 @@
 						</div>
 					</div>
 					</div>
+					<!--第九种情景-->
 
 
 					<div class="product-top">
-						<div style="font-size:16px;font-weight:bold;float:left;">白馬市極光奇景3日之旅 <span style="color:#e10500;">特價 $1,919 起</span></div>
+						<div class="product-title">
+							<span class="product-title-text">白馬市極光奇景3日之旅</span>
+							<span class="product-title-price">特價 $1,919 起</span>
+						</div>
 						<div style="float:right;">
 							<div style="color:#24a07d;">
 								本商品已熱銷完畢，將盡快補貨。敬請期待!
@@ -2576,6 +3091,7 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/baguetteBox.min.js"></script>
 <script src="js/readmore.js"></script>
+<script src="js/proOperate.js"></script>
 <script src="js/product.js"></script>
 <script src="js/city.js"></script>
 <script src="js/searchBar.js"></script>

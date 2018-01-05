@@ -52,5 +52,5 @@ img{ border:0;}
 .menushop:hover{border-bottom:none;}
 .menushop span{margin-right:10px;}
 .menushop::after{content:"";display:inline-block;border-style: solid;border-width: 5px 0 5px 5px;border-color: transparent transparent transparent #ffffff;}
-.select02{border: 1px solid #dddddd;padding:5px;background:#fff;width:700px;vertical-align:middle;}
-.select02::after{content:"▼";float:right;vertical-align:middle;font-size:12px;padding-top:3px;}
+.changjing-col .select-info{border: 1px solid #dddddd;padding:5px;background:#fff;width:700px;vertical-align:middle;position: relative;}
+.changjing-col .select-info:after{content:"";font-size:12px;padding-top:3px;border-left:5px solid transparent;border-top:4px solid #666;border-right:5px solid transparent;border-bottom:5px solid transparent;position: absolute;right:10px;top:13px;}
