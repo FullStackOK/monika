@@ -723,52 +723,43 @@
 						</div>
 
 						<div style="clear:both;"></div>
-						<div style="margin-top:10px;">
-							<div style="margin:10px 0;" id="firstTitle">迪士尼樂園門票-陸地</div>
 
-
-							<div class="select-info" style="width:200px;" data-fancybox="" data-src="#hidden-content" >
-								使用日期：請選擇
-							</div>
+						<div id="qingjing1">
 
 						</div>
-						<div style="margin-top:10px;">
-							<div style="margin:10px 0;" id="secondTitle">迪士尼樂園門票-海洋</div>
-							<div class="select-info" style="width:200px;" data-fancybox="" data-src="#hidden-content" >
-							使用日期：請選擇
-						</div>
-						</div>
-						<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">大人+小孩</span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span  style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span>
-									<span class="value1" style="vertical-align:initial;">
-										<input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1">
-									</span>
-									<span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div style="clear:both;"></div>
+
+						<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col" >
+							<div class="clearfix identity-list"></div>
+
 						</div>
 					</div>
 					</div>
+
+
+					<div  style="display:none;" id="qingjingModal1">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div>
+							<div class="calendar-main" id="calendarCol1">
+
+
+							</div>
+						</div>
+					</div>
+
 					<!--第一种情景-->
 
 					<!--第二种情景-->
 					<div id="changjingCol2" class="changjing-col">
 					<div class="product-top">
 						<div class="product-title">
-							<span class="product-title-text">白馬市極光奇景3日之旅</span>
-							<span class="product-title-price">特價 $1,919 起</span>
+							<span class="product-title-text"></span>
+							<span class="product-title-price"></span>
 						</div>
-						<span class="btn_01">優惠組合</span>
+						<div class="product-tag-list"></div>
+
 						<div style="float:right;">
 								<button class="detail-btn"  type="button">
 
@@ -785,13 +776,13 @@
 					</div>
 					<div class="product-select">
 						<div class="product-title">
-							<span class="product-title-text">白馬市極光奇景3日之旅白馬市極光奇景3日之旅白馬</span>
-							<span class="product-title-price">特價 $1,919 起</span>
+							<span class="product-title-text"></span>
+							<span class="product-title-price"></span>
 						</div>
-						<div style="float:left;background:#66bb3c;color:#fff;padding:1px 8px;margin-left:10px;">必買</div>
+						<div class="product-tag-list"></div>
 
 						<div style="float:right;">
-							<button class="detail-btn detail-btn1"  type="button">
+							<button class="detail-btn"  type="button">
 
 								<span class="detail-btn-col">詳細 <span>▼</span></span>
 
@@ -805,25 +796,34 @@
 
 						<div style="clear:both;"></div>
 						<div style="margin-top:10px;">
-							<div class="select02" id="dateContent" data-fancybox data-src="#hidden-content" href="javascript:;">
-								選項<font style="color:red;">*</font> 請選擇
+							<div class="select-info" id="dateContent" data-fancybox data-src="#qingjingModal2" href="javascript:;">
+								選項<font style="color:red;">*</font> <span id="qingjing2Text">請選擇</span>
 							</div>
 
-							<input type="hidden" id="dateCol" />
-							<input type="hidden" id="priceCol" />
-							<input type="hidden" id="shenfenCol" />
-							<input type="hidden" id="changciCol" />
-							<input type="hidden" id="xuanxiangCol" />
+
+						</div>
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+							<div class="clearfix identity-list">
 
 
-							<div class="step-modal" style="display:none;" id="hidden-content">
-								<div class="title-col clearfix">
-									<div class="line"></div>
-									<div class="text">請選擇</div>
-								</div>
-								<div class="calendar-col">
-									<div style="margin-bottom:20px;">
-										<div style="float:left;width:320px;">
+							</div>
+
+						</div>
+					</div>
+					</div>
+
+
+
+
+
+					<div class="step-modal" style="display:none;" id="qingjingModal2">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div class="calendar-col">
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
 
 											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
@@ -832,9 +832,9 @@
 
 											</select>
 											</span>
-										</div>
+								</div>
 
-										<div style="float:left;width:166px;margin-left:5px;">
+								<div style="float:left;width:166px;margin-left:5px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
 
 												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
@@ -843,9 +843,9 @@
 
 											</select>
 											</span>
-										</div>
+								</div>
 
-										<div style="float:left;width:166px;margin-left:5px;">
+								<div style="float:left;width:166px;margin-left:5px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
 
 												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
@@ -855,582 +855,634 @@
 											</select>
 
 											</span>
-										</div>
-										<div style="clear:both;"></div>
-									</div>
-									<div id="calendar04" data-moths="3"></div>
 								</div>
-							</div>
-						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="identity-list">
-								<!--<div class="col-xs-3 col-sm-3 col-md-3 identity-col">
-									<div>
-										<span style="vertical-align:middle;margin-right:5px;">大人</span>
-										<span class="hover-text"><img src="images/icon10.png"/>
-										<div  class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-										</span>
-
-									</div>
-									<div style="margin-top:10px;">
-										<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">
-										<input name="textfield3" id="adult" type="text" size="3" style="height:24px;text-align:center;" value="1">
-										</span>
-										<span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-									</div>
-								</div>
-								<div class="col-xs-3 col-sm-3 col-md-3 identity-col">
-									<div>
-										<span style="vertical-align:middle;margin-right:5px;">孩童</span>
-											<span class="hover-text"><img src="images/icon10.png"/>
-										<div  class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-										</span>
-									</div>
-									<div style="margin-top:10px;">
-										<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">
-										<input name="textfield3" type="text" size="3" id="child" style="height:24px;text-align:center;" value="1"></span>
-										<span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-									</div>
-								</div>-->
-
-
-								<div class="col-xs-3 col-sm-3 col-md-3">
-									<div style="margin-top:35px;color:#e10500;">
-										提示文字題示文字
-									</div>
-								</div>
-
+								<div style="clear:both;"></div>
 							</div>
 
 
+							<div class="calendar-main" id="calendarCol2">
 
-							<div class="col-xs-24 col-sm-24 col-md-24" style="padding:10px 5px;margin-top:10px;">
-								<span style="color:#e10500;">此為必須購買產品，</span>產品至少需購買<span id="shenfenColText"></span>，詳細內容請見「<a href="#buylimit" style="color:#0077b3;">購買限制</a>」
+
+
 							</div>
-							<div style="clear:both;"></div>
+
 						</div>
 					</div>
-					</div>
+
+
+
+
 					<!--第二种情景-->
 
 
 					<!--第三种情景-->
 					<div id="changjingCol3" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title">白馬市極光奇景3日之旅</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;">
-							<select name="select7" style="width:700px;height:24px;">
-								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
-							</select>
-						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
 							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 400</span><br>
-									<span style="color:#e10500;">TWD 9,600</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+						<div class="product-select">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
+							</div>
+
+							<div style="clear:both;"></div>
+							<div style="margin-top:10px;">
+								<div class="select-info"  data-fancybox data-src="#qingjingModal3" href="javascript:;">
+									選項<font style="color:red;">*</font> <span id="qingjing3Text">請選擇</span>
+								</div>
+
+
+							</div>
+							<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+								<div class="clearfix identity-list">
+
+
+								</div>
+
+							</div>
+						</div>
 					</div>
+
+					<div class="step-modal" style="display:none;" id="qingjingModal3">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div class="calendar-col">
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
+
+											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
+
+											<select name="select7" id="xuanxiangText3"  style="width:318px;height:24px;border:0;padding-left:40px;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
+
+											<select name="select7" id="changciText3"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
+
+											<select name="select7" id="shenfenText3"  style="width:164px;height:24px;padding-left:40px;border:0;">
+												<option value='成人'> 成人</option>
+											</select>
+
+											</span>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+
+							<div class="calendar-main" id="calendarCol3">
+
+
+
+							</div>
+
+						</div>
 					</div>
+
 					<!--第三种情景-->
 
 					<!--第四种情景-->
 					<div id="changjingCol4" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
 
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
 
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
 
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
 
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title"><span class="price-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
 
 
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;">
-							<select name="select7" style="width:700px;height:24px;">
-								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
-							</select>
-						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">一般</span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+						<div class="product-select">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
+							</div>
+
+							<div style="clear:both;"></div>
+							<div style="margin-top:10px;">
+								<div class="select-info" data-fancybox data-src="#qingjingModal4" href="javascript:;">
+									選項<font style="color:red;">*</font> <span id="qingjing4Text">請選擇</span>
+								</div>
+
+
+							</div>
+							<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+								<div class="clearfix identity-list">
+
+
+								</div>
+
+							</div>
+						</div>
 					</div>
+
+					<div class="step-modal" style="display:none;" id="qingjingModal4">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div class="calendar-col">
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
+
+											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
+
+											<select name="select7" id="xuanxiangText4"  style="width:318px;height:24px;border:0;padding-left:40px;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
+
+											<select name="select7" id="changciText4"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
+
+											<select name="select7" id="shenfenText4"  style="width:164px;height:24px;padding-left:40px;border:0;">
+												<option value='成人'> 成人</option>
+											</select>
+
+											</span>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+
+							<div class="calendar-main" id="calendarCol4">
+
+
+
+							</div>
+
+						</div>
 					</div>
+
 					<!--第四种情景-->
 
 
 					<!--第五种情景-->
 					<div id="changjingCol5" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;">
-							<select name="select7" style="width:700px;height:24px;">
-								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
-							</select>
-						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
 							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 400</span><br>
-									<span style="color:#e10500;">TWD 9,600</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+						<div class="product-select">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
+							</div>
+
+							<div style="clear:both;"></div>
+							<div style="margin-top:10px;">
+								<div class="select-info"  data-fancybox data-src="#qingjingModal5" href="javascript:;">
+									選項<font style="color:red;">*</font> <span id="qingjing5Text">請選擇</span>
+								</div>
+
+
+							</div>
+							<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+								<div class="clearfix identity-list">
+
+
+								</div>
+
+							</div>
+						</div>
 					</div>
+
+					<div class="step-modal" style="display:none;" id="qingjingModal5">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div class="calendar-col">
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
+
+											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
+
+											<select name="select7" id="xuanxiangText5"  style="width:318px;height:24px;border:0;padding-left:40px;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
+
+											<select name="select7" id="changciText5"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
+
+											<select name="select7" id="shenfenText5"  style="width:164px;height:24px;padding-left:40px;border:0;">
+												<option value='成人'> 成人</option>
+											</select>
+
+											</span>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+							<div class="bottom-btn" style="display: block;">
+
+								<button type="button" class="left-btn" data-fancybox-close>取消</button>
+								<button type="button" class="right-btn" data-fancybox-close id="querenBtn5">确认</button>
+
+							</div>
+
+
+						</div>
 					</div>
+
 					<!--第五种情景-->
 
 
 					<!--第六种情景-->
 					<div id="changjingCol6" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title"><span class="product-title-text">白馬市極光奇景3日之旅</span></div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
 
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
 
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
 
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
 
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title">
-							<span class="price-title-text"><span class="product-title-text">白馬市極光奇景3日之旅</span></span>
-						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
 
 
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;">
-							<select name="select7" style="width:700px;height:24px;">
-								<option value="產品名稱">選項*  Best Western Gold Rush Inn雙人房 ，21 :30 ，2016/12/31</option>
-							</select>
-						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">一般</span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+						<div class="product-select">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
+							</div>
+
+							<div style="clear:both;"></div>
+							<div style="margin-top:10px;">
+								<div class="select-info"  data-fancybox data-src="#qingjingModal6" href="javascript:;">
+									選項<font style="color:red;">*</font> <span id="qingjing6Text">請選擇</span>
+								</div>
+
+
+							</div>
+							<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+								<div class="clearfix identity-list">
+
+
+								</div>
+
+							</div>
+						</div>
 					</div>
+
+					<div class="step-modal" style="display:none;" id="qingjingModal6">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<div class="calendar-col">
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
+
+											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
+
+											<select name="select7" id="xuanxiangText6"  style="width:318px;height:24px;border:0;padding-left:40px;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
+
+											<select name="select7" id="changciText6"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
+											</span>
+								</div>
+
+								<div style="float:left;width:166px;margin-left:5px;">
+											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
+												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
+
+											<select name="select7" id="shenfenText6"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
+
+											</span>
+								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+							<div class="bottom-btn" style="display: block;">
+
+								<button type="button" class="left-btn" data-fancybox-close>取消</button>
+								<button type="button" class="right-btn" data-fancybox-close id="querenBtn6">确认</button>
+
+							</div>
+
+						</div>
 					</div>
+
 					<!--第六种情景-->
 
 
 					<!--第七种情景-->
 					<div id="changjingCol7" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title">
-							<span class="product-title-text">威秀電影券*2+餐飲券*1+屏東海生館*2</span>
-							<span class="product-title-price">特價 $1,919 起</span>
-						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title">
-							<span class="product-title-text">威秀電影券*2+餐飲券*1+屏東海生館*2</span>
-							<span class="product-title-price">特價 $1,919 起</span>
-						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">大人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
 							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">孩童</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">老人</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 400</span><br>
-									<span style="color:#e10500;">TWD 9,600</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">學生</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span><span><img src="images/icon10.png"></span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 315</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+					<div class="product-select">
+						<div class="product-title">
+							<span class="product-title-text"></span>
+							<span class="product-title-price"></span>
+						</div>
+						<div class="product-tag-list"></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+						<div style="clear:both;"></div>
+
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+							<div class="clearfix identity-list">
+
+
+							</div>
+
+						</div>
+
 					</div>
 					</div>
 					<!--第七种情景-->
 
 					<!--第八种情景-->
 					<div id="changjingCol8" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title">
-							<span class="product-title-text">威秀電影券*2+餐飲券*1+美麗華摩天輪*2</span>
-							<span class="product-title-price">特價 $919 起</span>
-						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
 
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
 
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
 
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
 
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
-					<div class="product-select">
-						<div class="product-title">
-							<span class="product-title-text">威秀電影券*2+餐飲券*1+美麗華摩天輪*2</span>
-							<span class="product-title-price">特價 $919 起</span>
-						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
 
 
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">一般</span>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 11,593</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
+								</button>
 							</div>
 							<div style="clear:both;"></div>
 						</div>
+					<div class="product-select">
+						<div class="product-title">
+							<span class="product-title-text"></span>
+							<span class="product-title-price"></span>
+						</div>
+						<div class="product-tag-list"></div>
+						<div style="float:right;">
+							<button class="detail-btn"  type="button">
+
+								<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+								<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+								<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+							</button>
+						</div>
+
+						<div style="clear:both;"></div>
+
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+							<div class="clearfix identity-list">
+
+
+							</div>
+
+						</div>
+
 					</div>
 					</div>
 					<!--第八种情景-->
 
 					<!--第九种情景-->
 					<div id="changjingCol9" class="changjing-col">
-					<div class="product-top">
-						<div class="product-title">
-							<span class="product-title-text">歐洲任選3國火車通行證彈性火車票</span>
+						<div class="product-top">
+							<div class="product-title">
+								<span class="product-title-text"></span>
+								<span class="product-title-price"></span>
+							</div>
+							<div class="product-tag-list"></div>
+
+							<div style="float:right;">
+								<button class="detail-btn"  type="button">
+
+									<span class="detail-btn-col">詳細 <span>▼</span></span>
+
+									<span class="gouxuan-btn-col">已選 <span>√</span></span>
+
+									<span class="quxiao-btn-col">取消 <span>×</span></span>
+
+
+								</button>
+							</div>
+							<div style="clear:both;"></div>
 						</div>
-						<div style="float:right;">
-							<button class="detail-btn"  type="button">
-
-								<span class="detail-btn-col detail-btn-open">詳細 <span>▼</span></span>
-
-								<span class="gouxuan-btn-col">已選 <span>√</span></span>
-
-								<span class="quxiao-btn-col">取消 <span>×</span></span>
-
-
-							</button>
-						</div>
-						<div style="clear:both;"></div>
-					</div>
 					<div class="product-select">
-						<div  class="product-title">
-							<span class="product-title-text">歐洲任選3國火車通行證彈性火車票</span>
+						<div class="product-title">
+							<span class="product-title-text"></span>
+							<span class="product-title-price"></span>
 						</div>
+						<div class="product-tag-list"></div>
 
 						<div style="float:right;">
 							<button class="detail-btn"  type="button">
@@ -1447,19 +1499,34 @@
 
 						<div style="clear:both;"></div>
 						<div style="margin-top:10px;">
-							<div class="select02" data-fancybox data-src="#hidden-content02" href="javascript:;" id="productSelect">選項<font style="color:red;">*</font> 請選擇</div>
-							<div class="step-modal" style="display: none;" id="hidden-content02">
-								<div class="title-col clearfix">
-									<div class="line"></div>
-									<div class="text">請選擇</div>
-								</div>
-								<input style="width:578px;" id="countryInput" type="text" placeholder="選擇國家*  請選擇n項" />
-								<div class="select-country">
-									<ul class="country-list clearfix" id="countryList">
+							<div class="select-info" data-fancybox data-src="#qingjingModal9" href="javascript:;" id="productSelect">選項<font style="color:red;">*</font> 請選擇</div>
+
+						</div>
+
+						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">
+							<div class="clearfix identity-list">
 
 
-									</ul>
-									<div class="map-col">
+							</div>
+
+						</div>
+
+					</div>
+					</div>
+
+
+					<div class="step-modal" style="display: none;" id="qingjingModal9">
+						<div class="title-col clearfix">
+							<div class="line"></div>
+							<div class="text">請選擇</div>
+						</div>
+						<input style="width:578px;" id="countryInput" data-value="" type="text" placeholder="選擇國家*  請選擇n項" />
+						<div class="select-country">
+							<ul class="country-list clearfix" id="countryList">
+
+
+							</ul>
+							<div class="map-col">
 										<span class="map-operate">
 										<span class="open">
 											<img src="images/imgClose.png"/>
@@ -1468,139 +1535,60 @@
 											<img src="images/imgOpen.png"/>
 										</span>
 										</span>
-										<img src="data/map.png"/>
-									</div>
-								</div>
+								<img src="data/map.png"/>
+							</div>
+						</div>
 
-								<div class="calendar-col" style="display: none;">
+						<div class="calendar-col" style="display: none;">
 
-									<div style="margin-bottom:20px;">
-										<div style="float:left;width:320px;">
-
+							<div style="margin-bottom:20px;">
+								<div style="float:left;width:320px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:320px;height:26px;position: relative;">
+
 											<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>
 
-											<select name="select7" id="xuanxiangText2" style="width:320px;height:24px;border:0;padding-left:50px;">
-												<option value='Best Western Gold Rush Inn雙人房'>Best Western Gold Rush Inn雙人房</option>
+											<select name="select7" id="xuanxiangText9"  style="width:318px;height:24px;border:0;padding-left:40px;">
+
 											</select>
 											</span>
+								</div>
 
-
-
-
-										</div>
-
-										<div style="float:left;width:166px;margin-left:5px;">
+								<div style="float:left;width:166px;margin-left:5px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
 
 												<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>
 
-											<select name="select7" id="changciText2" style="width:164px;height:24px;padding-left:40px;border:0;"><option value="1">07:00</option><option value="2">08:00</option></select>
+											<select name="select7" id="changciText9"  style="width:164px;height:24px;padding-left:40px;border:0;">
+
+											</select>
 											</span>
-										</div>
+								</div>
 
-										<div style="float:left;width:166px;margin-left:5px;">
-
-
+								<div style="float:left;width:166px;margin-left:5px;">
 											<span style="border:1px solid #ddd;display: inline-block;width:166px;height:26px;position: relative;">
+
 												<span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>
 
-												<select name="select7" id="shenfenText2"  style="width:164px;height:24px;padding-left:40px;border:0;">
-													<option value='成人'> 成人</option>
-												</select>
+											<select name="select7" id="shenfenText9"  style="width:164px;height:24px;padding-left:40px;border:0;">
+												<option value='成人'> 成人</option>
+											</select>
+
 											</span>
-
-
-										</div>
-										<div style="clear:both;"></div>
-									</div>
-									<div id="calendar02"></div>
-
-									<div></div>
-
 								</div>
+								<div style="clear:both;"></div>
+							</div>
+
+							<div class="calendar-main" id="calendarCol9">
+
 
 
 							</div>
+
 						</div>
-						<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;">
-							<div class="col-xs-3 col-sm-3 col-md-3">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">大人</span>
-									<span id="button03"><img src="images/icon10.png"/></span>
-									<div id="talkbox03" class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">孩童</span>
-									<span id="button04"><img src="images/icon10.png"/></span>
-									<div id="talkbox04" class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">老人</span>
-									<span id="button05"><img src="images/icon10.png"/></span>
-									<div id="talkbox05" class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">學生</span>
-									<span id="button06"><img src="images/icon10.png"/></span>
-									<div id="talkbox06" class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-3 col-sm-3 col-md-3" style="margin-left:30px;">
-								<div>
-									<span style="vertical-align:middle;margin-right:5px;">嬰幼兒</span>
-									<span id="button07"><img src="images/icon10.png"/></span>
-									<div id="talkbox07" class="talkbox">測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字</div>
-								</div>
-								<div>
-									<span style="text-decoration:line-through;">CAD 495</span><br>
-									<span style="color:#e10500;">TWD 7,425</span>
-								</div>
-								<div style="margin-top:10px;">
-									<span class="value-minus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;"><input name="textfield3" type="text" size="3" style="height:24px;text-align:center;" value="1"></span><span class="value-plus1" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>
-								</div>
-							</div>
-							<div class="col-xs-24 col-sm-24 col-md-24" style="padding:10px 5px;margin-top:10px;">
-								<span style="color:#e10500;">此為必須購買產品，</span>產品至少需購買大人1位、孩童1位，詳細內容請見「<a href="#buylimit" style="color:#0077b3;">購買限制</a>」
-							</div>
-							<div style="clear:both;"></div>
-						</div>
+
+
 					</div>
-					</div>
+
 					<!--第九种情景-->
 
 
@@ -3078,6 +3066,26 @@
 </div>
 
 
+<script type="text/template" id="calendarTemplate">
+	<div class="clndr-controls">
+		<div class="clndr-previous-button">
+			<span></span>
+		</div>
+		<div class="clndr-next-button">
+			<span></span>
+		</div>
+		<div class="month" data-str="<%= year %>-<%= month %>"><%= year %> 年 <%= month %> 月 </div>
+	</div>
+	<div class="clndr-grid">
+		<div class="days-of-the-week">
+			<% _.each(daysOfTheWeek, function(day) { %><div class="header-day"><%= day %></div><% }); %>
+		</div>
+		<div class="days">
+			<% _.each(days, function(day) { %><div class="<%= day.classes %>" data-str="<%= day.date.format('YYYY-MM-DD') %>" id="<%= day.id %>"><span class="day-number"><%= day.day %></span><div class="price-text"></div></div><% }); %>
+		</div>
+	</div>
+</script>
+
 <script src="js/jquery.min.js"></script>
 
 <script src="js/jquery.bxslider.js"></script>
@@ -3091,6 +3099,10 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/baguetteBox.min.js"></script>
 <script src="js/readmore.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/moment.zh-cn.js"></script>
+<script src="js/clndr.js"></script>
 <script src="js/proOperate.js"></script>
 <script src="js/product.js"></script>
 <script src="js/city.js"></script>
@@ -3100,5 +3112,9 @@
 
 
 <div id="goTop" class="display" style="position:fixed; bottom:50px; right:2%; cursor:pointer;z-index:10;"><img style="width:100%" src="images/top.png" ></div>
+
+
+
+
 </body>
 </html>
