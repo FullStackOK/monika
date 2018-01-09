@@ -9228,6 +9228,7 @@ $("body").on("click",".child-level",function()
 $(".mobile-product .mible-title").click(function()
 {
 
+
         $(this).toggleClass("active");
         $(this).next().toggle();
 
