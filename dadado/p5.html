@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://demos.jquerymobile.com/1.4.5/panel-external/ -->
+<html class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://demos.jquerymobile.com/1.4.5/panel-external/">--><base href=".">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>華歌爾</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jqm-demos.css">
+	<script src="js/jquery.js"></script>
+	
+	<script type="text/javascript" src="js/001.js"></script>
+	<script>
+	$(function(){
+		$(window).load(function(){
+			$(window).bind('scroll resize', function(){
+				var $this = $(this);
+				var $this_Top=$this.scrollTop();
+				
+				if($this_Top < 300){
+					$('#goTop').addClass("hidden");
+					}
+				if($this_Top > 300){
+					$('#goTop').removeClass("hidden");
+							
+				}
+			}).scroll();
+		});
+	});
+	</script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a" style="" id="ui-page-top">
+	<div class="jqm-demos ui-page ui-page-theme-a ui-page-active" tabindex="0" style="">
+		<div class="content05">
+			<div class="menubar">
+				<div class="logo"><a href="index.html"><img src="images/logo.png"/></a></div>
+				<div id="menubtn"><div id="menuimg"></div></div>
+				<div class="dropdown js" id="nav">
+					<div class="dropdown01">
+					  <div><a href="story.html"><img src="images/menu01.png"/></a></div>
+					  <div><a href="p1.html"><img src="images/menu02.png"/></a></div>
+					  <div><a href="p2.html"><img src="images/menu03.png"/></a></div>
+					  <div><a href="p3.html"><img src="images/menu04.png"/></a></div>
+					  <div><a href="p4.html"><img src="images/menu05.png"/></a></div>
+					  <div><a href="p5.html"><img src="images/menu06.png"/></a></div>
+					  <div class="underline2"><a href="p6.html"><img src="images/menu08.png"/></a></div>
+					  <div><a href="p7.html"><img src="images/menu07.png"/></a></div>
+					  <div class="dropdown02">
+						<div class="menulogo2">
+							<div class="menulogo2top"><a href="https://www.wacoal.com.tw/"><img src="images/menulogo2.png"/></a></div>
+							<div><img src="images/menulogo2-1.png"/></div>
+						</div>
+						<div class="menulogo2">
+							<div class="menulogo2top"><a href="https://www.facebook.com/wacoalfans/"><img src="images/menulogo3.png"/></a></div>
+							<div><img src="images/menulogo3-1.png"/></div>
+						</div>
+						<div style="clear:both;"></div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="content02">
+					<img src="images/page41.png"/>
+				</div>
+				<div class="content02">
+					<img src="images/page42.png"/>
+				</div>
+				<div class="content02">
+					<img src="images/page43.png"/>
+				</div>
+				<div class="content02">
+					<img src="images/title05.png"/>
+				</div>
+				<div class="content03">
+					<div class="row">
+						<div class="product"><a href="pin5.html#p01"><img src="images/product41.png"/></a></div>
+						<div class="product"><a href="pin5.html#p02"><img src="images/product42.png"/></a></div>
+						<div class="product"><a href="pin5.html#p03"><img src="images/product43.png"/></a></div>
+						<div class="product"><a href="pin5.html#p04"><img src="images/product44.png"/></a></div>
+						<div class="product"><a href="pin5.html#p05"><img src="images/product45.png"/></a></div>
+						<div class="product"><a href="pin5.html#p06"><img src="images/product46.png"/></a></div>
+						<div class="product"><a href="pin5.html#p07"><img src="images/product47.png"/></a></div>
+						<div class="product"><a href="pin5.html#p08"><img src="images/product48.png"/></a></div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer2">
+				<div class="footerleft"><img src="images/copyright.png"/></div><a href="https://www.facebook.com/wacoalfans/"><img src="images/footerfb.png"/></a><a href="https://www.wacoal.com.tw/"><img src="images/footerlogo.png"/></a>
+			</footer>
+		</div>
+	</div><!-- /page -->
+	<!-- rightpanel3  -->
+	<script>
+		$("#menubtn").click(function(){
+			$("#nav").toggle();
+			$('#menuimg').toggle(
+                function(){
+                    $(this).css("display","block");
+					$(this).css("background-image","url(../images/menu.png)");
+                },
+                function(){
+					$(this).css("display","block");
+					$(this).css("background-image","images/menu.png");
+                }
+                );
+		}
+		);
+    </script>
+	<div id="goTop" class="gototop3"></div>
+</body>
+</html>

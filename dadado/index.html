@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://demos.jquerymobile.com/1.4.5/panel-external/ -->
+<html class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://demos.jquerymobile.com/1.4.5/panel-external/">--><base href=".">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>華歌爾</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jqm-demos.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+	<script src="js/owl.carousel.js"></script>
+	
+	<script type="text/javascript" src="js/001.js"></script>
+	<script>
+	$(function(){
+		$(window).load(function(){
+			$(window).bind('scroll resize', function(){
+				var $this = $(this);
+				var $this_Top=$this.scrollTop();
+				
+				if($this_Top < 300){
+					$('#goTop').addClass("hidden");
+					}
+				if($this_Top > 300){
+					$('#goTop').removeClass("hidden");
+							
+				}
+			}).scroll();
+		});
+	});
+	</script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a" style="" id="ui-page-top">
+	<div class="jqm-demos ui-page ui-page-theme-a ui-page-active" tabindex="0" style="">
+		<div class="content05">
+			<div class="menubar">
+				<div class="logo"><a href="index.html"><img src="images/logo.png"/></a></div>
+				<div id="menubtn"><div id="menuimg"></div></div>
+				<div class="dropdown js" id="nav">
+					<div class="dropdown01">
+					  <div><a href="story.html"><img src="images/menu01.png"/></a></div>
+					  <div><a href="p1.html"><img src="images/menu02.png"/></a></div>
+					  <div><a href="p2.html"><img src="images/menu03.png"/></a></div>
+					  <div><a href="p3.html"><img src="images/menu04.png"/></a></div>
+					  <div><a href="p4.html"><img src="images/menu05.png"/></a></div>
+					  <div><a href="p5.html"><img src="images/menu06.png"/></a></div>
+					  <div class="underline2"><a href="p6.html"><img src="images/menu08.png"/></a></div>
+					  <div><a href="p7.html"><img src="images/menu07.png"/></a></div>
+					  <div class="dropdown02">
+						<div class="menulogo2">
+							<div class="menulogo2top"><a href="https://www.wacoal.com.tw/"><img src="images/menulogo2.png"/></a></div>
+							<div><img src="images/menulogo2-1.png"/></div>
+						</div>
+						<div class="menulogo2">
+							<div class="menulogo2top"><a href="https://www.facebook.com/wacoalfans/"><img src="images/menulogo3.png"/></a></div>
+							<div><img src="images/menulogo3-1.png"/></div>
+						</div>
+						<div style="clear:both;"></div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="content01">
+					<section id="demos">
+						<div class="row">
+							<div class="large-12 columns">
+								<div class="fadeOut owl-carousel owl-theme">
+									<div class="item">
+									  <div><img src="images/slider01.png"/></div>
+									</div>
+									<div class="item">
+									  <div><img src="images/slider02.png"/></div>
+									</div>
+									<div class="item">
+									  <div><img src="images/slider03.png"/></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				<div class="content02">
+					<img src="images/pic01.png"/>
+				</div>
+				<div class="content02">
+					<a href="story.html"><img src="images/icon01.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p1.html"><img src="images/icon02.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p2.html"><img src="images/icon03.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p3.html"><img src="images/icon04.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p4.html"><img src="images/icon05.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p5.html"><img src="images/icon06.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p6.html"><img src="images/icon07.png"/></a>
+				</div>
+				<div class="content02">
+					<a href="p7.html"><img src="images/icon08.png"/></a>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="footerleft"><img src="images/copyright.png"/></div><a href="https://www.facebook.com/wacoalfans/"><img src="images/footerfb.png"/></a><a href="https://www.wacoal.com.tw/"><img src="images/footerlogo.png"/></a>
+			</footer>
+		</div><!-- /page -->
+	</div>
+	<!-- rightpanel3  -->
+	<link rel="stylesheet" href="css/animate.css">
+    <script>
+        jQuery(document).ready(function($) {
+        $('.fadeOut').owlCarousel({
+            items: 1,
+            animateOut: 'fadeOut',
+            loop: true,
+            margin: 10,
+			autoplay:true,
+			autoplayTimeout:3000,
+			autoplayHoverPause:true
+        });
+        $('.custom1').owlCarousel({
+            animateOut: 'slideOutDown',
+            animateIn: 'flipInX',
+            items: 1,
+            margin: 30,
+            stagePadding: 30,
+            smartSpeed: 450
+        });
+        });
+		
+		$("#menubtn").click(function(){
+			$(this).toggleClass("active");
+			$("#nav").toggle();
+			
+		}
+		);
+    </script>
+	<div id="goTop" class="gototop"></div>
+</body>
+</html>
