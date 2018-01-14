@@ -66,44 +66,7 @@ $("#closeSelectDate").click(function()
 
 
 //情景1日期控件
-$("#calendarCol1").clndr({
-    template: $('#calendarTemplate').html(),
-    clickEvents: {
-        onMonthChange: function () {
 
-            initFirstScene();
-
-        },
-        click: function(target){
-
-           if($(target.element).hasClass("active"))
-           {
-               var dateStr=target.date.format("YYYY-MM-DD");
-               console.log(dateStr);
-               $("#"+selectInfoId).find("span").text(dateStr);
-           }
-
-
-
-        },
-    },
-
-    moment: moment,
-    constraints: {
-        endDate: moment().add(90, 'days').format("YYYY-MM-DD"),
-        startDate: moment().format("YYYY-MM-DD")
-    },
-
-    numberOfRows: 5,
-
-    adjacentDaysChangeMonth : true,
-});
-
-function initFirstScene()
-{
-    var dateListCol=sceneJson[qingjing1Index].selectList[qingjing1SelectIndex].dateList;
-    initCalendarInfo($("#calendarCol1"),dateListCol);
-}
 
 //添加日历可选数据
 function initCalendarInfo($calendarCol,dateListCol)
@@ -132,10 +95,71 @@ function initCalendarInfo($calendarCol,dateListCol)
     });
 }
 
+
+//情景1
+function initFirstScene($container,$qingjingModal)
+{
+
+    var qingjing1SelectIndex;
+    var qingjing1Index;
+    var $selectInfoObj;
+    $(".changjing-col").on("click",".select-info-first",function()
+    {
+        qingjing1Index=parseInt($(this).attr("data-index1"));
+        qingjing1SelectIndex=parseInt($(this).attr("data-index2"));
+        $selectInfoObj=$(this);
+
+        var dateListCol=sceneJson[qingjing1Index].selectList[qingjing1SelectIndex].dateList;
+        initCalendarInfo($qingjingModal.find(".calendarCol1"),dateListCol);
+
+    });
+
+
+    $qingjingModal.find(".calendarCol1").clndr({
+        template: $('#calendarTemplate').html(),
+        clickEvents: {
+            onMonthChange: function () {
+
+                var dateListCol=sceneJson[qingjing1Index].selectList[qingjing1SelectIndex].dateList;
+                initCalendarInfo($qingjingModal.find(".calendarCol1"),dateListCol);
+
+
+            },
+            click: function(target){
+
+                if($(target.element).hasClass("active"))
+                {
+                    var dateStr=target.date.format("YYYY-MM-DD");
+                    console.log(dateStr);
+                    $selectInfoObj.find("span").text(dateStr);
+                }
+
+
+
+            },
+        },
+
+        moment: moment,
+        constraints: {
+            endDate: moment().add(90, 'days').format("YYYY-MM-DD"),
+            startDate: moment().format("YYYY-MM-DD")
+        },
+
+        numberOfRows: 5,
+
+        adjacentDaysChangeMonth : true,
+    });
+
+
+
+
+
+}
+
+
+
 //情景2
-var optionList=[];
-var isMustBuy2;
-function initSecondScene()
+function initSecondScene($container,$qingjingModal,isMustBuy,optionList)
 {
 
 
@@ -147,23 +171,23 @@ function initSecondScene()
 
     }
 
-    $("#xuanxiangText").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText").append(selectHtml);
 
 
     //联动
-    $("#xuanxiangText").change(function()
+    $qingjingModal.find(".xuanxiangText").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText").val()-1);
+        var optionId2=parseInt($qingjingModal.find(".changciText").val()-1);
         console.log("optionId2:"+optionId2);
         initIdentitySelect(optionId2);
         initPrice();
     });
 
 
-    $("#changciText").change(function()
+    $qingjingModal.find(".changciText").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initIdentitySelect(optionId);
@@ -171,7 +195,7 @@ function initSecondScene()
 
     });
 
-    $("#shenfenText").change(function()
+    $qingjingModal.find(".shenfenText").change(function()
     {
 
         initPrice();
@@ -181,28 +205,30 @@ function initSecondScene()
     function initIdentitySelect(optionId2)
     {
 
-        var optionId1=parseInt($("#xuanxiangText").val()-1);
+
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText").val()-1);
 
 
-        $("#shenfenText").empty();
+
+        $qingjingModal.find(".shenfenText").empty();
         var identityHtml="";
         for(var i=0;i<optionList[optionId1].time[optionId2].identity.length;i++)
         {
             identityHtml=identityHtml+"<option value='"+optionList[optionId1].time[optionId2].identity[i].id+"'>"+optionList[optionId1].time[optionId2].identity[i].name+"</option>"
         }
-        $("#shenfenText").append(identityHtml);
+        $qingjingModal.find(".shenfenText").append(identityHtml);
     }
 
 
     function initTimeSelect(optionId)
     {
-        $("#changciText").empty();
+        $qingjingModal.find(".changciText").empty();
         var timeHtml="";
         for(var i=0;i<optionList[optionId].time.length;i++)
         {
             timeHtml=timeHtml+"<option value='"+optionList[optionId].time[i].id+"'>"+optionList[optionId].time[i].name+"</option>"
         }
-        $("#changciText").append(timeHtml);
+        $qingjingModal.find(".changciText").append(timeHtml);
     }
 
     initTimeSelect(0);
@@ -210,7 +236,7 @@ function initSecondScene()
 
 
 
-    $("#calendarCol2").clndr({
+    $qingjingModal.find(".calendarCol2").clndr({
         template: $('#calendarTemplate').html(),
         clickEvents: {
             onMonthChange: function () {
@@ -224,7 +250,7 @@ function initSecondScene()
                 {
                     var dateStr=target.date.format("YYYY-MM-DD");
 
-                    var qingjing2Text=$("#xuanxiangText option:selected").text()+"，"+$("#changciText option:selected").text()+"，"+dateStr;
+                    var qingjing2Text=$qingjingModal.find(".xuanxiangText option:selected").text()+"，"+$qingjingModal.find(".changciText option:selected").text()+"，"+dateStr;
 
                     var priceText=$(target.element).find(".price-text").text();
 
@@ -233,18 +259,20 @@ function initSecondScene()
                         qingjing2Text=qingjing2Text+"，"+priceText;
                     }
 
-                    $("#qingjing2Text").text(qingjing2Text);
+                    $container.find(".qingjing2Text").text(qingjing2Text);
 
 
-                    var optionId1=parseInt($("#xuanxiangText").val())-1;
-                    var optionId2=parseInt($("#changciText").val())-1;
-                    var optionId3=parseInt($("#shenfenText").val())-1;
+                    $container.find(".detail-btn").addClass("active");
+
+                    var optionId1=parseInt($qingjingModal.find(".xuanxiangText").val())-1;
+                    var optionId2=parseInt($qingjingModal.find(".changciText").val())-1;
+                    var optionId3=parseInt($qingjingModal.find(".shenfenText").val())-1;
 
                     var priceList=optionList[optionId1].time[optionId2].identity[optionId3].pricelist;
 
                     var identity_list=priceList[parseInt($(target.element).attr("data-id"))-1].identity_list;
 
-                    identityListInit($("#changjingCol2"),identity_list,isMustBuy2);
+                    identityListInit($container,identity_list,isMustBuy);
 
 
 
@@ -271,16 +299,16 @@ function initSecondScene()
     function initPrice()
     {
 
-        var optionId1=parseInt($("#xuanxiangText").val())-1;
-        var optionId2=parseInt($("#changciText").val())-1;
-        var optionId3=parseInt($("#shenfenText").val())-1;
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText").val())-1;
+        var optionId2=parseInt($qingjingModal.find(".changciText").val())-1;
+        var optionId3=parseInt($qingjingModal.find(".shenfenText").val())-1;
 
         var priceList=optionList[optionId1].time[optionId2].identity[optionId3].pricelist;
 
 
         console.log(priceList);
 
-        initCalendarInfo($("#calendarCol2"),priceList);
+        initCalendarInfo($qingjingModal.find(".calendarCol2"),priceList);
 
     }
 
@@ -292,9 +320,8 @@ function initSecondScene()
 
 
 //情景3
-var optionList3=[];
-var isMustBuy3;
-function initScene3()
+
+function initScene3($container,$qingjingModal,isMustBuy3,optionList3)
 {
 
 
@@ -305,23 +332,22 @@ function initScene3()
         selectHtml=selectHtml+"<option value='"+optionList3[i].id+"'>"+optionList3[i].name+"</option>";
 
     }
-
-    $("#xuanxiangText3").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText3").append(selectHtml);
 
     //联动
-    $("#xuanxiangText3").change(function()
+    $qingjingModal.find(".xuanxiangText3").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText3").val()-1);
+        var optionId2=parseInt($qingjingModal.find(".changciText3").val()-1);
         console.log("optionId2:"+optionId2);
         initIdentitySelect(optionId2);
         initPrice();
     });
 
 
-    $("#changciText3").change(function()
+    $qingjingModal.find(".changciText3").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initIdentitySelect(optionId);
@@ -329,7 +355,7 @@ function initScene3()
 
     });
 
-    $("#shenfenText3").change(function()
+    $qingjingModal.find(".shenfenText3").change(function()
     {
 
         initPrice();
@@ -339,16 +365,16 @@ function initScene3()
     function initIdentitySelect(optionId2)
     {
 
-        var optionId1=parseInt($("#xuanxiangText3").val()-1);
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText3").val()-1);
 
 
-        $("#shenfenText3").empty();
+        $qingjingModal.find(".shenfenText3").empty();
         var identityHtml="";
         for(var i=0;i<optionList3[optionId1].time[optionId2].identity.length;i++)
         {
             identityHtml=identityHtml+"<option value='"+optionList3[optionId1].time[optionId2].identity[i].id+"'>"+optionList3[optionId1].time[optionId2].identity[i].name+"</option>"
         }
-        $("#shenfenText3").append(identityHtml);
+        $qingjingModal.find(".shenfenText3").append(identityHtml);
     }
 
 
@@ -360,7 +386,7 @@ function initScene3()
         {
             timeHtml=timeHtml+"<option value='"+optionList3[optionId].time[i].id+"'>"+optionList3[optionId].time[i].name+"</option>"
         }
-        $("#changciText3").append(timeHtml);
+        $qingjingModal.find(".changciText3").append(timeHtml);
     }
 
     initTimeSelect(0);
@@ -368,7 +394,7 @@ function initScene3()
 
 
 
-    $("#calendarCol3").clndr({
+    $container.find(".calendarCol3").clndr({
         template: $('#calendarTemplate').html(),
         clickEvents: {
             onMonthChange: function () {
@@ -382,7 +408,7 @@ function initScene3()
                 {
                     var dateStr=target.date.format("YYYY-MM-DD");
 
-                    var qingjing2Text=$("#xuanxiangText3 option:selected").text()+"，"+$("#changciText3 option:selected").text()+"，"+dateStr;
+                    var qingjing2Text=$qingjingModal.find(".xuanxiangText3 option:selected").text()+"，"+$qingjingModal.find(".changciText3 option:selected").text()+"，"+dateStr;
 
                     var priceText=$(target.element).find(".price-text").text();
 
@@ -391,18 +417,19 @@ function initScene3()
                         qingjing2Text=qingjing2Text+"，"+priceText;
                     }
 
-                    $("#qingjing3Text").text(qingjing2Text);
+                    $container.find(".qingjing3Text").text(qingjing2Text);
 
+                    $container.find(".detail-btn").addClass("active");
 
-                    var optionId1=parseInt($("#xuanxiangText3").val())-1;
-                    var optionId2=parseInt($("#changciText3").val())-1;
-                    var optionId3=parseInt($("#shenfenText3").val())-1;
+                    var optionId1=parseInt($qingjingModal.find(".xuanxiangText3").val())-1;
+                    var optionId2=parseInt($qingjingModal.find(".changciText3").val())-1;
+                    var optionId3=parseInt($qingjingModal.find(".shenfenText3").val())-1;
 
                     var priceList=optionList3[optionId1].time[optionId2].identity[optionId3].pricelist;
 
                     var identity_list=priceList[parseInt($(target.element).attr("data-id"))-1].identity_list;
 
-                    identityListInit($("#changjingCol3"),identity_list,isMustBuy3);
+                    identityListInit($container,identity_list,isMustBuy3);
 
 
 
@@ -429,16 +456,16 @@ function initScene3()
     function initPrice()
     {
 
-        var optionId1=parseInt($("#xuanxiangText3").val())-1;
-        var optionId2=parseInt($("#changciText3").val())-1;
-        var optionId3=parseInt($("#shenfenText3").val())-1;
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText3").val())-1;
+        var optionId2=parseInt($qingjingModal.find(".changciText3").val())-1;
+        var optionId3=parseInt($qingjingModal.find(".shenfenText3").val())-1;
 
         var priceList=optionList3[optionId1].time[optionId2].identity[optionId3].pricelist;
 
 
         console.log(priceList);
 
-        initCalendarInfo($("#calendarCol3"),priceList);
+        initCalendarInfo($container.find(".calendarCol3"),priceList);
 
     }
 
@@ -449,9 +476,7 @@ function initScene3()
 
 
 //情景4
-var optionList4=[];
-var isMustBuy4;
-function initScene4()
+function initScene4($container,$qingjingModal,isMustBuy4,optionList4)
 {
 
 
@@ -463,70 +488,49 @@ function initScene4()
 
     }
 
-    $("#xuanxiangText4").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText4").append(selectHtml);
 
 
     //联动
-    $("#xuanxiangText4").change(function()
+    $qingjingModal.find(".xuanxiangText4").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText4").val()-1);
+        var optionId2=parseInt($qingjingModal.find(".changciText4").val()-1);
         console.log("optionId2:"+optionId2);
         initIdentitySelect(optionId2);
         initPrice();
     });
 
 
-    $("#changciText4").change(function()
+    $qingjingModal.find(".changciText4").change(function()
     {
         var optionId=parseInt($(this).val()-1);
-        initIdentitySelect(optionId);
-        initPrice();
-
-    });
-
-    $("#shenfenText4").change(function()
-    {
 
         initPrice();
 
     });
 
-    function initIdentitySelect(optionId2)
-    {
-
-        var optionId1=parseInt($("#xuanxiangText4").val()-1);
-
-
-        $("#shenfenText4").empty();
-        var identityHtml="";
-        for(var i=0;i<optionList4[optionId1].time[optionId2].identity.length;i++)
-        {
-            identityHtml=identityHtml+"<option value='"+optionList4[optionId1].time[optionId2].identity[i].id+"'>"+optionList4[optionId1].time[optionId2].identity[i].name+"</option>"
-        }
-        $("#shenfenText4").append(identityHtml);
-    }
 
 
     function initTimeSelect(optionId)
     {
-        $("#changciText4").empty();
+        $qingjingModal.find(".changciText4").empty();
         var timeHtml="";
         for(var i=0;i<optionList4[optionId].time.length;i++)
         {
             timeHtml=timeHtml+"<option value='"+optionList4[optionId].time[i].id+"'>"+optionList4[optionId].time[i].name+"</option>"
         }
-        $("#changciText4").append(timeHtml);
+        $qingjingModal.find(".changciText4").append(timeHtml);
     }
 
     initTimeSelect(0);
-    initIdentitySelect(0);
 
 
 
-    $("#calendarCol4").clndr({
+
+    $container.find(".calendarCol4").clndr({
         template: $('#calendarTemplate').html(),
         clickEvents: {
             onMonthChange: function () {
@@ -540,7 +544,7 @@ function initScene4()
                 {
                     var dateStr=target.date.format("YYYY-MM-DD");
 
-                    var qingjing2Text=$("#xuanxiangText4 option:selected").text()+"，"+$("#changciText4 option:selected").text()+"，"+dateStr;
+                    var qingjing2Text=$qingjingModal.find(".xuanxiangText4 option:selected").text()+"，"+$qingjingModal.find(".changciText4 option:selected").text()+"，"+dateStr;
 
                     var priceText=$(target.element).find(".price-text").text();
 
@@ -549,18 +553,19 @@ function initScene4()
                         qingjing2Text=qingjing2Text+"，"+priceText;
                     }
 
-                    $("#qingjing4Text").text(qingjing2Text);
+                    $container.find(".qingjing4Text").text(qingjing2Text);
+
+                    $container.find(".detail-btn").addClass("active");
+
+                    var optionId1=parseInt($qingjingModal.find(".xuanxiangText4").val())-1;
+                    var optionId2=parseInt($qingjingModal.find(".changciText4").val())-1;
 
 
-                    var optionId1=parseInt($("#xuanxiangText4").val())-1;
-                    var optionId2=parseInt($("#changciText4").val())-1;
-                    var optionId3=parseInt($("#shenfenText4").val())-1;
-
-                    var priceList=optionList4[optionId1].time[optionId2].identity[optionId3].pricelist;
+                    var priceList=optionList4[optionId1].time[optionId2].pricelist;
 
                     var identity_list=priceList[parseInt($(target.element).attr("data-id"))-1].identity_list;
 
-                    identityListInit($("#changjingCol4"),identity_list,isMustBuy2);
+                    identityListInit($container,identity_list,isMustBuy4);
 
 
 
@@ -587,16 +592,15 @@ function initScene4()
     function initPrice()
     {
 
-        var optionId1=parseInt($("#xuanxiangText4").val())-1;
-        var optionId2=parseInt($("#changciText4").val())-1;
-        var optionId3=parseInt($("#shenfenText4").val())-1;
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText4").val())-1;
+        var optionId2=parseInt($qingjingModal.find(".changciText4").val())-1;
 
-        var priceList=optionList4[optionId1].time[optionId2].identity[optionId3].pricelist;
+        var priceList=optionList4[optionId1].time[optionId2].pricelist;
 
 
         console.log(priceList);
 
-        initCalendarInfo($("#calendarCol4"),priceList);
+        initCalendarInfo($container.find(".calendarCol4"),priceList);
 
     }
 
@@ -606,9 +610,7 @@ function initScene4()
 }
 
 //情景5
-var optionList5=[];
-var isMustBuy5;
-function initScene5()
+function initScene5($container,$qingjingModal,isMustBuy5,optionList5)
 {
 
 
@@ -620,71 +622,60 @@ function initScene5()
 
     }
 
-    $("#xuanxiangText5").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText5").append(selectHtml);
 
 
     //联动
-    $("#xuanxiangText5").change(function()
+    $qingjingModal.find(".xuanxiangText5").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText5").val()-1);
+        var optionId2=parseInt($qingjingModal.find(".changciText5").val()-1);
         console.log("optionId2:"+optionId2);
         initIdentitySelect(optionId2);
     });
 
 
-    $("#changciText5").change(function()
+    $qingjingModal.find(".changciText5").change(function()
     {
         var optionId=parseInt($(this).val()-1);
-        initIdentitySelect(optionId);
 
     });
 
-    $("#querenBtn5").click(function()
+    $qingjingModal.find(".querenBtn5").click(function()
     {
 
-        var optionId1=parseInt($("#xuanxiangText5").val())-1;
-        var optionId2=parseInt($("#changciText5").val())-1;
-        var optionId3=parseInt($("#shenfenText5").val())-1;
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText5").val())-1;
+        var optionId2=parseInt($qingjingModal.find(".changciText5").val())-1;
 
-        var identity_list=optionList5[optionId1].time[optionId2].identity[optionId3].identity_list;
+        var identity_list=optionList5[optionId1].time[optionId2].identity_list;
 
-        identityListInit($("#changjingCol5"),identity_list,isMustBuy5);
+        identityListInit($container,identity_list,isMustBuy5);
+
+        $container.find(".xuanze-text").text($qingjingModal.find(".xuanxiangText6 option:selected").text()+"，"+$qingjingModal.find(".changciText6 option:selected").text());
+        $container.find(".detail-btn").addClass("active");
+
 
 
     });
 
-    function initIdentitySelect(optionId2)
-    {
 
-        var optionId1=parseInt($("#xuanxiangText5").val()-1);
-
-
-        $("#shenfenText5").empty();
-        var identityHtml="";
-        for(var i=0;i<optionList5[optionId1].time[optionId2].identity.length;i++)
-        {
-            identityHtml=identityHtml+"<option value='"+optionList5[optionId1].time[optionId2].identity[i].id+"'>"+optionList5[optionId1].time[optionId2].identity[i].name+"</option>"
-        }
-        $("#shenfenText5").append(identityHtml);
-    }
 
 
     function initTimeSelect(optionId)
     {
-        $("#changciText4").empty();
+        $qingjingModal.find(".changciText4").empty();
         var timeHtml="";
         for(var i=0;i<optionList5[optionId].time.length;i++)
         {
             timeHtml=timeHtml+"<option value='"+optionList5[optionId].time[i].id+"'>"+optionList5[optionId].time[i].name+"</option>"
         }
-        $("#changciText5").append(timeHtml);
+        $qingjingModal.find(".changciText5").append(timeHtml);
     }
 
     initTimeSelect(0);
-    initIdentitySelect(0);
+
 
 
 
@@ -692,9 +683,8 @@ function initScene5()
 }
 
 //情景6
-var optionList6=[];
-var isMustBuy6;
-function initScene6()
+
+function initScene6($container,$qingjingModal,isMustBuy6,optionList6)
 {
 
 
@@ -706,82 +696,56 @@ function initScene6()
 
     }
 
-    $("#xuanxiangText6").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText6").append(selectHtml);
 
 
     //联动
-    $("#xuanxiangText6").change(function()
+    $qingjingModal.find(".xuanxiangText6").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText6").val()-1);
-        console.log("optionId2:"+optionId2);
-        initIdentitySelect(optionId2);
 
     });
 
 
-    $("#changciText6").change(function()
-    {
-        var optionId=parseInt($(this).val()-1);
-        initIdentitySelect(optionId);
-
-
-    });
-
-   $("#querenBtn6").click(function()
+    $qingjingModal.find(".querenBtn6").click(function()
    {
 
-       var optionId1=parseInt($("#xuanxiangText6").val())-1;
-       var optionId2=parseInt($("#changciText6").val())-1;
-       var optionId3=parseInt($("#shenfenText6").val())-1;
+       var optionId1=parseInt($qingjingModal.find(".xuanxiangText6").val())-1;
+       var optionId2=parseInt($qingjingModal.find(".changciText6").val())-1;
 
-       var identity_list=optionList6[optionId1].time[optionId2].identity[optionId3].identity_list;
+       var identity_list=optionList6[optionId1].time[optionId2].identity_list;
 
-       identityListInit($("#changjingCol6"),identity_list,isMustBuy6);
+       $container.find(".xuanze-text").text($qingjingModal.find(".xuanxiangText6 option:selected").text()+"，"+$qingjingModal.find(".changciText6 option:selected").text());
+       $container.find(".detail-btn").addClass("active");
+       identityListInit($container,identity_list,isMustBuy6);
+
 
 
    });
 
-    function initIdentitySelect(optionId2)
-    {
-
-        var optionId1=parseInt($("#xuanxiangText6").val()-1);
-
-
-        $("#shenfenText6").empty();
-        var identityHtml="";
-        for(var i=0;i<optionList6[optionId1].time[optionId2].identity.length;i++)
-        {
-            identityHtml=identityHtml+"<option value='"+optionList6[optionId1].time[optionId2].identity[i].id+"'>"+optionList6[optionId1].time[optionId2].identity[i].name+"</option>"
-        }
-        $("#shenfenText6").append(identityHtml);
-    }
 
 
     function initTimeSelect(optionId)
     {
-        $("#changciText6").empty();
+        $qingjingModal.find(".changciText6").empty();
         var timeHtml="";
         for(var i=0;i<optionList6[optionId].time.length;i++)
         {
             timeHtml=timeHtml+"<option value='"+optionList6[optionId].time[i].id+"'>"+optionList6[optionId].time[i].name+"</option>"
         }
-        $("#changciText6").append(timeHtml);
+        $qingjingModal.find(".changciText6").append(timeHtml);
     }
 
     initTimeSelect(0);
-    initIdentitySelect(0);
 
 
 
 }
 
 
-var optionList9=[];
-var isMustBuy9;
-function initScene9()
+function initScene9($container,$qingjingModal,isMustBuy9,optionList9)
 {
     //国家选择json
     var proCountryList=[
@@ -885,7 +849,7 @@ function initScene9()
     }
 
 
-    $("#countryList").append(countryListHtml);
+    $qingjingModal.find(".countryList").append(countryListHtml);
 
 
     var selectHtml="";
@@ -896,22 +860,22 @@ function initScene9()
 
     }
 
-    $("#xuanxiangText9").append(selectHtml);
+    $qingjingModal.find(".xuanxiangText9").append(selectHtml);
 
     //联动
-    $("#xuanxiangText9").change(function()
+    $qingjingModal.find(".xuanxiangText9").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initTimeSelect(optionId);
 
-        var optionId2=parseInt($("#changciText9").val()-1);
+        var optionId2=parseInt($qingjingModal.find(".changciText9").val()-1);
         console.log("optionId2:"+optionId2);
         initIdentitySelect(optionId2);
         initPrice();
     });
 
 
-    $("#changciText9").change(function()
+    $qingjingModal.find(".changciText9").change(function()
     {
         var optionId=parseInt($(this).val()-1);
         initIdentitySelect(optionId);
@@ -919,7 +883,7 @@ function initScene9()
 
     });
 
-    $("#shenfenText9").change(function()
+    $qingjingModal.find(".shenfenText9").change(function()
     {
 
         initPrice();
@@ -929,28 +893,28 @@ function initScene9()
     function initIdentitySelect(optionId2)
     {
 
-        var optionId1=parseInt($("#xuanxiangText9").val()-1);
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText9").val()-1);
 
 
-        $("#shenfenText9").empty();
+        $qingjingModal.find(".shenfenText9").empty();
         var identityHtml="";
         for(var i=0;i<optionList9[optionId1].time[optionId2].identity.length;i++)
         {
             identityHtml=identityHtml+"<option value='"+optionList9[optionId1].time[optionId2].identity[i].id+"'>"+optionList9[optionId1].time[optionId2].identity[i].name+"</option>"
         }
-        $("#shenfenText9").append(identityHtml);
+        $qingjingModal.find(".shenfenText9").append(identityHtml);
     }
 
 
     function initTimeSelect(optionId)
     {
-        $("#changciText9").empty();
+        $qingjingModal.find(".changciText9").empty();
         var timeHtml="";
         for(var i=0;i<optionList9[optionId].time.length;i++)
         {
             timeHtml=timeHtml+"<option value='"+optionList9[optionId].time[i].id+"'>"+optionList9[optionId].time[i].name+"</option>"
         }
-        $("#changciText9").append(timeHtml);
+        $qingjingModal.find(".changciText9").append(timeHtml);
     }
 
     initTimeSelect(0);
@@ -958,7 +922,7 @@ function initScene9()
 
 
 
-    $("#calendarCol9").clndr({
+    $container.find(".calendarCol9").clndr({
         template: $('#calendarTemplate').html(),
         clickEvents: {
             onMonthChange: function () {
@@ -972,7 +936,7 @@ function initScene9()
                 {
                     var dateStr=target.date.format("YYYY-MM-DD");
 
-                    var qingjing2Text=$("#xuanxiangText9 option:selected").text()+"，"+$("#changciText9 option:selected").text()+"，"+dateStr;
+                    var qingjing2Text=$qingjingModal.find(".xuanxiangText9 option:selected").text()+"，"+$qingjingModal.find(".changciText9 option:selected").text()+"，"+dateStr;
 
                     var priceText=$(target.element).find(".price-text").text();
 
@@ -981,18 +945,18 @@ function initScene9()
                         qingjing2Text=qingjing2Text+"，"+priceText;
                     }
 
-                    $("#qingjing9Text").text(qingjing2Text);
+                    $qingjingModal.find(".qingjing9Text").text(qingjing2Text);
 
 
-                    var optionId1=parseInt($("#xuanxiangText9").val())-1;
-                    var optionId2=parseInt($("#changciText9").val())-1;
-                    var optionId3=parseInt($("#shenfenText9").val())-1;
+                    var optionId1=parseInt( $qingjingModal.find(".xuanxiangText9").val())-1;
+                    var optionId2=parseInt( $qingjingModal.find(".changciText9").val())-1;
+                    var optionId3=parseInt( $qingjingModal.find(".shenfenText9").val())-1;
 
                     var priceList=optionList9[optionId1].time[optionId2].identity[optionId3].pricelist;
 
                     var identity_list=priceList[parseInt($(target.element).attr("data-id"))-1].identity_list;
 
-                    identityListInit($("#changjingCol9"),identity_list,isMustBuy9);
+                    identityListInit($container,identity_list,isMustBuy9);
 
 
 
@@ -1019,16 +983,16 @@ function initScene9()
     function initPrice()
     {
 
-        var optionId1=parseInt($("#xuanxiangText9").val())-1;
-        var optionId2=parseInt($("#changciText9").val())-1;
-        var optionId3=parseInt($("#shenfenText9").val())-1;
+        var optionId1=parseInt($qingjingModal.find(".xuanxiangText9").val())-1;
+        var optionId2=parseInt($qingjingModal.find(".changciText9").val())-1;
+        var optionId3=parseInt($qingjingModal.find(".shenfenText9").val())-1;
 
         var priceList=optionList9[optionId1].time[optionId2].identity[optionId3].pricelist;
 
 
         console.log(priceList);
 
-        initCalendarInfo($("#calendarCol9"),priceList);
+        initCalendarInfo($container.find(".calendarCol9"),priceList);
 
     }
 
@@ -1048,8 +1012,9 @@ stock  库存
 
 var sceneJson=[
     {
+        id:1,
         type:1,
-        title:'白馬市極光奇景3日之旅',
+        title:'白馬市極光奇景3日之旅1',
         isDiscounts:1,
         isMustBuy:0,
         isSingleSell:1,
@@ -1114,6 +1079,74 @@ var sceneJson=[
 
     },
     {
+        id:2,
+        type:1,
+        title:'白馬市極光奇景3日之旅1',
+        isDiscounts:1,
+        isMustBuy:0,
+        isSingleSell:1,
+        selectList:[
+            {
+                id:1,
+                title:'迪士尼樂園門票-陸地',
+                dateList:[
+                    {
+                        id:1,
+                        date: "2018-01-10",
+                    },
+                    {
+                        id:2,
+                        date: "2018-01-11",
+                    },
+                    {
+                        id:3,
+                        date: "2018-01-12",
+                    }
+                ],
+            },
+            {
+                id:2,
+                title:'迪士尼樂園門票-海洋',
+                dateList:[
+                    {
+                        id:1,
+                        date: "2018-01-10",
+                    },
+                    {
+                        id:2,
+                        date: "2018-01-11",
+                    },
+                    {
+                        id:3,
+                        date: "2018-02-02",
+                    }
+                ]
+            }
+        ],
+        identityList:[
+            {
+                id:1,
+                name:'大人',
+                minvalue:1,
+                ismultiple:1,
+                cad:495,
+                twd:500,
+                stock:9
+            },
+            {
+                id:2,
+                name:'儿童',
+                minvalue:1,
+                ismultiple:0,
+                cad:395,
+                twd:400,
+                stock:20
+            }
+        ]
+
+    },
+    {
+        id:3,
         type:2,
         title:'白馬市極光奇景3日之旅白馬市2',
         isDiscounts:1,
@@ -1136,7 +1169,7 @@ var sceneJson=[
                                     {
                                         id:1,
                                         date: "2018-01-01",
-                                        price: "$839",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
@@ -2889,6 +2922,7 @@ var sceneJson=[
         ]
     },
     {
+        id:4,
         type:3,
         title:'白馬市極光奇景3日之旅白馬市3',
         isDiscounts:1,
@@ -4971,6 +5005,7 @@ var sceneJson=[
         ]
     },
     {
+        id:5,
         type:4,
         title:'白馬市極光奇景3日之旅白馬市4',
         isDiscounts:0,
@@ -4984,330 +5019,105 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        pricelist: [
                             {
                                 id:1,
-                                name:"成人",
-                                pricelist: [
+                                date: "2018-01-01",
+                                price: "$839",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                pricelist: [
+                                date: "2018-01-02",
+                                price: "$48239",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:3,
-                                name:"老人",
-                                pricelist: [
+                                date: "2018-01-03",
+                                price: "$4339",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:4,
+                                date: "2018-01-04",
+                                price: "$839",
+                                identity_list:[
                                     {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:5,
+                                date: "2018-01-05",
+                                price: "$439",
+                                identity_list:[
                                     {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:6,
+                                date: "2018-01-06",
+                                price: "$39",
+                                identity_list:[
                                     {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
@@ -5319,330 +5129,105 @@ var sceneJson=[
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        pricelist: [
                             {
                                 id:1,
-                                name:"成人",
-                                pricelist: [
+                                date: "2018-01-01",
+                                price: "$839",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                pricelist: [
+                                date: "2018-01-02",
+                                price: "$48239",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:3,
-                                name:"老人",
-                                pricelist: [
+                                date: "2018-01-03",
+                                price: "$4339",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:4,
+                                date: "2018-01-04",
+                                price: "$839",
+                                identity_list:[
                                     {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:5,
+                                date: "2018-01-05",
+                                price: "$439",
+                                identity_list:[
                                     {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:6,
+                                date: "2018-01-06",
+                                price: "$39",
+                                identity_list:[
                                     {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
@@ -5660,330 +5245,105 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        pricelist: [
                             {
                                 id:1,
-                                name:"成人",
-                                pricelist: [
+                                date: "2018-01-01",
+                                price: "$839",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                pricelist: [
+                                date: "2018-01-02",
+                                price: "$48239",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:3,
-                                name:"老人",
-                                pricelist: [
+                                date: "2018-01-03",
+                                price: "$4339",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:4,
+                                date: "2018-01-04",
+                                price: "$839",
+                                identity_list:[
                                     {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:5,
+                                date: "2018-01-05",
+                                price: "$439",
+                                identity_list:[
                                     {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:6,
+                                date: "2018-01-06",
+                                price: "$39",
+                                identity_list:[
                                     {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
@@ -5995,330 +5355,105 @@ var sceneJson=[
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        pricelist: [
                             {
                                 id:1,
-                                name:"成人",
-                                pricelist: [
+                                date: "2018-01-01",
+                                price: "$839",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                pricelist: [
+                                date: "2018-01-02",
+                                price: "$48239",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
                             },
                             {
                                 id:3,
-                                name:"老人",
-                                pricelist: [
+                                date: "2018-01-03",
+                                price: "$4339",
+                                identity_list:[
                                     {
                                         id:1,
-                                        date: "2018-01-01",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:4,
+                                date: "2018-01-04",
+                                price: "$839",
+                                identity_list:[
                                     {
-                                        id:2,
-                                        date: "2018-01-02",
-                                        price: "$48239",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:5,
+                                date: "2018-01-05",
+                                price: "$439",
+                                identity_list:[
                                     {
-                                        id:3,
-                                        date: "2018-01-03",
-                                        price: "$4339",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
+                                    }
 
-                                        ]
-                                    },
+                                ]
+                            },
+                            {
+                                id:6,
+                                date: "2018-01-06",
+                                price: "$39",
+                                identity_list:[
                                     {
-                                        id:4,
-                                        date: "2018-01-04",
-                                        price: "$839",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:5,
-                                        date: "2018-01-05",
-                                        price: "$439",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
-                                    },
-                                    {
-                                        id:6,
-                                        date: "2018-01-06",
-                                        price: "$39",
-                                        identity_list:[
-                                            {
-                                                id:1,
-                                                name:'一般',
-                                                minvalue:1,
-                                                stock:10,
-                                                cad:405,
-                                                twd:500,
-                                                ismultiple:1,  //表示倍数购买
-                                            }
-
-                                        ]
+                                        id:1,
+                                        name:'一般',
+                                        minvalue:1,
+                                        stock:10,
+                                        cad:405,
+                                        twd:500,
+                                        ismultiple:1,  //表示倍数购买
                                     }
 
                                 ]
@@ -6332,6 +5467,7 @@ var sceneJson=[
         ]
     },
     {
+        id:6,
         type:5,
         title:'白馬市極光奇景3日之旅白馬市5',
         isDiscounts:0,
@@ -6345,176 +5481,54 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'小孩',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     },
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     }
@@ -6527,176 +5541,54 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     },
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    },
-                                    {
-                                        id:2,
-                                        name:'大人',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,  //表示倍数购买
-                                        cad:504,
-                                        twd:605,
-                                        tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
-                                    }
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     }
@@ -6705,6 +5597,7 @@ var sceneJson=[
         ]
     },
     {
+        id:7,
         type:6,
         title:'白馬市極光奇景3日之旅白馬市6',
         isDiscounts:0,
@@ -6718,122 +5611,54 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     },
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     }
@@ -6846,122 +5671,54 @@ var sceneJson=[
                     {
                         id:1,
                         name: "07:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     },
                     {
                         id:2,
                         name: "08:00",
-                        identity:[
+                        identity_list:[
                             {
                                 id:1,
-                                name:"成人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
+                                name:'大人',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             },
                             {
                                 id:2,
-                                name:"儿童",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
-                            },
-                            {
-                                id:3,
-                                name:"老人",
-                                identity_list:[
-                                    {
-                                        id:1,
-                                        name:'一般',
-                                        minvalue:1,
-                                        stock:10,
-                                        ismultiple:1,
-                                        cad:405,
-                                        twd:605
-
-                                    }
-
-                                ]
-
+                                name:'小孩',
+                                minvalue:1,
+                                stock:10,
+                                ismultiple:1,  //表示倍数购买
+                                cad:504,
+                                twd:605,
+                                tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                             }
-
                         ]
 
                     }
@@ -6970,6 +5727,7 @@ var sceneJson=[
         ]
     },
     {
+        id:8,
         type:7,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
@@ -7011,6 +5769,7 @@ var sceneJson=[
 
     },
     {
+        id:9,
         type:8,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
@@ -7033,6 +5792,7 @@ var sceneJson=[
 
     },
     {
+        id:10,
         type:9,
         title:'歐洲任選3國火車通行證彈性火車票',
         isDiscounts:1,
@@ -8814,17 +7574,67 @@ for(var i=0;i<sceneJson.length;i++)
 
     if(sceneJson[i].type==1)  //情景1
     {
-        sceneInfoInit($("#changjingCol1"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="1">'+
+            ' <div class="product-top">'+
+            '<div class="product-title"><span class="product-title-text"></span></div>'+
+            ' <div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>'+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            ' <span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            '</button>'+
+            '</div>'+
+            ' <div style="clear:both;"></div>'+
+            '</div>'+
+            ' <div class="product-select">'+
+            '<div class="product-title"><span class="product-title-text"></span></div>'+
+            ' <div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>'+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            ' </button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            ' <div class="qingjing1">'+
+            ' </div>'+
+            '<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col" >'+
+            '<div class="clearfix identity-list"></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '<div  style="display:none;" class="mobile-dialog" id="qingjingColModal'+i+'">'+
+            '<div class="title-col clearfix">'+
+            '<div class="line"></div>'+
+            '<div class="back-col" data-fancybox-close=""><img src="images/icon27.png"></div>'+
+            '<div class="text">請選擇</div>'+
+            '</div>'+
+            '<div>'+
+            '<div class="calendar-main calendarCol1">'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>');
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
 
         for(var j=0;j<sceneJson[i].selectList.length;j++)
         {
-            $("#qingjing1").append('<div style="margin-top:10px;">'+
-                '<div style="margin:10px 0;" id="secondTitle">'+sceneJson[i].selectList[j].title+'</div>'+
-            '<div class="select-info select-info-first" style="width:200px;" id="selectInfo'+j+'" data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingModal1" >使用日期：<span>請選擇</span></div>');
+            $("#qingjingCol"+i).find(".qingjing1").append('<div style="margin-top:10px;">'+
+                '<div style="margin:10px 0;" >'+sceneJson[i].selectList[j].title+'</div>'+
+            '<div class="select-info select-info-first selectInfo'+j+'" style="width:200px;"  data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingColModal'+i+'" >使用日期：<span>請選擇</span></div>');
         }
 
+        initFirstScene($("#qingjingCol"+i),$("#qingjingColModal"+i));
 
-        identityListInit($("#changjingCol1"),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+        identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+
+
+
 
 
 
@@ -8833,83 +7643,581 @@ for(var i=0;i<sceneJson.length;i++)
     if(sceneJson[i].type==2)  //情景2
     {
 
-        isMustBuy2=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol2"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+        '<div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="2">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            ' <span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            ' </div>'+
+            ' <div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            ' <button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col">詳細 <span>▼</span></span>'+
+            ' <span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            ' <span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            ' </button>'+
+            ' </div>'+
+            '<div style="clear:both;"></div>'+
+            '</div>'+
+            ' <div class="product-select">'+
+            ' <div class="product-title">'+
+            ' <span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            ' </div>'+
+        '<div class="product-tag-list"></div>'+
+        ' <div style="float:right;" class="detail-btn-col">'+
+        ' <button class="detail-btn"  type="button">'+
+        ' <span class="detail-btn-col">詳細 <span>▼</span></span>'+
+        ' <span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+        '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+        ' </button>'+
+        ' </div>'+
+        ' <div style="clear:both;"></div>'+
+        ' <div style="margin-top:10px;">'+
+        ' <div class="select-info dateContent"  data-fancybox data-src="#qingjingColModal'+i+'" href="javascript:;">'+
+        ' 選項<font style="color:red;">*</font> <span class="xuanze-text qingjing2Text">請選擇</span>'+
+        ' </div>'+
+        ' </div>'+
+        ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        '<div class="clearfix identity-list">'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="step-modal mobile-dialog" style="display:none;" id="qingjingColModal'+i+'">'+
+        '<div class="title-col clearfix">'+
+        '<div class="line"></div>'+
+        '<div class="back-col" data-fancybox-close=""><img src="images/icon27.png"></div>'+
+        '<div class="text">請選擇</div>'+
+        ' </div>'+
+        ' <div class="calendar-col">'+
+        ' <div style="margin-bottom:20px;">'+
+        ' <div style="float:left;width:320px;" class="pro-select-mainl">'+
+        '  <span class="pro-select-col" style="width:320px;">'+
+        '<span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>'+
+        ' <select name="select7" class="xuanxiangText"  style="width:318px;height:24px;border:0;padding-left:40px;">'+
+        ' </select>'+
+        ' </span>'+
+        '  </div>'+
+        ' <div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col" >'+
+        ' <span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>'+
+        ' <select name="select7" class="changciText"  style="width:164px;height:24px;padding-left:40px;border:0;">'+
+        ' </select>'+
+        ' </span>'+
+        ' </div>'+
+        ' <div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col">'+
+        ' <span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>'+
+        ' <select name="select7" class="shenfenText"  style="width:164px;height:24px;padding-left:40px;border:0;">'+
+        ' </select>'+
+        '</span>'+
+        '</div>'+
+        '   <div style="clear:both;"></div>'+
+        '   </div>'+
+        '   <div class="calendar-main calendarCol2">'+
+        '   </div>'+
+        '   </div>'+
+        '   </div>'+
+        '   </div>');
 
-        optionList=sceneJson[i].optionList;
-        initSecondScene();
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        initSecondScene($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
     }
 
 
     if(sceneJson[i].type==3)  //情景3
     {
 
-        isMustBuy3=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol3"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
 
-        optionList3=sceneJson[i].optionList;
-        initScene3();
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            ' <div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="3">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            '</div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col">詳細 <span>▼</span></span>'+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            '</button>'+
+            ' </div>'+
+            '<div style="clear:both;"></div>'+
+            '</div>'+
+            '<div class="product-select">'+
+        '<div class="product-title">'+
+        ' <span class="product-title-text"></span>'+
+        ' <span class="product-title-price"></span>'+
+        ' </div>'+
+        ' <div class="product-tag-list"></div>'+
+        ' <div style="float:right;" class="detail-btn-col">'+
+        ' <button class="detail-btn"  type="button">'+
+        ' <span class="detail-btn-col">詳細 <span>▼</span></span>'+
+        '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+        '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+        ' </button>'+
+        ' </div>'+
+        ' <div style="clear:both;"></div>'+
+        ' <div style="margin-top:10px;">'+
+        ' <div class="select-info"  data-fancybox data-src="#qingjingColModal'+i+'" href="javascript:;">'+
+        ' 選項<font style="color:red;">*</font> <span class="xuanze-text qingjing3Text">請選擇</span>'+
+        ' </div>'+
+        ' </div>'+
+        '<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        ' <div class="clearfix identity-list">'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="step-modal mobile-dialog" style="display:none;" id="qingjingColModal'+i+'">'+
+        '<div class="title-col clearfix">'+
+        '<div class="line"></div>'+
+        '<div class="back-col" data-fancybox-close=""><img src="images/icon27.png"></div>'+
+        '<div class="text">請選擇</div>'+
+        '</div>'+
+        '<div class="calendar-col">'+
+        ' <div style="margin-bottom:20px;">'+
+        ' <div style="float:left;width:320px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col" style="width:320px;">'+
+        ' <span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>'+
+        '<select name="select7" class="xuanxiangText3"  style="width:318px;height:24px;border:0;padding-left:40px;">'+
+        ' </select>'+
+        '</span>'+
+        '</div>'+
+        '<div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        '<span class="pro-select-col">'+
+        '<span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>'+
+        '<select name="select7" class="changciText3"  style="width:164px;height:24px;padding-left:40px;border:0;">'+
+        '</select>'+
+        ' </span>'+
+        '</div>'+
+        '<div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        '<span class="pro-select-col">'+
+        ' <span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span>'+
+        ' <select name="select7" class="shenfenText3"  style="width:164px;height:24px;padding-left:40px;border:0;">'+
+        '</select>'+
+        '</span>'+
+        '</div>'+
+        '<div style="clear:both;"></div>'+
+        '</div>'+
+        '<div class="calendar-main calendarCol3">'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>');
+
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+
+        initScene3($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
+
     }
 
 
     if(sceneJson[i].type==4)  //情景4
     {
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            '<div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="4">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            '</div>'+
+            ' <div class="product-tag-list"></div>'+
 
-        isMustBuy4=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol4"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+            '<div style="float:right;" class="detail-btn-col">'+
+            ' <button class="detail-btn"  type="button">'+
 
-        optionList4=sceneJson[i].optionList;
-        initScene4();
+            '<span class="detail-btn-col">詳細 <span>▼</span></span>'+
+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+
+            '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+
+
+            '</button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            '</div>'+
+            ' <div class="product-select">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            '</div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+        ' <button class="detail-btn"  type="button">'+
+
+        '<span class="detail-btn-col">詳細 <span>▼</span></span>'+
+
+        '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+
+        '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+        ' </button>'+
+        ' </div>'+
+
+        '<div style="clear:both;"></div>'+
+        '<div style="margin-top:10px;">'+
+        ' <div class="select-info" data-fancybox data-src="#qingjingColModal'+i+'" href="javascript:;">'+
+        '選項<font style="color:red;">*</font> <span class="xuanze-text qingjing4Text">請選擇</span>'+
+        '</div>'+
+        '</div>'+
+        '<div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        '<div class="clearfix identity-list">'+
+
+
+        '</div>'+
+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="step-modal mobile-dialog" style="display:none;" id="qingjingColModal'+i+'">'+
+        '<div class="title-col clearfix">'+
+        ' <div class="line"></div>'+
+        ' <div class="back-col" data-fancybox-close=""><img src="images/icon27.png"></div>'+
+        ' <div class="text">請選擇</div>'+
+        '</div>'+
+        '<div class="calendar-col">'+
+        ' <div style="margin-bottom:20px;">'+
+        ' <div style="float:left;width:320px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col" style="width:320px;">'+
+        '  <span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span>'+
+        '  <select name="select7" class="xuanxiangText4"  style="width:318px;height:24px;border:0;padding-left:40px;">'+
+        ' </select>'+
+        ' </span>'+
+        ' </div>'+
+        '<div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col">'+
+        ' <span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span>'+
+        ' <select name="select7" class="changciText4"  style="width:164px;height:24px;padding-left:40px;border:0;">'+
+        ' </select>'+
+        ' </span>'+
+        ' </div>'+
+    ' <div style="clear:both;"></div>'+
+    ' </div>'+
+    ' <div class="calendar-main calendarCol4">'+
+    ' </div>'+
+    ' </div>'+
+    ' </div>'+
+    ' </div>');
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        initScene4($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
     }
 
 
     if(sceneJson[i].type==5)  //情景5
     {
 
-        isMustBuy5=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol5"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        $("#qingjingColList").append(' <div id="qingjingCol'+i+'">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="5">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            '</div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;">'+
+            ' <button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            ' </div>'+
+            '<div class="product-select">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            '</div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            '</div>'+
+        ' <div style="clear:both;"></div>'+
+        '<div style="margin-top:10px;">'+
+        ' <div class="select-info" data-fancybox="" data-src="#qingjingColModal'+i+'" href="javascript:;">'+
+        ' 選項'+
+        '<font style="color:red;">*</font>'+
+        '<span class="qingjing5Text xuanze-text">請選擇</span>'+
+        '</div>'+
+        ' </div>'+
+        ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        '<div class="clearfix identity-list">'+
+        ' </div>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '<div class="step-modal mobile-dialog" style="display:none;" id="qingjingColModal'+i+'">'+
+        '<div class="title-col clearfix">'+
+        '<div class="line"></div>'+
+        '<div class="back-col" data-fancybox-close="">'+
+        '<img src="images/icon27.png" />'+
+        '</div>'+
+        ' <div class="text">'+
+        ' 請選擇'+
+        '</div>'+
+        '</div>'+
+        '<div class="calendar-col">'+
+        ' <div style="margin-bottom:20px;">'+
+        '<div style="float:left;width:320px;" class="pro-select-mainl">'+
+        '<span class="pro-select-col" style="width:320px;"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span> <select name="select7" class="xuanxiangText5" style="width:318px;height:24px;border:0;padding-left:40px;"> </select> </span>'+
+        '</div>'+
+        '<div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        '<span class="pro-select-col"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span> <select name="select7" class="changciText5" style="width:164px;height:24px;padding-left:40px;border:0;"> </select> </span>'+
+        '</div>'+
+        '<div style="clear:both;"></div>'+
+        '</div>'+
+        '<div class="bottom-btn" style="display: block;">'+
+        '<button type="button" class="left-btn" data-fancybox-close="">取消</button>'+
+        '<button type="button" class="right-btn querenBtn5" data-fancybox-close="" >确认</button>'+
+        '</div>'+
+        '</div>'+
+        '</div>'+
+        '</div>');
 
-        optionList5=sceneJson[i].optionList;
-        initScene5();
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        initScene5($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
     }
 
 
     if(sceneJson[i].type==6)  //情景6
     {
 
-        isMustBuy6=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol6"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
 
-        optionList6=sceneJson[i].optionList;
-        initScene6();
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="6">'+
+            ' <div class="product-top">'+
+            ' <div class="product-title">'+
+            ' <span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            '  </div>'+
+            '  <div class="product-tag-list"></div>'+
+            '  <div style="float:right;" class="detail-btn-col">'+
+            ' <button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+        ' </div>'+
+        ' <div style="clear:both;"></div>'+
+        ' </div>'+
+        ' <div class="product-select">'+
+        ' <div class="product-title">'+
+        '<span class="product-title-text"></span>'+
+        '<span class="product-title-price"></span>'+
+        '</div>'+
+        ' <div class="product-tag-list"></div>'+
+        ' <div style="float:right;" class="detail-btn-col">'+
+        ' <button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+    ' </div>'+
+        '<div style="clear:both;"></div>'+
+        ' <div style="margin-top:10px;">'+
+        ' <div class="select-info" data-fancybox="" data-src="#qingjingColModal'+i+'" href="javascript:;">'+
+        ' 選項'+
+        '<font style="color:red;">*</font>'+
+        '<span class="qingjing6Text xuanze-text">請選擇</span>'+
+        '</div>'+
+        '</div>'+
+        ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        ' <div class="clearfix identity-list">'+
+        ' </div>'+
+        ' </div>'+
+        ' </div>'+
+        ' </div>'+
+        ' <div class="step-modal mobile-dialog" style="display:none;" id="qingjingColModal'+i+'">'+
+        ' <div class="title-col clearfix">'+
+        ' <div class="line"></div>'+
+        ' <div class="back-col" data-fancybox-close="">'+
+        ' <img src="images/icon27.png" />'+
+        ' </div>'+
+        '<div class="text">'+
+        ' 請選擇'+
+        ' </div>'+
+        ' </div>'+
+        '<div class="calendar-col">'+
+        '<div style="margin-bottom:20px;">'+
+        '<div style="float:left;width:320px;" class="pro-select-mainl">'+
+        '<span class="pro-select-col" style="width:320px;"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span> <select name="select7" class="xuanxiangText6" style="width:318px;height:24px;border:0;padding-left:40px;"> </select> </span>'+
+        ' </div>'+
+        ' <div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span> <select name="select7" class="changciText6" style="width:164px;height:24px;padding-left:40px;border:0;"> </select> </span>'+
+    ' </div>'+
+        '<div style="clear:both;"></div>'+
+        ' </div>'+
+        '<div class="bottom-btn" style="display: block;">'+
+        '<button type="button" class="left-btn" data-fancybox-close="">取消</button>'+
+        '<button type="button" class="right-btn querenBtn6" data-fancybox-close="" >确认</button>'+
+        '</div>'+
+        '</div>'+
+        ' </div>'+
+        '</div>');
+
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        initScene6($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
     }
 
     if(sceneJson[i].type==7)  //情景7
     {
 
-        sceneInfoInit($("#changjingCol7"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="7">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            '</div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            ' </div>'+
+            ' <div class="product-select">'+
+            ' <div class="product-title">'+
+            ' <span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            ' </div>'+
+            ' <div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            ' </div>'+
+            ' <div style="clear:both;"></div>'+
+            ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+            ' <div class="clearfix identity-list">'+
+            ' </div>'+
+            ' </div>'+
+            ' </div>'+
+            '</div>');
 
-        identityListInit($("#changjingCol7"),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
     }
 
 
     if(sceneJson[i].type==8)  //情景8
     {
 
-        sceneInfoInit($("#changjingCol8"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        $("#qingjingColList").append(' <div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="8">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            '<span class="product-title-price"></span>'+
+            ' </div>'+
+            '<div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            '</div>'+
+            '<div class="product-select">'+
+            ' <div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            ' </div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            ' </div>'+
+            ' <div style="clear:both;"></div>'+
+            ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+            '<div class="clearfix identity-list">'+
+            '</div>'+
+            '</div>'+
+            ' </div>'+
+            ' </div>');
 
-        identityListInit($("#changjingCol8"),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
     }
 
 
     if(sceneJson[i].type==9)  //情景9
     {
 
-        isMustBuy9=sceneJson[i].isMustBuy;
-        sceneInfoInit($("#changjingCol9"),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            ' <div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="9">'+
+            '<div class="product-top">'+
+            '<div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            ' </div>'+
+            ' <div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            ' <button class="detail-btn" type="button"> <span class="detail-btn-col">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            '</div>'+
+            ' <div style="clear:both;"></div>'+
+            '</div>'+
+            ' <div class="product-select">'+
+            ' <div class="product-title">'+
+            '<span class="product-title-text"></span>'+
+            ' <span class="product-title-price"></span>'+
+            ' </div>'+
+            '<div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            ' <button class="detail-btn" type="button"> <span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span> <span class="gouxuan-btn-col">已選 <span>√</span></span> <span class="quxiao-btn-col">取消 <span>&times;</span></span> </button>'+
+            ' </div>'+
+        ' <div style="clear:both;"></div>'+
+        '<div style="margin-top:10px;">'+
+        '<div class="select-info" data-fancybox="" data-src="#qingjingColModal'+i+'" href="javascript:;" >'+
+        '選項'+
+        ' <font style="color:red;">*</font> 請選擇'+
+        ' </div>'+
+        ' </div>'+
+        ' <div style="margin-top:10px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col">'+
+        ' <div class="clearfix identity-list">'+
+        ' </div>'+
+        ' </div>'+
+        ' </div>'+
+        ' </div>'+
+        ' <div class="step-modal mobile-dialog" style="display: none;" id="qingjingColModal'+i+'">'+
+        ' <div class="title-col clearfix">'+
+        ' <div class="line"></div>'+
+        '<div class="back-col" data-fancybox-close="">'+
+        '<img src="images/icon27.png" />'+
+        '</div>'+
+        ' <div class="text">'+
+        ' 請選擇'+
+        ' </div>'+
+        ' </div>'+
+        ' <input style="width:578px;" class="countryInput" data-value="" type="text" placeholder="選擇國家*  請選擇n項" />'+
+        ' <div class="select-country">'+
+        ' <ul class="country-list clearfix countryList">'+
+        ' </ul>'+
+        ' <div class="map-col">'+
+        ' <span class="map-operate"> <span class="open"> <img src="images/imgClose.png" /> </span> <span class="close" style="display: none;"> <img src="images/imgOpen.png" /> </span> </span>'+
+        '<img src="data/map.png" />'+
+        '</div>'+
+        '</div>'+
+        ' <div class="calendar-col" style="display: none;">'+
+        ' <div style="margin-bottom:20px;">'+
+        ' <div style="float:left;width:320px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col" style="width:320px;"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">選項<font style="color:red;">*</font></span> <select name="select7" class="xuanxiangText9" style="width:318px;height:24px;border:0;padding-left:40px;"> </select> </span>'+
+        ' </div>'+
+        ' <div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">場次<font style="color:red;">*</font></span> <select name="select7" class="changciText9" style="width:164px;height:24px;padding-left:40px;border:0;"> </select> </span>'+
+        ' </div>'+
+        ' <div style="float:left;width:166px;margin-left:5px;" class="pro-select-mainl">'+
+        ' <span class="pro-select-col"> <span style="position: absolute;left:6px;display: inline-block;top:2px;">身分<font style="color:red;">*</font></span> <select name="select7" class="shenfenText9" style="width:164px;height:24px;padding-left:40px;border:0;"></select> </span>'+
+        ' </div>'+
+        ' <div style="clear:both;"></div>'+
+        ' </div>'+
+        '<div class="calendar-main calendarCol9">'+
+        ' </div>'+
+        ' </div>'+
+        '</div>'+
+        '</div>');
 
-        optionList9=sceneJson[i].optionList;
-        initScene9();
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+
+        initScene9($("#qingjingCol"+i),$("#qingjingColModal"+i),sceneJson[i].isMustBuy,sceneJson[i].optionList);
+
     }
 
 
@@ -9015,78 +8323,53 @@ function identityListInit($changjingCol,identityList,isMustBuy)
 }
 
 
-var qingjing1SelectIndex;
-var qingjing1Index;
-var selectInfoId;
-$(".changjing-col").on("click",".select-info-first",function()
+
+
+$(".menushop").click(function()
 {
-    qingjing1Index=parseInt($(this).attr("data-index1"));
-    qingjing1SelectIndex=parseInt($(this).attr("data-index2"));
-    selectInfoId=$(this).attr("id");
-
-    initFirstScene();
-
-});
 
 
-
-
-
-
-
-
-$(".select02").click(function()
-{
-    initPrice();
-});
-
-
-
-
-    $(".menushop").click(function()
+    var jsonList=[];
+    $(".changjing-col").each(function()
     {
-        window.location.href="confirm.html?class="+ $("#xuanxiangCol").val()+"&event="+$("#priceCol").val()+"&idkind="+$("#shenfenCol").val()+"&usedate="+$("#dateCol").val()+"&adult="+$("#adult").val()+"&child="+$("#child").val();
-    });
-
-
-
-
-
-$(".quxiao-btn-col").click(function()
-{
-
-    $(".detail-btn1").removeClass("active");
-    $(".detail-btn1").parent().parent().parent().parent().find(".select02").html('選項<font style="color:red;">*</font> 請選擇');
-
-});
-
-
-
-$(function(){
-    $("#calendar02").ionCalendar({
-        lang: 'zh-cn',
-        onClick:function()
+        var changjingObj={};
+        changjingObj.id=$(this).attr("data-id");
+        changjingObj.type=$(this).attr("data-type");
+        if($(this).attr("data-type")=="1")
         {
-
-            $("#productSelect").empty();
-
-            var dateValue1=$("#calendarSelect1").val();
-            var dateValue2=$("#calendarSelect2").val();
-            var dateValue3=$("#calendarSelect3").val();
-            var dateValue4=$(this).find("div").eq(1).text();
-
-            $("#productSelect").empty();
-            $("#productSelect").append("<option>"+dateValue1+","+dateValue2+","+dateValue3+"."+dateValue4+"</option>")
+            changjingObj.dateList=[];
+            $(this).find(".select-info-first").each(function()
+            {
+                changjingObj.dateList.push($(this).find("span").text());
+            });
 
         }
+       else{
+            if($(this).find(".xuanze-text").length>0)
+            {
+                changjingObj.selectValue=$(this).find(".xuanze-text").text();
+            }
+        }
+
+
+        changjingObj.countList=[];
+        $(this).find(".identity-col").each(function()
+        {
+            var countObj={}
+            countObj.identity=$(this).find("div:first-child span").eq(0).text();
+            countObj.count=$(this).find(".middle-text").val();
+            changjingObj.countList.push(countObj);
+        });
+
+        jsonList.push(changjingObj);
+
+
     });
 
-    $("#calendarMobile").ionCalendar({
-        lang: 'zh-cn'
-    });
+    console.log(JSON.stringify(jsonList));
 
 
-
+    window.location.href="confirm.html?json="+JSON.stringify(jsonList);
 });
 
 
@@ -9161,7 +8444,7 @@ $("body").on("click",".child-level",function()
             var proCountryListTemp=JSON.parse($(this).parent().find(".child-list").text());
             getChildList(dataLevel,proCountryListTemp);
 
-            $("#countryInput").attr("data-value",$("#countryInput").attr("data-value")+"、"+$(this).next().text());
+            $(".countryInput").attr("data-value",$(".countryInput").attr("data-value")+"、"+$(this).next().text());
 
         }
         else
@@ -9173,16 +8456,16 @@ $("body").on("click",".child-level",function()
                 {
                     $(this).parent().parent().find("input").removeAttr("checked");
                     $(this).prop("checked","checked");
-                    var countryListStr=$("#countryInput").attr("data-value").split("、");
+                    var countryListStr=$(".countryInput").attr("data-value").split("、");
                     if(countryListStr.length>0)
                     {
                         countryListStr.pop();
                     }
-                    $("#countryInput").attr("data-value",countryListStr.join("、")+"、"+$(this).next().text());
+                    $(".countryInput").attr("data-value",countryListStr.join("、")+"、"+$(this).next().text());
                 }
                 else
                 {
-                    $("#countryInput").attr("data-value",$("#countryInput").attr("data-value")+"、"+$(this).next().text());
+                    $(".countryInput").attr("data-value",$(".countryInput").attr("data-value")+"、"+$(this).next().text());
                 }
 
 
@@ -9190,12 +8473,12 @@ $("body").on("click",".child-level",function()
             }
             else {
 
-                var countryListStr=$("#countryInput").attr("data-value").split("、");
+                var countryListStr=$(".countryInput").attr("data-value").split("、");
                 if(countryListStr.length>0)
                 {
                     countryListStr.pop();
                 }
-                $("#countryInput").attr("data-value",countryListStr.join("、"));
+                $(".countryInput").attr("data-value",countryListStr.join("、"));
 
 
 
@@ -9209,9 +8492,9 @@ $("body").on("click",".child-level",function()
 
 
 
-    if($("#countryInput").attr("data-value"))
+    if($(".countryInput").attr("data-value"))
     {
-        $("#countryInput").val($("#countryInput").attr("data-value").substring(1))
+        $(".countryInput").val($(".countryInput").attr("data-value").substring(1))
     }
 
 
@@ -9257,8 +8540,8 @@ function getChildList(dataLevel,proCountryListTemp)
         countryCheckHtml=countryCheckHtml+'<li><input type="checkbox" class="child-level" data-level="'+dataLevel+'" data-child="'+hasChild+'" data-id="'+proCountryListTemp[i].id+'" /><label>'+proCountryListTemp[i].name+'</label><span class="child-list" style="display: none;">'+childList+'</span></li>';;
     }
 
-    $("#countryList").empty();
-    $("#countryList").append(countryCheckHtml);
+    $(".countryList").empty();
+    $(".countryList").append(countryCheckHtml);
 
 
 }

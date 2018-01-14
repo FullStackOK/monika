@@ -281,7 +281,7 @@ $("#shenfenTextCol").change(function()
 });
 
 //详细操作
-$(".product-top .detail-btn").click(function()
+$("#qingjingColList").on("click",".product-top .detail-btn",function()
 {
 
     $(this).parent().parent().hide();
@@ -289,10 +289,38 @@ $(".product-top .detail-btn").click(function()
 
 });
 
-$(".product-select .detail-btn").click(function()
+$("#qingjingColList").on("click",".product-select .detail-btn",function()
 {
 
     $(this).parent().parent().prev().show();
     $(this).parent().parent().hide();
 
 })
+
+//取消功能
+$("#qingjingColList").on("click",".quxiao-btn-col",function()
+{
+
+    $(this).parent().parent().parent().parent().find(".detail-btn").removeClass("active");
+    $(this).parent().parent().parent().find(".xuanze-text").text("請選擇");
+
+    $(this).parent().parent().parent().parent().find(".identity-list").empty();
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
