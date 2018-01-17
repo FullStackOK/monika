@@ -8365,7 +8365,7 @@ for(var i=0;i<sceneJson.length;i++)
             '</div>'+
             '</div>');
 
-        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,1,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
 
         for(var j=0;j<sceneJson[i].selectList.length;j++)
         {
@@ -8374,10 +8374,9 @@ for(var i=0;i<sceneJson.length;i++)
                 '<div class="select-info select-info-first selectInfo'+j+'" style="width:200px;"  data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingColModal'+i+'" >使用日期：<span>請選擇</span></div>');
         }
 
-        initFirstScene($("#qingjingCol"+i),$("#qingjingColModal"+i));
+        initTenthScene($("#qingjingCol"+i),$("#qingjingColModal"+i));
 
         identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
-
 
 
 
