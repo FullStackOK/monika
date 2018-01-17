@@ -1013,9 +1013,9 @@ stock  库存
 var sceneJson=[
     {
         id:1,
+        ProductBaseID:'T00001',
         type:1,
         title:'白馬市極光奇景3日之旅1',
-        isDiscounts:1,
         isMustBuy:0,
         isSingleSell:1,
         selectList:[
@@ -1059,7 +1059,7 @@ var sceneJson=[
         identityList:[
             {
                 id:1,
-                name:'大人',
+                "IDKind" : 0,
                 minvalue:1,
                 ismultiple:1,
                 cad:495,
@@ -1068,7 +1068,7 @@ var sceneJson=[
             },
             {
                 id:2,
-                name:'儿童',
+                "IDKind" : 1,
                 minvalue:1,
                 ismultiple:0,
                 cad:395,
@@ -1080,9 +1080,9 @@ var sceneJson=[
     },
     {
         id:2,
+        ProductBaseID:'T00001',
         type:1,
         title:'白馬市極光奇景3日之旅1',
-        isDiscounts:1,
         isMustBuy:0,
         isSingleSell:1,
         selectList:[
@@ -1126,7 +1126,7 @@ var sceneJson=[
         identityList:[
             {
                 id:1,
-                name:'大人',
+                "IDKind" : 0,
                 minvalue:1,
                 ismultiple:1,
                 cad:495,
@@ -1135,7 +1135,7 @@ var sceneJson=[
             },
             {
                 id:2,
-                name:'儿童',
+                "IDKind" : 1,
                 minvalue:1,
                 ismultiple:0,
                 cad:395,
@@ -1147,9 +1147,9 @@ var sceneJson=[
     },
     {
         id:3,
+        ProductBaseID:'T00001',
         type:2,
         title:'白馬市極光奇景3日之旅白馬市2',
-        isDiscounts:1,
         isMustBuy:0,
         isSingleSell:0,
         price:3728,
@@ -1173,7 +1173,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 ismultiple:1,  //表示倍数购买
@@ -1181,7 +1181,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:9,
                                                 ismultiple:1,  //表示倍数购买
@@ -1196,17 +1196,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                minvalue:3,
+                                                "IDKind" : 1,
+                                                minvalue:1,
                                                 stock:10,
                                                 ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,  //表示倍数购买
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1218,13 +1219,20 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                            },
+                                            {
+                                                id:2,
+                                                "IDKind" : 1,
+                                                minvalue:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
+                                                tip:'測試文字測試文字'
                                             }
-
                                         ]
                                     },
                                     {
@@ -1234,18 +1242,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1257,18 +1265,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1280,18 +1288,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1305,137 +1313,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1449,137 +1458,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1601,137 +1611,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1745,137 +1756,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -1889,137 +1901,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2047,137 +2060,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2191,137 +2205,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2335,137 +2350,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2487,137 +2503,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2631,137 +2648,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2775,137 +2793,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$89",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 1,
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -2923,9 +2942,9 @@ var sceneJson=[
     },
     {
         id:4,
+        ProductBaseID:'T00001',
         type:3,
         title:'白馬市極光奇景3日之旅白馬市3',
-        isDiscounts:1,
         isMustBuy:0,
         isSingleSell:0,
         price:3728,
@@ -2949,7 +2968,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -2959,7 +2978,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -2976,7 +2995,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -2986,7 +3005,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3003,7 +3022,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3013,7 +3032,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3030,7 +3049,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3040,7 +3059,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3057,7 +3076,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3067,7 +3086,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3084,7 +3103,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3094,7 +3113,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3118,7 +3137,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3128,7 +3147,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3145,7 +3164,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3155,7 +3174,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3172,7 +3191,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3182,7 +3201,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3199,7 +3218,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3209,7 +3228,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3226,7 +3245,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3236,7 +3255,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3253,7 +3272,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3263,7 +3282,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3287,7 +3306,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3297,7 +3316,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3314,7 +3333,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3324,7 +3343,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3341,7 +3360,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3351,7 +3370,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3368,7 +3387,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3378,7 +3397,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3395,7 +3414,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3405,7 +3424,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3422,7 +3441,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3432,7 +3451,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3464,7 +3483,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3474,7 +3493,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3491,7 +3510,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3501,7 +3520,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3518,7 +3537,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3528,7 +3547,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3545,7 +3564,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3555,7 +3574,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3572,7 +3591,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3582,7 +3601,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3599,7 +3618,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3609,7 +3628,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3633,7 +3652,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3643,7 +3662,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3660,7 +3679,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3670,7 +3689,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3687,7 +3706,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3697,7 +3716,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3714,7 +3733,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3724,7 +3743,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3741,7 +3760,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3751,7 +3770,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3768,7 +3787,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3778,7 +3797,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3802,7 +3821,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3812,7 +3831,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3829,7 +3848,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3839,7 +3858,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3856,7 +3875,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3866,7 +3885,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3883,7 +3902,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3893,7 +3912,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3910,7 +3929,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3920,7 +3939,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3937,7 +3956,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3947,7 +3966,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -3985,7 +4004,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -3995,7 +4014,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4012,7 +4031,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4022,7 +4041,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4039,7 +4058,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4049,7 +4068,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4066,7 +4085,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4076,7 +4095,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4093,7 +4112,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4103,7 +4122,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4120,7 +4139,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4130,7 +4149,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4154,7 +4173,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4164,7 +4183,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4181,7 +4200,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4191,7 +4210,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4208,7 +4227,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4218,7 +4237,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4235,7 +4254,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4245,7 +4264,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4262,7 +4281,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4272,7 +4291,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4289,7 +4308,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4299,7 +4318,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4323,7 +4342,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4333,7 +4352,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4350,7 +4369,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4360,7 +4379,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4377,7 +4396,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4387,7 +4406,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4404,7 +4423,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4414,7 +4433,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4431,7 +4450,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4441,7 +4460,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4458,7 +4477,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4468,7 +4487,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4500,7 +4519,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4510,7 +4529,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4527,7 +4546,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4537,7 +4556,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4554,7 +4573,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4564,7 +4583,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4581,7 +4600,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4591,7 +4610,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4608,7 +4627,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4618,7 +4637,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4635,7 +4654,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4645,7 +4664,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4669,7 +4688,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4679,7 +4698,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4696,7 +4715,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4706,7 +4725,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4723,7 +4742,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4733,7 +4752,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4750,7 +4769,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4760,7 +4779,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4777,7 +4796,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4787,7 +4806,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4804,7 +4823,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4814,7 +4833,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4838,7 +4857,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4848,7 +4867,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4865,7 +4884,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4875,7 +4894,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4892,7 +4911,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4902,7 +4921,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4919,7 +4938,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4929,7 +4948,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4946,7 +4965,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4956,7 +4975,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -4973,7 +4992,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                "IDKind" : 1,
                                                 minvalue:1,
                                                 stock:10,
                                                 cad:405,
@@ -4983,7 +5002,7 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
+                                                "IDKind" : 0,
                                                 minvalue:1,
                                                 stock:9,
                                                 cad:405,
@@ -5006,9 +5025,9 @@ var sceneJson=[
     },
     {
         id:5,
+        ProductBaseID:'T00001',
         type:4,
         title:'白馬市極光奇景3日之旅白馬市4',
-        isDiscounts:0,
         isMustBuy:0,
         isSingleSell:0,
         optionList:[
@@ -5027,7 +5046,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5044,7 +5063,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5061,7 +5080,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 2,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5078,7 +5097,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 3,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5095,7 +5114,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5112,7 +5131,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5137,7 +5156,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5154,7 +5173,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5171,7 +5190,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 2,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5188,7 +5207,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 3,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5205,7 +5224,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5222,7 +5241,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5253,7 +5272,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5270,7 +5289,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5287,7 +5306,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 2,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5304,7 +5323,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 3,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5321,7 +5340,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5338,7 +5357,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5363,7 +5382,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5380,7 +5399,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5397,7 +5416,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 2,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5414,7 +5433,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 3,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5431,7 +5450,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 1,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5448,7 +5467,7 @@ var sceneJson=[
                                 identity_list:[
                                     {
                                         id:1,
-                                        name:'一般',
+                                        "IDKind" : 0,
                                         minvalue:1,
                                         stock:10,
                                         cad:405,
@@ -5468,9 +5487,9 @@ var sceneJson=[
     },
     {
         id:6,
+        ProductBaseID:'T00001',
         type:5,
         title:'白馬市極光奇景3日之旅白馬市5',
-        isDiscounts:0,
         isMustBuy:0,
         isSingleSell:0,
         optionList:[
@@ -5484,7 +5503,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 0,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5494,7 +5513,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 1,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5511,7 +5530,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 2,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5521,7 +5540,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 3,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5544,7 +5563,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 0,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5554,7 +5573,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 1,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5571,7 +5590,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 2,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5581,7 +5600,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 3,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5598,9 +5617,9 @@ var sceneJson=[
     },
     {
         id:7,
+        ProductBaseID:'T00001',
         type:6,
         title:'白馬市極光奇景3日之旅白馬市6',
-        isDiscounts:0,
         isMustBuy:0,
         isSingleSell:0,
         optionList:[
@@ -5614,7 +5633,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 0,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5624,7 +5643,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 1,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5641,7 +5660,7 @@ var sceneJson=[
                         identity_list:[
                             {
                                 id:1,
-                                name:'大人',
+                                "IDKind" : 2,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5651,7 +5670,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                name:'小孩',
+                                "IDKind" : 3,
                                 minvalue:1,
                                 stock:10,
                                 ismultiple:1,  //表示倍数购买
@@ -5728,16 +5747,16 @@ var sceneJson=[
     },
     {
         id:8,
+        ProductBaseID:'T00001',
         type:7,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
-        isDiscounts:0,
         isMustBuy:0,
         isSingleSell:0,
         identityList:[
             {
                 id:1,
-                name:'大人',
+                "IDKind" : 0,
                 minvalue:1,
                 ismultiple:1,
                 cad:495,
@@ -5747,7 +5766,7 @@ var sceneJson=[
             },
             {
                 id:2,
-                name:'儿童',
+                "IDKind" : 1,
                 minvalue:1,
                 ismultiple:0,
                 cad:395,
@@ -5757,7 +5776,7 @@ var sceneJson=[
             },
             {
                 id:2,
-                name:'老人',
+                "IDKind" : 2,
                 minvalue:1,
                 ismultiple:0,
                 cad:395,
@@ -5770,16 +5789,16 @@ var sceneJson=[
     },
     {
         id:9,
+        ProductBaseID:'T00001',
         type:8,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
-        isDiscounts:0,
         isMustBuy:0,
         isSingleSell:0,
         identityList:[
             {
                 id:1,
-                name:'一般',
+                "IDKind" : 1,
                 minvalue:1,
                 ismultiple:1,
                 cad:495,
@@ -5793,9 +5812,9 @@ var sceneJson=[
     },
     {
         id:10,
+        ProductBaseID:'T00001',
         type:9,
         title:'歐洲任選3國火車通行證彈性火車票',
-        isDiscounts:1,
         isMustBuy:0,
         isSingleSell:0,
         price:3728,
@@ -5819,7 +5838,7 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
                                                 ismultiple:1,  //表示倍数购买
@@ -5827,8 +5846,8 @@ var sceneJson=[
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
+                                                IDKind:1,
                                                 stock:9,
                                                 ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
@@ -5842,17 +5861,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                minvalue:3,
+                                                IDKind:0,
+                                                minvalue:1,
                                                 stock:10,
                                                 ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,  //表示倍数购买
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -5864,13 +5884,20 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'儿童',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
+                                            },
+                                            {
+                                                id:2,
+                                                minvalue:1,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
+                                                tip:'測試文字測試文字'
                                             }
-
                                         ]
                                     },
                                     {
@@ -5880,18 +5907,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -5903,18 +5930,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -5926,18 +5953,18 @@ var sceneJson=[
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -5951,137 +5978,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6095,137 +6123,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6247,137 +6276,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6391,137 +6421,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6535,137 +6566,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6693,137 +6725,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6837,137 +6870,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -6981,137 +7015,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -7133,137 +7168,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -7277,137 +7313,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -7421,137 +7458,138 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-02-01",
-                                        price: "$1839",
+                                        date: "2018-01-01",
+                                        price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:2,
-                                        date: "2018-02-02",
-                                        price: "$239",
+                                        date: "2018-01-02",
+                                        price: "$48239",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:3,
-                                        date: "2018-02-03",
-                                        price: "$48339",
+                                        date: "2018-01-03",
+                                        price: "$4339",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:4,
-                                        date: "2018-02-04",
+                                        date: "2018-01-04",
                                         price: "$839",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
                                                 stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:5,
-                                        date: "2018-02-05",
+                                        date: "2018-01-05",
                                         price: "$439",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
+                                                IDKind:0,
                                                 minvalue:1,
                                                 stock:10,
-                                                ismultiple:0,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                stock:10,
-                                                ismultiple:0,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
                                     },
                                     {
                                         id:6,
-                                        date: "2018-02-06",
-                                        price: "$639",
+                                        date: "2018-01-06",
+                                        price: "$39",
                                         identity_list:[
                                             {
                                                 id:1,
-                                                name:'大人',
-                                                stock:10,
+                                                IDKind:0,
                                                 minvalue:1,
-                                                ismultiple:0,
+                                                stock:10,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字測試文字'
                                             },
                                             {
                                                 id:2,
-                                                name:'儿童',
                                                 minvalue:1,
-                                                ismultiple:0,
-                                                stock:10,
+                                                IDKind:1,
+                                                stock:9,
+                                                ismultiple:1,  //表示倍数购买
                                                 tip:'測試文字測試文字'
                                             }
                                         ]
@@ -7566,6 +7604,64 @@ var sceneJson=[
                 ]
             }
         ]
+    },
+    {
+        id:11,
+        ProductBaseID:'T00001',
+        type:10,
+        DiscountName:'白馬市極光奇景3日之旅11',
+        DiscountID:"C123456789",
+        DiscountCombine:[
+            {
+                id:1,
+                "ProductBaseID" : "T1801000001",
+                "ProductBaseName" : "單品名稱1",
+                "ClassCode" : "FJKD",
+                "ClassName" : "测试",
+                "IDKind" : 1,
+                "Quantity" : 3,
+                "BookingNeedDate" : true,
+                dateList:[
+                    {
+                        id:1,
+                        date: "2018-01-10",
+                    },
+                    {
+                        id:2,
+                        date: "2018-01-11",
+                    },
+                    {
+                        id:3,
+                        date: "2018-01-12",
+                    }
+                ],
+            },
+            {
+                id:2,
+                "ProductBaseID" : "T1801000002",
+                "ProductBaseName" : "單品名稱2",
+                "ClassCode" : "FJKD",
+                "ClassName" : "测试",
+                "IDKind" : 0,
+                "Quantity" : 3,
+                "BookingNeedDate" : true,
+                dateList:[
+                    {
+                        id:1,
+                        date: "2018-01-10",
+                    },
+                    {
+                        id:2,
+                        date: "2018-01-11",
+                    },
+                    {
+                        id:3,
+                        date: "2018-02-02",
+                    }
+                ]
+            }
+        ]
+
     }
 ]
 
@@ -8221,6 +8317,74 @@ for(var i=0;i<sceneJson.length;i++)
     }
 
 
+    if(sceneJson[i].type==10)  //情景10
+    {
+
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="1">'+
+            ' <div class="product-top">'+
+            '<div class="product-title"><span class="product-title-text"></span></div>'+
+            ' <div class="product-tag-list"></div>'+
+            ' <div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>'+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            ' <span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            '</button>'+
+            '</div>'+
+            ' <div style="clear:both;"></div>'+
+            '</div>'+
+            ' <div class="product-select">'+
+            '<div class="product-title"><span class="product-title-text"></span></div>'+
+            ' <div class="product-tag-list"></div>'+
+            '<div style="float:right;" class="detail-btn-col">'+
+            '<button class="detail-btn"  type="button">'+
+            '<span class="detail-btn-col detail-btn-close">詳細 <span>▼</span></span>'+
+            '<span class="gouxuan-btn-col">已選 <span>√</span></span>'+
+            '<span class="quxiao-btn-col">取消 <span>×</span></span>'+
+            ' </button>'+
+            '</div>'+
+            '<div style="clear:both;"></div>'+
+            ' <div class="qingjing1">'+
+            ' </div>'+
+            '<div style="margin-top:30px;margin-left:-5px;margin-right:-5px;" class="clearfix identity-list-col" >'+
+            '<div class="clearfix identity-list"></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '<div  style="display:none;" class="mobile-dialog" id="qingjingColModal'+i+'">'+
+            '<div class="title-col clearfix">'+
+            '<div class="line"></div>'+
+            '<div class="back-col" data-fancybox-close=""><img src="images/icon27.png"></div>'+
+            '<div class="text">請選擇</div>'+
+            '</div>'+
+            '<div>'+
+            '<div class="calendar-main calendarCol1">'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>');
+
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,sceneJson[i].isDiscounts,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+
+        for(var j=0;j<sceneJson[i].selectList.length;j++)
+        {
+            $("#qingjingCol"+i).find(".qingjing1").append('<div style="margin-top:10px;">'+
+                '<div style="margin:10px 0;" >'+sceneJson[i].selectList[j].title+'</div>'+
+                '<div class="select-info select-info-first selectInfo'+j+'" style="width:200px;"  data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingColModal'+i+'" >使用日期：<span>請選擇</span></div>');
+        }
+
+        initFirstScene($("#qingjingCol"+i),$("#qingjingColModal"+i));
+
+        identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+
+
+
+
+
+
+    }
+
 }
 
 
@@ -8284,12 +8448,33 @@ function identityListInit($changjingCol,identityList,isMustBuy)
 
 
 
+        var identityListName="";
 
+        if(identityList[i].IDKind==0)
+        {
+            identityListName="成人";
+        }
+        else if(identityList[i].IDKind==1)
+        {
+            identityListName="學生";
+        }
+        else if(identityList[i].IDKind==2)
+        {
+            identityListName="老人";
+        }
+        else if(identityList[i].IDKind==3)
+        {
+            identityListName="孩童";
+        }
+        else if(identityList[i].IDKind==4)
+        {
+            identityListName="嬰幼兒";
+        }
 
 
         identity_list_html=identity_list_html+'<div class="col-xs-3 col-sm-3 col-md-3 identity-col">'+
             '<div>'+
-            '<span style="vertical-align:middle;margin-right:5px;">'+identityList[i].name+'</span>'+tipHtml+
+            '<span style="vertical-align:middle;margin-right:5px;">'+identityListName+'</span>'+tipHtml+
             '</div>'+cadHtml+
             '<div style="margin-top:10px;">'+
             '<span class="minus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">'+
