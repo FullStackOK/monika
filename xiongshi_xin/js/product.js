@@ -8369,7 +8369,7 @@ $(".menushop").click(function()
     console.log(JSON.stringify(jsonList));
 
 
-    window.location.href="confirm.html?json="+JSON.stringify(jsonList);
+    //window.location.href="confirm.html?json="+JSON.stringify(jsonList);
 });
 
 
