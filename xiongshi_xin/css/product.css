@@ -280,7 +280,7 @@
 .product-tag{background:#ff8500;color:#fff;padding:1px 8px;margin-left:10px;display: inline-block;}
 .product-title-price{color:#e10500;}
 
-.minus-text,.plus-text{cursor: pointer;}
+.minus-text,.plus-text,.minus-text-col,.plus-text-col{cursor: pointer;}
 #calendar03{display: none;}
 .bottom-btn{display: none;}
 

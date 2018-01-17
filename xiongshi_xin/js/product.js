@@ -157,6 +157,66 @@ function initFirstScene($container,$qingjingModal)
 }
 
 
+//情景10
+function initTenthScene($container,$qingjingModal)
+{
+
+    var qingjing1SelectIndex;
+    var qingjing1Index;
+    var $selectInfoObj;
+    $(".changjing-col").on("click",".select-info-first",function()
+    {
+        qingjing1Index=parseInt($(this).attr("data-index1"));
+        qingjing1SelectIndex=parseInt($(this).attr("data-index2"));
+        $selectInfoObj=$(this);
+
+        var dateListCol=sceneJson[qingjing1Index].DiscountCombine[qingjing1SelectIndex].dateList;
+        initCalendarInfo($qingjingModal.find(".calendarCol1"),dateListCol);
+
+    });
+
+
+    $qingjingModal.find(".calendarCol1").clndr({
+        template: $('#calendarTemplate').html(),
+        clickEvents: {
+            onMonthChange: function () {
+
+                var dateListCol=sceneJson[qingjing1Index].DiscountCombine[qingjing1SelectIndex].dateList;
+                initCalendarInfo($qingjingModal.find(".calendarCol1"),dateListCol);
+
+
+            },
+            click: function(target){
+
+                if($(target.element).hasClass("active"))
+                {
+                    var dateStr=target.date.format("YYYY-MM-DD");
+                    console.log(dateStr);
+                    $selectInfoObj.find("span").text(dateStr);
+                }
+
+
+
+            },
+        },
+
+        moment: moment,
+        constraints: {
+            endDate: moment().add(90, 'days').format("YYYY-MM-DD"),
+            startDate: moment().format("YYYY-MM-DD")
+        },
+
+        numberOfRows: 5,
+
+        adjacentDaysChangeMonth : true,
+    });
+
+
+
+
+
+}
+
 
 //情景2
 function initSecondScene($container,$qingjingModal,isMustBuy,optionList)
@@ -7619,7 +7679,7 @@ var sceneJson=[
                 "ClassCode" : "FJKD",
                 "ClassName" : "测试",
                 "IDKind" : 1,
-                "Quantity" : 3,
+                "Quantity" : 2,
                 "BookingNeedDate" : true,
                 dateList:[
                     {
@@ -7672,7 +7732,7 @@ for(var i=0;i<sceneJson.length;i++)
     {
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="1">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="1">'+
             ' <div class="product-top">'+
             '<div class="product-title"><span class="product-title-text"></span></div>'+
             ' <div class="product-tag-list"></div>'+
@@ -7740,7 +7800,7 @@ for(var i=0;i<sceneJson.length;i++)
     {
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-        '<div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="2">'+
+        '<div  class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="2">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             ' <span class="product-title-text"></span>'+
@@ -7830,7 +7890,7 @@ for(var i=0;i<sceneJson.length;i++)
 
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            ' <div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="3">'+
+            ' <div  class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="3">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -7920,7 +7980,7 @@ for(var i=0;i<sceneJson.length;i++)
     if(sceneJson[i].type==4)  //情景4
     {
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            '<div  class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="4">'+
+            '<div  class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="4">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -8014,7 +8074,7 @@ for(var i=0;i<sceneJson.length;i++)
     {
 
         $("#qingjingColList").append(' <div id="qingjingCol'+i+'">'+
-            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="5">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="5">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -8088,7 +8148,7 @@ for(var i=0;i<sceneJson.length;i++)
 
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="6">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="6">'+
             ' <div class="product-top">'+
             ' <div class="product-title">'+
             ' <span class="product-title-text"></span>'+
@@ -8160,7 +8220,7 @@ for(var i=0;i<sceneJson.length;i++)
     if(sceneJson[i].type==7)  //情景7
     {
 
-        $("#qingjingColList").append('<div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="7">'+
+        $("#qingjingColList").append('<div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="7">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -8198,7 +8258,7 @@ for(var i=0;i<sceneJson.length;i++)
     if(sceneJson[i].type==8)  //情景8
     {
 
-        $("#qingjingColList").append(' <div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="8">'+
+        $("#qingjingColList").append(' <div id="qingjingCol'+i+'" class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="8">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -8237,7 +8297,7 @@ for(var i=0;i<sceneJson.length;i++)
     {
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            ' <div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="9">'+
+            ' <div class="changjing-col" data-id="'+sceneJson[i].ProductBaseID+'" data-type="9">'+
             '<div class="product-top">'+
             '<div class="product-title">'+
             '<span class="product-title-text"></span>'+
@@ -8321,7 +8381,7 @@ for(var i=0;i<sceneJson.length;i++)
     {
 
         $("#qingjingColList").append('<div id="qingjingCol'+i+'">'+
-            '<div class="changjing-col" data-id="'+sceneJson[i].id+'" data-type="1">'+
+            '<div class="changjing-col" data-id="'+sceneJson[i].DiscountID+'" data-type="10">'+
             ' <div class="product-top">'+
             '<div class="product-title"><span class="product-title-text"></span></div>'+
             ' <div class="product-tag-list"></div>'+
@@ -8365,18 +8425,21 @@ for(var i=0;i<sceneJson.length;i++)
             '</div>'+
             '</div>');
 
-        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].title,1,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
+        sceneInfoInit($("#qingjingCol"+i),sceneJson[i].DiscountName,1,sceneJson[i].isMustBuy,sceneJson[i].isSingleSell,sceneJson[i].price);
 
-        for(var j=0;j<sceneJson[i].selectList.length;j++)
+
+
+        for(var j=0;j<sceneJson[i].DiscountCombine.length;j++)
         {
-            $("#qingjingCol"+i).find(".qingjing1").append('<div style="margin-top:10px;">'+
-                '<div style="margin:10px 0;" >'+sceneJson[i].selectList[j].title+'</div>'+
-                '<div class="select-info select-info-first selectInfo'+j+'" style="width:200px;"  data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingColModal'+i+'" >使用日期：<span>請選擇</span></div>');
+
+            $("#qingjingCol"+i).find(".qingjing1").append('<div style="margin-top:10px;" data-code="'+sceneJson[i].DiscountCombine[j].ClassCode+'">'+
+                '<div style="margin:10px 0;" >'+sceneJson[i].DiscountCombine[j].ProductBaseName+'-'+sceneJson[i].DiscountCombine[j].ClassName+'</div>'+
+                '<div class="select-info select-info-first selectInfo'+j+'" style="width:200px;" data-class="'+sceneJson[i].DiscountCombine[j].ClassCode+'"  data-index1="'+i+'" data-index2="'+j+'" data-fancybox="" data-src="#qingjingColModal'+i+'" >使用日期：<span>請選擇</span></div>');
         }
 
         initTenthScene($("#qingjingCol"+i),$("#qingjingColModal"+i));
 
-        identityListInit($("#qingjingCol"+i),sceneJson[i].identityList,sceneJson[i].isMustBuy);
+        identityListInitTenth($("#qingjingCol"+i),sceneJson[i].DiscountCombine,sceneJson[i].isMustBuy);
 
 
 
@@ -8477,7 +8540,7 @@ function identityListInit($changjingCol,identityList,isMustBuy)
             '</div>'+cadHtml+
             '<div style="margin-top:10px;">'+
             '<span class="minus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">'+
-            '<input class="middle-text" type="text" size="3" style="height:24px;text-align:center;" data-stock="'+identityList[i].stock+'" data-multiple="'+identityList[i].ismultiple+'" data-minvalue="'+identityList[i].minvalue+'" value="'+identityList[i].minvalue+'">'+
+            '<input class="middle-text" data-idkind="'+identityList[i].IDKind+'" type="text" size="3" style="height:24px;text-align:center;" data-stock="'+identityList[i].stock+'" data-multiple="'+identityList[i].ismultiple+'" data-minvalue="'+identityList[i].minvalue+'" value="'+identityList[i].minvalue+'">'+
             '</span>'+
             '<span class="plus-text" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>'+
             '</div>'+
@@ -8506,56 +8569,240 @@ function identityListInit($changjingCol,identityList,isMustBuy)
 
 }
 
+//优惠组合选择数量
+function identityListInitTenth($changjingCol,identityList,isMustBuy)
+{
+    var identity_list_html="";
+    var shenfenColText="";
+    var identity_name_html="";
 
+
+    for(var i=0;i<identityList.length;i++)
+    {
+
+        var tipHtml=""
+
+        if(identityList[i].tip)
+        {
+            tipHtml='<span class="text-hover"><img src="images/icon10.png"/><div  class="talkbox">'+identityList[i].tip+'</div></span>';
+        }
+
+        var cadHtml="";
+        if(identityList[i].cad)
+        {
+            cadHtml='<div><span style="text-decoration:line-through;">CAD 495</span><br><span style="color:#e10500;">TWD 11,593</span></div>';
+        }
+
+
+        var identityListName="";
+
+        if(identityList[i].IDKind==0)
+        {
+            identityListName="成人";
+        }
+        else if(identityList[i].IDKind==1)
+        {
+            identityListName="學生";
+        }
+        else if(identityList[i].IDKind==2)
+        {
+            identityListName="老人";
+        }
+        else if(identityList[i].IDKind==3)
+        {
+            identityListName="孩童";
+        }
+        else if(identityList[i].IDKind==4)
+        {
+            identityListName="嬰幼兒";
+        }
+
+        identity_name_html=identity_name_html+'<span class="identity-text" style="margin-right:10px;">'+identityListName+'×<span class="quantity" data-idkind="'+identityList[i].IDKind+'" data-count="'+identityList[i].Quantity+'">'+identityList[i].Quantity+'</span></span>';
+
+    }
+
+
+    identity_list_html='<div class="col-xs-6 col-sm-6 col-md-6 identity-col">'+
+        '<div>'+
+        '<span style="vertical-align:middle;margin-right:5px;">'+identity_name_html+'</span>'+tipHtml+
+        '</div>'+cadHtml+
+        '<div style="margin-top:10px;">'+
+        '<span class="minus-text-col" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">-</span><span class="value1" style="vertical-align:initial;">'+
+        '<input class="middle-text-col" type="text" size="3" style="height:24px;text-align:center;"  value="1">'+
+        '</span>'+
+        '<span class="plus-text-col" style="border:1px solid #dddddd;padding:2px 12px 3px 10px;background:#f7f7f7;color:#000;">+</span>'+
+        '</div>'+
+        '</div>';
+
+
+    $changjingCol.find(".identity-list").empty();
+    $changjingCol.find(".identity-list").append(identity_list_html);
+
+
+}
 
 
 $(".menushop").click(function()
 {
 
-
     var jsonList=[];
+
+    var jsonList1=[];
+
     $(".changjing-col").each(function()
     {
-        var changjingObj={};
-        changjingObj.id=$(this).attr("data-id");
-        changjingObj.type=$(this).attr("data-type");
-        if($(this).attr("data-type")=="1")
+
+
+        var typeStr=$(this).attr("data-type");
+        var $changjingDomObj=$(this);
+
+        if(typeStr=="10")
         {
-            changjingObj.dateList=[];
-            $(this).find(".select-info-first").each(function()
+
+
+            $changjingDomObj.find(".quantity").each(function(index)
             {
-                changjingObj.dateList.push($(this).find("span").text());
+
+                var changjingObj1={};
+
+                changjingObj1.IDKind=$(this).attr("data-idkind");
+                changjingObj1.Quantity==$(this).text();
+                changjingObj1.Class=$changjingDomObj.find(".select-info-first").eq(index).attr("data-class");
+
+
+                var dateStr=$changjingDomObj.find(".select-info-first").eq(index).find("span").text();
+
+                if(dateStr!="請選擇")
+                {
+                    changjingObj1.Date=dateStr;
+                }
+                else {
+                    changjingObj1.Date=null;
+                }
+
+
+                changjingObj1.DiscountID=$changjingDomObj.attr("data-id");
+                changjingObj1.type=$changjingDomObj.attr("data-type");
+
+                jsonList1.push(changjingObj1);
+
+
             });
 
+
+
+
         }
-       else{
-            if($(this).find(".xuanze-text").length>0)
+        else {
+
+            $changjingDomObj.find(".identity-col").each(function()
             {
-                changjingObj.selectValue=$(this).find(".xuanze-text").text();
-            }
+
+                var changjingObj={};
+                changjingObj.ProductBaseID=$changjingDomObj.attr("data-id");
+                changjingObj.type=$changjingDomObj.attr("data-type");
+
+                if($changjingDomObj.attr("data-type")=="1")
+                {
+                    changjingObj.DateList=[];
+                    $(this).find(".select-info-first").each(function()
+                    {
+                        changjingObj.DateList.push($(this).find("span").text());
+                    });
+
+                }
+                if(typeStr=="2"||typeStr=="3"||typeStr=="4"||typeStr=="5"||typeStr=="6"||typeStr=="9")
+                {
+                    changjingObj.Class=$(".xuanze-text").text().split("，")[0];
+                    changjingObj.Event=$(".xuanze-text").text().split("，")[1];
+                    changjingObj.Date=$(".xuanze-text").text().split("，")[2];
+                }
+                else{
+                    changjingObj.Class=null;
+                    changjingObj.Event=null;
+                    changjingObj.Date=null;
+                }
+
+
+                changjingObj.IDKind=$(this).find(".middle-text").attr("data-idkind");
+                changjingObj.Quantity=$(this).find(".middle-text").val();
+
+                jsonList.push(changjingObj);
+
+            });
+
+
         }
 
 
-        changjingObj.countList=[];
-        $(this).find(".identity-col").each(function()
-        {
-            var countObj={}
-            countObj.identity=$(this).find("div:first-child span").eq(0).text();
-            countObj.count=$(this).find(".middle-text").val();
-            changjingObj.countList.push(countObj);
-        });
 
-        jsonList.push(changjingObj);
+
+
 
 
     });
 
-    console.log(JSON.stringify(jsonList));
 
+    $("#jsonNormal").val(JSON.stringify(jsonList));
+    $("#jsonDiscount").val(JSON.stringify(jsonList));
+
+    console.log(JSON.stringify(jsonList));
+    console.log(JSON.stringify(jsonList1));
+
+    $("#formCol").submit();
 
     //window.location.href="confirm.html?json="+JSON.stringify(jsonList);
 });
 
+
+
+//优惠组合人数加和减运算
+$("body").on("click",".minus-text-col",function()
+{
+
+    var prevNum=parseInt($(this).parent().find(".middle-text-col").val());
+
+
+    if(prevNum>1)
+    {
+        prevNum--;
+
+        $(this).parent().find(".middle-text-col").val(prevNum);
+
+
+        $(this).parent().parent().parent().find(".quantity").each(function()
+        {
+
+            $(this).text(parseInt($(this).attr("data-count"))*prevNum);
+
+        });
+
+
+    }
+
+
+
+});
+$("body").on("click",".plus-text-col",function()
+{
+
+    var prevNum=parseInt($(this).parent().find(".middle-text-col").val());
+
+    prevNum++;
+
+    if(prevNum<=10)
+    {
+        $(this).parent().find(".middle-text-col").val(prevNum);
+        $(this).parent().parent().parent().find(".quantity").each(function()
+        {
+
+            $(this).text(parseInt($(this).attr("data-count"))*prevNum);
+
+        });
+    }
+
+
+});
 
 
 
