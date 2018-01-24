@@ -8442,9 +8442,6 @@ for(var i=0;i<sceneJson.length;i++)
         identityListInitTenth($("#qingjingCol"+i),sceneJson[i].DiscountCombine,sceneJson[i].isMustBuy);
 
 
-
-
-
     }
 
 }
@@ -8916,12 +8913,8 @@ $("body").on("click",".child-level",function()
             }
 
 
-
             $(".calendar-col").show();
         }
-
-
-
 
     if($(".countryInput").attr("data-value"))
     {
@@ -8929,20 +8922,11 @@ $("body").on("click",".child-level",function()
     }
 
 
-
-
-
-
-
-
-
 });
 
 
 $(".mobile-product .mible-title").click(function()
 {
-
-
         $(this).toggleClass("active");
         $(this).next().toggle();
 
