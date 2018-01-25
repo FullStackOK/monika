@@ -84,15 +84,24 @@ function leftTimer(timeStr){
     seconds = checkTime(seconds);
     millisecond = checkTime(millisecond);
 
+    if(days==0&&hours==0&&minutes==0&&seconds==0&&millisecond==0)
+    {
+        clearInterval(timerId);
+    }
+
     document.getElementById("timer").innerHTML = days+" 天 " + hours+" 時 " + minutes+" 分 "+seconds+" 秒 <span class='millisecond'>"+millisecond+"</span>";
 }
 
-setInterval("leftTimer(putawayTime)",1);
+var timerId=setInterval("leftTimer(putawayTime)",1);
 
 function checkTime(i){ //将0-9的数字前面加上0，例1变为01
-    if(i<10)
+    if(i<10&&i>=0)
     {
         i = "0" + i;
+    }
+    else if(i<0)
+    {
+        i=0;
     }
     return i;
 }
