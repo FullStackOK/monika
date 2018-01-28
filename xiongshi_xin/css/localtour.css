@@ -3334,9 +3334,11 @@ body.right-active .titlebar.active{right:270px;}
 .bottom-col .btn-col{background:#e20401;color:#fff;display: inline-block;line-height: normal;padding:5px 10px;border-radius: 4px;}
 
 .no-record{padding:15px;width:100%;display: none;}
-.no-record img{text-align: center;height:174px;position: absolute;top:50%;margin-top:-87px;width:100%;left:0;box-sizing: border-box;padding-left:40px;}
-.left-tool-bar{width:40px;float:left;height:100vh;position: relative;z-index:100;}
 
+.right-no-data{width:270px;padding:70px 0;text-align: center;}
+.right-no-data div{font-size:21px;color:#bbb;text-align: center;margin-top:10px;}
+
+.left-tool-bar{width:40px;float:left;height:100vh;position: relative;z-index:100;}
 
 .share-col{padding:0 12px;display: none;}
 .share-list a{display: block;text-decoration: none;color:#fff;padding-left:18px;line-height: 50px;margin-top:10px;position: relative;}

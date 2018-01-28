@@ -1,9 +1,29 @@
 //右边工具栏操作
 
-$(".sildernav .silderitem .menu2").live("click",function()
+$("#shoucangList .silderitem .menu2").live("click",function()
 {
     $(this).parent().remove();
+
+    if($("#shoucangList .silderitem").length==0)
+    {
+        $("#shoucangListCol").hide();
+        $("#shoucangList").append('<div class="right-no-data"><img src="images/add/browseNoRecord.png"><div>您尚未開始收藏產品</div></div>');
+    }
+
 });
+
+
+$("#browseNoRecord .silderitem .menu2").live("click",function()
+{
+    $(this).parent().remove();
+
+    if($("#browseNoRecord .silderitem").length==0)
+    {
+        $("#browseNoRecord").append('<div class="right-no-data"><img src="images/add/browseNoRecord.png"><div>您尚未開始瀏覽產品</div></div>');
+    }
+
+});
+
 
 
 $(".silderlist .silderlistbtn").click(function()
@@ -59,7 +79,7 @@ if(localStorage.productListLocalStorage)
 
 }
 else {
-    $("#browseNoRecord").append('<img src="images/add/browseNoRecord.png">');
+    $("#browseNoRecord").append('<div class="right-no-data"><img src="images/add/browseNoRecord.png"><div>您尚未開始瀏覽產品</div></div>');
 }
 
 

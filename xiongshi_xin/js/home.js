@@ -157,8 +157,11 @@ $("#mainList .collection label").click(function()
 
     $("#sildermenu").prop("checked","checked");
 
-    $("#silderitemList").prepend('	<div class="silderitem">					<div class="menu2" id="thisNode">						<span></span>						<span></span>					</div>					<div class="sildertitle">测试测试</div>					<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">						Love秋冬．東京+橫濱 3~14天<br>						適用期間：2016/07/01~2016/09/30					</div>					<div style="line-height:40px;text-align:right;">每人<span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>				</div>');
+    $("#silderitemList").prepend('<div class="silderitem">					<div class="menu2" id="thisNode">						<span></span>						<span></span>					</div>					<div class="sildertitle">测试测试</div>					<div style="min-height:70px;border-bottom:1px solid #f1f1f1;">						Love秋冬．東京+橫濱 3~14天<br>						適用期間：2016/07/01~2016/09/30					</div>					<div style="line-height:40px;text-align:right;">每人<span style="color:#e10500;font-size:20px;vertical-align:baseline;">$35,568</span> 起</div>				</div>');
 
+
+    $("#shoucangListCol").show();
+    $("#shoucangList .right-no-data").remove();
 
 
 });
