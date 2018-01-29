@@ -128,36 +128,19 @@ $("#selectListCol input").on("input",function()
         var html="";
         var inputValue=$(this).val().trim();
 
-        for(var i in CityArr)
+        var countValue=0;
+        for(var i=0;i<allCityCountryList.length;i++)
         {
-            if(CountryArr[i].indexOf(inputValue)>-1)
+            if(countValue>=10)
             {
-                var countryStr=CountryArr[i].replace(inputValue,"<span class='red-text'>"+inputValue+"</span>");
-                html=html+'<li data-country="'+i+'" data-country-value="'+CountryArr[i]+'" >'+countryStr+'</li>';
-
-                for(var j in CityArr[i])
-                {
-                    if(j!="_")
-                    {
-                        html=html+'<li data-country="'+i+'" data-country-value="'+CountryArr[i]+'"  data-city="'+j+'" data-city-value="'+CityArr[i][j]+'" >'+ CityArr[i][j]+'-'+countryStr+'</li>';
-                    }
-
-                }
-
+                break;
             }
-
-            for(var j in CityArr[i])
+            if(allCityCountryList[i].name.indexOf(inputValue)>-1)
             {
-                if(CityArr[i][j].indexOf(inputValue)>-1)
-                {
-                    var cityStr=CityArr[i][j].replace(inputValue,"<span class='red-text'>"+inputValue+"</span>");
-
-                    html=html+'<li data-country="'+i+'" data-country-value="'+CountryArr[i]+'"  data-city="'+j+'" data-city-value="'+CityArr[i][j]+'" >'+cityStr+'-'+CountryArr[i]+'</li>';
-                }
-
+                countValue++;
+                var countryStr=allCityCountryList[i].name.replace(inputValue,"<span class='red-text'>"+inputValue+"</span>");
+                html=html+'<li data-country="'+i+'" data-country-value="'+allCityCountryList[i].name+'" >'+countryStr+'</li>';
             }
-
-
 
 
         }
@@ -262,18 +245,10 @@ $(".xiala-list input").click(function()
 
 
 
-for(var i in LineArr){
-    if (LineArr.hasOwnProperty(i)) { //filter,只输出man的私有属性
+for(var i in vLine){
+    if (vLine.hasOwnProperty(i)) { //filter,只输出man的私有属性
+
         $(".select-list-tab").append('<span data-id="'+i+'">'+vLine[i]+'</span>');
-
-
-        //console.log(LineArr[i].length);
-
-        /*for(var j=0;j<LineArr[i].length;j++)
-        {
-            console.log(CountryArr[LineArr[i][j]]);
-        }*/
-
 
     };
 }
@@ -289,40 +264,29 @@ function getCityList(zhou)
 {
 
     var html="";
-    for(var i=0;i<LineArr[zhou].length;i++)
+    for(var i in vLinetravel[zhou])
     {
 
+        if(i!="_")
+        {
 
-       if(CityArr[LineArr[zhou][i]])
-       {
-           html=html+'<li class="has-child"><div class="title-text" data-value="'+LineArr[zhou][i]+'">'+CountryArr[LineArr[zhou][i]]+'</div><div class="child-list">';
-           for(var j in CityArr[LineArr[zhou][i]])
-           {
-               html=html+'<div data-value="'+j+'">'+CityArr[LineArr[zhou][i]][j]+'</div>'
-               console.log(CityArr[j]);
-           }
-           html=html+'</div></li>';
-       }
-        else {
-           html=html+'<li class="no-child"><div class="title-text" data-value="'+LineArr[zhou][i]+'">'+CountryArr[LineArr[zhou][i]]+'</div>';
-       }
+            html=html+'<li class="has-child"><div class="title-text" data-value="'+i+'"><span class="title-text-col"><span class="ic ic-ln x12 productreferf"></span>'+vLinetravel[zhou][i]+'</span></div><div class="child-list">';
 
+            for(var j in vLinewebarea[i])
+            {
+                if(j!="_") {
+                    html = html + '<div><span data-value="' + j + '">' + vLinewebarea[i][j] + '</span></div>';
+                }
+            }
 
-        html=html+"</li>";
+            html=html+'</div></li>';
+        }
 
     }
     $("#cityList").empty();
     $("#cityList").append(html);
 }
 
-$(".select-list-col .city-list .has-child").live("mouseover",function()
-{
-    console.log("###");
-    $(this).find(".child-list").show();
-}).live("mouseout",function()
-{
-    $(this).find(".child-list").hide();
-});
 
 $(".select-list-col .city-list li .child-list>div").live("click",function()
 {
@@ -388,12 +352,11 @@ $(".select-list-tab span").click(function()
 });
 
 
-$(".select-list-col .city-list .no-child .title-text").live("click",function()
+$(".select-list-col .city-list .title-text-col").live("click",function()
 {
 
-
-    $(".select-list-col .city-list .title-text").removeClass("active");
-   $(this).addClass("active");
+    $(".select-list-col .city-list .title-text-col").removeClass("active");
+    $(this).addClass("active");
     $("#selectListCol input").val($(this).text());
     $("#selectListCol input").attr("data-value",$(this).attr("data-value"));
 
@@ -619,6 +582,39 @@ document.onclick =function(e){
 }
 
 
+
+//模糊查询列表
+var allCityCountryList=[];
+for(var i in vLine)
+{
+    for(var j in vLinetravel[i])
+    {
+        if(j!="_")
+        {
+
+            var allCountryObj={};
+            allCountryObj.code1=j;
+            allCountryObj.code2=i;
+            allCountryObj.name=vLinetravel[i][j]+"-"+vLine[i];
+            allCityCountryList.push(allCountryObj);
+
+            for(var k in vLinewebarea[j])
+            {
+                if(k!="_")
+                {
+                    var allCityCountryObj={};
+                    allCityCountryObj.code1=k;
+                    allCityCountryObj.code2=j;
+                    allCityCountryObj.name=vLinewebarea[j][k]+"-"+vLinetravel[i][j];
+                    allCityCountryList.push(allCityCountryObj);
+                }
+
+
+            }
+        }
+
+    }
+}
 
 
 
