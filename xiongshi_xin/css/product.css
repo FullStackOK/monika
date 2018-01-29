@@ -179,7 +179,6 @@
 
 .select-list-col2 .select-list-close2,.select-list-col4 .select-list-close4{position: absolute;top:0;cursor:pointer;right:0;background: #f1f1f1;width:20px;height:20px;text-align: center;line-height: 20px;}
 
-
 .select-list-col .title-col{padding:10px 0 2px 0;border-bottom:1px dashed #ccc;}
 .select-list-col .city-list{list-style: none;height:200px;overflow: auto;padding:0 0;}
 .select-list-col .city-list li{font-size:0;;vertical-align: middle;position: relative;}
