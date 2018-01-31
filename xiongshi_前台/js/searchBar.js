@@ -256,8 +256,6 @@ $(".select-list-col .city-list li .child-list>div").live("click",function()
 {
     var dataValue=$(this).attr("data-value");
 
-    console.log(dataValue);
-
     if(dataValue!="_")
     {
         $("#selectListCol input").val($(this).parent().prev().text()+"-"+$(this).text());
@@ -268,6 +266,7 @@ $(".select-list-col .city-list li .child-list>div").live("click",function()
     }
 
     $("#selectListCol input").attr("data-value",$(this).parent().prev().attr("data-value"));
+
 
 });
 

@@ -108,8 +108,17 @@ $(".select-list-col2 ul li").live("click",function()
     $("#selectListCol input").attr("data-city",cityStr);
     $("#selectListCol input").attr("data-value",countryStr);
 
+    $(this).closest(".select-list-col2").parent().find(".input-close").show();
+
+    $(this).closest(".select-list-col2").hide();
+
+});
 
 
+$(".input-close").click(function()
+{
+    $(this).hide();
+    $(this).parent().find("input").val("");
 });
 
 
@@ -304,6 +313,11 @@ $(".select-list-col .city-list li .child-list>div").live("click",function()
     }
 
     $("#selectListCol input").attr("data-value",$(this).parent().prev().attr("data-value"));
+
+    $(this).closest(".select-list-col").parent().find(".input-close").show();
+
+    $(this).closest(".select-list-col").hide();
+
 
 });
 
