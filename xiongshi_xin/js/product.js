@@ -8496,7 +8496,7 @@ function identityListInit($changjingCol,identityList,isMustBuy)
         var cadHtml="";
         if(identityList[i].cad)
         {
-            cadHtml='<div><span style="text-decoration:line-through;">CAD 495</span><br><span style="color:#e10500;">TWD 11,593</span></div>';
+            cadHtml='<div><span style="text-decoration:line-through;">CAD '+identityList[i].cad+'</span><br><span style="color:#e10500;">TWD '+identityList[i].twd+'</span></div>';
         }
 
 
@@ -8587,7 +8587,7 @@ function identityListInitTenth($changjingCol,identityList,isMustBuy)
         var cadHtml="";
         if(identityList[i].cad)
         {
-            cadHtml='<div><span style="text-decoration:line-through;">CAD 495</span><br><span style="color:#e10500;">TWD 11,593</span></div>';
+            cadHtml='<div><span style="text-decoration:line-through;">CAD '+identityList[i].cad+'</span><br><span style="color:#e10500;">TWD '+identityList[i].twd+'</span></div>';
         }
 
 
@@ -8664,18 +8664,31 @@ $(".menushop").click(function()
 
                 changjingObj1.IDKind=$(this).attr("data-idkind");
                 changjingObj1.Quantity==$(this).text();
+
+                changjingObj1.DateList=[];
+
+
+
                 changjingObj1.Class=$changjingDomObj.find(".select-info-first").eq(index).attr("data-class");
 
 
-                var dateStr=$changjingDomObj.find(".select-info-first").eq(index).find("span").text();
-
-                if(dateStr!="請選擇")
+                $changjingDomObj.find(".select-info-first").each(function()
                 {
-                    changjingObj1.Date=dateStr;
-                }
-                else {
-                    changjingObj1.Date=null;
-                }
+                    var dateObj={};
+                    var dateStr=$(this).find("span").text();
+
+                    if(dateStr!="請選擇")
+                    {
+                        dateObj.Date=dateStr;
+                    }
+                    else {
+                        dateObj.Date=null;
+                    }
+
+                    changjingObj1.DateList.push(dateObj);
+
+                });
+
 
 
                 changjingObj1.DiscountID=$changjingDomObj.attr("data-id");
@@ -8702,9 +8715,22 @@ $(".menushop").click(function()
                 if($changjingDomObj.attr("data-type")=="1")
                 {
                     changjingObj.DateList=[];
-                    $(this).find(".select-info-first").each(function()
+                    $changjingDomObj.find(".select-info-first").each(function()
                     {
-                        changjingObj.DateList.push($(this).find("span").text());
+
+                        var dateObj={};
+                        var dateStr=$(this).find("span").text();
+
+                        if(dateStr!="請選擇")
+                        {
+                            dateObj.Date=dateStr;
+                        }
+                        else {
+                            dateObj.Date=null;
+                        }
+
+                        changjingObj.DateList.push(dateObj);
+
                     });
 
                 }
@@ -8732,11 +8758,6 @@ $(".menushop").click(function()
         }
 
 
-
-
-
-
-
     });
 
 
@@ -8744,9 +8765,9 @@ $(".menushop").click(function()
     $("#jsonDiscount").val(JSON.stringify(jsonList));
 
     console.log(JSON.stringify(jsonList));
-    console.log(JSON.stringify(jsonList1));
+    //console.log(JSON.stringify(jsonList1));
 
-    $("#formCol").submit();
+    //$("#formCol").submit();
 
     //window.location.href="confirm.html?json="+JSON.stringify(jsonList);
 });

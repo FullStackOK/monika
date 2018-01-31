@@ -151,10 +151,7 @@ $("#selectListCol input").on("input",function()
                 html=html+'<li data-country="'+i+'" data-country-value="'+allCityCountryList[i].name+'" >'+countryStr+'</li>';
             }
 
-
         }
-
-
 
         $("#selectCityList").empty();
         if(html=="")
@@ -169,7 +166,6 @@ $("#selectListCol input").on("input",function()
     }
 
 });
-
 
 
 $(".select-list-col .city-list li>span").click(function()
