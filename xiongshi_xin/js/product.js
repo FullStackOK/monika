@@ -8590,7 +8590,6 @@ function identityListInitTenth($changjingCol,identityList,isMustBuy)
             cadHtml='<div><span style="text-decoration:line-through;">CAD '+identityList[i].cad+'</span><br><span style="color:#e10500;">TWD '+identityList[i].twd+'</span></div>';
         }
 
-
         var identityListName="";
 
         if(identityList[i].IDKind==0)
