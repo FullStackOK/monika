@@ -1228,7 +1228,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1251,7 +1251,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -1274,7 +1274,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -1297,7 +1297,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -1320,7 +1320,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -1343,7 +1343,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -1373,7 +1373,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1396,7 +1396,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -1419,7 +1419,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -1442,7 +1442,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -1465,7 +1465,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -1488,7 +1488,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -1518,7 +1518,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1541,7 +1541,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -1564,7 +1564,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -1587,7 +1587,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -1610,7 +1610,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -1633,7 +1633,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -1671,7 +1671,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1694,7 +1694,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -1717,7 +1717,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -1740,7 +1740,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -1763,7 +1763,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -1786,7 +1786,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -1816,7 +1816,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1839,7 +1839,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -1862,7 +1862,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -1885,7 +1885,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -1908,7 +1908,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -1931,7 +1931,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -1961,7 +1961,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -1984,7 +1984,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2007,7 +2007,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2030,7 +2030,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2053,7 +2053,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2076,7 +2076,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2120,7 +2120,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2143,7 +2143,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2166,7 +2166,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2189,7 +2189,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2212,7 +2212,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2235,7 +2235,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2265,7 +2265,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2288,7 +2288,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2311,7 +2311,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2334,7 +2334,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2357,7 +2357,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2380,7 +2380,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2410,7 +2410,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2433,7 +2433,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2456,7 +2456,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2479,7 +2479,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2502,7 +2502,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2525,7 +2525,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2563,7 +2563,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2586,7 +2586,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2609,7 +2609,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2632,7 +2632,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2655,7 +2655,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2678,7 +2678,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2708,7 +2708,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2731,7 +2731,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2754,7 +2754,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2777,7 +2777,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2800,7 +2800,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2823,7 +2823,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -2853,7 +2853,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$89",
                                         identity_list:[
                                             {
@@ -2876,7 +2876,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -2899,7 +2899,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -2922,7 +2922,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -2945,7 +2945,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -2968,7 +2968,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3023,7 +3023,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3050,7 +3050,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3077,7 +3077,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3104,7 +3104,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3131,7 +3131,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -3158,7 +3158,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3192,7 +3192,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3219,7 +3219,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3246,7 +3246,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3273,7 +3273,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3300,7 +3300,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -3327,7 +3327,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3361,7 +3361,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3388,7 +3388,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3415,7 +3415,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3442,7 +3442,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3469,7 +3469,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -3496,7 +3496,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3538,7 +3538,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3565,7 +3565,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3592,7 +3592,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3619,7 +3619,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3646,7 +3646,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -3673,7 +3673,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3707,7 +3707,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3734,7 +3734,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3761,7 +3761,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3788,7 +3788,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3815,7 +3815,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -3842,7 +3842,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -3876,7 +3876,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3903,7 +3903,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -3930,7 +3930,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -3957,7 +3957,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -3984,7 +3984,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4011,7 +4011,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4059,7 +4059,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4086,7 +4086,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4113,7 +4113,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4140,7 +4140,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4167,7 +4167,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4194,7 +4194,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4228,7 +4228,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4255,7 +4255,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4282,7 +4282,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4309,7 +4309,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4336,7 +4336,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4363,7 +4363,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4397,7 +4397,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4424,7 +4424,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4451,7 +4451,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4478,7 +4478,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4505,7 +4505,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4532,7 +4532,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4574,7 +4574,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4601,7 +4601,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4628,7 +4628,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4655,7 +4655,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4682,7 +4682,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4709,7 +4709,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4743,7 +4743,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4770,7 +4770,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4797,7 +4797,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4824,7 +4824,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4851,7 +4851,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -4878,7 +4878,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -4912,7 +4912,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -4939,7 +4939,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -4966,7 +4966,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -4993,7 +4993,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -5020,7 +5020,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -5047,7 +5047,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -5101,7 +5101,7 @@ var sceneJson=[
                         pricelist: [
                             {
                                 id:1,
-                                date: "2018-01-01",
+                                date: "2018-02-10",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5118,7 +5118,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                date: "2018-01-02",
+                                date: "2018-02-02",
                                 price: "$48239",
                                 identity_list:[
                                     {
@@ -5135,7 +5135,7 @@ var sceneJson=[
                             },
                             {
                                 id:3,
-                                date: "2018-01-03",
+                                date: "2018-02-03",
                                 price: "$4339",
                                 identity_list:[
                                     {
@@ -5152,7 +5152,7 @@ var sceneJson=[
                             },
                             {
                                 id:4,
-                                date: "2018-01-04",
+                                date: "2018-02-04",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5169,7 +5169,7 @@ var sceneJson=[
                             },
                             {
                                 id:5,
-                                date: "2018-01-05",
+                                date: "2018-02-05",
                                 price: "$439",
                                 identity_list:[
                                     {
@@ -5186,7 +5186,7 @@ var sceneJson=[
                             },
                             {
                                 id:6,
-                                date: "2018-01-06",
+                                date: "2018-02-06",
                                 price: "$39",
                                 identity_list:[
                                     {
@@ -5211,7 +5211,7 @@ var sceneJson=[
                         pricelist: [
                             {
                                 id:1,
-                                date: "2018-01-01",
+                                date: "2018-02-10",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5228,7 +5228,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                date: "2018-01-02",
+                                date: "2018-02-02",
                                 price: "$48239",
                                 identity_list:[
                                     {
@@ -5245,7 +5245,7 @@ var sceneJson=[
                             },
                             {
                                 id:3,
-                                date: "2018-01-03",
+                                date: "2018-02-03",
                                 price: "$4339",
                                 identity_list:[
                                     {
@@ -5262,7 +5262,7 @@ var sceneJson=[
                             },
                             {
                                 id:4,
-                                date: "2018-01-04",
+                                date: "2018-02-04",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5279,7 +5279,7 @@ var sceneJson=[
                             },
                             {
                                 id:5,
-                                date: "2018-01-05",
+                                date: "2018-02-05",
                                 price: "$439",
                                 identity_list:[
                                     {
@@ -5296,7 +5296,7 @@ var sceneJson=[
                             },
                             {
                                 id:6,
-                                date: "2018-01-06",
+                                date: "2018-02-06",
                                 price: "$39",
                                 identity_list:[
                                     {
@@ -5327,7 +5327,7 @@ var sceneJson=[
                         pricelist: [
                             {
                                 id:1,
-                                date: "2018-01-01",
+                                date: "2018-02-10",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5344,7 +5344,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                date: "2018-01-02",
+                                date: "2018-02-02",
                                 price: "$48239",
                                 identity_list:[
                                     {
@@ -5361,7 +5361,7 @@ var sceneJson=[
                             },
                             {
                                 id:3,
-                                date: "2018-01-03",
+                                date: "2018-02-03",
                                 price: "$4339",
                                 identity_list:[
                                     {
@@ -5378,7 +5378,7 @@ var sceneJson=[
                             },
                             {
                                 id:4,
-                                date: "2018-01-04",
+                                date: "2018-02-04",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5395,7 +5395,7 @@ var sceneJson=[
                             },
                             {
                                 id:5,
-                                date: "2018-01-05",
+                                date: "2018-02-05",
                                 price: "$439",
                                 identity_list:[
                                     {
@@ -5412,7 +5412,7 @@ var sceneJson=[
                             },
                             {
                                 id:6,
-                                date: "2018-01-06",
+                                date: "2018-02-06",
                                 price: "$39",
                                 identity_list:[
                                     {
@@ -5437,7 +5437,7 @@ var sceneJson=[
                         pricelist: [
                             {
                                 id:1,
-                                date: "2018-01-01",
+                                date: "2018-02-10",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5454,7 +5454,7 @@ var sceneJson=[
                             },
                             {
                                 id:2,
-                                date: "2018-01-02",
+                                date: "2018-02-02",
                                 price: "$48239",
                                 identity_list:[
                                     {
@@ -5471,7 +5471,7 @@ var sceneJson=[
                             },
                             {
                                 id:3,
-                                date: "2018-01-03",
+                                date: "2018-02-03",
                                 price: "$4339",
                                 identity_list:[
                                     {
@@ -5488,7 +5488,7 @@ var sceneJson=[
                             },
                             {
                                 id:4,
-                                date: "2018-01-04",
+                                date: "2018-02-04",
                                 price: "$839",
                                 identity_list:[
                                     {
@@ -5505,7 +5505,7 @@ var sceneJson=[
                             },
                             {
                                 id:5,
-                                date: "2018-01-05",
+                                date: "2018-02-05",
                                 price: "$439",
                                 identity_list:[
                                     {
@@ -5522,7 +5522,7 @@ var sceneJson=[
                             },
                             {
                                 id:6,
-                                date: "2018-01-06",
+                                date: "2018-02-06",
                                 price: "$39",
                                 identity_list:[
                                     {
@@ -5893,7 +5893,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -5916,7 +5916,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -5939,7 +5939,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -5962,7 +5962,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -5985,7 +5985,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6008,7 +6008,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6038,7 +6038,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6061,7 +6061,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6084,7 +6084,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6107,7 +6107,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6130,7 +6130,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6153,7 +6153,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6183,7 +6183,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6206,7 +6206,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6229,7 +6229,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6252,7 +6252,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6275,7 +6275,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6298,7 +6298,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6336,7 +6336,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6359,7 +6359,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6382,7 +6382,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6405,7 +6405,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6428,7 +6428,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6451,7 +6451,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6481,7 +6481,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6504,7 +6504,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6527,7 +6527,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6550,7 +6550,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6573,7 +6573,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6596,7 +6596,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6626,7 +6626,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6649,7 +6649,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6672,7 +6672,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6695,7 +6695,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6718,7 +6718,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6741,7 +6741,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6785,7 +6785,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6808,7 +6808,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6831,7 +6831,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6854,7 +6854,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6877,7 +6877,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -6900,7 +6900,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -6930,7 +6930,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -6953,7 +6953,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -6976,7 +6976,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -6999,7 +6999,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7022,7 +7022,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -7045,7 +7045,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -7075,7 +7075,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7098,7 +7098,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -7121,7 +7121,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -7144,7 +7144,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7167,7 +7167,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -7190,7 +7190,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -7228,7 +7228,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7251,7 +7251,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -7274,7 +7274,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -7297,7 +7297,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7320,7 +7320,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -7343,7 +7343,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -7373,7 +7373,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7396,7 +7396,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -7419,7 +7419,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -7442,7 +7442,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7465,7 +7465,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -7488,7 +7488,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -7518,7 +7518,7 @@ var sceneJson=[
                                 pricelist: [
                                     {
                                         id:1,
-                                        date: "2018-01-01",
+                                        date: "2018-02-10",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7541,7 +7541,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:2,
-                                        date: "2018-01-02",
+                                        date: "2018-02-02",
                                         price: "$48239",
                                         identity_list:[
                                             {
@@ -7564,7 +7564,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:3,
-                                        date: "2018-01-03",
+                                        date: "2018-02-03",
                                         price: "$4339",
                                         identity_list:[
                                             {
@@ -7587,7 +7587,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:4,
-                                        date: "2018-01-04",
+                                        date: "2018-02-04",
                                         price: "$839",
                                         identity_list:[
                                             {
@@ -7610,7 +7610,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:5,
-                                        date: "2018-01-05",
+                                        date: "2018-02-05",
                                         price: "$439",
                                         identity_list:[
                                             {
@@ -7633,7 +7633,7 @@ var sceneJson=[
                                     },
                                     {
                                         id:6,
-                                        date: "2018-01-06",
+                                        date: "2018-02-06",
                                         price: "$39",
                                         identity_list:[
                                             {
@@ -7684,15 +7684,15 @@ var sceneJson=[
                 dateList:[
                     {
                         id:1,
-                        date: "2018-01-10",
+                        date: "2018-02-10",
                     },
                     {
                         id:2,
-                        date: "2018-01-11",
+                        date: "2018-02-11",
                     },
                     {
                         id:3,
-                        date: "2018-01-12",
+                        date: "2018-02-12",
                     }
                 ],
             },
@@ -7708,11 +7708,11 @@ var sceneJson=[
                 dateList:[
                     {
                         id:1,
-                        date: "2018-01-10",
+                        date: "2018-02-10",
                     },
                     {
                         id:2,
-                        date: "2018-01-11",
+                        date: "2018-02-11",
                     },
                     {
                         id:3,
@@ -8735,9 +8735,12 @@ $(".menushop").click(function()
                 }
                 if(typeStr=="2"||typeStr=="3"||typeStr=="4"||typeStr=="5"||typeStr=="6"||typeStr=="9")
                 {
-                    changjingObj.Class=$(".xuanze-text").text().split("，")[0];
-                    changjingObj.Event=$(".xuanze-text").text().split("，")[1];
-                    changjingObj.Date=$(".xuanze-text").text().split("，")[2];
+
+                    console.log($changjingDomObj);
+
+                    changjingObj.Class=$changjingDomObj.find(".xuanze-text").text().split("，")[0];
+                    changjingObj.Event=$changjingDomObj.find(".xuanze-text").text().split("，")[1];
+                    changjingObj.Date=$changjingDomObj.find(".xuanze-text").text().split("，")[2];
                 }
                 else{
                     changjingObj.Class=null;
@@ -8768,7 +8771,6 @@ $(".menushop").click(function()
 
     //$("#formCol").submit();
 
-    //window.location.href="confirm.html?json="+JSON.stringify(jsonList);
 });
 
 
