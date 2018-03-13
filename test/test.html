@@ -3,31 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style>
+        table{width:100%; border-collapse:collapse;}
+        table th{font-weight: normal;border:1px solid #666;text-align: center;}
+        table td{border:1px solid #666;text-align: center;}
+        .blue{color:blue;}
+    </style>
+
 </head>
-<body>
+<body style="padding:100px;">
+
+
+    <div style="width:918px;margin:0 auto;">
+    <div style="line-height: 40px;">以下是您<b style="color:blue"> 2018年 01 月份</b>（<b>2017年 12月 21日-2018年 01月 20日 </b>）的工资明细 ，发薪日为
+        <b style="color:blue">2018年 01月 30日</b> 请注意核对。</div>
+
+    <div style="font-weight: bold;padding:10px 0 20px 0;">请认真执行公司的薪资保密政策！</div>
+
+    <table  style="width:700px;">
+
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>工号</th>
+                <th>BU</th>
+                <th>部门</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr class="blue">
+                <td>
+                    涂耀
+                </td>
+                <td>
+                    cbi011251
+                </td>
+                <td>
+                    易贸-冠易
+                </td>
+                <td>
+                   IT部
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    当月社保基数
+                </td>
+                <td>
+                    当月公积金基数
+                </td>
+                <td>
+                    带薪病假（天）
+                </td>
+                <td>
+                    医疗期（天）
+                </td>
+            </tr>
+            <tr class="blue">
+                <td>
+                    16500.00
+                </td>
+                <td>
+                    16500.00
+                </td>
+                <td>
+                    0.0
+                </td>
+                <td>
+                    0.0
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    事假（天）
+                </td>
+                <td>
+                    年假（天）
+                </td>
+                <td>
+                    非正常考勤（天）
+                </td>
+                <td>
+                    易币卡金额（元）
+                </td>
+            </tr>
+            <tr class="blue">
+                <td>
+                    0.0
+                </td>
+                <td>
+                    0.0
+                </td>
+                <td>
+                    0.0
+                </td>
+                <td>
+                    600
+                </td>
+            </tr>
+            <tr >
+                <td >
+                    <div style="width:60%;float:left;">计税工资</div>
+                    <div style="width:40%;float:left;border-left:1px solid #666;box-sizing: border-box;">奖金</div>
+                </td>
+                <td>
+                    <div style="width:50%;float:left;">缺勤调整</div>
+                    <div style="width:50%;float:left;border-left:1px solid #666;box-sizing: border-box;">其它应扣</div>
+                </td>
+                <td>
+                    <div style="width:50%;float:left;">其它应加</div>
+                    <div style="width:50%;float:left;border-left:1px solid #666;box-sizing: border-box;">其它调整</div>
+                </td>
+                <td>
+                   四金个人部分
+                </td>
+            </tr>
+            <tr class="blue">
+                <td >
+                    <div style="width:60%;float:left;">17655.00</div>
+                    <div style="width:40%;float:left;border-left:1px solid #666;box-sizing: border-box;">0.00</div>
+                </td>
+
+                <td>
+                    <div style="width:50%;float:left;">0.00</div>
+                    <div style="width:50%;float:left;border-left:1px solid #666;box-sizing: border-box;">0.00</div>
+                </td>
+                <td>
+                    <div style="width:50%;float:left;">0.00</div>
+                    <div style="width:50%;float:left;border-left:1px solid #666;box-sizing: border-box;">0.00</div>
+                </td>
+                <td>
+                    -2887.50
+                </td>
+            </tr>
+
+
+            <tr >
+                <td>
+                   扣完四金
+                </td>
+                <td>
+                    个人所得税
+                </td>
+                <td>
+                    税后调整
+                </td>
+                <td style="color:red;font-weight: bold;">
+                    税后工资
+                </td>
+            </tr>
+            <tr class="blue">
+                <td>
+                   14767.50
+                </td>
+                <td>
+                    1811.88
+                </td>
+                <td>
+                    0.00
+                </td>
+                <td>
+                    12955.62
+                </td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+    </div>
 
 <script src="http://apps.bdimg.com/libs/jquery/1.8.0/jquery.min.js"></script>
 <script>
 
-    $.ajax({
-        //提交数据的类型 POST GET
-        type:"POST",
-        //提交的网址
-        url:"http://monitor.pro.youzewang.com/index.php?g=Api&m=App&a=login",
-        //提交的数据
-        data:{data:JSON.stringify({phone:"18768144976",password:"123456"})},
-
-        success:function(data){
-
-            console.log(data);
-
-        }   ,
-
-        //调用出错执行的函数
-        error: function(){
-            //请求出错处理
-        }
-    });
 
 </script>
 

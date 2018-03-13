@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>fullPage.js — 绑定菜单演示</title>
+    <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
+    <style>
+        body{background: #fef8ec;}
+        #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+        #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+        #menu .active a { color: #fff; background-color: #333;}
+        .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+
+        .section5 img{width:100%;}
+
+        .controlArrow.prev{background: url("assets/img/home_12.png");width:110px;height:164px;border:none;}
+        .controlArrow.next{}
+
+    </style>
+    <script src="assets/lib/jquery-1.8.3.min.js"></script>
+    <script src="assets/lib/jquery-ui-1.10.3.min.js"></script>
+    <script src="assets/lib/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.fn.fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+                menu: '#menu'
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<ul id="menu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
+    <li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
+    <li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
+    <li data-menuanchor="page4"><a href="#page4">第四屏</a></li>
+    <li data-menuanchor="page4"><a href="#page4">第四屏</a></li>
+    <li data-menuanchor="page4"><a href="#page4">第四屏</a></li>
+</ul>
+
+<div class="section" style="background:url('assets/img/homeImg1.png') center center;background-size:cover; ">
+
+
+    <video></video>
+
+
+</div>
+<div class="section">
+    <h3>第二屏</h3>
+    <p>请查看左上角，点击可以控制</p>
+</div>
+<div class="section">
+    <h3>第三屏</h3>
+    <p>绑定的菜单没有默认的样式，你需要自行编写</p>
+</div>
+<div class="section">
+    <h3>第四屏</h3>
+    <p>这是最后一屏</p>
+
+
+
+</div>
+
+
+<div class="section section5" style="padding:0.1% 15% 5% 15%;box-sizing: border-box;">
+
+
+
+    <div class="slide">
+
+        <img src="assets/img/home_09.png" />
+
+    </div>
+    <div class="slide">
+
+        <img src="assets/img/home_09.png" />
+
+    </div>
+    <div class="slide">
+
+        <img src="assets/img/home_09.png" />
+
+    </div>
+
+
+
+
+</div>
+
+
+<div class="section">
+
+
+    <div style="display: table-cell;width:100%;height:100%;">
+    <div style="display: table-cell;vertical-align: middle;position: relative;">
+    <img style="width:100%;display: inline-block;" src="assets/img/homeImg_06.png"/>
+        <a href="###" style="position: absolute;width:28%;height:14%;background: #000;left:10%;bottom:16%;display: block;opacity: 0;"></a>
+    </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
