@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="assets/css/jquery.fullPage.css">
     <style>
         body{background: #fef8ec;}
-        #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 50%; list-style-type: none; z-index: 70;}
-        #menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
-        #menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
-        #menu .active a { color: #fff; background-color: #333;}
+        #menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 50%; list-style-type: none; z-index: 70;margin-top:-100px;}
+        #menu li {  margin:  0 10px 0 0; font-size: 14px;}
+        #menu a { display: inline-block; padding: 20px 20px; background-image: url("assets/img/homePic_09.png");background-size:100% 100%;color: #333; text-decoration: none;}
+        #menu .active a { color: #fff; background-image: url("assets/img/homePic_07.png");}
+
+        #menu a img{width:45px;height:45px;}
+
         .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
 
         .section5 img{width:100%;}
@@ -20,6 +23,12 @@
         .controlArrow{margin-top:0;}
         .controlArrow.prev{background: url("assets/img/home_12.png");width:90px;height:124px;border:none;}
         .controlArrow.next{background: url("assets/img/home_14.png?v=2");width:90px;height:124px;border:none;}
+
+        .tableCell{vertical-align: top;padding-top:20px;}
+
+        @media screen  and (max-width: 960px) {
+
+        }
 
     </style>
     <script src="assets/lib/jquery-1.8.3.min.js"></script>
@@ -38,13 +47,21 @@
 <body>
 
 <ul id="menu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">第一屏</a></li>
-    <li data-menuanchor="page2"><a href="#page2">第二屏</a></li>
-    <li data-menuanchor="page3"><a href="#page3">第三屏</a></li>
+    <li data-menuanchor="page1" class="active">
+        <a href="#page1">
+        <img src="assets/img/homePic_3.png"/>
+        </a>
+    </li>
+    <li data-menuanchor="page2"><a href="#page2">
+        <img src="assets/img/homePic_06.png"/>
+    </a></li>
+    <li data-menuanchor="page3"><a href="#page3">
+        <img src="assets/img/homePic_12.png"/>
+    </a></li>
 
 </ul>
 
-<div class="section" style="background:url('assets/img/homeImg1.png') center center;background-size:cover; ">
+<div class="section" style="background:url('assets/img/homeImg1.png');background-size:cover; ">
 
 
     <video></video>
@@ -89,6 +106,9 @@
     </div>
 
 
+    <div style="background-image: url('assets/img/homePic_31.png');background-size:cover;" class="gengduo-yingpian">
+
+    </div>
 
 
 </div>
