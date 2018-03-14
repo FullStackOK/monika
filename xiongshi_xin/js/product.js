@@ -1140,7 +1140,7 @@ var sceneJson=[
     },
     {
         id:2,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00002',
         type:1,
         title:'白馬市極光奇景3日之旅1',
         isMustBuy:0,
@@ -1207,7 +1207,7 @@ var sceneJson=[
     },
     {
         id:3,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00003',
         type:2,
         title:'白馬市極光奇景3日之旅白馬市2',
         isMustBuy:0,
@@ -3002,7 +3002,7 @@ var sceneJson=[
     },
     {
         id:4,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00004',
         type:3,
         title:'白馬市極光奇景3日之旅白馬市3',
         isMustBuy:0,
@@ -5085,7 +5085,7 @@ var sceneJson=[
     },
     {
         id:5,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00005',
         type:4,
         title:'白馬市極光奇景3日之旅白馬市4',
         isMustBuy:0,
@@ -5547,7 +5547,7 @@ var sceneJson=[
     },
     {
         id:6,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00006',
         type:5,
         title:'白馬市極光奇景3日之旅白馬市5',
         isMustBuy:0,
@@ -5677,7 +5677,7 @@ var sceneJson=[
     },
     {
         id:7,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00007',
         type:6,
         title:'白馬市極光奇景3日之旅白馬市6',
         isMustBuy:0,
@@ -5807,7 +5807,7 @@ var sceneJson=[
     },
     {
         id:8,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00008',
         type:7,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
@@ -5849,7 +5849,7 @@ var sceneJson=[
     },
     {
         id:9,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T00009',
         type:8,
         title:'威秀電影券*2+餐飲券*1+屏東海生館*2',
         price:1919,
@@ -5872,7 +5872,7 @@ var sceneJson=[
     },
     {
         id:10,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T000010',
         type:9,
         title:'歐洲任選3國火車通行證彈性火車票',
         isMustBuy:0,
@@ -7667,7 +7667,7 @@ var sceneJson=[
     },
     {
         id:11,
-        ProductBaseID:'T00001',
+        ProductBaseID:'T000011',
         type:10,
         DiscountName:'白馬市極光奇景3日之旅11',
         DiscountID:"C123456789",
@@ -8735,8 +8735,6 @@ $(".menushop").click(function()
                 }
                 if(typeStr=="2"||typeStr=="3"||typeStr=="4"||typeStr=="5"||typeStr=="6"||typeStr=="9")
                 {
-
-                    console.log($changjingDomObj);
 
                     changjingObj.Class=$changjingDomObj.find(".xuanze-text").text().split("，")[0];
                     changjingObj.Event=$changjingDomObj.find(".xuanze-text").text().split("，")[1];
