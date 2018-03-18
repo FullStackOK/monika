@@ -1,0 +1,153 @@
+.stepWrap span{width: 18%; display: inline-block; border-radius: 3px;margin-bottom: 5px;
+    border: solid 1px #f1f1f1; padding: 10px 0px; text-align: center;}
+
+.stepWrap .selectItem{background-color: #008D8B; color: white;}
+.stepWrap .selectItem a{color: white;}
+.title{font-size: 25px; margin-bottom: 20px;}
+
+.noteWrap{vertical-align: middle; margin: 20px 0px; position: relative; padding-left: 80px;}
+.noteWrap .noteTitle{ display: inline-block; position: absolute; left: 0px; top: 0px;}
+
+.flow div{margin: 20px 0px;}
+
+.getGoodsContent{margin-top: 20px;}
+.getGoodsContent ul .item{margin-bottom: 30px;}
+.getGoodsContent ul .item1{margin-bottom: 30px; margin-left:20px;}
+.getGoodsContent ul li span span{color: red;}
+
+.btn-col{margin:44px 0 20px 0; text-align: left;}
+.btn-col button{margin:0 4px;}
+.left-btn{background:#008D8B;color:white;width:100px;line-height: 34px;border-radius: 4px;font-size:14px;}
+
+.right-btn{background:white;color:#008D8B;width:100px;line-height: 34px;border-radius: 4px;font-size:14px; border: #008D8B solid 1px;}
+
+
+.left-btn2{background:#008D8B;color:white;width:15%;line-height: 34px;border-radius: 4px;font-size:16px;}
+
+.right-btn2{background:white;color:#008D8B;width:15%;line-height: 34px;border-radius: 4px;font-size:16px; border: #008D8B solid 1px;}
+
+.right-btn2:hover{background:#008D8B;color:white;width:15%;line-height: 34px;border-radius: 4px;font-size:16px; border: #008D8B solid 1px;}
+/************************************************/
+.btn-col1{margin:15px 0 20px 0; text-align: left;}/* 15 20 上下*/
+.btn-col1 button{margin:0 4px;  margin-top:10px;}/* 10 top 4 左右*/
+
+.left-btn1{ background:url(../img/btn-img-bg02.jpg);color:white;width:40%;height: 70px;font-size:14px; text-align:left; padding:0 5% 0 3%;  background-repeat:no-repeat; word-break:break-all; line-height:15px;float:left;} 
+
+.right-btn1{ background:url(../img/btn-img-bg01.jpg);color:#008D8B;width:40%;height: 70px; background-repeat:no-repeat;font-size:14px; text-align:left; padding:0 5% 0 3%; word-break:break-all; line-height:15px;float:left;}
+
+.right-btn1:hover{ background:url(../img/btn-img-bg02.jpg);color:white;width:40%;height: 70px;font-size:14px; text-align:left; padding:0 5% 0 3%;  background-repeat:no-repeat; word-break:break-all; line-height:15px;float:left;}
+/************************************************/
+.right-btn:hover{background: #04689c;}
+
+.leafletWrap{background-color: #2D3E50; position: relative; vertical-align: middle; margin-top: 20px; height: 50px; line-height: 50px;}
+.leafletWrap .left{color: white; }
+.leafletWrap .right{float: right; color: white; margin-right: 10px;}
+.leafletWrap img{margin: 0px 10px 10px;}
+
+.rightnavigation .rightnavigation_nav .rightnavigation_content .middle{ padding: 0px;}
+
+
+/*.rightnavigation_content .contact-us .form-list li .radio{width: 20px;}*/
+
+.postMethod{display: block; margin-bottom: 10px;}
+.postMethod .radio{margin-top: 3px!important; width: auto!important;}
+.postMethod .up{padding-left: 10px;}
+.postMethod .down{padding-left: 10px;}
+.postMethod .middle{color: #04689c; text-decoration: underline; margin-left: 20px;}
+.postMethod .down span{color: #04689c; text-decoration: underline; margin-left: 20px;}
+
+.postMethod .attach{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+.postMethod .down span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+
+.getGoodsNum{margin: auto 10px;}
+.agreeWrap{text-align: left; margin: 20px 160px;}
+
+
+.btm-btn-col{margin:44px 0 20px 0; text-align: center;}
+.btm-btn-col button{margin:0 4px;}
+.btm-btn-col .left-btn{background:#d8d8d8;color:black;width:100px;line-height: 34px;border-radius: 4px;font-size:14px;}
+
+.btm-btn-col .right-btn{background:#0070b2;color:white;width:100px;line-height: 34px;border-radius: 4px;font-size:14px; border: #008D8B solid 1px;}
+
+.searchCode{color: red; line-height: 50px; margin-left: 20px;}
+
+
+.sexWrap{position: relative; }
+.manSelect{width: 50px!important; margin-top: 20px!important;}
+.womanSelect{width: 50px!important; margin-top: 20px!important;}
+
+.man{position: absolute; top: 20px; left: 190px;}
+.woman{position: absolute; top: 20px; left: 255px;}
+
+.selectLeft{margin-left: 20px;}
+.selectSelf{margin-left: 10px;}
+
+.selectBig{height: 200px!important; border-bottom: #E5e5e5 solid 1px;}
+
+.clearfix .instruction{background-color: #F7F5CD; border-radius: 10px; display: inline-block; width: auto; position: relative; padding-left: 80px; margin: 20px 20px 10px; width: 600px;}
+
+.instruction ul{display: inline-block; margin-top: 10px;}
+
+.instruction img{position: absolute; top: 40px; left: 10px; }
+.instruction ul li{height: 40px!important;}
+
+.labelBig{height: 100%!important; padding-left: 10px; line-height: 20px!important; padding-top: 20px;}
+
+.outCode{line-height: 20px!important; height: 58px!important; padding-top: 10px;}
+
+.textareWrap{height:400px!important; position: relative;}
+
+
+.applyQueryLabel{line-height: 100px!important; width: 200px!important; text-align: center!important;}
+
+.applyQueryLi{border-bottom: #E5e5e5 solid 1px; height: 100px!important;  line-height: 100px;}
+
+.applyQueryLi input{width: 300px!important; margin: 30px!important;}
+
+.queryPicLi{background-color: white; padding: 30px; font-size: 18px; height: 100px!important; margin: 10px auto;}
+
+.queryPicLi img{width: 100%; height: 50px; }
+
+
+@media screen  and  (max-width: 640px) {
+/**********************************************/
+.btn-img01{ display:none;}
+.left-btn1{ background:url(../img/btn-img-bg02.jpg);color:white;width:100%;height: 75px;font-size:14px; text-align:left; padding:0 30% 0 3%;  background-repeat:no-repeat; word-break:break-all; line-height:15px;}
+
+.right-btn1{ background:url(../img/btn-img-bg01.jpg);color:#008D8B;width:100%;height: 75px; background-repeat:no-repeat;font-size:14px; text-align:left; padding:0 32% 0 3%; word-break:break-all; line-height:15px;}
+.right-btn1:hover{ background:url(../img/btn-img-bg02.jpg);color:#FFF;width:100%;height: 75px; background-repeat:no-repeat;font-size:14px; text-align:left; padding:0 32% 0 3%; word-break:break-all; line-height:15px;}
+
+.btn-col button{margin:10px 4px;}
+.left-btn2{background:#008D8B;color:white;width:45%;line-height: 50px;border-radius: 4px;font-size:16px;float:left;}
+
+.right-btn2{background:white;color:#008D8B;width:45%;line-height:50px;border-radius: 4px;font-size:16px; border: #008D8B solid 1px; float:left;}
+
+.right-btn2:hover{background:#008D8B;color:white;width:45%;line-height: 50px;border-radius: 4px;font-size:16px; border: #008D8B solid 1px; float:left;}
+/******************************************/
+    .stepWrap span{width: 48%;}
+    .noteWrap{padding-top: 20px; padding-left: 0px;}
+    .btn-col{text-align: center;}
+    .leafletWrap{height: 50px; line-height: 10px; text-align: center; padding: 10px; margin-bottom: 10px;}
+    .leafletWrap .right{display: block;float: none; }
+    .longLabel{line-height: 12px!important; height: 100%; padding: 20px 5px 10px 20px!important; }
+    .longLabel span{display: inline-block; width: 40%;}
+
+    .blank{display:inline-block; width: 40%;}
+
+    .radioWrap{height: 170px!important;}
+    .radioWrap label{height: 100%; padding-top: 0px!important;}
+    .postMethod{display: block; margin-bottom: 0px;}
+    .postMethod .radio{margin-top: 3px!important; width: auto!important;}
+    .postMethod .up{padding-left: 10px; display: inline-block; padding-right: 40%;}
+    .postMethod .gap{display: block;}
+    .postMethod .attach{display: inline-block; margin: 5px 20px 10px;}
+    .postMethod .down{padding-left: 10px; display: inline-block; padding-right: 40%;}
+    .postMethod .middle{color: #04689c; text-decoration: underline; display: inline-block; margin: 5px 0px 5px 20px;}
+    .postMethod .down span{color: #04689c; text-decoration: underline; margin-left: 20px;}
+
+    .postMethod .attach{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+    .postMethod .down span span{color: white; padding: 2px 10px; background-color: #008D8B; text-decoration: none; border-radius: 5px;}
+
+}
+
+

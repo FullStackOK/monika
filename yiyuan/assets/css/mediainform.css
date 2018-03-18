@@ -1,0 +1,112 @@
+
+.movie{width:100%;}
+.movieRemark{border-bottom: solid 1px #000; background-color: #f1f1f1; padding: 20px 5px 20px 30px;}
+.movieRemark .content{margin-top: 10px; width: 100%}
+.movieRemark .btm{margin-top: 20px;}
+.movieRemark .btm img{margin-right:5px;position: relative;top:6px;}
+
+.message{font-size: 35px; margin: 30px 0px 5px;}
+.messageRemark{background-color: #f9dfdf; padding: 10px;}
+.messageRemark div{display: inline-block}
+.messageRemark div img{margin: 20px 20px;}
+.messageRemark div ul li{margin: 5px auto; color: #A6797B}
+
+.messageMiddle{margin: 10px 0px; color: #ff3333}
+
+.messageSex{border-bottom: solid 1px #E8E8E8; border-top: solid 1px #E8E8E8}
+.messageSex .messageBoard{background-color: #f1f1f1; width: 9%; padding: 20px 20px 20px 50px; display: inline-block; font-size: 16px;}
+.messageSex .messageBoard a{color: red;}
+.messageSex .messageBoard a span{color: #000}
+.messageSex div{display: inline-block}
+
+.manSex{margin-left: 10px;}
+.manSex input{margin-right: 10px;}
+.womanSex{margin-left: 70px;}
+.womanSex input{margin-right: 10px;}
+
+.message-btn{background:#fff;color:#186d3b;width:236px;line-height: 44px;border-radius: 4px;font-size:18px; border: solid 1px #186d3b}
+.message-btn:hover{background: #f0f4f4;}
+
+.divider{width: 100%; height: 1px; background-color: #f1f1f1}
+.msgContent{padding: 10px 0px;}
+.msgContent div{display: inline-block}
+.msgContent .right{margin-left: 60px}
+.msgContent .manCircle{width:50px;height:50px;background-color:#0070B2;border-radius:50px; margin-right: 10px;}
+.msgContent .circle{width:50px;height:50px;background-color:#EB61AD;border-radius:50px; margin-right: 10px;}
+.msgContent .right .title{position: relative; top: -50px;}
+.msgContent .right .content{position: relative; top: -30px;}
+
+        /*** 不固定高度 垂直居中 第一种写法 ***/
+.btmRemark{ background-color: #f1f1f1; margin-bottom: 10px; position: relative; padding-left: 110px;}
+.btmRemark .left{width: 100px; background-color: #2c3e50;
+        display: inline-block; position: absolute; top: 0px; left: 0px; height: 100%; text-align: center;}
+.btmRemark .left span{color: white;  position: relative; top: 50%; margin-top: -10px; display: inline-block;}
+
+.btmRemark .right{margin: 30px 10px 10px 10px; display: inline-block; box-sizing: border-box;}
+.btmRemark .right .content{width: 100%}
+.btmRemark .right .time{float: right; margin-top: 10px;}
+
+.pageBottom{background-color: white; }
+.backBtn{border-radius: 5px; border: solid 2px #2c3e50; text-align: center; float: left; margin-top: 10px;}
+.backBtn span{position: relative; top: 5px; margin-right: 10px;}
+.backBtn:hover{background-color: #f0f4f4;}
+
+.form-list .identifyCode{height:82px;background: #f1f1f1;}
+.identifyText{display: none!important;}
+.identifyInput{margin-top: 20px!important; width: 200px!important; }
+
+.zixun-page-list li .movieItem .img-col{background-image: url("../img/zixun/zixun_03.jpg"); width: 250px; height: 166px; text-align: center}
+.zixun-page-list li .movieItem .img-col img{width: 50px; height: 50px; margin-top: 30px; }
+.zixun-page-list li .movieItem .img-col div{color: white; font-size: 16px;}
+.zixun-page-list li .movieItem{cursor: pointer;position: relative;}
+.zixun-page-list li .movieItem:hover .middle-col{display: block;}
+
+#movieDetailContent .movieTitle{  background-color: black; padding: 10px 10px 12px 20px;}
+#movieDetailContent .movieTitle span{color: white; }
+#movieDetailContent .movieTitle div{float: right; }
+.videoItem{position: relative}
+.videoItem img{width: 60px; height: 60px; position: absolute; top: 50%; left: 50%; margin-left: -30px; margin-top: -30px;}
+
+.picDetailWrap .rightnavigation_nav .picBtm{line-height: 50px; height: 50px;}
+.picDetailTitle{text-align: left; margin-bottom: 20px;}
+#picDetailContent ul li p{margin-top: 5px; margin-bottom: 20px;}
+.picPageBottom{background-color: white; }
+.modal-dialog-col div img{vertical-align: middle;}
+.modal-dialog-col .modalPicWrap{width: 900px; display: block; overflow:hidden;}
+
+@media screen  and  (max-width: 640px) {
+    .messageRemark div{display: inline-block; width: 100%; text-align: center;}
+    .messageRemark div img{margin: 20px 20px;}
+    .messageRemark div ul li{margin: 5px auto; color: #A6797B; text-align: justify}
+
+    .error-text{margin-left: 0px!important;}
+    .messageSex .messageBoard{background-color: #f1f1f1; width: 60px; padding: 20px 0px 20px 30px; display: inline-block; font-size: 12px}
+
+    .womanSex{margin-left: 10px;}
+    .rightnavigation_nav .rightnavigation_content .middle{padding: 20px 0px!important;}
+
+    .contact-us .form-list li input, .contact-us .form-list li textarea{font-size:14px!important;color:#9c9c9c;line-height: 32px;display: block;border-radius: 4px; width: 70%!important; margin-left: 5px!important;}
+
+
+    .btmRemark{ background-color: #f1f1f1; margin-bottom: 10px; padding: 30px 15px 10px 0px;}
+    .btmRemark .left{width: 100%; background-color: #2c3e50; text-align: center; height: 50px;}
+    .btmRemark .left span{color: white; }
+
+    .btmRemark .right{margin: 30px 10px 10px 10px; box-sizing: border-box; width: 100%;}
+
+    .pageBottom{background-color: white; position: relative; height: 80px;}
+    .pageBottom .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: 50px;}
+    .pageBottom .backBtn span{position: relative; top: 5px; margin-right: 10px;}
+    .pageBottom .backBtn:hover{background-color: #f0f4f4;}
+
+    .form-list .identifyCode{height:140px!important;background: #f1f1f1;}
+    .identifyText{display: block!important;}
+    .identifyInput{margin-top: 12px!important; width: 120px!important;}
+    .zixun-page-list li .movieItem .img-col{background-image: url("../img/zixun/zixun_03.jpg"); width: 100%; height: 166px; text-align: center}
+    .picDetailWrap .title-col{display: none;}
+
+    .picPageBottom .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 50%; margin-left: -45px; width: 90px; margin-top: -40px;}
+    .picPageBottom .page-col{margin-top: 30px; padding: 10px 0px 0px;}
+}
+
+

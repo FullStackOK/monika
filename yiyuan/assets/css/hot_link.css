@@ -1,0 +1,99 @@
+/*.newContent{overflow: auto; display: block;}*/
+/*.newContent table{width: 100%;  border-collapse: collapse;  }*/
+/*.newContent table td{min-width: 100px; width: 10%;}*/
+/*.newContent table tr{height: 50px; text-align: center;}*/
+/*.newContent table tr>th{background-color: #283646; text-align: center; color: white;}*/
+
+/*.newContent table tr .aboutNews{width: 30%;}*/
+.newContent table tr .aboutNews:hover{color: #38A8E2; text-decoration: underline;}
+
+.rightnavigation_nav .title{font-size: 20px; margin: 20px;}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:nth-of-type(2n+1) {
+    height: 50px;
+}
+
+tr:nth-of-type(2n) {
+    background: #efefef;
+    height: 50px;
+}
+
+th {
+    background: #283646;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    text-align: center;
+}
+
+
+@media screen  and  (max-width: 640px) {
+    .rightnavigation_nav .title{font-size: 20px; margin: 0px 0px 10px;}
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        text-align: left;
+        padding: 0px;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        position: relative;
+        padding-left: 55%;
+        height: auto;
+        line-height: 20px;
+        word-break: break-all;
+        text-overflow: ellipsis; overflow: hidden;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0px;
+        left: 0px;
+        width: 45%;
+        padding-right: 10px;
+        word-break: break-all;
+    }
+
+    /*
+    Label the data
+    */
+    td:nth-of-type(1):before { content: "排行"; background-color: #283646; color: white; height: 100%; line-height: auto; text-align: center;}
+    td:nth-of-type(2):before { content: "網頁推薦"; background-color: #283646; color: white; height:100%; line-height: auto; text-align: center;}
+    td:nth-of-type(3):before { content: "近兩個月點擊率"; background-color: #283646;color: white; height: 100%; line-height: auto; text-align: center;}
+    /*
+	td:nth-of-type(4):before { content: "發佈單位"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(5):before { content: "公告期限"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}*/
+
+    tr:nth-of-type(2n+1) {
+        background: #efefef;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    tr:nth-of-type(2n) {
+        background: #efefef;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+

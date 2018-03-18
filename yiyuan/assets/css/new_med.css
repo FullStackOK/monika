@@ -1,0 +1,137 @@
+/*.newContent{overflow: auto; display: block;}*/
+/*.newContent table{width: 100%;  border-collapse: collapse;  }*/
+/*.newContent table td{min-width: 100px; width: 10%;}*/
+/*.newContent table tr{height: 50px; text-align: center;}*/
+/*.newContent table tr>th{background-color: #283646; text-align: center; color: white;}*/
+
+/*.newContent table tr .aboutNews{width: 30%;}*/
+
+.sub{position:relative; top:+16px;right:+125px;}
+.cle{position:relative; top:+16px;right:+110px;}
+
+
+.inp{width:400px;height:4.5%; border-radius:3px;}
+
+.med{width:500px; height:35%;}
+.med_11{font-size:16px;font-weight:bold;}
+.med_1{font-size:16px;font-weight:bold;position:relative; top:-85px;right:-280px;}
+.med_2{font-size:16px;font-weight:bold;position:relative; right:-550px;top:-170px;}
+
+
+.newContent table tr .aboutNews:hover{color: #38A8E2; text-decoration: underline;}
+
+.rightnavigation_nav .title{font-size: 20px; margin: 20px;}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:nth-of-type(2n+1) {
+    height: 50px;
+}
+
+tr:nth-of-type(2n) {
+    background: #efefef;
+    height: 50px;
+}
+
+th {
+    background: #283646;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    padding: 6px;
+    text-align: center;
+}
+
+
+@media screen  and  (max-width: 640px) {
+	.a1{display: none;}
+	.sub{position:relative; top:+16px;right:0px;}
+	.cle{position:relative; top:+16px;right:0px;}
+	.inp{width:100%;height:4.5%; border-radius:3px;border:2px #009896 solid;position:relative; top:+5px;}
+	
+	.med{width:500px; height:100%;}
+	
+	.med_11{font-size:16px;font-weight:bold;position:relative; top:+15%;right:+0%}
+	
+	.med_1{font-size:16px;font-weight:bold;position:relative; top:+35%; right:+0%}
+	
+	.med_2{font-size:16px;font-weight:bold;position:relative; top:+55%; right:+0%}
+	
+    .rightnavigation_nav .title{font-size: 20px; margin: 0px 0px 10px;}
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        text-align: left;
+        padding: 0px;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        position: relative;
+        padding-left: 44%;
+        height: 40px;
+        line-height: 20px;
+       
+        text-overflow: ellipsis; overflow: hidden;
+		word-wrap:break-word;
+		
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0px;
+        left: 0px;
+        width: 40%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+	
+	
+	
+    /*
+    Label the data
+    */
+td:nth-of-type(1):before { content: "編號"; background-color: #283646; color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(2):before { content: "中榮醫訊月刊標題"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(3):before { content: "刊登日期"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    td:nth-of-type(4):before { content: "點擊數"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}
+    /*td:nth-of-type(5):before { content: "公告期限"; background-color: #283646;color: white; height: 40px; line-height: 40px; text-align: right;}*/
+
+    tr:nth-of-type(2n+1) {
+        background: #efefef;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    tr:nth-of-type(2n) {
+        background: #efefef;
+        height: auto;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+	
+	/*th {
+   	background: #283646;
+  	color: white;
+   	font-weight: bold;
+	height: 40px; 
+	line-height: 40px; 
+	text-align: left;
+	}*/
+}
+
+

@@ -1,0 +1,16 @@
+.newsBtm span{position: relative; top: 5px;}
+.newsName{margin-top: 10px; margin-bottom: 10px;}
+.newsName span{position: relative; top: 5px;}
+
+.content ul li{font-size: 20px;}
+.content .week{margin: 10px 0px;}
+.content ul li .remark{margin: 20px 0px; }
+
+@media screen  and  (max-width: 640px) {
+    .newsBtm :nth-child(3){display: block; position: relative; top: 10px; left: 32px;}
+    .newsBtm :nth-child(2){position: relative; top: 10px;}
+    .newsBtm img{position: relative; top: 20px;}
+    .yanzhengma{font-size: 14px;}
+}
+
+

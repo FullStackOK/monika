@@ -1,0 +1,146 @@
+/*reset.css*/
+html{color: #000;background: #fff;overflow-y: scroll;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+html *{outline: 0;-webkit-text-size-adjust: none;-webkit-tap-highlight-color: rgba(0,0,0,0)}
+html,body{width:100%;height:100%;font-family: sans-serif;font-size:14px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin: 0;padding: 0}
+input,select,textarea{font-size: 100%}
+table{border-collapse: collapse;border-spacing: 0}
+fieldset,img{border: 0}
+abbr,acronym{border: 0;font-variant: normal}
+del{text-decoration: line-through}
+address,caption,cite,code,dfn,em,th,var{font-style: normal;font-weight: 500}
+ol,ul{list-style: none}
+caption,th{text-align: left}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: 500}
+q:before,q:after{content: ''}
+sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}
+sup{top: -.5em}
+sub{bottom: -.25em}
+a:hover{text-decoration: none;}
+ins,a{text-decoration: none}
+
+
+/** common **/
+html{height:100%;}
+body{font-family: "Microsoft YaHei",Arial;min-height:100%;-webkit-font-smoothing: antialiased;color:#333;min-height:100%;}
+button{border:0px;text-align: center;cursor: pointer;display: inline-block;}
+button,input,select,textarea{font-family: Microsoft YaHei;}
+input:active{border:1px solid #000;}
+input[type=text],textarea,select,input[type=password]{padding-left:10px;box-sizing: border-box;border:1px solid #cfd6e2;}
+input[type=button]{border:1px solid #cfd6e2;cursor: pointer;}
+a{color:#333;}
+a:hover{color:#009997;}
+.fl{float: left;}
+.hide{display: none;}
+.show{display: block;}
+.clearfix:after{content:''; display: block; height:0; clear:both;}
+.clearfix{zoom:1;}
+.button-class1{
+border:solid 1px #FFFFFF; 
+background-color:#009896; 
+color:#FFF;
+padding:5px 10px 5px 10px;}
+.button-class2{
+border:solid 1px #009896; 
+background-color:#FFFFFF; 
+color:#009896;
+padding:5px 10px 5px 10px;}
+.button-classon{
+border:solid 1px #FFF; 
+background-color:#000; 
+color:#FFF;
+padding:5px 10px 5px 10px;
+margin-bottom:5px;}
+.button-classclose{
+border:solid 1px #000; 
+background-color:#FFF; 
+color:#000;
+padding:5px 10px 5px 10px;}
+.mt10{margin-top:10px!important;}
+
+.green{color:#009896!important;}
+
+
+.modal-col{width:100%;height:100%;position: fixed;background: rgba(0,0,0,0.5);top:0;left:0;z-index:1000;display: none;}
+.modal-dialog{width:802px;height:100%;display: table;margin:0 auto;}
+.modal-dialog-col{display: table-cell;vertical-align: middle;}
+.modal-dialog-col .bigPic{width:800px;}
+
+.modal-dialog-col .close-col{display: block;margin:20px auto 0 auto;color:#fff;font-size:14px;border-radius: 5px;padding:0 10px;background: #6e757c;}
+.modal-dialog-col .close-col .cha{font-size:24px;}
+.modal-dialog-col .close-col span{display: inline-block;vertical-align: middle;}
+
+.red-text{color:#ff0000!important;}
+
+
+.modal-agree-col{width:100%;height:100%;position: fixed;background: rgba(0,0,0,0.5);top:0;left:0;z-index:1000;display: none;}
+.modal-agree-dialog-col{width:40%;height:50%;background-color: white; border-radius: 10px; position: absolute; top: 0; left: 0; bottom: 0px; right: 0px; margin: auto; padding: 40px; overflow:scroll;}
+.modal-agree-dialog-col .title{font-size: 20px; color: black; display: block; margin-bottom: 20px;}
+.modal-agree-dialog-col .content{font-size: 14px; text-align: left; background:#FFF;}
+
+.modal-agree-dialog-col .close-col{display: block;margin:60px auto 0;color:#fff;font-size:14px;border-radius: 5px;padding:5px 20px;background: #007571;}
+/****************************************************/
+    ul.drop-down-menu {
+        border: #ccc 1px solid;
+        display: inline-block;
+        font-family: 'Open Sans', Arial, sans-serif;
+        font-size: 13px;
+    }
+	    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+        color: #red;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        
+        color: #red;
+    }
+
+  ul.drop-down-menu ul { /*隱藏次選單*/
+        display: none;
+    }
+
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+        display: block;
+    }
+
+	ul.drop-down-menu li ul li img{
+		
+	float:left; margin-top:10px;
+	}
+
+.danwei-banner .news-list li .teg{border-radius: 0;width:60px;height:60px;padding:12px;box-sizing: border-box;text-align: center;top:0;}
+				
+.T3 {
+border-right: 5px solid #009896;
+border-left: 5px solid #009896;
+border-top: 10px solid #FFF;
+display:inline-block;
+}
+.pageBottom1{background-color: white; position: relative; height: 80px;}
+    .pageBottom1 .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 5%; margin-left: -45px; width: 90px; margin-top: 30px;}
+    .pageBottom1 .backBtn span{position: relative; top: 5px; margin-right: 10px;}
+    .pageBottom1 .backBtn:hover{background-color: #f0f4f4;}
+	.nonoimg{}
+	.three-img-1{float:right; margin-right:50px;}
+	.three-img{float:right; margin-right:5px;}
+	
+
+@media  screen and  (max-width: 640px) {
+.pageBottom1{background-color: white; position: relative; height: 80px;}
+    .pageBottom1 .backBtn{border-radius: 5px; border: solid 2px #2c3e50; position: absolute; left: 10%; margin-left: -45px; width: 90px; margin-top: 30px;}
+    .pageBottom1 .backBtn span{position: relative; top: 5px; margin-right: 10px;}
+    .pageBottom1 .backBtn:hover{background-color: #f0f4f4;}
+	.nonoimg{ display:none;}
+	.three-img-1{ display:none;}
+	.three-img{ display:none;}
+	.swiper-pagination{display:none;}
+	.fancybox{ display:none;}
+	.share{ right:10px;}
+}
+
+
+
+
+
+
+
+

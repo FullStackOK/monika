@@ -1,0 +1,104 @@
+.questionSearch{height: 40px; vertical-align: middle; margin-bottom: 20px;}
+.questionSearch input{ width: 265px; height: 37px; border: 1px solid #dddddd; border-radius: 5px; display: inline-block;}
+.questionSearch div{display: inline-block; border: 2px solid #1B4782; line-height: 37px; border-radius: 7px;
+    height: 80%; width: 100px; text-align: center; vertical-align: middle;}
+.questionSearch div span{font-size: 16px; color: #1B4782; }
+.questionSearch div img{margin-top: -12px; margin-left: 5px;}
+
+
+.questionList{border: 1px solid #dddddd; border-radius: 5px; height: 37px; width: 200px; padding-left: 10px; line-height: 37px; margin: 20px 0px;}
+.questionList img{position: relative; top: -5px; left: 90px;}
+
+.questionContent select{appearance:none;  -moz-appearance:none;  -webkit-appearance:none; background-color: white; }
+.questionContent select::-ms-expand {  display: none;  }
+
+
+.accordion {
+    width: 100%;
+    margin: 30px auto 20px;
+}
+
+.accordion li{
+    background-color: #efefef;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 20px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion .link img{
+    position: relative; top: -3px; float: right;
+}
+
+.accordion li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordion li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordion li.open .link {
+    background-color: #283646;
+    color: white;
+}
+
+.accordion li.open i {
+    background-color: #283646;
+    color: white;
+}
+
+.accordion li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    display: none;
+    background-color: white;
+    font-size: 14px;
+    padding: 20px;
+}
+
+
+@media screen  and  (max-width: 640px) {
+    .questionSearch{text-align: center;}
+    .questionSearch input{width: 100%;}
+    .questionSearch >span{display: none}
+    .questionSearch div{margin-top: 10px;}
+
+    .divider{margin-top: 60px;}
+}
+
+
