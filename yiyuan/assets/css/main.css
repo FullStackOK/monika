@@ -220,17 +220,18 @@ body{min-width:1200px;}
     -webkit-align-items: center;
 
 }
+
+.lunbo img{width:172px;}
+
 .lunbo .swiper-button-next.swiper-button-white, 
-.swiper-container-rtl .swiper-button-prev.swiper-button-white{background: url("../img/home_76.png");opacity: 1;right:-53px;}
-.lunbo1 .swiper-button-next.swiper-button-white, 
-.swiper-container-rtl .swiper-button-prev.swiper-button-white{background: url("../img/home_76.png");opacity: 1;right:-53px;}
-
-.lunbo .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white{background: url("../img/home_73.png");opacity: 1;left:-56px;}
-.lunbo1 .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white{background: url("../img/home_73.png");opacity: 1;left:-56px;}
+.swiper-container-rtl .swiper-button-prev.swiper-button-white{background: url("../img/home_76.png");opacity: 1;right:-53px;background-size:100% 100%;}
 
 
-.lunbo .swiper-button-next, .swiper-button-prev{width:45px;}
-.lunbo1 .swiper-button-next, .swiper-button-prev{width:45px;}
+.lunbo .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white{background: url("../img/home_73.png");opacity: 1;left:-56px;background-size:100% 100%;}
+
+
+
+.lunbo .swiper-button-next, .swiper-button-prev{width:40px;height:40px;}
 
 .yixun .left{width:50%;float:left;color:#b5b5b5;line-height: 30px;padding-top:70px;}
 .yixun .right{width:50%;float:left;color:#b5b5b5;line-height: 30px;padding-top:70px;}
@@ -268,7 +269,7 @@ body{min-width:1200px;}
 .yixun .right .lunbo-col .green-btn-col{text-align: right;border-top:1px solid #eee;bottom:0;padding-top:10px;padding-bottom:10px;position: absolute;left:0;width:100%;box-sizing: border-box;padding-right:30px;}
 
 .header{position: relative;z-index:10000;}
-.header .logo-col{width:220px;}
+.header .logo-col{width:220px;margin-top:10px;}
 .header .top-col{border-bottom:1px solid #eee;}
 .header .top-col .fl{float:right;margin-top:6px; margin-bottom:4px;}
 .header .search-col{position: relative;margin:16px 16px;}
@@ -289,11 +290,12 @@ body{min-width:1200px;}
 .header .line-col img{position: relative;top:2px;}
 
 .header .menu{float:right;margin-top:0px; display:block;}
-.header .menu a,.header .menu span{display: inline-block;margin:0 5px;cursor: pointer;position: relative;padding:10px 0;}
-.header .menu span .xiala-list{position: absolute;border:1px solid #eee;border-top:0;padding:5px 0;display:none;background: #fff;left:-25px;width:120px;z-index:1000;top:40px;text-align: center;line-height: normal;}
+.header .menu a,.header .menu span{display: inline-block;margin:0 5px;cursor: pointer;position: relative;padding:21px 0 12px 0;}
+.header .menu span .xiala-list{position: absolute;border:1px solid #eee;border-top:0;padding:5px 0;display:none;background: #fff;left:-25px;width:130px;z-index:1000;top:68px;text-align: center;line-height: normal;}
 .header .menu span .xiala-list a{display: block;padding:5px 0;}
 .header .menu span .xiala-list .has-child{color:#000;position: relative;line-height: normal;}
-.header .menu span .xiala-list .has-child .child-list{background: #fff;width:120px;left:120px;padding:5px 0;top:0;border:1px solid #eee;border-left:0;position: absolute;display: none;}
+.header .menu span .xiala-list .has-child span{padding:5px 0;}
+.header .menu span .xiala-list .has-child .child-list{background: #fff;width:120px;left:120px;padding:5px 0;top:-5px;border:1px solid #eee;border-left:0;position: absolute;display: none;}
 .header .menu span .xiala-list .has-child:hover .child-list{display: block;}
 .header .menu span:hover .xiala-list{display: block;}
 .header .menu .share{margin:0 10px 0 10px;position: relative;top:9px;cursor: pointer;position: relative;z-index:100;padding:5px 0  10px 0;display: inline-block;}
