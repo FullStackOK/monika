@@ -22,7 +22,7 @@ ins,a{text-decoration: none}
 
 /** common **/
 html{height:100%;}
-body{font-family: "Microsoft YaHei",Arial;min-height:100%;-webkit-font-smoothing: antialiased;color:#333;min-height:100%;}
+body{font-family: "微软正黑体","Microsoft YaHei",Arial;min-height:100%;-webkit-font-smoothing: antialiased;color:#333;min-height:100%;}
 button{border:0px;text-align: center;cursor: pointer;display: inline-block;}
 button,input,select,textarea{font-family: Microsoft YaHei;}
 input:active{border:1px solid #000;}
@@ -46,16 +46,19 @@ background-color:#FFFFFF;
 color:#009896;
 padding:5px 10px 5px 10px;}
 .button-classon{
-border:solid 1px #FFF; 
+border:solid 1px #000;
 background-color:#000; 
 color:#FFF;
-padding:5px 10px 5px 10px;
-margin-bottom:5px;}
+    width:25px;text-align: center;
+    line-height: 25px;
+}
 .button-classclose{
 border:solid 1px #000; 
 background-color:#FFF; 
 color:#000;
-padding:5px 10px 5px 10px;}
+    width:25px;text-align: center;
+    line-height: 25px;
+;}
 .mt10{margin-top:10px!important;}
 
 .green{color:#009896!important;}
@@ -139,8 +142,8 @@ display:inline-block;
 
 
 
-
-
+.swiper-pagination-bullet{border:2px solid #fff;background: transparent;opacity: 1;width:12px;height:12px;}
+.swiper-pagination-bullet-active{background: #fff;}
 
 
 

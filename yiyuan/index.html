@@ -36,7 +36,7 @@
 
 					<span class="search-col">
                     <span class="input-col">
-                    <input type="text" placeholder="輸入關鍵字" />
+                    <input type="text" placeholder="關鍵字搜尋..." />
                     </span>
                     <img src="assets/img/home_03.png">
                     </span>
@@ -67,19 +67,24 @@
                 </span>
 
                 <span class="line-col-share">
-              <a  href="index_en.html"> English</a>
+                    <a  href="index_en.html"> English</a>
                 </span>
- <span class="share" style="position:relative;top:0px">
- <a class="fancybox" data-fancybox-type="iframe" href="https://www.addtoany.com/share#url=http://hospita.dodobar.tw"><img src="assets/img/home_17.png" style="position:relative;top:+7px"/></a>
-                <script type="text/javascript">
-		$(".fancybox").fancybox();
-	</script>
-<button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
 
-<button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
+                <span class="share">
+                    <a class="fancybox" data-fancybox-type="iframe" href="https://www.addtoany.com/share#url=http://hospita.dodobar.tw">
+                        <img src="assets/img/home_17.png" />
+                    </a>
+                    <script type="text/javascript">
+                    $(".fancybox").fancybox();
+                </script>
+                     </span>
 
-<button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
-                </span>
+                        <button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
+
+                        <button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
+
+                        <button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
+
                 </div>
            
 
@@ -90,7 +95,7 @@
         <div class="mw-top clearfix">
           <img class="logo-col" src="assets/img/logo.png" />
             <div class="menu">
-              <span class="first"><span>認識中榮</span>
+              <span class="first"><span>認識本院</span>
                 <div class="xiala-list">
                   <a href="#">我們的家長</a>
                   <a href="#">沿革</a>
@@ -230,7 +235,7 @@
               </span>
               <a href="#">訊息專區</a>
               <a href="#">資訊公開</a>
-              <a href="#">特色醫療中心</a>
+              <a href="#">特色醫療服務</a>
               <span class="share" >
                 <a href="mailto:12424@qq.com"><img  src="assets/img/home/shouzhangXinxiang.jpg"></a>
   
@@ -608,7 +613,7 @@
                 <span class="green-bg">預覽人次: 34862750</span>
                 </div>
 				
-                <div class="left">地址: 40705 台中市西屯區臺灣大道四段1650號   總機: (04)2359-2525   傳真: (04)2359-5046
+                <div class="left">地址: 40705 台中市西屯區臺灣大道四段1650號   總機: (04)2359-2525   傳真: (05)236-9676
 </div>
       </div>          
 
@@ -630,6 +635,7 @@
 
     
  		<div class="clearfix wenzi">
+        <div class="mw">
          <div class="left-moblie">
                 2018©本網站內容為臺中榮民總醫院所有，未經允許請勿任意轉載、複製或做商業用途　最佳瀏覽：1024以上及IE8以上
 				</div>
@@ -637,6 +643,7 @@
                          <a href="###">隱私權公告</a>｜<a href="###">政府網站資料開放宣告</a>｜<a href="###">網站滿意度</a>
                 </div>
             </div>
+        </div>
 </footer>
 
     <script src="assets/lib/circle-progress.js"></script>
@@ -920,7 +927,7 @@ chagefz.style.fontSize=Number(size)+ "px" ;
   $(".zhankai-btn").click(function()
     {
 		$("#list-clearfix").toggle();
-		if($("#zhankai-btn-name").text() =='收起')
+		if($("#zhankai-btn-name").text() =='關閉')
 		{
 		document.getElementById("zhankai-btn-name").innerHTML='展開';	
 		document.getElementById("zhankai-btn").className = " zhankai-btn";
@@ -929,7 +936,7 @@ chagefz.style.fontSize=Number(size)+ "px" ;
 		}
 		else
 		{
-		document.getElementById("zhankai-btn-name").innerHTML='收起';  	
+		document.getElementById("zhankai-btn-name").innerHTML='關閉';  	
 		document.getElementById("zhankai-btn").className = " zhankai-btn-close";
 		document.getElementById("zhankai-btn-small").className = "zhankai-btn-close-small";
 		
