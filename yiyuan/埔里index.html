@@ -194,6 +194,8 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper-button-white swiper-button-next2"></div>
+                    <div class="swiper-button-prev swiper-button-white swiper-button-prev2"></div>
                 </div>
             </div>
 	        
@@ -676,6 +678,8 @@ chagefz.style.fontSize=Number(size)+ "px" ;
             swiper1 = new Swiper('.gaoxie-swiper-container', {
                 slidesPerView: 1,
                 paginationClickable: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
                 pagination: '.swiper-pagination',
                 spaceBetween: 2
             });
