@@ -80,7 +80,7 @@ body{min-width:1200px;}
 	width: 100%;
 }
 
-.footer .to-top{position: absolute;right:-64px;width:58px;bottom:70px;cursor: pointer;}
+.footer .to-top{position: absolute;right:-64px;width:58px;bottom:70px;cursor: pointer;z-index:10000;}
 
 .green-bg{background:#009997;display:inline-block;padding:2px 10px 2px 10px;color:#FFF; border:1px #FFF solid; margin-top:10px; margin-bottom:-15px; font-size:10px; font-family: Microsoft JhengHei;}
 .footer .left .left{padding-bottom:10px;}
@@ -932,3 +932,7 @@ padding:5px 10px 5px 10px;}
 .rightnavigation .rightnavigation_nav .rightnavigation_content .bottom li img{ float: left; position: absolute; right: 0px; top: 7px;}
 #g{ float: left;}
 #cx{ float: left;}
+
+
+
+
