@@ -2,288 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8603ef17-863f-4a24-ab88-468ac4e4529d" name="Default" comment="8">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner01.jpg" afterPath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner02.jpg" afterPath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner03.jpg" afterPath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner04.jpg" afterPath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner05.jpg" afterPath="$PROJECT_DIR$/yiyuan/assets/img/banner/banner05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/monika.iml" afterPath="$PROJECT_DIR$/.idea/monika.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/assets/css/jquery.fullPage.css" afterPath="$PROJECT_DIR$/FBBH/assets/css/jquery.fullPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/assets/lib/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/FBBH/assets/lib/jquery-1.8.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/assets/lib/jquery-ui-1.10.3.min.js" afterPath="$PROJECT_DIR$/FBBH/assets/lib/jquery-ui-1.10.3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/assets/lib/jquery.fullPage.min.js" afterPath="$PROJECT_DIR$/FBBH/assets/lib/jquery.fullPage.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/animate.min.css" afterPath="$PROJECT_DIR$/FBBH/css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/bootstrap.css" afterPath="$PROJECT_DIR$/FBBH/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/FBBH/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/owl.carousel.css" afterPath="$PROJECT_DIR$/FBBH/css/owl.carousel.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/owl.theme.css" afterPath="$PROJECT_DIR$/FBBH/css/owl.theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/prettyPhoto.css" afterPath="$PROJECT_DIR$/FBBH/css/prettyPhoto.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/css/style.css" afterPath="$PROJECT_DIR$/FBBH/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/index.html" afterPath="$PROJECT_DIR$/FBBH/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/SmoothScroll.js" afterPath="$PROJECT_DIR$/FBBH/js/SmoothScroll.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/bootstrap.js" afterPath="$PROJECT_DIR$/FBBH/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/FBBH/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/jquery.1.11.1.js" afterPath="$PROJECT_DIR$/FBBH/js/jquery.1.11.1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/jquery.counterup.js" afterPath="$PROJECT_DIR$/FBBH/js/jquery.counterup.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/jquery.isotope.js" afterPath="$PROJECT_DIR$/FBBH/js/jquery.isotope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/FBBH/js/jquery.prettyPhoto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/main.js" afterPath="$PROJECT_DIR$/FBBH/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/owl.carousel.js" afterPath="$PROJECT_DIR$/FBBH/js/owl.carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/scrolla.jquery.min.js" afterPath="$PROJECT_DIR$/FBBH/js/scrolla.jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FBBH/js/waypoints.js" afterPath="$PROJECT_DIR$/FBBH/js/waypoints.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadado/js/001.js" afterPath="$PROJECT_DIR$/dadado/js/001.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dadado/js/jquery-1.7.1.min.js" afterPath="$PROJECT_DIR$/dadado/js/jquery-1.7.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/.gitignore" afterPath="$PROJECT_DIR$/hospital/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/.gitignore" afterPath="$PROJECT_DIR$/hospital/assets/css/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/base.css" afterPath="$PROJECT_DIR$/hospital/assets/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/gongneng.css" afterPath="$PROJECT_DIR$/hospital/assets/css/gongneng.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/main.css" afterPath="$PROJECT_DIR$/hospital/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/manage.css" afterPath="$PROJECT_DIR$/hospital/assets/css/manage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/mediainform.css" afterPath="$PROJECT_DIR$/hospital/assets/css/mediainform.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/new.css" afterPath="$PROJECT_DIR$/hospital/assets/css/new.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/newDetail.css" afterPath="$PROJECT_DIR$/hospital/assets/css/newDetail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/plead.css" afterPath="$PROJECT_DIR$/hospital/assets/css/plead.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/question.css" afterPath="$PROJECT_DIR$/hospital/assets/css/question.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/css/swiper.min.css" afterPath="$PROJECT_DIR$/hospital/assets/css/swiper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/js/common.js" afterPath="$PROJECT_DIR$/hospital/assets/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/js/swiper.min.js" afterPath="$PROJECT_DIR$/hospital/assets/js/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/lib/circle-progress.js" afterPath="$PROJECT_DIR$/hospital/assets/lib/circle-progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/lib/jquery-1.8.2.min.js" afterPath="$PROJECT_DIR$/hospital/assets/lib/jquery-1.8.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/assets/lib/swiper.min.js" afterPath="$PROJECT_DIR$/hospital/assets/lib/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/一般診斷書申請.html" afterPath="$PROJECT_DIR$/hospital/一般診斷書申請.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/一般診斷書申請2.html" afterPath="$PROJECT_DIR$/hospital/一般診斷書申請2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/出生證明申請.html" afterPath="$PROJECT_DIR$/hospital/出生證明申請.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/出生證明申請2.html" afterPath="$PROJECT_DIR$/hospital/出生證明申請2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/单位.html" afterPath="$PROJECT_DIR$/hospital/单位.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/多媒體資訊-影音詳情.html" afterPath="$PROJECT_DIR$/hospital/多媒體資訊-影音詳情.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/多媒體資訊-相簿專區-back.html" afterPath="$PROJECT_DIR$/hospital/多媒體資訊-相簿專區-back.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/多媒體資訊.html" afterPath="$PROJECT_DIR$/hospital/多媒體資訊.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/常見問題.html" afterPath="$PROJECT_DIR$/hospital/常見問題.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/常见问题.html" afterPath="$PROJECT_DIR$/hospital/常见问题.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/最新消息.html" afterPath="$PROJECT_DIR$/hospital/最新消息.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/最新消息詳情.html" afterPath="$PROJECT_DIR$/hospital/最新消息詳情.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/死亡證明申請.html" afterPath="$PROJECT_DIR$/hospital/死亡證明申請.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/死亡證明申請2.html" afterPath="$PROJECT_DIR$/hospital/死亡證明申請2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/注意事项.txt" afterPath="$PROJECT_DIR$/hospital/注意事项.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/現場取件事項.html" afterPath="$PROJECT_DIR$/hospital/現場取件事項.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/申請證明書流程.html" afterPath="$PROJECT_DIR$/hospital/申請證明書流程.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/病歷複製申請.html" afterPath="$PROJECT_DIR$/hospital/病歷複製申請.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/病歷複製申請2.html" afterPath="$PROJECT_DIR$/hospital/病歷複製申請2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/登录.html" afterPath="$PROJECT_DIR$/hospital/登录.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/聯絡我們.html" afterPath="$PROJECT_DIR$/hospital/聯絡我們.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/自然人憑證說明.html" afterPath="$PROJECT_DIR$/hospital/自然人憑證說明.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/證明書申請查詢.html" afterPath="$PROJECT_DIR$/hospital/證明書申請查詢.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/費用證明申請.html" afterPath="$PROJECT_DIR$/hospital/費用證明申請.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/費用證明申請2.html" afterPath="$PROJECT_DIR$/hospital/費用證明申請2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/郵件取件事項.html" afterPath="$PROJECT_DIR$/hospital/郵件取件事項.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hospital/首页.html" afterPath="$PROJECT_DIR$/hospital/首页.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/certificate.html" afterPath="$PROJECT_DIR$/xiongshi_xin/certificate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/collection.html" afterPath="$PROJECT_DIR$/xiongshi_xin/collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/collection_no.html" afterPath="$PROJECT_DIR$/xiongshi_xin/collection_no.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/complete.html" afterPath="$PROJECT_DIR$/xiongshi_xin/complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/confirm.html" afterPath="$PROJECT_DIR$/xiongshi_xin/confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/consent.html" afterPath="$PROJECT_DIR$/xiongshi_xin/consent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/Content/sass/components/ic-ln/fonts/19a7b4159dc6ddc61af1fac844e21f82.svg" afterPath="$PROJECT_DIR$/xiongshi_xin/css/Content/sass/components/ic-ln/fonts/19a7b4159dc6ddc61af1fac844e21f82.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/Content/sass/components/ic-ln/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/xiongshi_xin/css/Content/sass/components/ic-ln/fonts/iconfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/PagedList.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/PagedList.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/baguetteBox.min.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/baguetteBox.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/home.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/hscheckdata.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/hscheckdata.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/index.style.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/index.style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/ion.calendar.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/ion.calendar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/jquery.bxslider.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/jquery.bxslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/localtour.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/localtour.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/product.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/productDetail.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/productDetail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/searchResult.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/searchResult.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/slider.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/css/swiper.min.css" afterPath="$PROJECT_DIR$/xiongshi_xin/css/swiper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/hotel.html" afterPath="$PROJECT_DIR$/xiongshi_xin/hotel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/increaseprice.html" afterPath="$PROJECT_DIR$/xiongshi_xin/increaseprice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/index.html" afterPath="$PROJECT_DIR$/xiongshi_xin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/001.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/001.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/baguetteBox.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/baguetteBox.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/bundles.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/bundles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/city.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/city.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/citydata.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/citydata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/clndr.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/clndr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/collection.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/collection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/home.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/hscheckdata.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/hscheckdata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/html2canvas.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/html2canvas.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/ion.calendar.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/ion.calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/ion.calendar.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/ion.calendar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery-1.6.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery-1.6.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery-1.9.1.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery-1.9.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.bxslider.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.bxslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.easing-1.3.pack.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.easing-1.3.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.event.drag-1.5.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.event.drag-1.5.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.fancybox.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.min-1.11.3.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.min-1.11.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.mousewheel-3.0.4.pack.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.mousewheel-3.0.4.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.pagination.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.pagination.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.slidereveal.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.slidereveal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.touchSlider.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.touchSlider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery.validate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/jquery2.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/jquery2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/liontravel.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/liontravel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/masonry.pkgd.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/masonry.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/moment.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/moment.zh-cn.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/moment.zh-cn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/pic_tab.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/pic_tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/platform.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/platform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/proOperate.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/proOperate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/product.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/readmore.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/readmore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/rightToolbar.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/rightToolbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/searchBar.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/searchBar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/searchResult.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/searchResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/search_B.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/search_B.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/species.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/species.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/swiper.min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/underscore-min.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/underscore-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/js/visitorinfo.js" afterPath="$PROJECT_DIR$/xiongshi_xin/js/visitorinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/loading.html" afterPath="$PROJECT_DIR$/xiongshi_xin/loading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/mail.html" afterPath="$PROJECT_DIR$/xiongshi_xin/mail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/order.html" afterPath="$PROJECT_DIR$/xiongshi_xin/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/orderingproduct.html" afterPath="$PROJECT_DIR$/xiongshi_xin/orderingproduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/payed.html" afterPath="$PROJECT_DIR$/xiongshi_xin/payed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/personalized.html" afterPath="$PROJECT_DIR$/xiongshi_xin/personalized.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/preview.html" afterPath="$PROJECT_DIR$/xiongshi_xin/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/print.html" afterPath="$PROJECT_DIR$/xiongshi_xin/print.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/printblack.html" afterPath="$PROJECT_DIR$/xiongshi_xin/printblack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/product.html" afterPath="$PROJECT_DIR$/xiongshi_xin/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/product2.html" afterPath="$PROJECT_DIR$/xiongshi_xin/product2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/purchase.html" afterPath="$PROJECT_DIR$/xiongshi_xin/purchase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/robots.txt" afterPath="$PROJECT_DIR$/xiongshi_xin/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/search_noresults.html" afterPath="$PROJECT_DIR$/xiongshi_xin/search_noresults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/search_results.html" afterPath="$PROJECT_DIR$/xiongshi_xin/search_results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/sitemap.html" afterPath="$PROJECT_DIR$/xiongshi_xin/sitemap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_xin/visitorinfo.html" afterPath="$PROJECT_DIR$/xiongshi_xin/visitorinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/certificate.html" afterPath="$PROJECT_DIR$/xiongshi_前台/certificate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/collection.html" afterPath="$PROJECT_DIR$/xiongshi_前台/collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/collection_no.html" afterPath="$PROJECT_DIR$/xiongshi_前台/collection_no.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/complete.html" afterPath="$PROJECT_DIR$/xiongshi_前台/complete.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/confirm.html" afterPath="$PROJECT_DIR$/xiongshi_前台/confirm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/consent.html" afterPath="$PROJECT_DIR$/xiongshi_前台/consent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/Content/sass/components/ic-ln/fonts/19a7b4159dc6ddc61af1fac844e21f82.svg" afterPath="$PROJECT_DIR$/xiongshi_前台/css/Content/sass/components/ic-ln/fonts/19a7b4159dc6ddc61af1fac844e21f82.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/Content/sass/components/ic-ln/fonts/iconfont.svg" afterPath="$PROJECT_DIR$/xiongshi_前台/css/Content/sass/components/ic-ln/fonts/iconfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/PagedList.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/PagedList.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/baguetteBox.min.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/baguetteBox.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/home.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/hscheckdata.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/hscheckdata.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/index.style.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/index.style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/ion.calendar.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/ion.calendar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/jquery.bxslider.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/jquery.bxslider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/localtour.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/localtour.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/product.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/productDetail.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/productDetail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/searchResult.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/searchResult.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/slider.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/slider.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/css/swiper.min.css" afterPath="$PROJECT_DIR$/xiongshi_前台/css/swiper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/hotel.html" afterPath="$PROJECT_DIR$/xiongshi_前台/hotel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/increaseprice.html" afterPath="$PROJECT_DIR$/xiongshi_前台/increaseprice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/index.html" afterPath="$PROJECT_DIR$/xiongshi_前台/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/index2.html" afterPath="$PROJECT_DIR$/xiongshi_前台/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/001.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/001.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/baguetteBox.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/baguetteBox.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/bundles.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/bundles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/city.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/city.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/citydata.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/citydata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/home.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/hscheckdata.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/hscheckdata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/ion.calendar.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/ion.calendar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/ion.calendar.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/ion.calendar.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery-1.6.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery-1.6.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery-1.9.1.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery-1.9.1.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.bxslider.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.bxslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.easing-1.3.pack.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.easing-1.3.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.event.drag-1.5.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.event.drag-1.5.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.fancybox.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.min-1.11.3.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.min-1.11.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.mousewheel-3.0.4.pack.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.mousewheel-3.0.4.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.pagination.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.pagination.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.slidereveal.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.slidereveal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery.touchSlider.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery.touchSlider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/jquery2.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/jquery2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/liontravel.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/liontravel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/masonry.pkgd.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/masonry.pkgd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/moment.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/pic_tab.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/pic_tab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/platform.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/platform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/product.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/readmore.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/readmore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/searchBar.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/searchBar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/searchResult.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/searchResult.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/search_B.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/search_B.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/js/swiper.min.js" afterPath="$PROJECT_DIR$/xiongshi_前台/js/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/loading.html" afterPath="$PROJECT_DIR$/xiongshi_前台/loading.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/mail.html" afterPath="$PROJECT_DIR$/xiongshi_前台/mail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/order.html" afterPath="$PROJECT_DIR$/xiongshi_前台/order.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/orderingproduct.html" afterPath="$PROJECT_DIR$/xiongshi_前台/orderingproduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/payed.html" afterPath="$PROJECT_DIR$/xiongshi_前台/payed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/personalized.html" afterPath="$PROJECT_DIR$/xiongshi_前台/personalized.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/preview.html" afterPath="$PROJECT_DIR$/xiongshi_前台/preview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/print.html" afterPath="$PROJECT_DIR$/xiongshi_前台/print.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/printblack.html" afterPath="$PROJECT_DIR$/xiongshi_前台/printblack.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/product.html" afterPath="$PROJECT_DIR$/xiongshi_前台/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/product2.html" afterPath="$PROJECT_DIR$/xiongshi_前台/product2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/purchase.html" afterPath="$PROJECT_DIR$/xiongshi_前台/purchase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/robots.txt" afterPath="$PROJECT_DIR$/xiongshi_前台/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/search_noresults.html" afterPath="$PROJECT_DIR$/xiongshi_前台/search_noresults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/search_results.html" afterPath="$PROJECT_DIR$/xiongshi_前台/search_results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/sitemap.html" afterPath="$PROJECT_DIR$/xiongshi_前台/sitemap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xiongshi_前台/visitorinfo.html" afterPath="$PROJECT_DIR$/xiongshi_前台/visitorinfo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/.gitignore" afterPath="$PROJECT_DIR$/yiyuan/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/.gitignore" afterPath="$PROJECT_DIR$/yiyuan/assets/css/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/Government-open-information-2.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/Government-open-information-2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/Government-open-information-3.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/Government-open-information-3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/Questionnaire.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/Questionnaire.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/about.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/gongneng.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/gongneng.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/hot_link.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/hot_link.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/jquery.fancybox.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/jquery.fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/main_de.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/main_de.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/manage.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/manage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/mediainform-table.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/mediainform-table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/mediainform.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/mediainform.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/medical-records.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/medical-records.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/new.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/new.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/newDetail.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/newDetail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/new_en.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/new_en.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/new_med.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/new_med.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/phone.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/phone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/plead.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/plead.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/question.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/question.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/schedule.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/schedule.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/css/swiper.min.css" afterPath="$PROJECT_DIR$/yiyuan/assets/css/swiper.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/js/common.js" afterPath="$PROJECT_DIR$/yiyuan/assets/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/js/swiper.min.js" afterPath="$PROJECT_DIR$/yiyuan/assets/js/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/lib/circle-progress.js" afterPath="$PROJECT_DIR$/yiyuan/assets/lib/circle-progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/lib/jquery.fancybox.min.js" afterPath="$PROJECT_DIR$/yiyuan/assets/lib/jquery.fancybox.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/lib/jquery.min.js" afterPath="$PROJECT_DIR$/yiyuan/assets/lib/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/assets/lib/swiper.min.js" afterPath="$PROJECT_DIR$/yiyuan/assets/lib/swiper.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/index.html" afterPath="$PROJECT_DIR$/yiyuan/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/index_en.html" afterPath="$PROJECT_DIR$/yiyuan/index_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/嘉義index-en.html" afterPath="$PROJECT_DIR$/yiyuan/嘉義index-en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/嘉義index.html" afterPath="$PROJECT_DIR$/yiyuan/嘉義index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/埔里index-en.html" afterPath="$PROJECT_DIR$/yiyuan/埔里index-en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/埔里index.html" afterPath="$PROJECT_DIR$/yiyuan/埔里index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/灣橋index-en.html" afterPath="$PROJECT_DIR$/yiyuan/灣橋index-en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yiyuan/灣橋index.html" afterPath="$PROJECT_DIR$/yiyuan/灣橋index.html" />
     </list>
     <ignored path="monika.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -313,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yiyuan/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1085">
-              <caret line="283" column="79" lean-forward="true" selection-start-line="283" selection-start-column="79" selection-end-line="283" selection-end-column="79" />
+            <state relative-caret-position="665">
+              <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding>
                 <element signature="n#span#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#span#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -338,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yiyuan/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+            <state relative-caret-position="682">
+              <caret line="931" column="0" lean-forward="true" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -452,8 +171,8 @@
         <option value="$PROJECT_DIR$/yiyuan/埔里index-en.html" />
         <option value="$PROJECT_DIR$/yiyuan/灣橋index.html" />
         <option value="$PROJECT_DIR$/yiyuan/灣橋index-en.html" />
-        <option value="$PROJECT_DIR$/yiyuan/assets/css/main.css" />
         <option value="$PROJECT_DIR$/yiyuan/index.html" />
+        <option value="$PROJECT_DIR$/yiyuan/assets/css/main.css" />
       </list>
     </option>
   </component>
@@ -499,50 +218,6 @@
               <item name="monika" type="b2602c69:ProjectViewProjectNode" />
               <item name="monika" type="462c0819:PsiDirectoryNode" />
               <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="banner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="home_en" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="video" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -645,7 +320,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520945966552</updated>
-      <workItem from="1521686652490" duration="3650000" />
+      <workItem from="1521686652490" duration="16749000" />
     </task>
     <task id="LOCAL-00001" summary="8">
       <created>1520953133863</created>
@@ -696,11 +371,32 @@
       <option name="project" value="LOCAL" />
       <updated>1521646730880</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="8">
+      <created>1521709522008</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1521709522008</updated>
+    </task>
+    <task id="LOCAL-00009" summary="8">
+      <created>1521710578145</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1521710578145</updated>
+    </task>
+    <task id="LOCAL-00010" summary="8">
+      <created>1521710992358</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521710992358</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3650000" />
+    <option name="totallyTimeSpent" value="16749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1006" extended-state="6" />
@@ -1125,24 +821,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yiyuan/assets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yiyuan/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1085">
-          <caret line="283" column="79" lean-forward="true" selection-start-line="283" selection-start-column="79" selection-end-line="283" selection-end-column="79" />
+        <state relative-caret-position="665">
+          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
             <element signature="n#span#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#1;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#span#2;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#span#3;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yiyuan/assets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="931" column="0" lean-forward="true" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
