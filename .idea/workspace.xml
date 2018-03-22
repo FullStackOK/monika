@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8603ef17-863f-4a24-ab88-468ac4e4529d" name="Default" comment="8">
+    <list default="true" id="8603ef17-863f-4a24-ab88-468ac4e4529d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="monika.iws" />
@@ -60,8 +60,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yiyuan/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="931" column="0" lean-forward="true" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
+            <state relative-caret-position="697">
+              <caret line="932" column="0" lean-forward="true" selection-start-line="932" selection-start-column="0" selection-end-line="932" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -214,11 +214,6 @@
               <item name="monika" type="b2602c69:ProjectViewProjectNode" />
               <item name="monika" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="monika" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monika" type="462c0819:PsiDirectoryNode" />
-              <item name="yiyuan" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -320,7 +315,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1520945966552</updated>
-      <workItem from="1521686652490" duration="16749000" />
+      <workItem from="1521686652490" duration="17052000" />
     </task>
     <task id="LOCAL-00001" summary="8">
       <created>1520953133863</created>
@@ -392,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521710992358</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="8">
+      <created>1521712740420</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1521712740420</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16749000" />
+    <option name="totallyTimeSpent" value="17052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1006" extended-state="6" />
@@ -836,8 +838,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yiyuan/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="931" column="0" lean-forward="true" selection-start-line="931" selection-start-column="0" selection-end-line="931" selection-end-column="0" />
+        <state relative-caret-position="697">
+          <caret line="932" column="0" lean-forward="true" selection-start-line="932" selection-start-column="0" selection-end-line="932" selection-end-column="0" />
           <folding />
         </state>
       </provider>
