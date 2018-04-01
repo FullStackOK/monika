@@ -34,14 +34,21 @@
 
                 <div class="fl">
 
+                    <div class="search-icon-col">
+                        <img class="search-icon" src="assets/img/home_03.png">
+                    </div>
+
 					<span class="search-col">
-                    <span class="input-col">
-                    <input type="text" placeholder="輸入關鍵字" />
-                    </span>
-                    <img src="assets/img/home_03.png">
+                        <span class="input-col">
+                            <input type="text" placeholder="輸入關鍵字" />
+                             <img src="assets/img/home_03.png">
+                        </span>
+
+                        <span class="text-col">熱門搜尋: 腸病毒 流行性感冒 登革熱 體檢 首長信箱</span>
+
                     </span>
 
-                <span class="text-col">熱門搜尋: 腸病毒 流行性感冒 登革熱 體檢 首長信箱</span>
+
 
 
                 <span class="left-text">
@@ -73,17 +80,20 @@
                 <span class="line-col-share">
               <a  href="埔里child.html"> 兒童版</a>
                 </span>
- <span class="share" >
- <a class="fancybox" data-fancybox-type="iframe" href="https://www.addtoany.com/share#url=http://hospita.dodobar.tw"><img src="assets/img/home_17.png" /></a>
-                <script type="text/javascript">
-		$(".fancybox").fancybox();
-	</script>
-     </span>
-<button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
+                 <span class="share" >
+                 <a class="fancybox" data-fancybox-type="iframe" href="https://www.addtoany.com/share#url=http://hospita.dodobar.tw"><img src="assets/img/home_17.png" /></a>
+                                <script type="text/javascript">
+                        $(".fancybox").fancybox();
+                    </script>
+                     </span>
 
-<button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
+                     <span class="font-col">
+                    <button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
 
-<button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
+                    <button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
+
+                    <button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
+                    </span>
 
                 </div>
            
@@ -96,6 +106,8 @@
 
           
             <img class="logo-col" src="assets/img/danwei/pageIcon_03.gif" style=" display:block; float:left; padding-top:5px;"/>
+
+            <div class="menu-list-col">
 
             <div class="menu">
                 <a href="#"> 認識本院</a>
@@ -146,20 +158,26 @@
                 <span class="share" >
                  <a href="mailto:12424@qq.com"><img  src="assets/img/home/shouzhangXinxiang.jpg"></a>
   
-<div class="hover-col active" >
-<a href="javascript:void(0)" >
-<img src="assets/img/shareCol_01.png" />
-<div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
-<blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
-</blockquote>
-</div>
-</a>      
-                    </div>
+
 
                 </span>
 
+                <span class="menu-close">×</span>
+
+
             </div>
 
+            </div>
+
+            <div class="hover-col active" >
+                <a href="javascript:void(0)" >
+                    <img src="assets/img/shareCol_01.png" />
+                    <div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
+                        </blockquote>
+                    </div>
+                </a>
+            </div>
 
             <img class="menu-list" src="assets/img/menu.jpg" />
 
@@ -382,7 +400,7 @@
                 <span class="green-bg">預覽人次: 34862750</span>
                 </div>
 				
-                <div class="left">地址: 40705 台中市西屯區臺灣大道四段1650號   總機: (04)2359-2525   傳真: (05)236-9676
+                <div class="left"><span>地址: 40705 台中市西屯區臺灣大道四段1650號</span><span>總機: (04)2359-2525</span>  <span> 傳真: (05)236-9676</span>
 </div>
       </div>          
 
@@ -418,325 +436,343 @@
     <script src="assets/lib/circle-progress.js"></script>
     <script src="assets/lib/swiper.min.js"></script>
 <script src="assets/js/common.js"></script>
-<script>
- 
-function doZoom(size){
-if(size==12)
-{
-var size=12;
-document.getElementById("button-small").className='button-classon';
-document.getElementById("button-mid").className='button-classclose';
-document.getElementById("button-big").className='button-classclose';
-var chagefz=document.getElementById("body");
-chagefz.style.fontSize=Number(size)+ "px" ;
-}
-if(size==14)
-{
-var size=14;	
-document.getElementById("button-small").className='button-classclose';
-document.getElementById("button-mid").className='button-classon';
-document.getElementById("button-big").className='button-classclose';
-var chagefz=document.getElementById("body");
-chagefz.style.fontSize=Number(size)+ "px" ;
-}
-if(size==16)
-{
-var size=16;
-document.getElementById("button-small").className='button-classclose';
-document.getElementById("button-mid").className='button-classclose';
-document.getElementById("button-big").className='button-classon';
-var chagefz=document.getElementById("body");
-chagefz.style.fontSize=Number(size)+ "px" ;
-}
-}
- /*
-    $(".header .menu .share>img").click(function()
-    {
-        $(".header .menu .share .hover-col").toggle();
-    });
-*/
+  <script>
+
+      function doZoom(size){
+          if(size==12)
+          {
+              var size=12;
+              document.getElementById("button-small").className='button-classon';
+              document.getElementById("button-mid").className='button-classclose';
+              document.getElementById("button-big").className='button-classclose';
+              var chagefz=document.getElementById("body");
+              chagefz.style.fontSize=Number(size)+ "px" ;
+          }
+          if(size==14)
+          {
+              var size=14;
+              document.getElementById("button-small").className='button-classclose';
+              document.getElementById("button-mid").className='button-classon';
+              document.getElementById("button-big").className='button-classclose';
+              var chagefz=document.getElementById("body");
+              chagefz.style.fontSize=Number(size)+ "px" ;
+          }
+          if(size==16)
+          {
+              var size=16;
+              document.getElementById("button-small").className='button-classclose';
+              document.getElementById("button-mid").className='button-classclose';
+              document.getElementById("button-big").className='button-classon';
+              var chagefz=document.getElementById("body");
+              chagefz.style.fontSize=Number(size)+ "px" ;
+          }
+      }
 
 
-//影片JS*******************************************************/
-    var vid = document.getElementById("video");
-    vid.onpause = function() {
-        $("#play").show();
-    };
-	vid.onplay = function() {
-        $("#play").hide();
-    };	
-	
-    $("#video").click(function()
-    {
-		
-		if($("#play").is(":hidden"))
-		{
-        $("#play").show();
-		$("#video").attr("controls","controls");
-        document.getElementById("video").pause();
-		}
-		else
-		{
-		$("#play").hide();
-        document.getElementById("video").play();
-		}
-    });
+      //影片JS*******************************************************/
+      var vid = document.getElementById("video");
+      vid.onpause = function() {
+          $("#play").show();
+      };
+      vid.onplay = function() {
+          $("#play").hide();
+      };
 
-	 $("#play").click(function()
-    {
-        $("#play").hide();
-		$("#video").attr("controls","controls");
-        document.getElementById("video").play();
-    });
+      $("#video").click(function()
+      {
 
-/*******************************************************/
+          if($("#play").is(":hidden"))
+          {
+              $("#play").show();
+              $("#video").attr("controls","controls");
+              document.getElementById("video").pause();
+          }
+          else
+          {
+              $("#play").hide();
+              document.getElementById("video").play();
+          }
+      });
 
+      $("#play").click(function()
+      {
+          $("#play").hide();
+          $("#video").attr("controls","controls");
+          document.getElementById("video").play();
+      });
 
-   $("#yuanhuanList").on("click",".active",function()
-   {
-       $(this).next().hide();
-       $(this).removeClass("active").addClass("no-active");
-   });
-   $("#yuanhuanList").on("click",".no-active",function()
-   {
-        $(this).next().show();
-       $(this).removeClass("no-active").addClass("active");
-   });
-
-    $(".tab-list span").click(function()
-    {
-        $(".tab-list span").removeClass("active");
-        $(this).addClass("active");
-        $("#yuanhuanList>div").hide();
-        $("#yuanhuanList>div").eq($(this).index()).show();
-
-
-    });
-
-
-    $('#circle1').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle2').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle3').circleProgress({
-        value: 0.1,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle4').circleProgress({
-        value: 0.8,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle5').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle6').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle7').circleProgress({
-        value: 0.1,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle8').circleProgress({
-        value: 0.8,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-
-    $('#circle9').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle10').circleProgress({
-        value: 0,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle11').circleProgress({
-        value: 0.1,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
-
-    $('#circle12').circleProgress({
-        value: 0.8,
-        size: 160,
-        easing: "circleProgressEasing",
-        fill: {
-            color:"#009997"
-        }
-    });
+      /*******************************************************/
 
 
 
-    $(".header .menu-list").click(function()
-    {
-        $(".header .menu").toggle();
-    });
+      $("#yuanhuanList").on("click",".active",function()
+      {
+          $(this).next().hide();
+          $(this).removeClass("active").addClass("no-active");
+      });
+      $("#yuanhuanList").on("click",".no-active",function()
+      {
+          $(this).next().show();
+          $(this).removeClass("no-active").addClass("active");
+      });
 
-    $(".header .search-col img").click(function()
-    {
-        $(this).prev().toggle();
-    });
-
-    var swiper2;
-    var swiper1;
-
-    function lunbo()
-    {
-        if($(window).width()<=640)
-        {
-            if(swiper2)
-            {
-                swiper2.destroy(false);
-                swiper1.destroy(false);
-            }
-            swiper2 = new Swiper('.lubo-swiper-container', {
-                nextButton: '.swiper-button-next2',
-                prevButton: '.swiper-button-prev2',
-                paginationClickable: true
-            });
-
-             swiper1 = new Swiper('.gaoxie-swiper-container', {
-                paginationClickable: true,
-                pagination: '.swiper-pagination',
-            });
+      $(".tab-list span").click(function()
+      {
+          $(".tab-list span").removeClass("active");
+          $(this).addClass("active");
+          $("#yuanhuanList>div").hide();
+          $("#yuanhuanList>div").eq($(this).index()).show();
 
 
-
-        }
-        else {
-            if(swiper2)
-            {
-                swiper2.destroy(false);
-                swiper1.destroy(false);
-            }
-            swiper2 = new Swiper('.lubo-swiper-container', {
-                nextButton: '.swiper-button-next2',
-                prevButton: '.swiper-button-prev2',
-                slidesPerView: 6,
-                paginationClickable: true,
-                spaceBetween: 8
-            });
-
-            swiper1 = new Swiper('.gaoxie-swiper-container', {
-                slidesPerView: 1,
-                paginationClickable: true,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                pagination: '.swiper-pagination',
-                spaceBetween: 2
-            });
+      });
 
 
-        }
-    }
-    lunbo();
-    $(window).resize(function()
-    {
-        lunbo();
-    });
+      $('#circle1').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
-  $(".zhankai-btn").click(function()
-    {
-		$("#list-clearfix").toggle();
-		if($("#zhankai-btn-name").text() =='關閉')
-		{
-		document.getElementById("zhankai-btn-name").innerHTML='展開';	
-		document.getElementById("zhankai-btn").className = " zhankai-btn";
-		document.getElementById("zhankai-btn-small").className = "zhankai-btn-small";
-		
-		}
-		else
-		{
-		document.getElementById("zhankai-btn-name").innerHTML='關閉';  	
-		document.getElementById("zhankai-btn").className = " zhankai-btn-close";
-		document.getElementById("zhankai-btn-small").className = "zhankai-btn-close-small";
-		
-		}
-    });
+      $('#circle2').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
-	    $(".header .menu .share .hover-col a").click(function()
-    {	$("#fb-page").toggle();
-	    $(this).parent().toggleClass("active");	
-    });
-	
-$(".header .menu .share .hover-col a").click(function(d, s, id) {	
+      $('#circle3').circleProgress({
+          value: 0.1,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-	
+      $('#circle4').circleProgress({
+          value: 0.8,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle5').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle6').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle7').circleProgress({
+          value: 0.1,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle8').circleProgress({
+          value: 0.8,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
 
-    $("#huodongTab span").click(function()
-    {
-        $("#huodongTab span").removeClass("active");
-        $(this).addClass("active");
+      $('#circle9').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
-    });
+      $('#circle10').circleProgress({
+          value: 0,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle11').circleProgress({
+          value: 0.1,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
+
+      $('#circle12').circleProgress({
+          value: 0.8,
+          size: 160,
+          easing: "circleProgressEasing",
+          fill: {
+              color:"#009997"
+          }
+      });
 
 
-</script>
+
+      $(".header .menu-list").click(function()
+      {
+          $("body").addClass("active");
+      });
+
+
+
+      $(".header .search-icon").click(function()
+      {
+          $(this).parent().next().toggleClass("active");
+      });
+
+
+
+
+      var swiper2;
+      var swiper1;
+
+      function lunbo()
+      {
+          if($(window).width()<=640)
+          {
+              if(swiper2)
+              {
+                  swiper2.destroy(false);
+                  swiper1.destroy(false);
+              }
+              swiper2 = new Swiper('.lubo-swiper-container', {
+                  nextButton: '.swiper-button-next2',
+                  prevButton: '.swiper-button-prev2',
+                  paginationClickable: true
+              });
+
+              swiper1 = new Swiper('.gaoxie-swiper-container', {
+                  paginationClickable: true,
+                  pagination: '.swiper-pagination',
+              });
+
+
+
+          }
+          else {
+              if(swiper2)
+              {
+                  swiper2.destroy(false);
+                  swiper1.destroy(false);
+              }
+              swiper2 = new Swiper('.lubo-swiper-container', {
+                  nextButton: '.swiper-button-next2',
+                  prevButton: '.swiper-button-prev2',
+                  slidesPerView: 6,
+                  paginationClickable: true,
+                  spaceBetween: 8
+              });
+
+              swiper1 = new Swiper('.gaoxie-swiper-container', {
+                  slidesPerView: 1,
+                  paginationClickable: true,
+                  pagination: '.swiper-pagination',
+                  nextButton: '.swiper-button-next',
+                  prevButton: '.swiper-button-prev',
+                  spaceBetween: 2
+              });
+
+
+          }
+      }
+      lunbo();
+      $(window).resize(function()
+      {
+          lunbo();
+      });
+
+      $(".zhankai-btn").click(function()
+      {
+          $("#list-clearfix").toggle();
+          if($("#zhankai-btn-name").text() =='關閉')
+          {
+              document.getElementById("zhankai-btn-name").innerHTML='展開';
+              document.getElementById("zhankai-btn").className = " zhankai-btn";
+              document.getElementById("zhankai-btn-small").className = "zhankai-btn-small";
+
+          }
+          else
+          {
+              document.getElementById("zhankai-btn-name").innerHTML='關閉';
+              document.getElementById("zhankai-btn").className = " zhankai-btn-close";
+              document.getElementById("zhankai-btn-small").className = "zhankai-btn-close-small";
+
+          }
+      });
+
+      $(".header .hover-col a").click(function()
+      {	$("#fb-page").toggle();
+          $(this).parent().toggleClass("active");
+      });
+
+      if($(window).width()<=640)
+      {
+          $(".header .hover-col").removeClass("active");
+          $(".header .menu .first>span").click(function()
+          {
+              $(this).parent().toggleClass("active");
+
+          });
+
+
+          $(".header .menu span .xiala-list .has-child>span").click(function()
+          {
+              $(this).parent().toggleClass("active");
+          });
+
+
+      }
+
+      $(".header  .hover-col a").click(function(d, s, id) {
+
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          //js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+
+
+      $("#huodongTab span").click(function()
+      {
+          $("#huodongTab span").removeClass("active");
+          $(this).addClass("active");
+
+      });
+
+
+  </script>
 
 </body>
 </html>

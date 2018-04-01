@@ -33,14 +33,21 @@
 
                 <div class="fl">
 
+                    <div class="search-icon-col">
+                        <img class="search-icon" src="assets/img/home_03.png">
+                    </div>
+
 					<span class="search-col">
-                    <span class="input-col">
-                    <input type="text" placeholder="Keyword" />
-                    </span>
-                    <img src="assets/img/home_03.png">
+                        <span class="input-col">
+                        <input type="text" placeholder="Keyword" />
+                         <img src="assets/img/home_03.png">
+                         </span>
+
+                         <span class="text-col">Search:<u>Departments</u>  <u> History</u>  <u> Traffic</u> </span>
+
                     </span>
 
-                <span class="text-col">Search:<u>Departments</u>  <u> History</u>  <u> Traffic</u> </span>
+
 
 
                 <span class="left-text">
@@ -76,20 +83,22 @@
 		$(".fancybox").fancybox();
 	</script>
      </span>
-<button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">S</button>
 
-<button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">M</button>
+             <span class="font-col">
+            <button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">S</button>
 
-<button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">L</button>
+            <button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">M</button>
 
-                </div>
+            <button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">L</button>
+            </span>
+    </div>
            
 
       </div>
         </div>
 
 
-        <div class="mw clearfix">
+        <div class="mw-top clearfix">
 
 
           
@@ -99,6 +108,7 @@
             <img class="logo-right" src="assets/img/homeImg_03.jpg">
 
 
+            <div class="menu-list-col">
             <div class="menu">
                 <span class="first">About Us
 
@@ -187,19 +197,21 @@
 
                 <span class="share" >
                  <a href="mailto:12424@qq.com"><img  src="assets/img/home_en_21.jpg"></a>
-  
-<div class="hover-col active" >
-<a href="javascript:void(0)" >
-<img src="assets/img/shareCol_01.png" />
-<div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
-<blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
-</blockquote>
-</div>
-</a>      
-                    </div>
-
                 </span>
 
+                <span class="menu-close">×</span>
+
+            </div>
+            </div>
+
+            <div class="hover-col active" >
+                <a href="javascript:void(0)" >
+                    <img src="assets/img/shareCol_01.png" />
+                    <div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
+                        </blockquote>
+                    </div>
+                </a>
             </div>
 
             <img class="menu-list" src="assets/img/menu.jpg" />
@@ -566,6 +578,25 @@ $(".header .menu .share .hover-col a").click(function(d, s, id) {
         document.getElementById("video").play();
     });
 
+
+if($(window).width()<=640)
+{
+    $(".header .hover-col").removeClass("active");
+    $(".header .menu .first>span").click(function()
+    {
+        $(this).parent().toggleClass("active");
+
+    });
+
+
+    $(".header .menu span .xiala-list .has-child>span").click(function()
+    {
+        $(this).parent().toggleClass("active");
+    });
+
+
+}
+
 /*******************************************************/
 
    $("#yuanhuanList").on("click",".active",function()
@@ -703,7 +734,12 @@ $(".header .menu .share .hover-col a").click(function(d, s, id) {
 
     $(".header .menu-list").click(function()
     {
-        $(".header .menu").toggle();
+        $("body").addClass("active");
+    });
+
+    $(".header .search-icon").click(function()
+    {
+        $(this).parent().next().toggleClass("active");
     });
 
     $(".header .search-col img").click(function()

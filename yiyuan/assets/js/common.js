@@ -18,3 +18,11 @@ $(".right-menu").click(function()
 
 
 });
+
+
+$(".menu-close").click(function()
+{
+
+    $("body").removeClass("active");
+
+});

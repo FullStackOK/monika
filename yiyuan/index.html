@@ -34,14 +34,24 @@
 
                 <div class="fl">
 
+
+                    <div class="search-icon-col">
+                    <img class="search-icon" src="assets/img/home_03.png">
+                    </div>
+
 					<span class="search-col">
-                    <span class="input-col">
-                    <input type="text" placeholder="關鍵字搜尋..." />
-                    </span>
-                    <img src="assets/img/home_03.png">
+
+                        <span class="input-col">
+                        <input type="text" placeholder="關鍵字搜尋..." />
+                        <img  src="assets/img/home_03.png">
+                        </span>
+
+
+                        <span class="text-col">熱門搜尋: 腸病毒 流行性感冒 登革熱</span>
+
                     </span>
 
-                <span class="text-col">熱門搜尋: 腸病毒 流行性感冒 登革熱</span>
+
 
 
                 <span class="left-text">
@@ -79,11 +89,14 @@
                 </script>
                      </span>
 
+
+                        <span class="font-col">
                         <button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
 
                         <button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
 
                         <button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
+                        </span>
 
                 </div>
            
@@ -94,7 +107,12 @@
 
         <div class="mw-top clearfix">
           <img class="logo-col" src="assets/img/logo.png" />
+
+            <div class="menu-list-col">
+
             <div class="menu">
+
+
               <span class="first"><span>認識本院</span>
                 <div class="xiala-list">
                   <a href="#">我們的家長</a>
@@ -238,21 +256,29 @@
               <a href="#">特色醫療服務</a>
               <span class="share" >
                 <a href="mailto:12424@qq.com"><img  src="assets/img/home/shouzhangXinxiang.jpg"></a>
-  
-<div class="hover-col active" >
-<a href="javascript:void(0)" >
-<img src="assets/img/shareCol_01.png" />
-<div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
-<blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
-</blockquote>
-</div>
-</a>      
-                    </div>
+              </span>
 
-                </span>
+
+                <span class="menu-close">×</span>
+
+
 
             </div>
 
+
+
+
+            </div>
+
+            <div class="hover-col active" >
+                <a href="javascript:void(0)" >
+                    <img src="assets/img/shareCol_01.png" />
+                    <div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
+                        </blockquote>
+                    </div>
+                </a>
+            </div>
 
             <img class="menu-list" src="assets/img/menu.jpg" />
 
@@ -623,8 +649,8 @@
                 <span class="green-bg">預覽人次: 34862750</span>
                 </div>
 				
-                <div class="left">地址: 40705 台中市西屯區臺灣大道四段1650號   總機: (04)2359-2525   傳真: (05)236-9676
-</div>
+                <div class="left"><span>地址: 40705 台中市西屯區臺灣大道四段1650號</span><span>總機: (04)2359-2525</span>  <span> 傳真: (05)236-9676</span>
+                </div>
       </div>          
 
                 <div class="right">
@@ -690,12 +716,6 @@ var chagefz=document.getElementById("body");
 chagefz.style.fontSize=Number(size)+ "px" ;
 }
 }
- /*
-    $(".header .menu .share>img").click(function()
-    {
-        $(".header .menu .share .hover-col").toggle();
-    });
-*/
 
 
 //影片JS*******************************************************/
@@ -869,14 +889,18 @@ chagefz.style.fontSize=Number(size)+ "px" ;
 
     $(".header .menu-list").click(function()
     {
-        $(".header .menu").toggle();
-		$("#list-clearfix").toogle();
+        $("body").addClass("active");
     });
 
-    $(".header .search-col img").click(function()
-    {
-        $(this).prev().toggle();
-    });
+
+
+        $(".header .search-icon").click(function()
+        {
+            $(this).parent().next().toggleClass("active");
+        });
+
+
+
 
     var swiper2;
     var swiper1;
@@ -955,12 +979,30 @@ chagefz.style.fontSize=Number(size)+ "px" ;
 		}
     });
 
-	    $(".header .menu .share .hover-col a").click(function()
+    $(".header .hover-col a").click(function()
     {	$("#fb-page").toggle();
 	    $(this).parent().toggleClass("active");	
     });
+
+if($(window).width()<=640)
+{
+    $(".header .hover-col").removeClass("active");
+    $(".header .menu .first>span").click(function()
+    {
+        $(this).parent().toggleClass("active");
+
+    });
+
+
+    $(".header .menu span .xiala-list .has-child>span").click(function()
+    {
+        $(this).parent().toggleClass("active");
+    });
+
+
+}
 	
-$(".header .menu .share .hover-col a").click(function(d, s, id) {	
+$(".header  .hover-col a").click(function(d, s, id) {
 
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

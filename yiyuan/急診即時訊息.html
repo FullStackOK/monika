@@ -1,0 +1,839 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>急診即時訊息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="assets/css/swiper.min.css" rel="stylesheet"/>
+    <link href="assets/css/base.css" rel="stylesheet"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="assets/css/schedule.css" rel="stylesheet">
+    <link href="assets/css/gongneng.css" rel="stylesheet"/>
+
+    <!-- jQuery v1.9.1 -->
+    <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
+    <!-- fancyBox v2.1.5 -->
+    <link type="text/css" rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+    <script type="text/javascript" src="assets/lib/jquery.fancybox.min.js"></script>
+    
+</head>
+<body id="body">
+    <header class="header danwei-header" id="header">
+
+        <div class="top-col">
+
+        <div class="mw clearfix">
+
+                <div class="search-icon-col">
+                    <img class="search-icon" src="assets/img/home_03.png">
+                </div>
+
+            		<span class="search-col">
+
+                        <span class="input-col">
+                        <input type="text" placeholder="關鍵字搜尋..." />
+                        <img  src="assets/img/home_03.png">
+                        </span>
+
+
+                        <span class="text-col">熱門搜尋: 腸病毒 流行性感冒 登革熱</span>
+
+                    </span>
+
+                  <span class="font-col">
+                        <button type="button" id="button-small" class="button-classclose" onClick="doZoom(12)">小</button>
+
+                        <button type="button" id="button-mid" class="button-classon" onClick="doZoom(14)">中</button>
+
+                        <button type="button" id="button-big" class="button-classclose" onClick="doZoom(16)">大</button>
+                    </span>
+
+        </div>
+
+        </div>
+
+
+        <div class="mw-top second-col clearfix">
+
+
+            <a href="index.html" >
+                        <img class="logo-col" src="assets/img/danwei/danwei_logo.jpg" />
+            </a>
+
+
+            <span class="link">
+
+
+                <span class="left-text">
+
+                 <span class="line-col">
+                 <a href="index.html">
+                 <font color="#FFFFFF">
+                回首頁
+                </font>
+                </a>
+                </span>
+                <span class="line-col">
+                網站導覽
+                </span>
+
+               <span class="line-col">
+                    <span class="text-detail">
+                    選擇分院 <div class="T3"></div>
+                    </span>
+
+                    <div class="xiala-list" style="color:#000"> 
+                        <div>——分院——</div>
+                        <a href="###" style="color:#000">埔里分院</a>
+                        <a href="###" style="color:#000">嘉義分院</a>
+                        <a href="###" style="color:#000">灣橋分院</a>
+                       <div>——版本——</div>
+                        <a href="###" style="color:#000">國際醫療</a>
+                        <a href="###" style="color:#000">兒童專區</a>
+					</font>
+                    	</div>
+
+                </span>
+
+
+                </span>
+
+                <span class="line-col">
+              <a  href="index_en.html"><font color="#FFFFFF">English</font></a>
+                </span>
+
+
+           <span class="line-col" >
+
+                <span class="share">
+				<a class="fancybox" data-fancybox-type="iframe" href="https://www.addtoany.com/share#url=http://hospita.dodobar.tw">
+                    <img src="assets/img/department_05.jpg" />
+                </a>
+				<script type="text/javascript">
+                    $(".fancybox").fancybox();
+                </script>
+                </span>
+
+           </span>
+               
+                     <span class="jia-jian"  >
+
+                                         <span class="font-col">
+                                                    <button type="button" id="button-small-m" class="button-class1" onClick="doZoom(12)">小</button>
+
+                                                    <button type="button" id="button-mid-m" class="button-class2" onClick="doZoom(14)">中</button>
+
+                                                    <button type="button" id="button-big-m" class="button-class1" onClick="doZoom(16)">大</button>
+                                         </span>
+                    </span>
+            </span>
+
+
+            <span class="yuyan">
+                <a href="mailto:12424@qq.com" ><img  src="assets/img/home_21.png" style="top:+5px; "></a>
+            </span>
+
+
+
+
+        </div>
+
+        <div class="hover-col" >
+            <a href="javascript:void(0)" >
+                <img src="assets/img/shareCol_01.png" />
+                <div class="fb-page"  id="fb-page"  data-href="https://www.facebook.com/vghtc/" data-tabs="timeline" data-height="550"  data-width="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/vghtc/" class="fb-xfbml-parse-ignore">
+                    </blockquote>
+                </div>
+            </a>
+        </div>
+
+        <img class="menu-list" src="assets/img/menu.jpg" />
+
+          
+        <div class="menu-col clearfix">
+
+        <div class="mw">
+        <a href="index.html" class="logo-link">
+                    <img class="logo" src="assets/img/logo.png" />
+        </a>
+
+               <div class="a danwei-menu daohan">
+                 	 <a href="###">認識中榮</a>
+			      	 <a href="###">醫療團隊</a>
+			      	 <a href="###">就醫指南</a>
+			      	 <a href="###">便民服務</a>
+			      	 <a href="###">醫藥訊息</a>
+			      	 <a href="###">資訊公開</a>
+			      	 <a href="###">特色醫療中心</a>
+            </div>
+
+
+      <span class="search-col search-cld">
+            <input type="text" placeholder="關鍵字搜尋" />
+            <img src="assets/img/danwei/danwei_19.png">
+        </span>
+
+
+
+	     </div>
+
+        </div>
+
+
+
+
+    </header>
+
+
+<div class="danwei-banner">
+
+
+    <div class="banner-img" style="background: url('assets/img/gongneng/banner01.jpg') center center;background-size:cover;">
+
+        <div class="mw">
+
+            <div class="hot-search">熱門搜尋: <a href="###">腸病毒</a> <a href="###">流行性感冒</a> <a href="###">登革熱</a> <a href="###">體檢</a></div>
+
+        </div>
+
+    </div>
+
+
+          <div class="themiddleof menu-list-col">
+        <div class="themiddleof1">
+
+      	 <a href="###">認識中榮</a>
+      	 <a href="###">醫療團隊</a>
+      	 <a href="###">就醫指南</a>
+      	 <span class="has-child">
+
+             <span>便民服務</span>
+
+             <div class="child-list">
+                 <a href="###">申辦服務</a>
+                 <a href="###">院內環景導覽</a>
+                 <a href="###">首長信箱</a>
+                 <a href="###">看診進度</a>
+                 <a href="###">急診．住院名單查詢</a>
+                 <a href="###">衛教專區</a>
+                 <a href="###">訪視新生兒</a>
+                 <a href="###">服務電話</a>
+                 <a href="###">藥物諮詢</a>
+                 <a href="###">熱門網頁推薦</a>
+                 <a href="###">身心障礙資訊</a>
+                 <a href="###">捐物/捐款徵信</a>
+                 <a href="###">器官移植專區</a>
+                 <a href="###">QR Code & APP專區</a>
+             </div>
+
+         </span>
+      	 <a href="###">醫藥訊息</a>
+      	 <a href="###">資訊公開</a>
+      	 <a href="###">特色醫療中心</a>
+
+            <span class="menu-close">×</span>
+
+
+      </div>
+      		<div class="themiddleof2">
+            <a href="###" class="search" style="width:350px; height:100%; background-color:#f1f1f1;">
+                <input type="text" placeholder="輸入關鍵字" style="margin-top:10px;" />
+                <img src="assets/img/home_03.png" style="display:inline-block; left:250px; margin-top:10px"/>
+            </a>
+        
+        </div>
+        </div>
+    <div class="content-col">
+        <div class="content" >
+            <div class="leftnavigation">
+                <a href="###" class="on"><img src="assets/img/gongneng/gongneng_15.png" />快捷選單</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />看診進度</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />預約掛號</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />醫師專長</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />健康檢查</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />交通指引</a>
+                <a href="###"><img src="assets/img/gongneng/gongneng_15.png" />衛教及用藥諮詢</a>
+            </div>
+            <div class="rightnavigation notPicDetail">
+            
+                <span id="d" class="title-col"><img src="assets/img/gongneng/gongneng_03.png" class="nonoimg">現在位置：首頁  >  就醫指南  >  急診服務  >   急診即時訊息 </span>
+                <div class="rightnavigation_nav">
+                    <h3 class="title"  style="float:left; font-size:24px;">急診即時訊息</h3><span style="position:relative;top:+30px;color:#888888;">(每30秒更新1次)</span>
+<span style="position:relative;top:+30px;float:right;"><img src="assets/img/zixun/zixun_11.jpg">2017/11/13<span style="color:#F60">09:53:25</span></span>
+<div style="clear:both"></div>
+                    
+                    <div class="newContent">
+		
+         <ul class="yuanhuan clearfix" style=" margin:10% 0 10% 0; display: block;">
+                <li>
+                <div id="circle1" class="annulus-col"></div>
+
+                <div class="middle">
+                    否
+                </div>
+
+                <p>是否已向<br/>
+                119通報滿床</p>
+                </li>
+                <li>
+                    <div id="circle2" class="annulus-col"></div>
+
+                    <div class="middle">
+                        <b class="green">0</b>
+                    </div>
+                    <img src="assets/img/renshu.png"/>
+
+
+                    <p>等待推床</p>
+                </li>
+                <li>
+                    <div id="circle3" class="annulus-col"></div>
+
+                    <div class="middle"><b class="green">42</b></div>
+                    <img src="assets/img/renshu.png"/>
+
+                    <p>等待住院</p>
+                </li>
+                <li>
+                    <div id="circle4" class="annulus-col"></div>
+
+                    <div class="middle"><b class="green">2</b></div>
+                    <img src="assets/img/renshu.png"/>
+
+                    <p>等待加護病房</p>
+                </li>
+            </ul>
+            
+            <!------------------------------------------------>
+            
+            <ul class="yuanhuan clearfix" style=" margin:10% 0 10% 0; display: block;">
+                
+                <li>
+                    <div id="circle5" class="annulus-col"></div>
+
+                    <div class="middle">
+                        <b class="green">3</b>
+                    </div>
+                    <img style="top:+45%;" src="assets/img/renshu.png"/>
+
+
+                    <p>內科急診(MER)</p><p>等待看診人數</p>
+                    
+                </li>
+                <li>
+                    <div id="circle6" class="annulus-col"></div>
+
+                    <div class="middle"><b class="green">2</b></div>
+                    <img style="top:+45%;" src="assets/img/renshu.png"/>
+
+                    <p>外科人數(SER)</p>
+                    <p>等待看診人數</p>
+                </li>
+                <li>
+                    <div id="circle7" class="annulus-col"></div>
+
+                    <div class="middle"><b class="green">0</b></div>
+                    <img style="top:+45%;" src="assets/img/renshu.png"/>
+
+                    <p>兒科急診(PER)</p>
+                    <p>等待看診人數</p>
+                </li>
+            </ul>
+            </div>
+                        
+                        
+
+ <div style="clear:both;height:60px;"></div>
+ 
+<ul style="border: 2px #f1f1f1 solid">
+<li style="width:100%; float:left; background-color:#273649">
+<span class="left" style="margin-left:20px; margin-top: 20px; height:50px; line-height:50px; color:#FFF; font-size:16px">備註</span>
+</li> 
+                                     
+<li class="item" style="word-break:break-all; width:100%;">
+<span>1.看診號次/看診時間:由診間醫師送出，實際以診間為準，若有疑問請洽診間，謝謝!<br></span>
+<span>2.看診時間:上午科09:00-12:00 下午科14:00-17:00 夜診18:00-20:00<br></span>
+<span>3.轉診病患請於看診當日先至客服中心報到，再至診間就診<br></span>
+<span>4.如遇颱風等天然災害，臺中市政府宣布停止上班，本院亦即停止門診<br></span>
+<span>5.語音查詢看診進度專線:0985-24-0000(費率已一般網外行動電話計算)<br></span>
+<span>6.客服中心服務專線:(04)23741252<br></span>
+<span>7.門診服務台:(04)23741257<br></span>
+</li>
+</ul>
+							
+
+
+
+                    
+
+                     </div>                  
+					</div>
+                   </div>
+	            </div>
+            </div>
+	   </div>
+    </div>
+</div>
+
+
+  <div class="zhankai">
+     <div class="mw"> 
+
+         <div class="zhankai-btn" id="zhankai-btn">
+         <div class="zhankai-btn-small" id="zhankai-btn-small"></div>
+         <span id="zhankai-btn-name">展開</span></div>
+            
+
+     <ul class="list clearfix" id="list-clearfix" hidden="li";>
+                <BR>
+                <li>
+                    <div class="title">認識中榮</div>
+
+                    <a href="###">
+                        我們的家長
+                    </a>
+                    <a href="###">
+                        沿革
+                    </a>
+
+                    <a href="###">
+                        特色與貢獻
+                    </a>
+
+                    <a href="###">
+                        組織架構
+                    </a>
+
+
+                    <a href="###">
+                        醫療服務及研究統計．<br/>
+                        服務規模
+                    </a>
+
+
+
+                    <a href="###">
+                        願景．未來展望
+                    </a>
+
+                    <a href="###">
+                        我們的榮耀
+                    </a>
+
+                    <a href="###">
+                        民眾感謝函
+                    </a>
+                    
+                    
+                     <div class="title">就醫指南</div>
+                    <a href="###"></a>
+
+                    <a href="###">院內停車位資訊</a>
+                    <a href="###">掛號服務</a>
+                    <a href="###">門診服務</a>
+                    <a href="###">住院暨出院服務</a>
+                    <a href="###">急診服務</a>
+                    <a href="###">收費說明</a>
+                    <a href="###">高階健康檢查</a>
+                    <a href="###">交通指南</a>
+                    <a href="###">病人權利</a>
+                    <a href="###">常見問答集</a>
+
+                </li>
+
+         <li>
+           <div class="title">醫療團隊</div>
+             <a href="###">內科部</a>
+             <a href="###">外科部</a>
+             <a href="###">婦女醫學部</a>
+             <a href="###">兒童醫學部</a>
+             <a href="###">口腔醫學部</a>
+			 <a href="###">家庭醫學部</a>
+             <a href="###">眼科部</a>
+             <a href="###">護理部</a>
+             <a href="###">藥學部</a>
+             <a href="###">重症醫學部</a>
+             <a href="###">神經醫學中心</a>
+             <a href="###">心臟血管中心</a>
+             <a href="###">放射線部</a>
+             <a href="###">病理檢驗部</a>
+             <a href="###">急診部</a>
+             <a href="###">骨科部</a>
+             <a href="###">精神部</a>
+             <a href="###">耳鼻喉頭頸部</a>
+             <a href="###">麻醉部</a>
+             <a href="###">放射腫瘤部</a>
+             <a href="###">復健科</a>
+             <a href="###">皮膚科</a>
+             <a href="###">核醫部</a>
+             <a href="###">傳統醫學科</a>
+             <a href="###">營養室</a>
+             <a href="###">品質管理中心</a>
+             <a href="###">感染管制中心</a>                   
+
+           </li>
+
+                <li>
+                    <div class="title">便民服務</div>
+
+                    
+                    <a href="###">申辦服務</a>
+                    <a href="###">院內環境導覽</a>
+                    <a href="###">首長信箱</a>
+                    <a href="###">看診進度</a>
+                    <a href="###">急診，住院名單查詢</a>
+                    <a href="###">衛教專區</a>
+                    <a href="###">訪視新生兒</a>
+                    <a href="###">服務電話</a>
+                    <a href="###">藥物諮詢</a>
+                    <a href="###">熱門網頁推薦</a>
+                    <a href="###">身心障礙資訊</a>
+                    <a href="###">捐物/捐款徵信</a>
+                    <a href="###">器官移植專區</a>
+                    <a href="###">QR Code & APP專區</a>
+
+
+                </li>
+
+
+                <li>
+                    <div class="title">訊息專區</div>
+                    <a href="###">最新消息</a>
+
+                    <a href="###">門診公告</a>
+                    <a href="###">重大政策</a>
+                    <a href="###">徵才訊息</a>
+                    <a href="###">學術活動訊息</a>
+                    <a href="###">記者會訊</a>
+                    <a href="###">門診衛教時間</a>
+                    <a href="###">中榮醫訊與中榮醫教</a>
+                    <a href="###">多媒體專區</a>
+		
+					<a href="###"></a>
+					<a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                     <div class="title">專業人士常用連結</div>
+                     <a href="###">品質指標資訊平台</a>
+                     <a href="###">轉診轉檢報告查詢</a>
+                     <a href="###">代檢報告查詢</a>
+                     <a href="###">中榮轉診檢資訊平台</a>
+                     <a href="###">AIR代檢報告查詢</a>
+                     <a href="###">外包人員專屬資料系統</a>
+                     <a href="###">榮家榮院專屬資料系統</a>
+                     <a href="###">其他連結推薦</a>
+                </li>
+
+
+                <li>
+                    <div class="title">資訊公開</div>
+                    <a href="###">政府公開資訊</a>
+                    <a href="###">主題專區</a>
+                    <a href="###">權利宣告</a>
+                    <a href="###">網站滿意度調查</a>
+                    <a href="###">問卷調查</a>
+                    <a href="###">病人滿意度調查檢果 <br>與改善措施</a> 
+                    <a href="###">下載專區</a>
+                    
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    <a href="###"></a>
+                    
+                    <div class="title">院內相關連結</div>
+                  	<a href="###">員工入口網</a>
+                    <a href="###">新進人員報到專區</a>
+                    <a href="###">中榮ｅ學網</a>
+                    <a href="###">本院合作醫院</a>
+                    <a href="###"></a>
+                    <a href="###"></a> 
+                    <a href="###"></a>
+                    <a href="###"></a>
+                </li>
+
+
+                <li>
+                    <div class="title">特色醫療中心</div>
+					<a href="###">國際醫療中心</a>
+                    <a href="###">整合性癌症中心</a>
+                    <a href="###">遺傳諮詢中心</a>
+                    <a href="###">高齡醫學中心</a>
+                    <a href="###">整合癌症資源中心</a>
+                    <a href="###">攝護腺疾病防治中心</a>
+                    <a href="###">安寧緩和醫學科</a>
+                    <a href="###">健康管理中心</a>
+                    <a href="###">美容醫學中心</a>
+                    <a href="###">中榮技術轉移中心</a>
+                    <a href="###">臨床試驗中心</a>
+                    <a href="###">醫學倫理與法律中心</a>
+                    <a href="###">糖尿病人保健中心</a>
+                    <a href="###">磁振造影健檢中心</a>
+                    <a href="###">腦中風中心</a>
+                    <a href="###">生殖醫學中心</a>
+                    <a href="###">罕病暨血友病中心</a>
+                    <a href="###">兒童發展聯合評估中心</a>
+                    <a href="###">中榮植牙中心</a>
+                    <a href="###">肝病中心</a>
+
+                </li>
+
+
+            </ul>
+        </div>
+
+
+    </div>
+
+    <footer class="footer" style="clear: both;">
+
+
+
+
+        <div class="mw">
+
+
+ 
+            <div class="clearfix">
+
+              <div class="left">
+                <div class="riqi">
+                <span class="green-bg">更新日期: 106-10-26</span>
+                <span class="green-bg">預覽人次: 34862750</span>
+                </div>
+
+                  <div class="left"><span>地址: 40705 台中市西屯區臺灣大道四段1650號</span><span>總機: (04)2359-2525</span>  <span> 傳真: (05)236-9676</span>
+                  </div>
+      </div>          
+
+                <div class="right">
+                    <img src="assets/img/home_89.png">
+                    <img src="assets/img/home_92.png">
+                    <img src="assets/img/home_94.png">
+                    <img src="assets/img/home_95.png">
+                    <img src="assets/img/home_96.png">
+                    <img src="assets/img/home_97.png">
+
+	           </div>
+
+            </div>
+
+            <img class="to-top" id="scrollTop" src="assets/img/home_98.png">
+
+      </div>
+
+ 		<div class="clearfix wenzi">
+         <div class="left-moblie">
+                2018©本網站內容為臺中榮民總醫院所有，未經允許請勿任意轉載、複製或做商業用途　最佳瀏覽：1024以上及IE8以上
+				</div>
+                <div class="right-moblie">
+                         <a href="###">隱私權公告</a>｜<a href="###">政府網站資料開放宣告</a>｜<a href="###">網站滿意度</a>
+                </div>
+            </div>
+
+</footer>
+
+
+<script src="assets/lib/circle-progress.js"></script>
+<script src="assets/lib/swiper.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script>
+function doZoom(size){
+if(size==12)
+{
+var size=12;
+document.getElementById("button-small").className='button-class2';
+document.getElementById("button-mid").className='button-class1';
+document.getElementById("button-big").className='button-class1';
+document.getElementById("button-small-m").className='button-class2';
+document.getElementById("button-mid-m").className='button-class1';
+document.getElementById("button-big-m").className='button-class1';
+var chagefz=document.getElementById("body");
+chagefz.style.fontSize=Number(size)+ "px" ;
+}
+if(size==14)
+{
+var size=14;	
+document.getElementById("button-small").className='button-class1';
+document.getElementById("button-mid").className='button-class2';
+document.getElementById("button-big").className='button-class1';
+
+document.getElementById("button-small-m").className='button-class1';
+document.getElementById("button-mid-m").className='button-class2';
+document.getElementById("button-big-m").className='button-class1';
+var chagefz=document.getElementById("body");
+chagefz.style.fontSize=Number(size)+ "px" ;
+}
+if(size==16)
+{
+var size=16;
+document.getElementById("button-small").className='button-class1';
+document.getElementById("button-mid").className='button-class1';
+document.getElementById("button-big").className='button-class2';
+
+document.getElementById("button-small-m").className='button-class1';
+document.getElementById("button-mid-m").className='button-class1';
+document.getElementById("button-big-m").className='button-class2';
+var chagefz=document.getElementById("body");
+chagefz.style.fontSize=Number(size)+ "px" ;
+}
+}
+
+
+ 
+	    $(".header .menu .share .hover-col a").click(function()
+    {	$("#fb-page").toggle();
+	    $(this).parent().toggleClass("active");	
+    });
+	
+$(".header .menu .share .hover-col a").click(function(d, s, id) {	
+
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  //js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+	
+  $(".zhankai-btn").click(function()
+    {
+		$("#list-clearfix").toggle();
+		if($("#zhankai-btn-name").text() =='收起')
+		{
+		document.getElementById("zhankai-btn-name").innerHTML='展開';	
+		document.getElementById("zhankai-btn").className = " zhankai-btn";
+		document.getElementById("zhankai-btn-small").className = "zhankai-btn-small";
+		
+		}
+		else
+		{
+		document.getElementById("zhankai-btn-name").innerHTML='收起';  	
+		document.getElementById("zhankai-btn").className = " zhankai-btn-close";
+		document.getElementById("zhankai-btn-small").className = "zhankai-btn-close-small";
+		
+		}
+    });
+	    $(".rightnavigation .rightnavigation_nav .rightnavigation_content .bottom li .top").click(function()
+    {
+        $(this).parent().toggleClass("active");
+
+    });
+
+
+
+    $(".header .menu-list").click(function()
+    {
+        $("body").addClass("active");
+    });
+
+
+
+    $(".header .search-icon").click(function()
+    {
+        $(this).parent().next().toggleClass("active");
+    });
+
+
+	
+    $("table tr .aboutNews").click(function() {
+        window.location.href = "最新消息詳情.html"
+    });
+	
+	 $('#circle1').circleProgress({
+		startAngle:4.7,
+        value: 0,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+
+    $('#circle2').circleProgress({
+		startAngle:4.7,
+        value: 0,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+
+    $('#circle3').circleProgress({
+		startAngle:4.7,
+        value: 0.3,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+	
+	$('#circle4').circleProgress({
+		startAngle:4.7,
+        value: 0.1,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+
+	$('#circle5').circleProgress({
+		startAngle:4.7,
+        value: 0.1,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+	
+	$('#circle6').circleProgress({
+		startAngle:4.7,
+        value: 0.1,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+	
+	$('#circle7').circleProgress({
+		startAngle:4.7,
+        value: 0,
+        size: 160,
+        easing: "circleProgressEasing",
+        fill: {
+            color:"#009997"
+        }
+    });
+
+if($(window).width()<=640)
+{
+
+    $(".menu-list-col .has-child>span").click(function()
+    {
+        $(this).parent().toggleClass("active");
+
+    });
+
+}
+
+	
+</script>
+
+</body>
+</html>
